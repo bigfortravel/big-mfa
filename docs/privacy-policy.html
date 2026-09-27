@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Politique de confidentialité — Big MFA</title>
+<style>
+    body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        max-width: 720px;
+        margin: 0 auto;
+        padding: 40px 20px;
+        line-height: 1.6;
+        color: #1a1a1a;
+    }
+    h1 { color: #6C63FF; }
+    h2 { color: #0F1117; margin-top: 32px; font-size: 1.2em; }
+    .updated { color: #7B7F9E; font-size: 0.9em; margin-bottom: 32px; }
+    ul { padding-left: 20px; }
+    a { color: #6C63FF; }
+    footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid #DDDDE8; color: #7B7F9E; font-size: 0.85em; }
+</style>
+</head>
+<body>
+
+<h1>Politique de confidentialité — Big MFA</h1>
+<p class="updated">Dernière mise à jour : 27 septembre 2026</p>
+
+<p>BigForTravel (« nous ») édite l'application Big MFA, un générateur de codes d'authentification à deux facteurs (TOTP/HOTP) pour Android.</p>
+
+<h2>1. Aucune collecte de données</h2>
+<p>Big MFA ne collecte, ne transmet et ne stocke aucune donnée personnelle sur un serveur, qu'il soit le nôtre ou celui d'un tiers. L'application ne réalise aucune connexion réseau de sa propre initiative.</p>
+
+<h2>2. Données traitées localement sur votre appareil</h2>
+<p>Big MFA traite localement, exclusivement sur votre appareil :</p>
+<ul>
+    <li>Les noms de comptes et émetteurs que vous ajoutez</li>
+    <li>Les clés secrètes TOTP/HOTP correspondantes, chiffrées avec AES-256-GCM-SIV</li>
+    <li>Votre mot de passe maître, jamais stocké — seule sa dérivation cryptographique (Argon2id) sert à déverrouiller le coffre</li>
+</ul>
+<p>Ces données ne quittent jamais votre appareil, sauf action explicite de votre part (voir section 3).</p>
+
+<h2>3. Exports et partages initiés par vous</h2>
+<p>Si vous choisissez d'exporter une sauvegarde chiffrée ou un code QR, ce fichier est généré localement et n'est partagé qu'avec l'application de votre choix, via le mécanisme de partage natif d'Android. Nous n'avons accès à aucun de ces fichiers.</p>
+
+<h2>4. Saisie automatique (Autofill)</h2>
+<p>Si vous activez la fonction de saisie automatique, Big MFA ne propose vos codes qu'après vérification biométrique, et uniquement dans les applications ou sites que vous avez explicitement associés à chaque compte.</p>
+
+<h2>5. Permissions demandées</h2>
+<p><strong>Caméra</strong> : uniquement pour scanner des codes QR, jamais utilisée autrement, jamais enregistrée.</p>
+
+<h2>6. Bibliothèques tierces intégrées</h2>
+<p>Big MFA intègre des bibliothèques open source (Bouncy Castle, AndroidX, CameraX, ML Kit) qui fonctionnent localement et n'effectuent aucune télémétrie. Le détail est consultable dans l'application (Paramètres → À propos → Mentions tierces) et dans notre dépôt GitHub public.</p>
+
+<h2>7. Vos droits (RGPD)</h2>
+<p>Vous pouvez à tout moment :</p>
+<ul>
+    <li>Consulter vos données via l'export chiffré (droit d'accès, art. 15)</li>
+    <li>Transférer vos données via l'export chiffré (droit à la portabilité, art. 20)</li>
+    <li>Supprimer toutes vos données via « Paramètres → Supprimer toutes mes données » (droit à l'effacement, art. 17)</li>
+</ul>
+
+<h2>8. Responsable de traitement</h2>
+<p>Patrick DJEUZONG – BigForTravel<br>
+Contact : <a href="mailto:contact@bigfortravel.com">contact@bigfortravel.com</a></p>
+
+<h2>9. Autorités de contrôle</h2>
+<ul>
+    <li>Utilisateurs européens : CNIL — <a href="https://www.cnil.fr">www.cnil.fr</a></li>
+    <li>Utilisateurs camerounais : ANTIC — <a href="https://www.antic.cm">www.antic.cm</a></li>
+</ul>
+
+<h2>10. Code source</h2>
+<p>Big MFA est un logiciel libre sous licence GPLv3. Le code source complet est disponible sur : <a href="https://github.com/bigfortravel/big-mfa">github.com/bigfortravel/big-mfa</a></p>
+
+<footer>
+Big MFA — BigForTravel
+</footer>
+
+</body>
+</html>
