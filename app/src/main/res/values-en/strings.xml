@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Big MFA</string>
+
+    <!-- Unlock screen -->
+    <string name="unlock_title">Big MFA</string>
+    <string name="unlock_subtitle">Enter your master password</string>
+    <string name="unlock_password_label">Master password</string>
+    <string name="unlock_button">Unlock</string>
+    <string name="unlock_reset_vault">Reset vault</string>
+    <string name="unlock_biometric_content_description">Unlock with fingerprint</string>
+
+    <!-- Shared footer -->
+    <string name="footer_support">❤️ Support</string>
+    <string name="footer_contact">✉️ Contact us</string>
+    <string name="footer_language_auto">🌐 Automatic — browser language</string>
+    <string name="footer_language_placeholder">Language selector — coming soon</string>
+    <string name="footer_gplv3">Free and open source (GPLv3 license).</string>
+    <string name="language_dialog_title">Choose language</string>
+    <string name="language_option_auto">🌐 Automatic (system language)</string>
+    <!-- My codes -->
+    <string name="accounts_empty_state">No accounts yet.\nUse "+ Add" to create one.</string>
+    <string name="accounts_search_placeholder">Search for an account</string>
+    <string name="accounts_no_results">No results for "%1$s"</string>
+    <string name="accounts_rename_title">Rename account</string>
+    <string name="accounts_name_label">Account name</string>
+    <string name="accounts_issuer_label">Issuer (optional)</string>
+    <string name="accounts_name_required_error">Account name is required</string>
+    <string name="accounts_save">Save</string>
+    <string name="accounts_cancel">Cancel</string>
+    <string name="accounts_rename_content_description">Rename %1$s</string>
+    <string name="accounts_delete_content_description">Delete %1$s</string>
+    <string name="accounts_delete_confirm_title">Delete "%1$s"?</string>
+    <string name="accounts_delete_irreversible">This action cannot be undone.</string>
+    <string name="accounts_delete_button">Delete</string>
+    <string name="accounts_hotp_label">HOTP</string>
+    <string name="accounts_unreadable">Unreadable</string>
+    <string name="accounts_copy_content_description">Copy</string>
+    <string name="accounts_generate_button">Generate</string>
+    <!-- + Add -->
+    <string name="add_account_title">Add an account</string>
+    <string name="add_account_scan_qr">📷 Scan a QR code</string>
+    <string name="add_account_qr_invalid">Invalid or unrecognized QR code</string>
+    <string name="add_account_cancel_scan">Cancel scan</string>
+    <string name="add_account_name_label">Account name</string>
+    <string name="add_account_issuer_label">Issuer (optional)</string>
+    <string name="add_account_secret_label">Secret (Base32)</string>
+    <string name="add_account_advanced_options">⚙ Advanced options (algorithm, digits, period)</string>
+    <string name="add_account_type_label">TYPE</string>
+    <string name="add_account_type_totp">TOTP (time-based — standard)</string>
+    <string name="add_account_type_hotp">HOTP (counter-based)</string>
+    <string name="add_account_algorithm_label">ALGORITHM</string>
+    <string name="add_account_algorithm_sha1">SHA-1 (default, universal compatibility)</string>
+    <string name="add_account_digits_label">NUMBER OF DIGITS</string>
+    <string name="add_account_digits_default">6 digits (default)</string>
+    <string name="add_account_digits_n">%1$d digits</string>
+    <string name="add_account_period_label">PERIOD (SECONDS)</string>
+    <string name="add_account_save">Save</string>
+    <string name="add_account_name_required">Account name is required</string>
+    <string name="add_account_secret_required">Secret is required</string>
+    <string name="add_account_secret_invalid">Secret is not valid Base32</string>
+    <string name="add_account_save_error">Unable to save account</string>
+    <string name="add_account_camera_permission_needed">Camera access is required to scan a QR code.</string>
+    <string name="add_account_grant_camera">Grant camera access</string>
+    <!-- Key -->
+    <string name="generate_key_description">Generates a random Base32 secret key (160 bits) compatible with Google Authenticator, Aegis, Authy…</string>
+    <string name="generate_key_generate">Generate</string>
+    <string name="generate_key_copy">Copy</string>
+    <string name="generate_key_copied">Key copied</string>
+    <string name="generate_key_show_qr">Show QR</string>
+    <string name="generate_key_qr_title">QR code</string>
+    <string name="generate_key_close">Close</string>
+    <!-- Decoder -->
+    <string name="decoder_import_qr">Import from a QR code (image)</string>
+    <string name="decoder_no_qr_found">No QR code detected in this image</string>
+    <string name="decoder_secret_label">MFA / TOTP KEY (BASE32)</string>
+    <string name="decoder_code_placeholder">— — — — — —</string>
+    <string name="decoder_generate_code">Generate code</string>
+    <string name="decoder_copy_content_description">Copy code</string>
+    <string name="decoder_code_copied">Code copied — cleared in 30s</string>
+    <string name="decoder_secret_empty_error">Please enter or import a key</string>
+    <string name="decoder_secret_invalid_error">Invalid key</string>
+    <!-- Create/Restore vault -->
+    <string name="create_vault_password_too_short">Password must be at least 12 characters long</string>
+    <string name="create_vault_passwords_mismatch">Passwords do not match</string>
+    <string name="create_vault_creation_error">Unable to create vault</string>
+    <string name="restore_vault_new_password_too_short">New password must be at least 12 characters long</string>
+    <string name="restore_vault_new_passwords_mismatch">New passwords do not match</string>
+    <string name="restore_vault_generic_error">Unable to restore backup</string>
+    <!-- Unlock errors -->
+    <string name="unlock_error_wrong_password">Incorrect password</string>
+    <string name="unlock_error_corrupted_vault">Vault data is corrupted or unreadable</string>
+    <string name="unlock_error_no_vault">No vault found</string>
+    <string name="unlock_error_too_many_attempts">Too many attempts — try again in %1$ds</string>
+    <string name="unlock_error_biometric_unavailable">Biometrics unavailable — use your password</string>
+    <string name="unlock_error_biometric_failed">Biometric authentication failed</string>
+    <!-- Create vault screen -->
+    <string name="create_vault_title">Create your Big MFA vault</string>
+    <string name="create_vault_min_chars">Minimum 12 characters</string>
+    <string name="create_vault_password_label">Password</string>
+    <string name="create_vault_confirm_label">Confirm password</string>
+    <string name="create_vault_create_button">Create vault</string>
+    <string name="create_vault_restore_button">📥 Restore an existing backup</string>
+    <string name="restore_backup_title">Restore a backup</string>
+    <string name="restore_backup_description">Native Big MFA or Chrome-compatible format — detected automatically.</string>
+    <string name="restore_backup_choose_file">Choose backup file</string>
+    <string name="restore_backup_file_selected">✅ File selected</string>
+    <string name="restore_backup_backup_password_label">Backup password</string>
+    <string name="restore_backup_new_password_title">NEW MASTER PASSWORD</string>
+    <string name="restore_backup_new_password_hint">Distinct from the backup password — minimum 12 characters.</string>
+    <string name="restore_backup_new_password_label">New master password</string>
+    <string name="restore_backup_confirm_new_password_label">Confirm new password</string>
+    <string name="restore_backup_restore_button">Restore</string>
+    <string name="restore_backup_cancel">Cancel</string>
+    <string name="restore_backup_file_read_error">Unable to read file</string>
+    <!-- Change master password -->
+    <string name="change_password_title">Change master password</string>
+    <string name="change_password_current_label">CURRENT PASSWORD</string>
+    <string name="change_password_new_label">NEW PASSWORD</string>
+    <string name="change_password_confirm_label">CONFIRM</string>
+    <string name="change_password_button">Change password</string>
+    <string name="change_password_new_too_short">New password must be at least 12 characters long</string>
+    <string name="change_password_new_mismatch">New passwords do not match</string>
+    <string name="change_password_wrong_current">Current password is incorrect</string>
+    <string name="change_password_generic_error">Unable to change password</string>
+    <string name="change_password_success_toast">Password changed successfully</string>
+    <string name="change_password_cancel">Cancel</string>
+    <!-- Biometrics -->
+    <string name="biometric_setup_title">Enable biometrics</string>
+    <string name="biometric_hardware_insufficient">Your device does not have sufficient hardware backing to safely enable biometrics.</string>
+    <string name="biometric_activate_prompt">Enable fingerprint unlock</string>
+    <string name="biometric_password_confirmed_hint">Password confirmed — place your finger on the sensor.</string>
+    <string name="biometric_continue_button">Continue with fingerprint</string>
+    <string name="biometric_confirm_password_label">Confirm your master password</string>
+    <string name="biometric_confirm_button">Confirm</string>
+    <string name="biometric_wrong_password">Incorrect password</string>
+    <string name="biometric_key_creation_error">Unable to create secure key</string>
+    <string name="biometric_cipher_error">Unable to prepare encryption</string>
+    <string name="biometric_enable_error">Unable to enable biometrics</string>
+    <string name="biometric_auth_failed">Biometric authentication failed</string>
+    <string name="biometric_activated_toast">Biometrics enabled</string>
+    <string name="biometric_deactivated_toast">Biometrics disabled</string>
+    <string name="biometric_cancel">Cancel</string>
+    <string name="biometric_row_title">Biometric unlock</string>
+    <string name="biometric_row_enabled">Enabled</string>
+    <string name="biometric_row_disabled">Disabled</string>
+    <!-- Settings — security status -->
+    <string name="settings_title">Settings</string>
+    <string name="settings_security_status_title">SECURITY STATUS</string>
+    <string name="settings_masvs_badge">🛡 OWASP MASVS — Hardened level</string>
+    <string name="settings_encryption_label">ENCRYPTION</string>
+    <string name="settings_kdf_label">KDF</string>
+    <string name="settings_inactivity_label">INACTIVITY TIMEOUT</string>
+    <string name="settings_inactivity_value">2 min</string>
+    <string name="settings_bruteforce_label">BRUTE FORCE PROTECTION</string>
+    <string name="settings_bruteforce_value">5 attempts + HMAC</string>
+    <string name="settings_lockout_label">LOCKOUT</string>
+    <string name="settings_lockout_value">Exponential</string>
+    <string name="settings_salt_label">SALT</string>
+    <string name="settings_salt_value">256 bits</string>
+    <string name="settings_integrity_label">VAULT INTEGRITY</string>
+    <string name="settings_integrity_value">HMAC-SHA256</string>
+    <string name="settings_hardware_label">HARDWARE BACKING</string>
+    <string name="settings_hardware_value">TEE minimum, StrongBox if available</string>
+    <string name="settings_bruteforce_note">ℹ️ Brute-force protection defends against repeated attempts within the app. It does not replace a strong password: someone with direct access to the vault file on the device could attempt an offline decryption without going through this limit. Use a passphrase of 16+ characters.</string>
+
+    <!-- Settings — GDPR -->
+    <string name="settings_rgpd_badge">🔒 GDPR compliant — 100% local data</string>
+    <string name="settings_rgpd_title">PRIVACY &amp; GDPR</string>
+    <string name="settings_rgpd_controller_label">Data controller</string>
+    <string name="settings_rgpd_controller_value">Patrick DJEUZONG – BigForTravel</string>
+    <string name="settings_rgpd_data_label">Data collected</string>
+    <string name="settings_rgpd_data_value">Account names, encrypted TOTP keys</string>
+    <string name="settings_rgpd_storage_label">Storage location</string>
+    <string name="settings_rgpd_storage_value">Your device only (private app storage, isolated by the Android sandbox)</string>
+    <string name="settings_rgpd_transfer_label">Transfer to third parties</string>
+    <string name="settings_rgpd_transfer_value">No request is made by Big MFA itself. The encrypted export can be shared via a third-party app of your choice, only if you explicitly enable it.</string>
+    <string name="settings_rgpd_thirdparty_label">Embedded third-party code</string>
+    <string name="settings_rgpd_thirdparty_value">Bouncy Castle (MIT), CameraX (Apache-2.0), embedded ML Kit barcode-scanning (Apache-2.0), ZXing (Apache-2.0) — all local, no telemetry</string>
+    <string name="settings_rgpd_retention_label">Retention period</string>
+    <string name="settings_rgpd_retention_value">Until uninstall or manual deletion</string>
+    <string name="settings_rgpd_legal_label">Legal basis</string>
+    <string name="settings_rgpd_legal_value">User consent (Art. 6.1.a)</string>
+    <string name="settings_rgpd_access_label">Right of access (Art. 15)</string>
+    <string name="settings_rgpd_access_value">Via encrypted export (above)</string>
+    <string name="settings_rgpd_erasure_label">Right to erasure (Art. 17)</string>
+    <string name="settings_rgpd_erasure_value">Via "Delete all my data"</string>
+    <string name="settings_rgpd_portability_label">Right to portability (Art. 20)</string>
+    <string name="settings_rgpd_portability_value">Via encrypted export (native or cross-platform)</string>
+    <string name="settings_rgpd_dpo_label">DPO contact</string>
+    <string name="settings_rgpd_dpo_value">contact@bigfortravel.com</string>
+    <string name="settings_rgpd_eu_label">EU authority (complaints)</string>
+    <string name="settings_rgpd_eu_value">CNIL – www.cnil.fr (European users)</string>
+    <string name="settings_rgpd_cm_label">Cameroon authority (complaints)</string>
+    <string name="settings_rgpd_cm_value">ANTIC – www.antic.cm (Cameroonian users)</string>
+    <string name="settings_rgpd_footer">Big MFA does not collect any personal data outside your device, does not initiate any network connections itself, and does not share any information with third parties. All data is encrypted with AES-256-GCM-SIV before local storage.</string>
+    <!-- Settings — change password button -->
+    <string name="settings_change_password_button">🔑 Change master password</string>
+
+    <!-- Settings — backup/export/import -->
+    <string name="settings_backup_title">BACKUP</string>
+    <string name="settings_export_native_title">🛡️ Maximum security export</string>
+    <string name="settings_export_native_subtitle">Argon2id + AES-256-GCM-SIV</string>
+    <string name="settings_export_chrome_title">🌐 Cross-platform compatible export</string>
+    <string name="settings_export_chrome_subtitle">PBKDF2 + AES-256-GCM — importable into Big MFA Chrome</string>
+    <string name="settings_export_qr_title">📷 QR Export (carousel + ZIP)</string>
+    <string name="settings_export_qr_subtitle">One QR per account, to scroll through or download</string>
+    <string name="settings_import_button">📥 Import / Restore</string>
+    <string name="settings_export_footer">The export is encrypted — secrets remain protected even if the file is shared.</string>
+    <string name="settings_export_native_dialog_title">Maximum security export</string>
+    <string name="settings_export_chrome_dialog_title">Cross-platform compatible export</string>
+    <string name="settings_export_native_dialog_desc">🛡️ Argon2id + AES-256-GCM-SIV — this password protects the exported file, separate from your master password.</string>
+    <string name="settings_export_chrome_dialog_desc">🌐 PBKDF2 + AES-256-GCM — format compatible with the Big MFA Chrome extension. This password is separate from your master password.</string>
+    <string name="settings_export_password_label">Export password</string>
+    <string name="settings_export_confirm_label">Confirm</string>
+    <string name="settings_export_min_chars_error">Minimum 8 characters</string>
+    <string name="settings_export_mismatch_error">Passwords do not match</string>
+    <string name="settings_export_button">Export</string>
+    <string name="settings_export_cancel">Cancel</string>
+    <string name="settings_export_generic_error">Unable to create export</string>
+    <string name="settings_export_share_title">Share export</string>
+    <string name="settings_import_dialog_title">Import a backup</string>
+    <string name="settings_import_dialog_desc">Select a backup file (native Big MFA or Chrome-compatible — the format is detected automatically).</string>
+    <string name="settings_import_choose_file">Choose a file</string>
+    <string name="settings_import_file_selected_desc">File selected — enter this backup\'s password.</string>
+    <string name="settings_import_password_label">Backup password</string>
+    <string name="settings_import_button_confirm">Import</string>
+    <string name="settings_import_read_error">Unable to read file</string>
+    <string name="settings_import_generic_error">Import failed</string>
+    <string name="settings_import_success_toast">%1$d account(s) imported</string>
+
+    <!-- Settings — danger zone -->
+    <string name="settings_danger_zone_title">DANGER ZONE</string>
+    <string name="settings_delete_all_button">🗑 Delete all my data</string>
+    <string name="settings_delete_all_description">Exercises your right to erasure (Art. 17 GDPR). Deletes all accounts and the master password. This action is irreversible.</string>
+    <string name="settings_delete_confirm_title">Delete all data?</string>
+    <string name="settings_delete_confirm_desc">All your accounts will be permanently deleted. This action cannot be undone.</string>
+    <string name="settings_delete_continue">Continue</string>
+    <string name="settings_delete_final_title">Final confirmation</string>
+    <string name="settings_delete_final_desc">Are you REALLY sure? No recovery will be possible after this step.</string>
+    <string name="settings_delete_final_button">Delete permanently</string>
+    <string name="settings_delete_cancel">Cancel</string>
+    <!-- BackupImporter -->
+    <string name="backup_importer_unreadable">Unreadable or corrupted file</string>
+    <string name="backup_importer_unknown_format">Unrecognized file format</string>
+    <string name="backup_importer_wrong_password">Incorrect password or corrupted file</string>
+    <!-- Support -->
+    <string name="support_title">Support Big MFA</string>
+    <string name="support_description">Big MFA is developed and maintained on a volunteer basis by BigForTravel. No ads, no data selling, no hidden subscription. If the app is useful to you, a donation — even small — helps fund its ongoing development.</string>
+    <string name="support_paypal_button">Donate via PayPal</string>
+    <string name="support_kofi_button">Donate via Ko-fi</string>
+    <string name="support_disclaimer">Donations are optional and do not grant any additional functionality. Always verify that the displayed recipient is BigForTravel / Patrick Djeuzong.</string>
+    <string name="support_official_site">🌐 Official website</string>
+    <string name="support_contact_us">✉️ Write to us</string>
+    <string name="support_contact_subject">Big MFA — Contact</string>
+    <!-- QR export carousel -->
+    <string name="export_qr_title">QR Export (%1$d/%2$d)</string>
+    <string name="export_qr_no_accounts">No accounts to export.</string>
+    <string name="export_qr_zip_button">📦 Export all QR codes as ZIP</string>
+    <string name="export_qr_close_button">Close</string>
+    <string name="export_qr_zip_error">Unable to create ZIP archive</string>
+    <string name="export_qr_share_title">Share QR archive</string>
+    <!-- Guide -->
+    <string name="guide_title">Big MFA Guide</string>
+    <string name="guide_intro">A quick overview of every available feature.</string>
+
+    <string name="guide_codes_title">🔑 My codes</string>
+    <string name="guide_codes_body">Your TOTP codes refresh live with a visual countdown. Tap a code to copy it (automatically cleared from the clipboard after 30s). For HOTP accounts, tap "Generate" each time you need a code. Search, rename, or delete an account using the icons on each row.</string>
+
+    <string name="guide_decoder_title">🔍 Decoder</string>
+    <string name="guide_decoder_body">Paste or import a secret from a QR code image to instantly get its TOTP code, without adding it to your vault. Useful for a one-time check.</string>
+
+    <string name="guide_key_title">🔐 Key</string>
+    <string name="guide_key_body">Generates a random secret key, with its QR code, to set up a new account on another service that asks you to create your own secret.</string>
+
+    <string name="guide_add_title">➕ Add an account</string>
+    <string name="guide_add_body">Scan the QR code provided by the service, or manually enter the secret. Advanced options let you adjust the algorithm, number of digits, period, or switch to HOTP.</string>
+
+    <string name="guide_biometric_title">👆 Biometric unlock</string>
+    <string name="guide_biometric_body">Enable fingerprint unlock from Settings. Your master password always remains available as a fallback — never replaced, only complemented.</string>
+
+    <string name="guide_backup_title">💾 Backup and restore</string>
+    <string name="guide_backup_body">Two export formats: maximum security (native Android) or cross-platform compatible (importable into the Chrome extension). QR export generates a carousel of QR codes, individually or as a ZIP archive. Restoring automatically detects the file format.</string>
+
+    <string name="guide_security_title">🛡 Security</string>
+    <string name="guide_security_body">All data stays exclusively on your device, encrypted with AES-256-GCM-SIV and a key derived using Argon2id. No network connection is ever initiated by the app itself.</string>
+
+    <string name="guide_language_title">🌐 Language</string>
+    <string name="guide_language_body">Choose "Automatic" to follow your phone\'s language, or select a specific language from the footer of the login screens.</string>
+    <!-- Guide - tabs -->
+    <string name="guide_tab_installation">Installation</string>
+    <string name="guide_tab_usage">Usage</string>
+    <string name="guide_tab_features">Features</string>
+
+    <!-- Installation guide -->
+    <string name="guide_install_step1_title">1. Create your vault</string>
+    <string name="guide_install_step1_body">On first launch, choose "Create vault" to start with an empty vault, or "Restore an existing backup" if you\'ve already used Big MFA on Chrome or another Android device.</string>
+
+    <string name="guide_install_step2_title">2. Choose a strong master password</string>
+    <string name="guide_install_step2_body">Minimum 12 characters, but aim for a 16+ character passphrase (for example, several words combined). It\'s the only key protecting all your accounts.</string>
+
+    <string name="guide_install_step3_title">3. Understand it\'s unrecoverable</string>
+    <string name="guide_install_step3_body">Big MFA does not store your master password anywhere, neither in plain text nor encrypted. If you forget it and have no external backup, your accounts will be permanently inaccessible. Write it down in a reliable password manager.</string>
+
+    <string name="guide_install_step4_title">4. Enable biometrics (optional)</string>
+    <string name="guide_install_step4_body">From Settings, enable fingerprint unlock for faster daily access. Your master password always remains available as a fallback.</string>
+    <!-- Usage guide -->
+    <string name="guide_usage_step1_title">1. Add your first account</string>
+    <string name="guide_usage_step1_body">From "+ Add", scan the QR code shown by the service (fastest method), or manually enter the name, issuer, and Base32 secret if you cannot scan.</string>
+
+    <string name="guide_usage_step2_title">2. Use a code daily</string>
+    <string name="guide_usage_step2_body">On "My codes", tap directly on a TOTP code to copy it (automatically cleared from the clipboard after 30 seconds). For an HOTP account, tap "Generate" each time you need one — the counter always moves forward, never back.</string>
+
+    <string name="guide_usage_step3_title">3. Manage your accounts</string>
+    <string name="guide_usage_step3_body">Use the search bar to quickly find an account among many. The pencil icon lets you rename, the trash icon lets you delete (with double confirmation, irreversible action).</string>
+
+    <string name="guide_usage_step4_title">4. Back up regularly</string>
+    <string name="guide_usage_step4_body">From Settings, choose "Maximum security export" for an Android-only backup, or "Cross-platform compatible export" if you also use Big MFA on Chrome. QR export (carousel or ZIP) is useful for transferring to another standard TOTP-compatible manager.</string>
+
+    <string name="guide_usage_step5_title">5. Change your master password</string>
+    <string name="guide_usage_step5_body">From Settings, enter your current password then the new one. Your accounts and biometrics (if enabled) remain intact — only the password changes.</string>
+    <string name="settings_language_row_title">Language</string>
+    <!-- Main navigation bar -->
+    <string name="nav_accounts">My codes</string>
+    <string name="nav_decoder">Decoder</string>
+    <string name="nav_key">Key</string>
+    <string name="nav_add">+ Add</string>
+    <string name="nav_support">Support</string>
+    <string name="nav_settings">Settings</string>
+    <string name="nav_guide">Guide</string>
+    <string name="nav_lock_content_description">Lock vault</string>
+    <!-- About / License -->
+    <string name="settings_about_title">ABOUT</string>
+    <string name="settings_about_version_label">Version</string>
+    <string name="settings_about_license_label">License</string>
+    <string name="settings_about_license_value">GNU General Public License v3.0 (GPLv3)</string>
+    <string name="settings_about_view_license_button">📄 View full license</string>
+    <string name="settings_about_view_notices_button">📋 View third-party notices</string>
+    <string name="settings_about_source_button">🔗 Source code (GitHub)</string>
+    <string name="settings_about_dialog_close">Close</string>
+    <!-- Autofill -->
+    <string name="settings_autofill_title">AUTOFILL</string>
+    <string name="settings_autofill_status_enabled">✅ Big MFA is the active autofill service</string>
+    <string name="settings_autofill_status_disabled">Autofill service not enabled</string>
+    <string name="settings_autofill_enable_button">Enable in Android settings</string>
+    <string name="settings_autofill_disable_button">Disable</string>
+    <string name="settings_autofill_description">Lets you fill your TOTP codes directly into other apps, after biometric verification. Only works on Android 8.0 or higher.</string>
+    <!-- Autofill linking -->
+    <string name="accounts_autofill_section_title">AUTOFILL LINK (optional)</string>
+    <string name="accounts_autofill_hint">Link this account to the app or site it belongs to, so Big MFA never offers this code on the wrong page — a protection against phishing.</string>
+    <string name="accounts_autofill_type_app">Android app</string>
+    <string name="accounts_autofill_type_web">Website</string>
+    <string name="accounts_autofill_package_label">Package name (e.g. com.google.android.gm)</string>
+    <string name="accounts_autofill_domain_label">Domain (e.g. github.com)</string>
+    <string name="accounts_autofill_none">No link</string>
+    <string name="accounts_autofill_current_app">Linked app: %1$s</string>
+    <string name="accounts_autofill_current_web">Linked site: %1$s</string>
+    <string name="autofill_generic_suggestion">Big MFA — choose a code</string>
+    <string name="autofill_picker_title">Choose an account</string>
+    <string name="autofill_no_match_title">No account linked to this app</string>
+    <string name="autofill_search_placeholder">Search for an account</string>
+    <string name="autofill_search_manually_button">Search manually</string>
+    <string name="autofill_cancel_button">Cancel</string>
+    <string name="add_account_migration_detected_title">Google Authenticator import</string>
+    <string name="add_account_migration_detected_desc">%1$d account(s) detected in this QR code. Select which ones to import.</string>
+    <string name="add_account_migration_import_button">Import selection</string>
+    <string name="add_account_migration_select_all">Select all</string>
+    <string name="add_account_migration_cancel">Cancel</string>
+    <string name="decoder_migration_detected_title">Google Authenticator import</string>
+    <string name="decoder_migration_detected_desc">%1$d account(s) detected. Select which one to preview.</string>
+    <string name="decoder_migration_cancel">Cancel</string>
+    <string name="guide_autofill_title">🔐 Autofill</string>
+    <string name="guide_autofill_body">Big MFA can offer your codes directly in other apps and websites, after biometric verification. Enable it in Settings, then link each account to its app or site by editing the account (pencil icon). Domain verification protects against phishing: only real browsers can report a trusted domain.</string>
+    <string name="guide_google_import_title">📲 Google Authenticator import</string>
+    <string name="guide_google_import_body">Scan or import Google Authenticator\'s export directly (its "Transfer accounts" menu): Big MFA automatically detects this format and lets you select which accounts to import at once, instead of adding them one by one.</string>
+</resources>

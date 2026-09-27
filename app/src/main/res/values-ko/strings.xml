@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Big MFA</string>
+
+    <!-- 잠금 해제 화면 -->
+    <string name="unlock_title">Big MFA</string>
+    <string name="unlock_subtitle">마스터 비밀번호를 입력하세요</string>
+    <string name="unlock_password_label">마스터 비밀번호</string>
+    <string name="unlock_button">잠금 해제</string>
+    <string name="unlock_reset_vault">보관함 재설정</string>
+    <string name="unlock_biometric_content_description">지문으로 잠금 해제</string>
+
+    <!-- 공유 바닥글 -->
+    <string name="footer_support">❤️ 후원하기</string>
+    <string name="footer_contact">✉️ 문의하기</string>
+    <string name="footer_language_auto">🌐 자동 — 브라우저 언어</string>
+    <string name="footer_language_placeholder">언어 선택 — 곧 제공 예정</string>
+    <string name="footer_gplv3">무료 및 오픈소스 (GPLv3 라이선스).</string>
+    <string name="language_dialog_title">언어 선택</string>
+    <string name="language_option_auto">🌐 자동 (시스템 언어)</string>
+
+    <!-- 내 코드 -->
+    <string name="accounts_empty_state">아직 계정이 없습니다.\n“+ 추가”를 사용하여 계정을 만드세요.</string>
+    <string name="accounts_search_placeholder">계정 검색</string>
+    <string name="accounts_no_results">“%1$s”에 대한 결과가 없습니다</string>
+    <string name="accounts_rename_title">계정 이름 변경</string>
+    <string name="accounts_name_label">계정 이름</string>
+    <string name="accounts_issuer_label">발급자 (선택 사항)</string>
+    <string name="accounts_name_required_error">계정 이름은 필수입니다</string>
+    <string name="accounts_save">저장</string>
+    <string name="accounts_cancel">취소</string>
+    <string name="accounts_rename_content_description">%1$s 이름 변경</string>
+    <string name="accounts_delete_content_description">%1$s 삭제</string>
+    <string name="accounts_delete_confirm_title">“%1$s”을(를) 삭제하시겠습니까?</string>
+    <string name="accounts_delete_irreversible">이 작업은 취소할 수 없습니다.</string>
+    <string name="accounts_delete_button">삭제</string>
+    <string name="accounts_hotp_label">HOTP</string>
+    <string name="accounts_unreadable">읽을 수 없음</string>
+    <string name="accounts_copy_content_description">복사</string>
+    <string name="accounts_generate_button">생성</string>
+
+    <!-- + 추가 -->
+    <string name="add_account_title">계정 추가</string>
+    <string name="add_account_scan_qr">📷 QR 코드 스캔</string>
+    <string name="add_account_qr_invalid">유효하지 않거나 인식할 수 없는 QR 코드</string>
+    <string name="add_account_cancel_scan">스캔 취소</string>
+    <string name="add_account_name_label">계정 이름</string>
+    <string name="add_account_issuer_label">발급자 (선택 사항)</string>
+    <string name="add_account_secret_label">비밀 키 (Base32)</string>
+    <string name="add_account_advanced_options">⚙ 고급 옵션 (알고리즘, 자릿수, 주기)</string>
+    <string name="add_account_type_label">유형</string>
+    <string name="add_account_type_totp">TOTP (시간 기반 — 표준)</string>
+    <string name="add_account_type_hotp">HOTP (카운터 기반)</string>
+    <string name="add_account_algorithm_label">알고리즘</string>
+    <string name="add_account_algorithm_sha1">SHA-1 (기본값, 범용 호환성)</string>
+    <string name="add_account_digits_label">자릿수</string>
+    <string name="add_account_digits_default">6자리 (기본값)</string>
+    <string name="add_account_digits_n">%1$d자리</string>
+    <string name="add_account_period_label">주기 (초)</string>
+    <string name="add_account_save">저장</string>
+    <string name="add_account_name_required">계정 이름은 필수입니다</string>
+    <string name="add_account_secret_required">비밀 키는 필수입니다</string>
+    <string name="add_account_secret_invalid">비밀 키가 유효한 Base32가 아닙니다</string>
+    <string name="add_account_save_error">계정을 저장할 수 없습니다</string>
+    <string name="add_account_camera_permission_needed">QR 코드를 스캔하려면 카메라 접근 권한이 필요합니다.</string>
+    <string name="add_account_grant_camera">카메라 접근 허용</string>
+
+    <!-- 키 -->
+    <string name="generate_key_description">Google Authenticator, Aegis, Authy 등과 호환되는 무작위 Base32 비밀 키(160비트)를 생성합니다</string>
+    <string name="generate_key_generate">생성</string>
+    <string name="generate_key_copy">복사</string>
+    <string name="generate_key_copied">키가 복사되었습니다</string>
+    <string name="generate_key_show_qr">QR 표시</string>
+    <string name="generate_key_qr_title">QR 코드</string>
+    <string name="generate_key_close">닫기</string>
+
+    <!-- 디코더 -->
+    <string name="decoder_import_qr">QR 코드(이미지)에서 가져오기</string>
+    <string name="decoder_no_qr_found">이 이미지에서 QR 코드를 찾을 수 없습니다</string>
+    <string name="decoder_secret_label">MFA / TOTP 키 (BASE32)</string>
+    <string name="decoder_code_placeholder">— — — — — —</string>
+    <string name="decoder_generate_code">코드 생성</string>
+    <string name="decoder_copy_content_description">코드 복사</string>
+    <string name="decoder_code_copied">코드가 복사되었습니다 — 30초 후 삭제됩니다</string>
+    <string name="decoder_secret_empty_error">키를 입력하거나 가져오세요</string>
+    <string name="decoder_secret_invalid_error">유효하지 않은 키</string>
+
+    <!-- 보관함 생성/복원 -->
+    <string name="create_vault_password_too_short">비밀번호는 12자 이상이어야 합니다</string>
+    <string name="create_vault_passwords_mismatch">비밀번호가 일치하지 않습니다</string>
+    <string name="create_vault_creation_error">보관함을 만들 수 없습니다</string>
+    <string name="restore_vault_new_password_too_short">새 비밀번호는 12자 이상이어야 합니다</string>
+    <string name="restore_vault_new_passwords_mismatch">새 비밀번호가 일치하지 않습니다</string>
+    <string name="restore_vault_generic_error">백업을 복원할 수 없습니다</string>
+    <string name="create_vault_title">Big MFA 보관함 만들기</string>
+    <string name="create_vault_min_chars">최소 12자</string>
+    <string name="create_vault_password_label">비밀번호</string>
+    <string name="create_vault_confirm_label">비밀번호 확인</string>
+    <string name="create_vault_create_button">보관함 만들기</string>
+    <string name="create_vault_restore_button">📥 기존 백업 복원</string>
+    <string name="restore_backup_title">백업 복원</string>
+    <string name="restore_backup_description">Big MFA 기본 형식 또는 Chrome 호환 형식 — 자동으로 감지됩니다.</string>
+    <string name="restore_backup_choose_file">백업 파일 선택</string>
+    <string name="restore_backup_file_selected">✅ 파일이 선택되었습니다</string>
+    <string name="restore_backup_backup_password_label">백업 비밀번호</string>
+    <string name="restore_backup_new_password_title">새 마스터 비밀번호</string>
+    <string name="restore_backup_new_password_hint">백업 비밀번호와 다름 — 최소 12자.</string>
+    <string name="restore_backup_new_password_label">새 마스터 비밀번호</string>
+    <string name="restore_backup_confirm_new_password_label">새 비밀번호 확인</string>
+    <string name="restore_backup_restore_button">복원</string>
+    <string name="restore_backup_cancel">취소</string>
+    <string name="restore_backup_file_read_error">파일을 읽을 수 없습니다</string>
+
+    <!-- 잠금 해제 오류 -->
+    <string name="unlock_error_wrong_password">잘못된 비밀번호</string>
+    <string name="unlock_error_corrupted_vault">보관함 데이터가 손상되었거나 읽을 수 없습니다</string>
+    <string name="unlock_error_no_vault">보관함을 찾을 수 없습니다</string>
+    <string name="unlock_error_too_many_attempts">시도 횟수가 너무 많습니다 — %1$d초 후 다시 시도하세요</string>
+    <string name="unlock_error_biometric_unavailable">생체 인식을 사용할 수 없습니다 — 비밀번호를 사용하세요</string>
+    <string name="unlock_error_biometric_failed">생체 인증에 실패했습니다</string>
+
+    <!-- 마스터 비밀번호 변경 -->
+    <string name="change_password_title">마스터 비밀번호 변경</string>
+    <string name="change_password_current_label">현재 비밀번호</string>
+    <string name="change_password_new_label">새 비밀번호</string>
+    <string name="change_password_confirm_label">확인</string>
+    <string name="change_password_button">비밀번호 변경</string>
+    <string name="change_password_new_too_short">새 비밀번호는 12자 이상이어야 합니다</string>
+    <string name="change_password_new_mismatch">새 비밀번호가 일치하지 않습니다</string>
+    <string name="change_password_wrong_current">현재 비밀번호가 올바르지 않습니다</string>
+    <string name="change_password_generic_error">비밀번호를 변경할 수 없습니다</string>
+    <string name="change_password_success_toast">비밀번호가 성공적으로 변경되었습니다</string>
+    <string name="change_password_cancel">취소</string>
+
+    <!-- 생체 인식 -->
+    <string name="biometric_setup_title">생체 인식 활성화</string>
+    <string name="biometric_hardware_insufficient">이 기기는 생체 인식을 안전하게 활성화할 만큼 충분한 하드웨어를 지원하지 않습니다.</string>
+    <string name="biometric_activate_prompt">지문으로 잠금 해제 활성화</string>
+    <string name="biometric_password_confirmed_hint">비밀번호가 확인되었습니다 — 센서에 손가락을 올려놓으세요.</string>
+    <string name="biometric_continue_button">지문으로 계속하기</string>
+    <string name="biometric_confirm_password_label">마스터 비밀번호를 확인하세요</string>
+    <string name="biometric_confirm_button">확인</string>
+    <string name="biometric_wrong_password">잘못된 비밀번호</string>
+    <string name="biometric_key_creation_error">보안 키를 만들 수 없습니다</string>
+    <string name="biometric_cipher_error">암호화를 준비할 수 없습니다</string>
+    <string name="biometric_enable_error">생체 인식을 활성화할 수 없습니다</string>
+    <string name="biometric_auth_failed">생체 인증에 실패했습니다</string>
+    <string name="biometric_activated_toast">생체 인식이 활성화되었습니다</string>
+    <string name="biometric_deactivated_toast">생체 인식이 비활성화되었습니다</string>
+    <string name="biometric_cancel">취소</string>
+    <string name="biometric_row_title">생체 인식 잠금 해제</string>
+    <string name="biometric_row_enabled">활성화됨</string>
+    <string name="biometric_row_disabled">비활성화됨</string>
+
+    <!-- 설정 -->
+    <string name="settings_title">설정</string>
+    <string name="settings_security_status_title">보안 상태</string>
+    <string name="settings_masvs_badge">🛡 OWASP MASVS — 강화된 수준</string>
+    <string name="settings_encryption_label">암호화</string>
+    <string name="settings_kdf_label">KDF</string>
+    <string name="settings_inactivity_label">비활성 시간</string>
+    <string name="settings_inactivity_value">2분</string>
+    <string name="settings_bruteforce_label">무차별 대입 공격 방어</string>
+    <string name="settings_bruteforce_value">5회 시도 + HMAC</string>
+    <string name="settings_lockout_label">잠금</string>
+    <string name="settings_lockout_value">지수적</string>
+    <string name="settings_salt_label">솔트</string>
+    <string name="settings_salt_value">256비트</string>
+    <string name="settings_integrity_label">보관함 무결성</string>
+    <string name="settings_integrity_value">HMAC-SHA256</string>
+    <string name="settings_hardware_label">하드웨어 고정</string>
+    <string name="settings_hardware_value">최소 TEE, 가능한 경우 StrongBox</string>
+    <string name="settings_bruteforce_note">ℹ️ 무차별 대입 공격 방어는 앱 내 반복적인 시도로부터 보호합니다. 강력한 비밀번호를 대체하지는 않습니다: 기기의 보관함 파일에 직접 접근할 수 있는 사람은 이 제한을 우회하여 오프라인 복호화를 시도할 수 있습니다. 16자 이상의 암호구를 사용하세요.</string>
+    <string name="settings_change_password_button">🔑 마스터 비밀번호 변경</string>
+    <string name="settings_backup_title">백업</string>
+    <string name="settings_export_native_title">🛡️ 최대 보안 내보내기</string>
+    <string name="settings_export_native_subtitle">Argon2id + AES-256-GCM-SIV</string>
+    <string name="settings_export_chrome_title">🌐 크로스 플랫폼 내보내기</string>
+    <string name="settings_export_chrome_subtitle">PBKDF2 + AES-256-GCM — Big MFA Chrome으로 가져오기 가능</string>
+    <string name="settings_export_qr_title">📷 QR 내보내기 (캐러셀 + ZIP)</string>
+    <string name="settings_export_qr_subtitle">계정당 하나의 QR, 탐색 또는 다운로드용</string>
+    <string name="settings_import_button">📥 가져오기 / 복원</string>
+    <string name="settings_export_footer">내보내기는 암호화되어 있어 파일이 공유되더라도 비밀 키가 보호됩니다.</string>
+    <string name="settings_export_native_dialog_title">최대 보안 내보내기</string>
+    <string name="settings_export_chrome_dialog_title">크로스 플랫폼 내보내기</string>
+    <string name="settings_export_native_dialog_desc">🛡️ Argon2id + AES-256-GCM-SIV — 이 비밀번호는 내보낸 파일을 보호하며 마스터 비밀번호와는 다릅니다.</string>
+    <string name="settings_export_chrome_dialog_desc">🌐 PBKDF2 + AES-256-GCM — Big MFA Chrome 확장 프로그램과 호환되는 형식입니다. 이 비밀번호는 마스터 비밀번호와는 다릅니다.</string>
+    <string name="settings_export_password_label">내보내기 비밀번호</string>
+    <string name="settings_export_confirm_label">확인</string>
+    <string name="settings_export_min_chars_error">최소 8자</string>
+    <string name="settings_export_mismatch_error">비밀번호가 일치하지 않습니다</string>
+    <string name="settings_export_button">내보내기</string>
+    <string name="settings_export_cancel">취소</string>
+    <string name="settings_export_generic_error">내보내기를 만들 수 없습니다</string>
+    <string name="settings_export_share_title">내보내기 공유</string>
+    <string name="settings_import_dialog_title">백업 가져오기</string>
+    <string name="settings_import_dialog_desc">백업 파일을 선택하세요 (Big MFA 기본 형식 또는 Chrome 호환 형식 — 형식은 자동으로 감지됩니다).</string>
+    <string name="settings_import_choose_file">파일 선택</string>
+    <string name="settings_import_file_selected_desc">파일이 선택되었습니다 — 이 백업의 비밀번호를 입력하세요.</string>
+    <string name="settings_import_password_label">백업 비밀번호</string>
+    <string name="settings_import_button_confirm">가져오기</string>
+    <string name="settings_import_read_error">파일을 읽을 수 없습니다</string>
+    <string name="settings_import_generic_error">가져오기에 실패했습니다</string>
+    <string name="settings_import_success_toast">%1$d개의 계정을 가져왔습니다</string>
+    <string name="settings_danger_zone_title">위험 구역</string>
+    <string name="settings_delete_all_button">🗑 모든 데이터 삭제</string>
+    <string name="settings_delete_all_description">삭제 권한을 행사합니다 (GDPR 제17조). 모든 계정과 마스터 비밀번호를 삭제합니다. 취소할 수 없는 작업입니다.</string>
+    <string name="settings_delete_confirm_title">모든 데이터를 삭제하시겠습니까?</string>
+    <string name="settings_delete_confirm_desc">모든 계정이 영구적으로 삭제됩니다. 이 작업은 취소할 수 없습니다.</string>
+    <string name="settings_delete_continue">계속</string>
+    <string name="settings_delete_final_title">최종 확인</string>
+    <string name="settings_delete_final_desc">정말로 확실합니까? 이 단계 이후에는 복구가 불가능합니다.</string>
+    <string name="settings_delete_final_button">영구 삭제</string>
+    <string name="settings_delete_cancel">취소</string>
+    <string name="settings_rgpd_badge">🔒 GDPR 준수 — 데이터 100% 로컬</string>
+    <string name="settings_rgpd_title">개인정보 보호 및 GDPR</string>
+    <string name="settings_rgpd_controller_label">데이터 관리자</string>
+    <string name="settings_rgpd_controller_value">Patrick DJEUZONG – BigForTravel</string>
+    <string name="settings_rgpd_data_label">수집되는 데이터</string>
+    <string name="settings_rgpd_data_value">계정 이름, 암호화된 TOTP 키</string>
+    <string name="settings_rgpd_storage_label">저장 위치</string>
+    <string name="settings_rgpd_storage_value">사용자 기기에만 저장 (Android 샌드박스로 격리된 앱 전용 저장소)</string>
+    <string name="settings_rgpd_transfer_label">제3자에게 전송</string>
+    <string name="settings_rgpd_transfer_value">Big MFA 자체는 어떠한 요청도 보내지 않습니다. 암호화된 내보내기는 명시적으로 활성화한 경우에만 선택한 타사 앱을 통해 공유할 수 있습니다.</string>
+    <string name="settings_rgpd_thirdparty_label">내장된 타사 코드</string>
+    <string name="settings_rgpd_thirdparty_value">Bouncy Castle (MIT), CameraX (Apache-2.0), 내장 ML Kit barcode-scanning (Apache-2.0), ZXing (Apache-2.0) — 모두 로컬, 원격 측정 없음</string>
+    <string name="settings_rgpd_retention_label">보존 기간</string>
+    <string name="settings_rgpd_retention_value">제거 또는 수동 삭제 시까지</string>
+    <string name="settings_rgpd_legal_label">법적 근거</string>
+    <string name="settings_rgpd_legal_value">사용자 동의 (제6조 1항 a)</string>
+    <string name="settings_rgpd_access_label">접근권 (제15조)</string>
+    <string name="settings_rgpd_access_value">암호화된 내보내기를 통해 (위)</string>
+    <string name="settings_rgpd_erasure_label">삭제권 (제17조)</string>
+    <string name="settings_rgpd_erasure_value">“모든 데이터 삭제”를 통해</string>
+    <string name="settings_rgpd_portability_label">데이터 이동권 (제20조)</string>
+    <string name="settings_rgpd_portability_value">암호화된 내보내기를 통해 (기본 또는 크로스 플랫폼)</string>
+    <string name="settings_rgpd_dpo_label">DPO 연락처</string>
+    <string name="settings_rgpd_dpo_value">contact@bigfortravel.com</string>
+    <string name="settings_rgpd_eu_label">EU 당국 (불만 제기)</string>
+    <string name="settings_rgpd_eu_value">CNIL – www.cnil.fr (유럽 사용자)</string>
+    <string name="settings_rgpd_cm_label">카메룬 당국 (불만 제기)</string>
+    <string name="settings_rgpd_cm_value">ANTIC – www.antic.cm (카메룬 사용자)</string>
+    <string name="settings_rgpd_footer">Big MFA는 사용자 기기 외부의 어떠한 개인 데이터도 수집하지 않으며, 스스로 네트워크 연결을 시작하지 않고, 제3자와 정보를 공유하지 않습니다. 모든 데이터는 로컬 저장 전에 AES-256-GCM-SIV로 암호화됩니다.</string>
+    <string name="settings_language_row_title">언어</string>
+
+    <!-- BackupImporter -->
+    <string name="backup_importer_unreadable">파일을 읽을 수 없거나 손상되었습니다</string>
+    <string name="backup_importer_unknown_format">인식할 수 없는 파일 형식입니다</string>
+    <string name="backup_importer_wrong_password">잘못된 비밀번호이거나 파일이 손상되었습니다</string>
+
+    <!-- 후원하기 -->
+    <string name="support_title">Big MFA 후원하기</string>
+    <string name="support_description">Big MFA는 BigForTravel이 자발적으로 개발 및 유지 관리하고 있습니다. 광고 없음, 데이터 판매 없음, 숨겨진 구독 없음. 이 앱이 유용하다고 느끼신다면, 작은 기부라도 지속적인 개발에 도움이 됩니다.</string>
+    <string name="support_paypal_button">PayPal로 기부하기</string>
+    <string name="support_kofi_button">Ko-fi로 기부하기</string>
+    <string name="support_disclaimer">기부는 선택 사항이며 추가 기능을 제공하지 않습니다. 표시된 수취인이 항상 BigForTravel / Patrick Djeuzong인지 확인하세요.</string>
+    <string name="support_official_site">🌐 공식 웹사이트</string>
+    <string name="support_contact_us">✉️ 문의하기</string>
+    <string name="support_contact_subject">Big MFA — 문의</string>
+
+    <!-- QR 내보내기 캐러셀 -->
+    <string name="export_qr_title">QR 내보내기 (%1$d/%2$d)</string>
+    <string name="export_qr_no_accounts">내보낼 계정이 없습니다.</string>
+    <string name="export_qr_zip_button">📦 모든 QR 코드를 ZIP으로 내보내기</string>
+    <string name="export_qr_close_button">닫기</string>
+    <string name="export_qr_zip_error">ZIP 아카이브를 만들 수 없습니다</string>
+    <string name="export_qr_share_title">QR 아카이브 공유</string>
+
+    <!-- 가이드 -->
+    <string name="guide_tab_installation">설치</string>
+    <string name="guide_tab_usage">사용법</string>
+    <string name="guide_tab_features">기능</string>
+    <string name="guide_title">Big MFA 가이드</string>
+    <string name="guide_intro">사용 가능한 모든 기능에 대한 빠른 개요입니다.</string>
+    <string name="guide_codes_title">🔑 내 코드</string>
+    <string name="guide_codes_body">TOTP 코드는 시각적 카운트다운과 함께 실시간으로 업데이트됩니다. 코드를 탭하여 복사할 수 있습니다(30초 후 클립보드에서 자동으로 삭제됨). HOTP 계정의 경우, 코드가 필요할 때마다 “생성”을 탭하세요. 각 행의 아이콘을 사용하여 계정을 검색, 이름 변경 또는 삭제할 수 있습니다.</string>
+    <string name="guide_decoder_title">🔍 디코더</string>
+    <string name="guide_decoder_body">보관함에 추가하지 않고도 즉시 해당 TOTP 코드를 얻으려면 QR 코드 이미지에서 비밀 키를 붙여넣거나 가져오세요. 일회성 확인에 유용합니다.</string>
+    <string name="guide_key_title">🔐 키</string>
+    <string name="guide_key_body">자체 비밀 키를 만들도록 요청하는 다른 서비스에서 새 계정을 설정하기 위해 무작위 비밀 키와 해당 QR 코드를 생성합니다.</string>
+    <string name="guide_add_title">➕ 계정 추가</string>
+    <string name="guide_add_body">서비스에서 제공하는 QR 코드를 스캔하거나 비밀 키를 수동으로 입력하세요. 고급 옵션을 사용하면 알고리즘, 자릿수, 주기를 조정하거나 HOTP로 전환할 수 있습니다.</string>
+    <string name="guide_biometric_title">👆 생체 인식 잠금 해제</string>
+    <string name="guide_biometric_body">설정에서 지문 잠금 해제를 활성화하세요. 마스터 비밀번호는 항상 예비 수단으로 사용할 수 있습니다 — 대체되는 것이 아니라 보완될 뿐입니다.</string>
+    <string name="guide_backup_title">💾 백업 및 복원</string>
+    <string name="guide_backup_body">두 가지 내보내기 형식: 최대 보안(Android 기본) 또는 크로스 플랫폼 호환(Chrome 확장 프로그램으로 가져오기 가능). QR 내보내기는 개별 또는 ZIP 아카이브로 QR 코드 캐러셀을 생성합니다. 복원 시 파일 형식이 자동으로 감지됩니다.</string>
+    <string name="guide_security_title">🛡 보안</string>
+    <string name="guide_security_body">모든 데이터는 사용자 기기에만 저장되며, AES-256-GCM-SIV와 Argon2id로 파생된 키로 암호화됩니다. 앱은 스스로 네트워크 연결을 시작하지 않습니다.</string>
+    <string name="guide_language_title">🌐 언어</string>
+    <string name="guide_language_body">휴대폰 언어를 따르려면 “자동”을 선택하거나, 로그인 화면 하단에서 특정 언어를 선택하세요.</string>
+    <string name="guide_install_step1_title">1. 보관함 만들기</string>
+    <string name="guide_install_step1_body">처음 실행할 때, 빈 보관함으로 시작하려면 “보관함 만들기”를 선택하거나, Chrome이나 다른 Android 기기에서 이미 Big MFA를 사용한 적이 있다면 “기존 백업 복원”을 선택하세요.</string>
+    <string name="guide_install_step2_title">2. 강력한 마스터 비밀번호 선택</string>
+    <string name="guide_install_step2_body">최소 12자이지만, 16자 이상의 암호구(예: 여러 단어를 조합한 것)를 목표로 하는 것이 좋습니다. 모든 계정을 보호하는 유일한 키입니다.</string>
+    <string name="guide_install_step3_title">3. 복구 불가능함을 이해하기</string>
+    <string name="guide_install_step3_body">Big MFA는 마스터 비밀번호를 평문으로도, 암호화된 형태로도 어디에도 저장하지 않습니다. 이를 잊어버리고 외부 백업이 없다면 계정에 영구적으로 접근할 수 없게 됩니다. 신뢰할 수 있는 비밀번호 관리자에 기록해 두세요.</string>
+    <string name="guide_install_step4_title">4. 생체 인식 활성화 (선택 사항)</string>
+    <string name="guide_install_step4_body">더 빠른 일상적인 접근을 위해 설정에서 지문 잠금 해제를 활성화하세요. 마스터 비밀번호는 항상 예비 수단으로 사용할 수 있습니다.</string>
+    <string name="guide_usage_step1_title">1. 첫 번째 계정 추가하기</string>
+    <string name="guide_usage_step1_body">“+ 추가”에서 서비스가 표시하는 QR 코드를 스캔하거나 (가장 빠른 방법), 스캔할 수 없는 경우 이름, 발급자, Base32 비밀 키를 수동으로 입력하세요.</string>
+    <string name="guide_usage_step2_title">2. 매일 코드 사용하기</string>
+    <string name="guide_usage_step2_body">“내 코드”에서 TOTP 코드를 직접 탭하여 복사할 수 있습니다(30초 후 클립보드에서 자동으로 삭제됨). HOTP 계정의 경우, 필요할 때마다 “생성”을 탭하세요 — 카운터는 항상 앞으로만 진행하며 절대 뒤로 가지 않습니다.</string>
+    <string name="guide_usage_step3_title">3. 계정 관리하기</string>
+    <string name="guide_usage_step3_body">검색창을 사용하여 여러 계정 중에서 빠르게 찾을 수 있습니다. 연필 아이콘으로 이름 변경, 휴지통 아이콘으로 삭제할 수 있습니다(이중 확인, 취소 불가능한 작업).</string>
+    <string name="guide_usage_step4_title">4. 정기적으로 백업하기</string>
+    <string name="guide_usage_step4_body">Android 전용 백업을 원한다면 설정에서 “최대 보안 내보내기”를, Chrome에서도 Big MFA를 사용한다면 “크로스 플랫폼 내보내기”를 선택하세요. QR 내보내기(캐러셀 또는 ZIP)는 표준 TOTP 호환 관리자로 이전하는 데 유용합니다.</string>
+    <string name="guide_usage_step5_title">5. 마스터 비밀번호 변경하기</string>
+    <string name="guide_usage_step5_body">설정에서 현재 비밀번호를 입력한 다음 새 비밀번호를 입력하세요. 계정과 생체 인식(활성화된 경우)은 그대로 유지됩니다 — 비밀번호만 변경됩니다.</string>
+    <string name="nav_accounts">내 코드</string>
+    <string name="nav_decoder">디코더</string>
+    <string name="nav_key">키</string>
+    <string name="nav_add">+ 추가</string>
+    <string name="nav_support">후원하기</string>
+    <string name="nav_settings">설정</string>
+    <string name="nav_guide">가이드</string>
+    <string name="nav_lock_content_description">보관함 잠그기</string>
+</resources>

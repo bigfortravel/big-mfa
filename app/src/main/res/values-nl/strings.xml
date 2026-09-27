@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Big MFA</string>
+
+    <!-- Ontgrendelscherm -->
+    <string name="unlock_title">Big MFA</string>
+    <string name="unlock_subtitle">Voer uw hoofdwachtwoord in</string>
+    <string name="unlock_password_label">Hoofdwachtwoord</string>
+    <string name="unlock_button">Ontgrendelen</string>
+    <string name="unlock_reset_vault">Kluis resetten</string>
+    <string name="unlock_biometric_content_description">Ontgrendelen met vingerafdruk</string>
+
+    <!-- Gedeelde voettekst -->
+    <string name="footer_support">❤️ Steunen</string>
+    <string name="footer_contact">✉️ Neem contact op</string>
+    <string name="footer_language_auto">🌐 Automatisch — browsertaal</string>
+    <string name="footer_language_placeholder">Taalkeuze — binnenkort beschikbaar</string>
+    <string name="footer_gplv3">Gratis en open source (GPLv3-licentie).</string>
+    <string name="language_dialog_title">Taal kiezen</string>
+    <string name="language_option_auto">🌐 Automatisch (systeemtaal)</string>
+
+    <!-- Mijn codes -->
+    <string name="accounts_empty_state">Nog geen accounts.\nGebruik “+ Toevoegen” om er een aan te maken.</string>
+    <string name="accounts_search_placeholder">Zoek een account</string>
+    <string name="accounts_no_results">Geen resultaten voor “%1$s”</string>
+    <string name="accounts_rename_title">Account hernoemen</string>
+    <string name="accounts_name_label">Accountnaam</string>
+    <string name="accounts_issuer_label">Uitgever (optioneel)</string>
+    <string name="accounts_name_required_error">De accountnaam is verplicht</string>
+    <string name="accounts_save">Opslaan</string>
+    <string name="accounts_cancel">Annuleren</string>
+    <string name="accounts_rename_content_description">%1$s hernoemen</string>
+    <string name="accounts_delete_content_description">%1$s verwijderen</string>
+    <string name="accounts_delete_confirm_title">“%1$s” verwijderen?</string>
+    <string name="accounts_delete_irreversible">Deze actie is onomkeerbaar.</string>
+    <string name="accounts_delete_button">Verwijderen</string>
+    <string name="accounts_hotp_label">HOTP</string>
+    <string name="accounts_unreadable">Onleesbaar</string>
+    <string name="accounts_copy_content_description">Kopiëren</string>
+    <string name="accounts_generate_button">Genereren</string>
+
+    <!-- + Toevoegen -->
+    <string name="add_account_title">Account toevoegen</string>
+    <string name="add_account_scan_qr">📷 QR-code scannen</string>
+    <string name="add_account_qr_invalid">Ongeldige of niet-herkende QR-code</string>
+    <string name="add_account_cancel_scan">Scan annuleren</string>
+    <string name="add_account_name_label">Accountnaam</string>
+    <string name="add_account_issuer_label">Uitgever (optioneel)</string>
+    <string name="add_account_secret_label">Geheim (Base32)</string>
+    <string name="add_account_advanced_options">⚙ Geavanceerde opties (algoritme, cijfers, periode)</string>
+    <string name="add_account_type_label">TYPE</string>
+    <string name="add_account_type_totp">TOTP (tijdgebaseerd — standaard)</string>
+    <string name="add_account_type_hotp">HOTP (tellergebaseerd)</string>
+    <string name="add_account_algorithm_label">ALGORITME</string>
+    <string name="add_account_algorithm_sha1">SHA-1 (standaard, universele compatibiliteit)</string>
+    <string name="add_account_digits_label">AANTAL CIJFERS</string>
+    <string name="add_account_digits_default">6 cijfers (standaard)</string>
+    <string name="add_account_digits_n">%1$d cijfers</string>
+    <string name="add_account_period_label">PERIODE (SECONDEN)</string>
+    <string name="add_account_save">Opslaan</string>
+    <string name="add_account_name_required">De accountnaam is verplicht</string>
+    <string name="add_account_secret_required">Het geheim is verplicht</string>
+    <string name="add_account_secret_invalid">Het geheim is geen geldige Base32</string>
+    <string name="add_account_save_error">Kan account niet opslaan</string>
+    <string name="add_account_camera_permission_needed">Cameratoegang is vereist om een QR-code te scannen.</string>
+    <string name="add_account_grant_camera">Cameratoegang toestaan</string>
+
+    <!-- Sleutel -->
+    <string name="generate_key_description">Genereert een willekeurige Base32-geheimsleutel (160 bit), compatibel met Google Authenticator, Aegis, Authy…</string>
+    <string name="generate_key_generate">Genereren</string>
+    <string name="generate_key_copy">Kopiëren</string>
+    <string name="generate_key_copied">Sleutel gekopieerd</string>
+    <string name="generate_key_show_qr">QR tonen</string>
+    <string name="generate_key_qr_title">QR-code</string>
+    <string name="generate_key_close">Sluiten</string>
+
+    <!-- Decoder -->
+    <string name="decoder_import_qr">Importeren vanuit een QR-code (afbeelding)</string>
+    <string name="decoder_no_qr_found">Geen QR-code gevonden in deze afbeelding</string>
+    <string name="decoder_secret_label">MFA / TOTP SLEUTEL (BASE32)</string>
+    <string name="decoder_code_placeholder">— — — — — —</string>
+    <string name="decoder_generate_code">Code genereren</string>
+    <string name="decoder_copy_content_description">Code kopiëren</string>
+    <string name="decoder_code_copied">Code gekopieerd — wordt over 30s gewist</string>
+    <string name="decoder_secret_empty_error">Voer een sleutel in of importeer er een</string>
+    <string name="decoder_secret_invalid_error">Ongeldige sleutel</string>
+
+    <!-- Kluis aanmaken/herstellen -->
+    <string name="create_vault_password_too_short">Het wachtwoord moet minstens 12 tekens bevatten</string>
+    <string name="create_vault_passwords_mismatch">De wachtwoorden komen niet overeen</string>
+    <string name="create_vault_creation_error">Kan kluis niet aanmaken</string>
+    <string name="restore_vault_new_password_too_short">Het nieuwe wachtwoord moet minstens 12 tekens bevatten</string>
+    <string name="restore_vault_new_passwords_mismatch">De nieuwe wachtwoorden komen niet overeen</string>
+    <string name="restore_vault_generic_error">Kan back-up niet herstellen</string>
+    <string name="create_vault_title">Maak uw Big MFA-kluis aan</string>
+    <string name="create_vault_min_chars">Minimaal 12 tekens</string>
+    <string name="create_vault_password_label">Wachtwoord</string>
+    <string name="create_vault_confirm_label">Wachtwoord bevestigen</string>
+    <string name="create_vault_create_button">Kluis aanmaken</string>
+    <string name="create_vault_restore_button">📥 Bestaande back-up herstellen</string>
+    <string name="restore_backup_title">Back-up herstellen</string>
+    <string name="restore_backup_description">Native Big MFA-indeling of Chrome-compatibel — automatisch gedetecteerd.</string>
+    <string name="restore_backup_choose_file">Back-upbestand kiezen</string>
+    <string name="restore_backup_file_selected">✅ Bestand geselecteerd</string>
+    <string name="restore_backup_backup_password_label">Wachtwoord van de back-up</string>
+    <string name="restore_backup_new_password_title">NIEUW HOOFDWACHTWOORD</string>
+    <string name="restore_backup_new_password_hint">Anders dan het wachtwoord van de back-up — minimaal 12 tekens.</string>
+    <string name="restore_backup_new_password_label">Nieuw hoofdwachtwoord</string>
+    <string name="restore_backup_confirm_new_password_label">Nieuw wachtwoord bevestigen</string>
+    <string name="restore_backup_restore_button">Herstellen</string>
+    <string name="restore_backup_cancel">Annuleren</string>
+    <string name="restore_backup_file_read_error">Kan bestand niet lezen</string>
+
+    <!-- Ontgrendelfouten -->
+    <string name="unlock_error_wrong_password">Onjuist wachtwoord</string>
+    <string name="unlock_error_corrupted_vault">De kluisgegevens zijn beschadigd of onleesbaar</string>
+    <string name="unlock_error_no_vault">Geen kluis gevonden</string>
+    <string name="unlock_error_too_many_attempts">Te veel pogingen — probeer opnieuw over %1$ds</string>
+    <string name="unlock_error_biometric_unavailable">Biometrie niet beschikbaar — gebruik uw wachtwoord</string>
+    <string name="unlock_error_biometric_failed">Biometrische authenticatie mislukt</string>
+
+    <!-- Hoofdwachtwoord wijzigen -->
+    <string name="change_password_title">Hoofdwachtwoord wijzigen</string>
+    <string name="change_password_current_label">HUIDIG WACHTWOORD</string>
+    <string name="change_password_new_label">NIEUW WACHTWOORD</string>
+    <string name="change_password_confirm_label">BEVESTIGEN</string>
+    <string name="change_password_button">Wachtwoord wijzigen</string>
+    <string name="change_password_new_too_short">Het nieuwe wachtwoord moet minstens 12 tekens bevatten</string>
+    <string name="change_password_new_mismatch">De nieuwe wachtwoorden komen niet overeen</string>
+    <string name="change_password_wrong_current">Het huidige wachtwoord is onjuist</string>
+    <string name="change_password_generic_error">Kan wachtwoord niet wijzigen</string>
+    <string name="change_password_success_toast">Wachtwoord succesvol gewijzigd</string>
+    <string name="change_password_cancel">Annuleren</string>
+
+    <!-- Biometrie -->
+    <string name="biometric_setup_title">Biometrie inschakelen</string>
+    <string name="biometric_hardware_insufficient">Uw apparaat beschikt niet over voldoende hardwareondersteuning om biometrie veilig in te schakelen.</string>
+    <string name="biometric_activate_prompt">Ontgrendeling met vingerafdruk inschakelen</string>
+    <string name="biometric_password_confirmed_hint">Wachtwoord bevestigd — plaats uw vinger op de sensor.</string>
+    <string name="biometric_continue_button">Doorgaan met vingerafdruk</string>
+    <string name="biometric_confirm_password_label">Bevestig uw hoofdwachtwoord</string>
+    <string name="biometric_confirm_button">Bevestigen</string>
+    <string name="biometric_wrong_password">Onjuist wachtwoord</string>
+    <string name="biometric_key_creation_error">Kan beveiligde sleutel niet aanmaken</string>
+    <string name="biometric_cipher_error">Kan versleuteling niet voorbereiden</string>
+    <string name="biometric_enable_error">Kan biometrie niet inschakelen</string>
+    <string name="biometric_auth_failed">Biometrische authenticatie mislukt</string>
+    <string name="biometric_activated_toast">Biometrie ingeschakeld</string>
+    <string name="biometric_deactivated_toast">Biometrie uitgeschakeld</string>
+    <string name="biometric_cancel">Annuleren</string>
+    <string name="biometric_row_title">Biometrische ontgrendeling</string>
+    <string name="biometric_row_enabled">Ingeschakeld</string>
+    <string name="biometric_row_disabled">Uitgeschakeld</string>
+
+    <!-- Instellingen -->
+    <string name="settings_title">Instellingen</string>
+    <string name="settings_security_status_title">BEVEILIGINGSSTATUS</string>
+    <string name="settings_masvs_badge">🛡 OWASP MASVS — Verhoogd niveau</string>
+    <string name="settings_encryption_label">VERSLEUTELING</string>
+    <string name="settings_kdf_label">KDF</string>
+    <string name="settings_inactivity_label">INACTIVITEITSTIJD</string>
+    <string name="settings_inactivity_value">2 min</string>
+    <string name="settings_bruteforce_label">BESCHERMING TEGEN BRUTE FORCE</string>
+    <string name="settings_bruteforce_value">5 pogingen + HMAC</string>
+    <string name="settings_lockout_label">VERGRENDELING</string>
+    <string name="settings_lockout_value">Exponentieel</string>
+    <string name="settings_salt_label">SALT</string>
+    <string name="settings_salt_value">256 bit</string>
+    <string name="settings_integrity_label">INTEGRITEIT KLUIS</string>
+    <string name="settings_integrity_value">HMAC-SHA256</string>
+    <string name="settings_hardware_label">HARDWAREVERANKERING</string>
+    <string name="settings_hardware_value">Minimaal TEE, StrongBox indien beschikbaar</string>
+    <string name="settings_bruteforce_note">ℹ️ De brute-force-bescherming beschermt tegen herhaalde pogingen binnen de app. Het vervangt geen sterk wachtwoord: iemand met directe toegang tot het kluisbestand op het apparaat zou een offline decodering kunnen proberen zonder deze limiet te passeren. Gebruik een wachtwoordzin van 16+ tekens.</string>
+    <string name="settings_change_password_button">🔑 Hoofdwachtwoord wijzigen</string>
+    <string name="settings_backup_title">BACK-UP</string>
+    <string name="settings_export_native_title">🛡️ Export met maximale beveiliging</string>
+    <string name="settings_export_native_subtitle">Argon2id + AES-256-GCM-SIV</string>
+    <string name="settings_export_chrome_title">🌐 Platformonafhankelijke export</string>
+    <string name="settings_export_chrome_subtitle">PBKDF2 + AES-256-GCM — importeerbaar in Big MFA Chrome</string>
+    <string name="settings_export_qr_title">📷 QR-export (carrousel + ZIP)</string>
+    <string name="settings_export_qr_subtitle">Eén QR per account, om te doorbladeren of te downloaden</string>
+    <string name="settings_import_button">📥 Importeren / Herstellen</string>
+    <string name="settings_export_footer">De export is versleuteld — geheimen blijven beschermd, zelfs als het bestand wordt gedeeld.</string>
+    <string name="settings_export_native_dialog_title">Export met maximale beveiliging</string>
+    <string name="settings_export_chrome_dialog_title">Platformonafhankelijke export</string>
+    <string name="settings_export_native_dialog_desc">🛡️ Argon2id + AES-256-GCM-SIV — dit wachtwoord beschermt het geëxporteerde bestand en verschilt van uw hoofdwachtwoord.</string>
+    <string name="settings_export_chrome_dialog_desc">🌐 PBKDF2 + AES-256-GCM — indeling compatibel met de Big MFA Chrome-extensie. Dit wachtwoord verschilt van uw hoofdwachtwoord.</string>
+    <string name="settings_export_password_label">Exportwachtwoord</string>
+    <string name="settings_export_confirm_label">Bevestigen</string>
+    <string name="settings_export_min_chars_error">Minimaal 8 tekens</string>
+    <string name="settings_export_mismatch_error">De wachtwoorden komen niet overeen</string>
+    <string name="settings_export_button">Exporteren</string>
+    <string name="settings_export_cancel">Annuleren</string>
+    <string name="settings_export_generic_error">Kan export niet aanmaken</string>
+    <string name="settings_export_share_title">Export delen</string>
+    <string name="settings_import_dialog_title">Back-up importeren</string>
+    <string name="settings_import_dialog_desc">Selecteer een back-upbestand (native Big MFA of Chrome-compatibel — de indeling wordt automatisch gedetecteerd).</string>
+    <string name="settings_import_choose_file">Bestand kiezen</string>
+    <string name="settings_import_file_selected_desc">Bestand geselecteerd — voer het wachtwoord van deze back-up in.</string>
+    <string name="settings_import_password_label">Wachtwoord van de back-up</string>
+    <string name="settings_import_button_confirm">Importeren</string>
+    <string name="settings_import_read_error">Kan bestand niet lezen</string>
+    <string name="settings_import_generic_error">Importeren mislukt</string>
+    <string name="settings_import_success_toast">%1$d account(s) geïmporteerd</string>
+    <string name="settings_danger_zone_title">GEVARENZONE</string>
+    <string name="settings_delete_all_button">🗑 Al mijn gegevens verwijderen</string>
+    <string name="settings_delete_all_description">Oefent uw recht op wissing uit (Art. 17 AVG). Verwijdert alle accounts en het hoofdwachtwoord. Onomkeerbare actie.</string>
+    <string name="settings_delete_confirm_title">Alle gegevens verwijderen?</string>
+    <string name="settings_delete_confirm_desc">Al uw accounts worden permanent verwijderd. Deze actie kan niet ongedaan worden gemaakt.</string>
+    <string name="settings_delete_continue">Doorgaan</string>
+    <string name="settings_delete_final_title">Laatste bevestiging</string>
+    <string name="settings_delete_final_desc">Weet u het ECHT zeker? Na deze stap is geen herstel meer mogelijk.</string>
+    <string name="settings_delete_final_button">Definitief verwijderen</string>
+    <string name="settings_delete_cancel">Annuleren</string>
+    <string name="settings_rgpd_badge">🔒 AVG-conform — 100% lokale gegevens</string>
+    <string name="settings_rgpd_title">PRIVACY EN AVG</string>
+    <string name="settings_rgpd_controller_label">Verwerkingsverantwoordelijke</string>
+    <string name="settings_rgpd_controller_value">Patrick DJEUZONG – BigForTravel</string>
+    <string name="settings_rgpd_data_label">Verzamelde gegevens</string>
+    <string name="settings_rgpd_data_value">Accountnamen, versleutelde TOTP-sleutels</string>
+    <string name="settings_rgpd_storage_label">Opslaglocatie</string>
+    <string name="settings_rgpd_storage_value">Alleen uw apparaat (privé-opslag van de app, geïsoleerd door de Android-sandbox)</string>
+    <string name="settings_rgpd_transfer_label">Overdracht aan derden</string>
+    <string name="settings_rgpd_transfer_value">Geen enkel verzoek wordt door Big MFA zelf gedaan. De versleutelde export kan worden gedeeld via een app van derden naar keuze, alleen als u dit expliciet activeert.</string>
+    <string name="settings_rgpd_thirdparty_label">Ingebouwde code van derden</string>
+    <string name="settings_rgpd_thirdparty_value">Bouncy Castle (MIT), CameraX (Apache-2.0), ingebouwde ML Kit barcode-scanning (Apache-2.0), ZXing (Apache-2.0) — allemaal lokaal, geen telemetrie</string>
+    <string name="settings_rgpd_retention_label">Bewaartermijn</string>
+    <string name="settings_rgpd_retention_value">Tot verwijdering of handmatige wissing</string>
+    <string name="settings_rgpd_legal_label">Rechtsgrondslag</string>
+    <string name="settings_rgpd_legal_value">Toestemming van de gebruiker (Art. 6.1.a)</string>
+    <string name="settings_rgpd_access_label">Recht op inzage (Art. 15)</string>
+    <string name="settings_rgpd_access_value">Via de versleutelde export (hierboven)</string>
+    <string name="settings_rgpd_erasure_label">Recht op wissing (Art. 17)</string>
+    <string name="settings_rgpd_erasure_value">Via “Al mijn gegevens verwijderen”</string>
+    <string name="settings_rgpd_portability_label">Recht op overdraagbaarheid (Art. 20)</string>
+    <string name="settings_rgpd_portability_value">Via de versleutelde export (native of platformonafhankelijk)</string>
+    <string name="settings_rgpd_dpo_label">Contact FG</string>
+    <string name="settings_rgpd_dpo_value">contact@bigfortravel.com</string>
+    <string name="settings_rgpd_eu_label">EU-autoriteit (klachten)</string>
+    <string name="settings_rgpd_eu_value">CNIL – www.cnil.fr (Europese gebruikers)</string>
+    <string name="settings_rgpd_cm_label">Kameroense autoriteit (klachten)</string>
+    <string name="settings_rgpd_cm_value">ANTIC – www.antic.cm (Kameroense gebruikers)</string>
+    <string name="settings_rgpd_footer">Big MFA verzamelt geen persoonsgegevens buiten uw apparaat, initieert zelf geen netwerkverbindingen en deelt geen informatie met derden. Alle gegevens worden versleuteld met AES-256-GCM-SIV vóór lokale opslag.</string>
+    <string name="settings_language_row_title">Taal</string>
+
+    <!-- BackupImporter -->
+    <string name="backup_importer_unreadable">Bestand onleesbaar of beschadigd</string>
+    <string name="backup_importer_unknown_format">Bestandsindeling niet herkend</string>
+    <string name="backup_importer_wrong_password">Onjuist wachtwoord of beschadigd bestand</string>
+
+    <!-- Steunen -->
+    <string name="support_title">Big MFA steunen</string>
+    <string name="support_description">Big MFA wordt vrijwillig ontwikkeld en onderhouden door BigForTravel. Geen advertenties, geen verkoop van gegevens, geen verborgen abonnement. Als de app nuttig voor u is, helpt een donatie — zelfs een kleine — de continue ontwikkeling te financieren.</string>
+    <string name="support_paypal_button">Doneren via PayPal</string>
+    <string name="support_kofi_button">Doneren via Ko-fi</string>
+    <string name="support_disclaimer">Donaties zijn optioneel en verlenen geen extra functionaliteit. Controleer altijd of de weergegeven begunstigde BigForTravel / Patrick Djeuzong is.</string>
+    <string name="support_official_site">🌐 Officiële website</string>
+    <string name="support_contact_us">✉️ Schrijf ons</string>
+    <string name="support_contact_subject">Big MFA — Contact</string>
+
+    <!-- QR-exportcarrousel -->
+    <string name="export_qr_title">QR-export (%1$d/%2$d)</string>
+    <string name="export_qr_no_accounts">Geen accounts om te exporteren.</string>
+    <string name="export_qr_zip_button">📦 Alle QR-codes exporteren als ZIP</string>
+    <string name="export_qr_close_button">Sluiten</string>
+    <string name="export_qr_zip_error">Kan ZIP-archief niet aanmaken</string>
+    <string name="export_qr_share_title">QR-archief delen</string>
+
+    <!-- Gids -->
+    <string name="guide_tab_installation">Installatie</string>
+    <string name="guide_tab_usage">Gebruik</string>
+    <string name="guide_tab_features">Functies</string>
+    <string name="guide_title">Big MFA-gids</string>
+    <string name="guide_intro">Een snel overzicht van alle beschikbare functies.</string>
+    <string name="guide_codes_title">🔑 Mijn codes</string>
+    <string name="guide_codes_body">Uw TOTP-codes worden in realtime bijgewerkt met een visueel aftellen. Tik op een code om deze te kopiëren (wordt na 30s automatisch uit het klembord gewist). Tik voor HOTP-accounts telkens op “Genereren” wanneer u een code nodig heeft. Zoek, hernoem of verwijder een account via de pictogrammen op elke rij.</string>
+    <string name="guide_decoder_title">🔍 Decoder</string>
+    <string name="guide_decoder_body">Plak of importeer een geheim vanuit een QR-code-afbeelding om direct de bijbehorende TOTP-code te krijgen, zonder deze aan uw kluis toe te voegen. Nuttig voor een eenmalige controle.</string>
+    <string name="guide_key_title">🔐 Sleutel</string>
+    <string name="guide_key_body">Genereert een willekeurige geheime sleutel, met bijbehorende QR-code, om een nieuw account in te stellen bij een andere dienst die vraagt om uw eigen geheim aan te maken.</string>
+    <string name="guide_add_title">➕ Account toevoegen</string>
+    <string name="guide_add_body">Scan de QR-code die door de dienst wordt getoond, of voer het geheim handmatig in. Met de geavanceerde opties kunt u het algoritme, het aantal cijfers, de periode aanpassen, of overschakelen naar HOTP.</string>
+    <string name="guide_biometric_title">👆 Biometrische ontgrendeling</string>
+    <string name="guide_biometric_body">Schakel vingerafdrukontgrendeling in via Instellingen. Uw hoofdwachtwoord blijft altijd beschikbaar als terugvaloptie — nooit vervangen, alleen aangevuld.</string>
+    <string name="guide_backup_title">💾 Back-up en herstel</string>
+    <string name="guide_backup_body">Twee exportindelingen: maximale beveiliging (native voor Android) of platformonafhankelijk compatibel (importeerbaar in de Chrome-extensie). De QR-export genereert een carrousel van QR-codes, individueel of als ZIP-archief. Bij herstel wordt de bestandsindeling automatisch gedetecteerd.</string>
+    <string name="guide_security_title">🛡 Beveiliging</string>
+    <string name="guide_security_body">Alle gegevens blijven uitsluitend op uw apparaat, versleuteld met AES-256-GCM-SIV en een sleutel afgeleid via Argon2id. De app initieert zelf nooit een netwerkverbinding.</string>
+    <string name="guide_language_title">🌐 Taal</string>
+    <string name="guide_language_body">Kies “Automatisch” om de taal van uw telefoon te volgen, of selecteer een specifieke taal onderaan de aanmeldschermen.</string>
+    <string name="guide_install_step1_title">1. Maak uw kluis aan</string>
+    <string name="guide_install_step1_body">Kies bij de eerste start “Kluis aanmaken” om met een lege kluis te beginnen, of “Bestaande back-up herstellen” als u Big MFA al op Chrome of een ander Android-apparaat heeft gebruikt.</string>
+    <string name="guide_install_step2_title">2. Kies een sterk hoofdwachtwoord</string>
+    <string name="guide_install_step2_body">Minimaal 12 tekens, maar streef liever naar een wachtwoordzin van 16+ tekens (bijvoorbeeld meerdere gecombineerde woorden). Het is de enige sleutel die al uw accounts beschermt.</string>
+    <string name="guide_install_step3_title">3. Begrijp de onherstelbaarheid</string>
+    <string name="guide_install_step3_body">Big MFA slaat uw hoofdwachtwoord nergens op, noch in platte tekst, noch versleuteld. Als u het vergeet en geen externe back-up heeft, worden uw accounts permanent ontoegankelijk. Noteer het in een betrouwbare wachtwoordmanager.</string>
+    <string name="guide_install_step4_title">4. Biometrie inschakelen (optioneel)</string>
+    <string name="guide_install_step4_body">Schakel via Instellingen vingerafdrukontgrendeling in voor snellere dagelijkse toegang. Uw hoofdwachtwoord blijft altijd beschikbaar als terugvaloptie.</string>
+    <string name="guide_usage_step1_title">1. Voeg uw eerste account toe</string>
+    <string name="guide_usage_step1_body">Scan via “+ Toevoegen” de QR-code die door de dienst wordt getoond (snelste methode), of voer handmatig de naam, uitgever en Base32-geheim in als u niet kunt scannen.</string>
+    <string name="guide_usage_step2_title">2. Gebruik dagelijks een code</string>
+    <string name="guide_usage_step2_body">Tik in “Mijn codes” direct op een TOTP-code om deze te kopiëren (wordt na 30 seconden automatisch uit het klembord gewist). Tik voor een HOTP-account telkens op “Genereren” wanneer u er een nodig heeft — de teller loopt altijd vooruit, nooit terug.</string>
+    <string name="guide_usage_step3_title">3. Beheer uw accounts</string>
+    <string name="guide_usage_step3_body">Gebruik de zoekbalk om snel een account te vinden tussen vele. Met het potloodpictogram kunt u hernoemen, met het prullenbakpictogram kunt u verwijderen (met dubbele bevestiging, onomkeerbare actie).</string>
+    <string name="guide_usage_step4_title">4. Maak regelmatig back-ups</string>
+    <string name="guide_usage_step4_body">Kies in Instellingen “Export met maximale beveiliging” voor een alleen-Android back-up, of “Platformonafhankelijke export” als u Big MFA ook op Chrome gebruikt. De QR-export (carrousel of ZIP) is nuttig om over te dragen naar een andere standaard TOTP-compatibele manager.</string>
+    <string name="guide_usage_step5_title">5. Wijzig uw hoofdwachtwoord</string>
+    <string name="guide_usage_step5_body">Voer in Instellingen uw huidige wachtwoord in en vervolgens het nieuwe. Uw accounts en biometrie (indien ingeschakeld) blijven ongewijzigd — alleen het wachtwoord verandert.</string>
+    <string name="nav_accounts">Mijn codes</string>
+    <string name="nav_decoder">Decoder</string>
+    <string name="nav_key">Sleutel</string>
+    <string name="nav_add">+ Toevoegen</string>
+    <string name="nav_support">Steunen</string>
+    <string name="nav_settings">Instellingen</string>
+    <string name="nav_guide">Gids</string>
+    <string name="nav_lock_content_description">Kluis vergrendelen</string>
+</resources>

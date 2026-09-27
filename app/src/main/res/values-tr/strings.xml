@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Big MFA</string>
+
+    <!-- Kilit açma ekranı -->
+    <string name="unlock_title">Big MFA</string>
+    <string name="unlock_subtitle">Ana parolanızı girin</string>
+    <string name="unlock_password_label">Ana parola</string>
+    <string name="unlock_button">Kilidi Aç</string>
+    <string name="unlock_reset_vault">Kasayı sıfırla</string>
+    <string name="unlock_biometric_content_description">Parmak izi ile kilidi aç</string>
+
+    <!-- Ortak alt bilgi -->
+    <string name="footer_support">❤️ Destek Ol</string>
+    <string name="footer_contact">✉️ Bize Ulaşın</string>
+    <string name="footer_language_auto">🌐 Otomatik — tarayıcı dili</string>
+    <string name="footer_language_placeholder">Dil seçici — yakında kullanılabilir</string>
+    <string name="footer_gplv3">Ücretsiz ve açık kaynak (GPLv3 lisansı).</string>
+    <string name="language_dialog_title">Dil seçin</string>
+    <string name="language_option_auto">🌐 Otomatik (sistem dili)</string>
+
+    <!-- Kodlarım -->
+    <string name="accounts_empty_state">Henüz hesap yok.\nOluşturmak için “+ Ekle”yi kullanın.</string>
+    <string name="accounts_search_placeholder">Bir hesap ara</string>
+    <string name="accounts_no_results">“%1$s” için sonuç bulunamadı</string>
+    <string name="accounts_rename_title">Hesabı yeniden adlandır</string>
+    <string name="accounts_name_label">Hesap adı</string>
+    <string name="accounts_issuer_label">Veren (isteğe bağlı)</string>
+    <string name="accounts_name_required_error">Hesap adı gereklidir</string>
+    <string name="accounts_save">Kaydet</string>
+    <string name="accounts_cancel">İptal</string>
+    <string name="accounts_rename_content_description">%1$s öğesini yeniden adlandır</string>
+    <string name="accounts_delete_content_description">%1$s öğesini sil</string>
+    <string name="accounts_delete_confirm_title">“%1$s” silinsin mi?</string>
+    <string name="accounts_delete_irreversible">Bu işlem geri alınamaz.</string>
+    <string name="accounts_delete_button">Sil</string>
+    <string name="accounts_hotp_label">HOTP</string>
+    <string name="accounts_unreadable">Okunamıyor</string>
+    <string name="accounts_copy_content_description">Kopyala</string>
+    <string name="accounts_generate_button">Oluştur</string>
+
+    <!-- + Ekle -->
+    <string name="add_account_title">Hesap ekle</string>
+    <string name="add_account_scan_qr">📷 QR kodu tara</string>
+    <string name="add_account_qr_invalid">Geçersiz veya tanınmayan QR kodu</string>
+    <string name="add_account_cancel_scan">Taramayı iptal et</string>
+    <string name="add_account_name_label">Hesap adı</string>
+    <string name="add_account_issuer_label">Veren (isteğe bağlı)</string>
+    <string name="add_account_secret_label">Gizli anahtar (Base32)</string>
+    <string name="add_account_advanced_options">⚙ Gelişmiş seçenekler (algoritma, basamak, süre)</string>
+    <string name="add_account_type_label">TÜR</string>
+    <string name="add_account_type_totp">TOTP (zamana dayalı — standart)</string>
+    <string name="add_account_type_hotp">HOTP (sayaca dayalı)</string>
+    <string name="add_account_algorithm_label">ALGORİTMA</string>
+    <string name="add_account_algorithm_sha1">SHA-1 (varsayılan, evrensel uyumluluk)</string>
+    <string name="add_account_digits_label">BASAMAK SAYISI</string>
+    <string name="add_account_digits_default">6 basamak (varsayılan)</string>
+    <string name="add_account_digits_n">%1$d basamak</string>
+    <string name="add_account_period_label">SÜRE (SANİYE)</string>
+    <string name="add_account_save">Kaydet</string>
+    <string name="add_account_name_required">Hesap adı gereklidir</string>
+    <string name="add_account_secret_required">Gizli anahtar gereklidir</string>
+    <string name="add_account_secret_invalid">Gizli anahtar geçerli bir Base32 değil</string>
+    <string name="add_account_save_error">Hesap kaydedilemedi</string>
+    <string name="add_account_camera_permission_needed">QR kodu taramak için kamera erişimi gereklidir.</string>
+    <string name="add_account_grant_camera">Kamera erişimine izin ver</string>
+
+    <!-- Anahtar -->
+    <string name="generate_key_description">Google Authenticator, Aegis, Authy… ile uyumlu, rastgele bir Base32 gizli anahtarı (160 bit) oluşturur</string>
+    <string name="generate_key_generate">Oluştur</string>
+    <string name="generate_key_copy">Kopyala</string>
+    <string name="generate_key_copied">Anahtar kopyalandı</string>
+    <string name="generate_key_show_qr">QR göster</string>
+    <string name="generate_key_qr_title">QR kodu</string>
+    <string name="generate_key_close">Kapat</string>
+
+    <!-- Kod çözücü -->
+    <string name="decoder_import_qr">Bir QR koddan içe aktar (görsel)</string>
+    <string name="decoder_no_qr_found">Bu görselde QR kod algılanmadı</string>
+    <string name="decoder_secret_label">MFA / TOTP ANAHTARI (BASE32)</string>
+    <string name="decoder_code_placeholder">— — — — — —</string>
+    <string name="decoder_generate_code">Kod oluştur</string>
+    <string name="decoder_copy_content_description">Kodu kopyala</string>
+    <string name="decoder_code_copied">Kod kopyalandı — 30sn içinde silinecek</string>
+    <string name="decoder_secret_empty_error">Bir anahtar girin veya içe aktarın</string>
+    <string name="decoder_secret_invalid_error">Geçersiz anahtar</string>
+
+    <!-- Kasa oluşturma/geri yükleme -->
+    <string name="create_vault_password_too_short">Parola en az 12 karakter içermelidir</string>
+    <string name="create_vault_passwords_mismatch">Parolalar eşleşmiyor</string>
+    <string name="create_vault_creation_error">Kasa oluşturulamadı</string>
+    <string name="restore_vault_new_password_too_short">Yeni parola en az 12 karakter içermelidir</string>
+    <string name="restore_vault_new_passwords_mismatch">Yeni parolalar eşleşmiyor</string>
+    <string name="restore_vault_generic_error">Yedek geri yüklenemedi</string>
+    <string name="create_vault_title">Big MFA kasanızı oluşturun</string>
+    <string name="create_vault_min_chars">En az 12 karakter</string>
+    <string name="create_vault_password_label">Parola</string>
+    <string name="create_vault_confirm_label">Parolayı onayla</string>
+    <string name="create_vault_create_button">Kasa oluştur</string>
+    <string name="create_vault_restore_button">📥 Mevcut bir yedeği geri yükle</string>
+    <string name="restore_backup_title">Bir yedeği geri yükle</string>
+    <string name="restore_backup_description">Yerel Big MFA biçimi veya Chrome uyumlu — otomatik olarak algılanır.</string>
+    <string name="restore_backup_choose_file">Yedek dosyasını seç</string>
+    <string name="restore_backup_file_selected">✅ Dosya seçildi</string>
+    <string name="restore_backup_backup_password_label">Yedeğin parolası</string>
+    <string name="restore_backup_new_password_title">YENİ ANA PAROLA</string>
+    <string name="restore_backup_new_password_hint">Yedeğin parolasından farklı — en az 12 karakter.</string>
+    <string name="restore_backup_new_password_label">Yeni ana parola</string>
+    <string name="restore_backup_confirm_new_password_label">Yeni parolayı onayla</string>
+    <string name="restore_backup_restore_button">Geri yükle</string>
+    <string name="restore_backup_cancel">İptal</string>
+    <string name="restore_backup_file_read_error">Dosya okunamadı</string>
+
+    <!-- Kilit açma hataları -->
+    <string name="unlock_error_wrong_password">Yanlış parola</string>
+    <string name="unlock_error_corrupted_vault">Kasa verileri bozuk veya okunamıyor</string>
+    <string name="unlock_error_no_vault">Kasa bulunamadı</string>
+    <string name="unlock_error_too_many_attempts">Çok fazla deneme — %1$ds içinde tekrar deneyin</string>
+    <string name="unlock_error_biometric_unavailable">Biyometri kullanılamıyor — parolanızı kullanın</string>
+    <string name="unlock_error_biometric_failed">Biyometrik kimlik doğrulama başarısız oldu</string>
+
+    <!-- Ana parola değişikliği -->
+    <string name="change_password_title">Ana parolayı değiştir</string>
+    <string name="change_password_current_label">MEVCUT PAROLA</string>
+    <string name="change_password_new_label">YENİ PAROLA</string>
+    <string name="change_password_confirm_label">ONAYLA</string>
+    <string name="change_password_button">Parolayı değiştir</string>
+    <string name="change_password_new_too_short">Yeni parola en az 12 karakter içermelidir</string>
+    <string name="change_password_new_mismatch">Yeni parolalar eşleşmiyor</string>
+    <string name="change_password_wrong_current">Mevcut parola yanlış</string>
+    <string name="change_password_generic_error">Parola değiştirilemedi</string>
+    <string name="change_password_success_toast">Parola başarıyla değiştirildi</string>
+    <string name="change_password_cancel">İptal</string>
+
+    <!-- Biyometri -->
+    <string name="biometric_setup_title">Biyometriyi etkinleştir</string>
+    <string name="biometric_hardware_insufficient">Cihazınız, biyometriyi güvenli bir şekilde etkinleştirmek için yeterli donanım desteğine sahip değil.</string>
+    <string name="biometric_activate_prompt">Parmak izi ile kilit açmayı etkinleştir</string>
+    <string name="biometric_password_confirmed_hint">Parola onaylandı — parmağınızı sensöre koyun.</string>
+    <string name="biometric_continue_button">Parmak iziyle devam et</string>
+    <string name="biometric_confirm_password_label">Ana parolanızı onaylayın</string>
+    <string name="biometric_confirm_button">Onayla</string>
+    <string name="biometric_wrong_password">Yanlış parola</string>
+    <string name="biometric_key_creation_error">Güvenli anahtar oluşturulamadı</string>
+    <string name="biometric_cipher_error">Şifreleme hazırlanamadı</string>
+    <string name="biometric_enable_error">Biyometri etkinleştirilemedi</string>
+    <string name="biometric_auth_failed">Biyometrik kimlik doğrulama başarısız oldu</string>
+    <string name="biometric_activated_toast">Biyometri etkinleştirildi</string>
+    <string name="biometric_deactivated_toast">Biyometri devre dışı bırakıldı</string>
+    <string name="biometric_cancel">İptal</string>
+    <string name="biometric_row_title">Biyometrik kilit açma</string>
+    <string name="biometric_row_enabled">Etkin</string>
+    <string name="biometric_row_disabled">Devre dışı</string>
+
+    <!-- Ayarlar -->
+    <string name="settings_title">Ayarlar</string>
+    <string name="settings_security_status_title">GÜVENLİK DURUMU</string>
+    <string name="settings_masvs_badge">🛡 OWASP MASVS — Güçlendirilmiş seviye</string>
+    <string name="settings_encryption_label">ŞİFRELEME</string>
+    <string name="settings_kdf_label">KDF</string>
+    <string name="settings_inactivity_label">HAREKETSİZLİK SÜRESİ</string>
+    <string name="settings_inactivity_value">2 dk</string>
+    <string name="settings_bruteforce_label">KABA KUVVET KORUMASI</string>
+    <string name="settings_bruteforce_value">5 deneme + HMAC</string>
+    <string name="settings_lockout_label">KİLİTLENME</string>
+    <string name="settings_lockout_value">Üstel</string>
+    <string name="settings_salt_label">TUZ</string>
+    <string name="settings_salt_value">256 bit</string>
+    <string name="settings_integrity_label">KASA BÜTÜNLÜĞÜ</string>
+    <string name="settings_integrity_value">HMAC-SHA256</string>
+    <string name="settings_hardware_label">DONANIM DESTEĞİ</string>
+    <string name="settings_hardware_value">En az TEE, mevcutsa StrongBox</string>
+    <string name="settings_bruteforce_note">ℹ️ Kaba kuvvet koruması, uygulama içindeki tekrarlanan denemelere karşı savunur. Güçlü bir parolanın yerini tutmaz: cihazdaki kasa dosyasına doğrudan erişimi olan biri, bu sınırı aşarak çevrimdışı şifre çözme denemesi yapabilir. 16+ karakter uzunluğunda bir parola cümlesi kullanın.</string>
+    <string name="settings_change_password_button">🔑 Ana parolayı değiştir</string>
+    <string name="settings_backup_title">YEDEK</string>
+    <string name="settings_export_native_title">🛡️ Maksimum güvenlik dışa aktarımı</string>
+    <string name="settings_export_native_subtitle">Argon2id + AES-256-GCM-SIV</string>
+    <string name="settings_export_chrome_title">🌐 Platformlar arası uyumlu dışa aktarım</string>
+    <string name="settings_export_chrome_subtitle">PBKDF2 + AES-256-GCM — Big MFA Chrome\'a aktarılabilir</string>
+    <string name="settings_export_qr_title">📷 QR dışa aktarımı (döngü + ZIP)</string>
+    <string name="settings_export_qr_subtitle">Hesap başına bir QR, gezinmek veya indirmek için</string>
+    <string name="settings_import_button">📥 İçe Aktar / Geri Yükle</string>
+    <string name="settings_export_footer">Dışa aktarım şifrelidir — dosya paylaşılsa bile gizli anahtarlar korunmaya devam eder.</string>
+    <string name="settings_export_native_dialog_title">Maksimum güvenlik dışa aktarımı</string>
+    <string name="settings_export_chrome_dialog_title">Platformlar arası uyumlu dışa aktarım</string>
+    <string name="settings_export_native_dialog_desc">🛡️ Argon2id + AES-256-GCM-SIV — bu parola, dışa aktarılan dosyayı korur ve ana parolanızdan farklıdır.</string>
+    <string name="settings_export_chrome_dialog_desc">🌐 PBKDF2 + AES-256-GCM — Big MFA Chrome uzantısıyla uyumlu biçim. Bu parola ana parolanızdan farklıdır.</string>
+    <string name="settings_export_password_label">Dışa aktarım parolası</string>
+    <string name="settings_export_confirm_label">Onayla</string>
+    <string name="settings_export_min_chars_error">En az 8 karakter</string>
+    <string name="settings_export_mismatch_error">Parolalar eşleşmiyor</string>
+    <string name="settings_export_button">Dışa aktar</string>
+    <string name="settings_export_cancel">İptal</string>
+    <string name="settings_export_generic_error">Dışa aktarım oluşturulamadı</string>
+    <string name="settings_export_share_title">Dışa aktarımı paylaş</string>
+    <string name="settings_import_dialog_title">Bir yedeği içe aktar</string>
+    <string name="settings_import_dialog_desc">Bir yedek dosyası seçin (yerel Big MFA veya Chrome uyumlu — biçim otomatik olarak algılanır).</string>
+    <string name="settings_import_choose_file">Bir dosya seç</string>
+    <string name="settings_import_file_selected_desc">Dosya seçildi — bu yedeğin parolasını girin.</string>
+    <string name="settings_import_password_label">Yedeğin parolası</string>
+    <string name="settings_import_button_confirm">İçe aktar</string>
+    <string name="settings_import_read_error">Dosya okunamadı</string>
+    <string name="settings_import_generic_error">İçe aktarma başarısız oldu</string>
+    <string name="settings_import_success_toast">%1$d hesap içe aktarıldı</string>
+    <string name="settings_danger_zone_title">TEHLİKELİ BÖLGE</string>
+    <string name="settings_delete_all_button">🗑 Tüm verilerimi sil</string>
+    <string name="settings_delete_all_description">Silme hakkınızı kullanır (GDPR Md. 17). Tüm hesapları ve ana parolayı siler. Geri alınamaz işlem.</string>
+    <string name="settings_delete_confirm_title">Tüm veriler silinsin mi?</string>
+    <string name="settings_delete_confirm_desc">Tüm hesaplarınız kalıcı olarak silinecek. Bu işlem geri alınamaz.</string>
+    <string name="settings_delete_continue">Devam et</string>
+    <string name="settings_delete_final_title">Son onay</string>
+    <string name="settings_delete_final_desc">Gerçekten emin misiniz? Bu adımdan sonra hiçbir kurtarma mümkün olmayacaktır.</string>
+    <string name="settings_delete_final_button">Kalıcı olarak sil</string>
+    <string name="settings_delete_cancel">İptal</string>
+    <string name="settings_rgpd_badge">🔒 GDPR uyumlu — %100 yerel veri</string>
+    <string name="settings_rgpd_title">GİZLİLİK VE GDPR</string>
+    <string name="settings_rgpd_controller_label">Veri sorumlusu</string>
+    <string name="settings_rgpd_controller_value">Patrick DJEUZONG – BigForTravel</string>
+    <string name="settings_rgpd_data_label">Toplanan veriler</string>
+    <string name="settings_rgpd_data_value">Hesap adları, şifrelenmiş TOTP anahtarları</string>
+    <string name="settings_rgpd_storage_label">Depolama konumu</string>
+    <string name="settings_rgpd_storage_value">Yalnızca cihazınız (Android sanal alanıyla izole edilmiş, uygulamaya özel depolama)</string>
+    <string name="settings_rgpd_transfer_label">Üçüncü taraflara aktarım</string>
+    <string name="settings_rgpd_transfer_value">Big MFA\'nın kendisi hiçbir istek göndermez. Şifrelenmiş dışa aktarım, yalnızca açıkça etkinleştirirseniz, seçtiğiniz bir üçüncü taraf uygulaması aracılığıyla paylaşılabilir.</string>
+    <string name="settings_rgpd_thirdparty_label">Gömülü üçüncü taraf kodu</string>
+    <string name="settings_rgpd_thirdparty_value">Bouncy Castle (MIT), CameraX (Apache-2.0), gömülü ML Kit barcode-scanning (Apache-2.0), ZXing (Apache-2.0) — hepsi yerel, telemetri yok</string>
+    <string name="settings_rgpd_retention_label">Saklama süresi</string>
+    <string name="settings_rgpd_retention_value">Kaldırma veya manuel silmeye kadar</string>
+    <string name="settings_rgpd_legal_label">Yasal dayanak</string>
+    <string name="settings_rgpd_legal_value">Kullanıcı rızası (Md. 6.1.a)</string>
+    <string name="settings_rgpd_access_label">Erişim hakkı (Md. 15)</string>
+    <string name="settings_rgpd_access_value">Şifrelenmiş dışa aktarım aracılığıyla (yukarıda)</string>
+    <string name="settings_rgpd_erasure_label">Silme hakkı (Md. 17)</string>
+    <string name="settings_rgpd_erasure_value">“Tüm verilerimi sil” aracılığıyla</string>
+    <string name="settings_rgpd_portability_label">Veri taşınabilirliği hakkı (Md. 20)</string>
+    <string name="settings_rgpd_portability_value">Şifrelenmiş dışa aktarım aracılığıyla (yerel veya platformlar arası)</string>
+    <string name="settings_rgpd_dpo_label">DPO iletişimi</string>
+    <string name="settings_rgpd_dpo_value">contact@bigfortravel.com</string>
+    <string name="settings_rgpd_eu_label">AB otoritesi (şikayetler)</string>
+    <string name="settings_rgpd_eu_value">CNIL – www.cnil.fr (Avrupalı kullanıcılar)</string>
+    <string name="settings_rgpd_cm_label">Kamerun otoritesi (şikayetler)</string>
+    <string name="settings_rgpd_cm_value">ANTIC – www.antic.cm (Kamerunlu kullanıcılar)</string>
+    <string name="settings_rgpd_footer">Big MFA, cihazınızın dışında hiçbir kişisel veri toplamaz, kendisi hiçbir ağ bağlantısı başlatmaz ve üçüncü taraflarla hiçbir bilgi paylaşmaz. Tüm veriler, yerel depolamadan önce AES-256-GCM-SIV ile şifrelenir.</string>
+    <string name="settings_language_row_title">Dil</string>
+
+    <!-- BackupImporter -->
+    <string name="backup_importer_unreadable">Dosya okunamıyor veya bozuk</string>
+    <string name="backup_importer_unknown_format">Tanınmayan dosya biçimi</string>
+    <string name="backup_importer_wrong_password">Yanlış parola veya bozuk dosya</string>
+
+    <!-- Destek Ol -->
+    <string name="support_title">Big MFA\'ya destek olun</string>
+    <string name="support_description">Big MFA, BigForTravel tarafından gönüllü olarak geliştirilmekte ve sürdürülmektedir. Reklam yok, veri satışı yok, gizli abonelik yok. Uygulama size faydalıysa, bir bağış — küçük olsa bile — sürekli gelişimini finanse etmeye yardımcı olur.</string>
+    <string name="support_paypal_button">PayPal ile bağış yap</string>
+    <string name="support_kofi_button">Ko-fi ile bağış yap</string>
+    <string name="support_disclaimer">Bağışlar isteğe bağlıdır ve ek işlevsellik sağlamaz. Görüntülenen alıcının BigForTravel / Patrick Djeuzong olduğunu her zaman doğrulayın.</string>
+    <string name="support_official_site">🌐 Resmi web sitesi</string>
+    <string name="support_contact_us">✉️ Bize yazın</string>
+    <string name="support_contact_subject">Big MFA — İletişim</string>
+
+    <!-- QR dışa aktarım döngüsü -->
+    <string name="export_qr_title">QR dışa aktarımı (%1$d/%2$d)</string>
+    <string name="export_qr_no_accounts">Dışa aktarılacak hesap yok.</string>
+    <string name="export_qr_zip_button">📦 Tüm QR kodlarını ZIP olarak dışa aktar</string>
+    <string name="export_qr_close_button">Kapat</string>
+    <string name="export_qr_zip_error">ZIP arşivi oluşturulamadı</string>
+    <string name="export_qr_share_title">QR arşivini paylaş</string>
+
+    <!-- Kılavuz -->
+    <string name="guide_tab_installation">Kurulum</string>
+    <string name="guide_tab_usage">Kullanım</string>
+    <string name="guide_tab_features">Özellikler</string>
+    <string name="guide_title">Big MFA Kılavuzu</string>
+    <string name="guide_intro">Mevcut tüm özelliklere hızlı bir genel bakış.</string>
+    <string name="guide_codes_title">🔑 Kodlarım</string>
+    <string name="guide_codes_body">TOTP kodlarınız görsel bir geri sayımla gerçek zamanlı olarak güncellenir. Kopyalamak için bir koda dokunun (30sn sonra panodan otomatik olarak silinir). HOTP hesapları için, kod ihtiyacınız olduğunda “Oluştur”a dokunun. Her satırdaki simgeleri kullanarak bir hesabı arayın, yeniden adlandırın veya silin.</string>
+    <string name="guide_decoder_title">🔍 Kod çözücü</string>
+    <string name="guide_decoder_body">Kasanıza eklemeden anında TOTP kodunu almak için bir QR kod görselinden bir gizli anahtar yapıştırın veya içe aktarın. Tek seferlik doğrulama için kullanışlıdır.</string>
+    <string name="guide_key_title">🔐 Anahtar</string>
+    <string name="guide_key_body">Kendi gizli anahtarınızı oluşturmanızı isteyen başka bir hizmette yeni bir hesap ayarlamak için, ilgili QR koduyla birlikte rastgele bir gizli anahtar oluşturur.</string>
+    <string name="guide_add_title">➕ Hesap ekle</string>
+    <string name="guide_add_body">Hizmet tarafından sağlanan QR kodu tarayın veya gizli anahtarı manuel olarak girin. Gelişmiş seçenekler, algoritmayı, basamak sayısını, süreyi ayarlamanıza veya HOTP\'ye geçmenize olanak tanır.</string>
+    <string name="guide_biometric_title">👆 Biyometrik kilit açma</string>
+    <string name="guide_biometric_body">Ayarlar\'dan parmak izi ile kilit açmayı etkinleştirin. Ana parolanız her zaman yedek olarak kullanılabilir kalır — asla değiştirilmez, yalnızca tamamlanır.</string>
+    <string name="guide_backup_title">💾 Yedekleme ve geri yükleme</string>
+    <string name="guide_backup_body">İki dışa aktarım biçimi: maksimum güvenlik (Android için yerel) veya platformlar arası uyumlu (Chrome uzantısına aktarılabilir). QR dışa aktarımı, ayrı ayrı veya ZIP arşivi olarak QR kodlarından oluşan bir döngü oluşturur. Geri yükleme, dosya biçimini otomatik olarak algılar.</string>
+    <string name="guide_security_title">🛡 Güvenlik</string>
+    <string name="guide_security_body">Tüm veriler yalnızca cihazınızda kalır, AES-256-GCM-SIV ile ve Argon2id kullanılarak türetilen bir anahtarla şifrelenir. Uygulama kendisi hiçbir zaman bir ağ bağlantısı başlatmaz.</string>
+    <string name="guide_language_title">🌐 Dil</string>
+    <string name="guide_language_body">Telefonunuzun dilini takip etmek için “Otomatik”i seçin veya giriş ekranlarının alt bilgisinden belirli bir dil seçin.</string>
+    <string name="guide_install_step1_title">1. Kasanızı oluşturun</string>
+    <string name="guide_install_step1_body">İlk başlatmada, boş bir kasayla başlamak için “Kasa oluştur”u seçin veya Chrome\'da ya da başka bir Android cihazda Big MFA\'yı zaten kullandıysanız “Mevcut bir yedeği geri yükle”yi seçin.</string>
+    <string name="guide_install_step2_title">2. Güçlü bir ana parola seçin</string>
+    <string name="guide_install_step2_body">En az 12 karakter, ancak daha iyisi için 16+ karakterlik bir parola cümlesi hedefleyin (örneğin birkaç birleştirilmiş kelime). Tüm hesaplarınızı koruyan tek anahtardır.</string>
+    <string name="guide_install_step3_title">3. Geri alınamazlığı anlayın</string>
+    <string name="guide_install_step3_body">Big MFA, ana parolanızı hiçbir yerde, ne düz metin olarak ne de şifrelenmiş olarak saklamaz. Onu unutur ve harici bir yedeğiniz yoksa, hesaplarınız kalıcı olarak erişilemez hale gelecektir. Güvenilir bir parola yöneticisine not edin.</string>
+    <string name="guide_install_step4_title">4. Biyometriyi etkinleştirin (isteğe bağlı)</string>
+    <string name="guide_install_step4_body">Daha hızlı günlük erişim için Ayarlar\'dan parmak izi ile kilit açmayı etkinleştirin. Ana parolanız her zaman yedek olarak kullanılabilir kalır.</string>
+    <string name="guide_usage_step1_title">1. İlk hesabınızı ekleyin</string>
+    <string name="guide_usage_step1_body">“+ Ekle”den, hizmet tarafından gösterilen QR kodu tarayın (en hızlı yöntem) veya tarayamıyorsanız adı, vereni ve Base32 gizli anahtarını manuel olarak girin.</string>
+    <string name="guide_usage_step2_title">2. Bir kodu günlük olarak kullanın</string>
+    <string name="guide_usage_step2_body">“Kodlarım”da, kopyalamak için doğrudan bir TOTP koduna dokunun (30 saniye sonra panodan otomatik olarak silinir). Bir HOTP hesabı için, ihtiyacınız olduğunda “Oluştur”a dokunun — sayaç her zaman ileri gider, asla geri gitmez.</string>
+    <string name="guide_usage_step3_title">3. Hesaplarınızı yönetin</string>
+    <string name="guide_usage_step3_body">Birçoğu arasında hızlıca bir hesap bulmak için arama çubuğunu kullanın. Kalem simgesi yeniden adlandırmanıza, çöp kutusu simgesi ise silmenize olanak tanır (çift onayla, geri alınamaz işlem).</string>
+    <string name="guide_usage_step4_title">4. Düzenli olarak yedek alın</string>
+    <string name="guide_usage_step4_body">Yalnızca Android yedeği için Ayarlar\'dan “Maksimum güvenlik dışa aktarımı”nı seçin, veya Chrome\'da da Big MFA kullanıyorsanız “Platformlar arası uyumlu dışa aktarım”ı seçin. QR dışa aktarımı (döngü veya ZIP), standart TOTP uyumlu başka bir yöneticiye aktarım için kullanışlıdır.</string>
+    <string name="guide_usage_step5_title">5. Ana parolanızı değiştirin</string>
+    <string name="guide_usage_step5_body">Ayarlar\'da mevcut parolanızı, ardından yenisini girin. Hesaplarınız ve biyometriniz (etkinse) sağlam kalır — yalnızca parola değişir.</string>
+    <string name="nav_accounts">Kodlarım</string>
+    <string name="nav_decoder">Kod çözücü</string>
+    <string name="nav_key">Anahtar</string>
+    <string name="nav_add">+ Ekle</string>
+    <string name="nav_support">Destek Ol</string>
+    <string name="nav_settings">Ayarlar</string>
+    <string name="nav_guide">Kılavuz</string>
+    <string name="nav_lock_content_description">Kasayı kilitle</string>
+</resources>

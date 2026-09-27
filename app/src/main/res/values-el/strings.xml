@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Big MFA</string>
+
+    <!-- Οθόνη ξεκλειδώματος -->
+    <string name="unlock_title">Big MFA</string>
+    <string name="unlock_subtitle">Εισαγάγετε τον κύριο κωδικό πρόσβασης</string>
+    <string name="unlock_password_label">Κύριος κωδικός πρόσβασης</string>
+    <string name="unlock_button">Ξεκλείδωμα</string>
+    <string name="unlock_reset_vault">Επαναφορά θησαυροφυλακίου</string>
+    <string name="unlock_biometric_content_description">Ξεκλείδωμα με δακτυλικό αποτύπωμα</string>
+
+    <!-- Κοινό υποσέλιδο -->
+    <string name="footer_support">❤️ Υποστήριξη</string>
+    <string name="footer_contact">✉️ Επικοινωνήστε μαζί μας</string>
+    <string name="footer_language_auto">🌐 Αυτόματα — γλώσσα προγράμματος περιήγησης</string>
+    <string name="footer_language_placeholder">Επιλογή γλώσσας — σύντομα διαθέσιμη</string>
+    <string name="footer_gplv3">Δωρεάν και ανοιχτού κώδικα (άδεια GPLv3).</string>
+    <string name="language_dialog_title">Επιλογή γλώσσας</string>
+    <string name="language_option_auto">🌐 Αυτόματα (γλώσσα συστήματος)</string>
+
+    <!-- Οι κωδικοί μου -->
+    <string name="accounts_empty_state">Δεν υπάρχουν λογαριασμοί ακόμα.\nΧρησιμοποιήστε το «+ Προσθήκη» για να δημιουργήσετε έναν.</string>
+    <string name="accounts_search_placeholder">Αναζήτηση λογαριασμού</string>
+    <string name="accounts_no_results">Κανένα αποτέλεσμα για «%1$s»</string>
+    <string name="accounts_rename_title">Μετονομασία λογαριασμού</string>
+    <string name="accounts_name_label">Όνομα λογαριασμού</string>
+    <string name="accounts_issuer_label">Εκδότης (προαιρετικό)</string>
+    <string name="accounts_name_required_error">Το όνομα λογαριασμού είναι υποχρεωτικό</string>
+    <string name="accounts_save">Αποθήκευση</string>
+    <string name="accounts_cancel">Ακύρωση</string>
+    <string name="accounts_rename_content_description">Μετονομασία %1$s</string>
+    <string name="accounts_delete_content_description">Διαγραφή %1$s</string>
+    <string name="accounts_delete_confirm_title">Διαγραφή «%1$s»;</string>
+    <string name="accounts_delete_irreversible">Αυτή η ενέργεια είναι μη αναστρέψιμη.</string>
+    <string name="accounts_delete_button">Διαγραφή</string>
+    <string name="accounts_hotp_label">HOTP</string>
+    <string name="accounts_unreadable">Μη αναγνώσιμο</string>
+    <string name="accounts_copy_content_description">Αντιγραφή</string>
+    <string name="accounts_generate_button">Δημιουργία</string>
+
+    <!-- + Προσθήκη -->
+    <string name="add_account_title">Προσθήκη λογαριασμού</string>
+    <string name="add_account_scan_qr">📷 Σάρωση κωδικού QR</string>
+    <string name="add_account_qr_invalid">Μη έγκυρος ή μη αναγνωρίσιμος κωδικός QR</string>
+    <string name="add_account_cancel_scan">Ακύρωση σάρωσης</string>
+    <string name="add_account_name_label">Όνομα λογαριασμού</string>
+    <string name="add_account_issuer_label">Εκδότης (προαιρετικό)</string>
+    <string name="add_account_secret_label">Μυστικό (Base32)</string>
+    <string name="add_account_advanced_options">⚙ Σύνθετες επιλογές (αλγόριθμος, ψηφία, περίοδος)</string>
+    <string name="add_account_type_label">ΤΥΠΟΣ</string>
+    <string name="add_account_type_totp">TOTP (βασισμένο στον χρόνο — τυπικό)</string>
+    <string name="add_account_type_hotp">HOTP (βασισμένο σε μετρητή)</string>
+    <string name="add_account_algorithm_label">ΑΛΓΟΡΙΘΜΟΣ</string>
+    <string name="add_account_algorithm_sha1">SHA-1 (προεπιλογή, καθολική συμβατότητα)</string>
+    <string name="add_account_digits_label">ΑΡΙΘΜΟΣ ΨΗΦΙΩΝ</string>
+    <string name="add_account_digits_default">6 ψηφία (προεπιλογή)</string>
+    <string name="add_account_digits_n">%1$d ψηφία</string>
+    <string name="add_account_period_label">ΠΕΡΙΟΔΟΣ (ΔΕΥΤΕΡΟΛΕΠΤΑ)</string>
+    <string name="add_account_save">Αποθήκευση</string>
+    <string name="add_account_name_required">Το όνομα λογαριασμού είναι υποχρεωτικό</string>
+    <string name="add_account_secret_required">Το μυστικό είναι υποχρεωτικό</string>
+    <string name="add_account_secret_invalid">Το μυστικό δεν είναι έγκυρο Base32</string>
+    <string name="add_account_save_error">Δεν ήταν δυνατή η αποθήκευση του λογαριασμού</string>
+    <string name="add_account_camera_permission_needed">Απαιτείται πρόσβαση στην κάμερα για σάρωση κωδικού QR.</string>
+    <string name="add_account_grant_camera">Παραχώρηση πρόσβασης στην κάμερα</string>
+
+    <!-- Κλειδί -->
+    <string name="generate_key_description">Δημιουργεί ένα τυχαίο μυστικό κλειδί Base32 (160 bit) συμβατό με Google Authenticator, Aegis, Authy…</string>
+    <string name="generate_key_generate">Δημιουργία</string>
+    <string name="generate_key_copy">Αντιγραφή</string>
+    <string name="generate_key_copied">Το κλειδί αντιγράφηκε</string>
+    <string name="generate_key_show_qr">Εμφάνιση QR</string>
+    <string name="generate_key_qr_title">Κωδικός QR</string>
+    <string name="generate_key_close">Κλείσιμο</string>
+
+    <!-- Αποκωδικοποιητής -->
+    <string name="decoder_import_qr">Εισαγωγή από κωδικό QR (εικόνα)</string>
+    <string name="decoder_no_qr_found">Δεν εντοπίστηκε κωδικός QR σε αυτήν την εικόνα</string>
+    <string name="decoder_secret_label">ΚΛΕΙΔΙ MFA / TOTP (BASE32)</string>
+    <string name="decoder_code_placeholder">— — — — — —</string>
+    <string name="decoder_generate_code">Δημιουργία κωδικού</string>
+    <string name="decoder_copy_content_description">Αντιγραφή κωδικού</string>
+    <string name="decoder_code_copied">Ο κωδικός αντιγράφηκε — θα διαγραφεί σε 30δ</string>
+    <string name="decoder_secret_empty_error">Εισαγάγετε ή εισαγάγετε ένα κλειδί</string>
+    <string name="decoder_secret_invalid_error">Μη έγκυρο κλειδί</string>
+
+    <!-- Δημιουργία/Επαναφορά θησαυροφυλακίου -->
+    <string name="create_vault_password_too_short">Ο κωδικός πρόσβασης πρέπει να έχει τουλάχιστον 12 χαρακτήρες</string>
+    <string name="create_vault_passwords_mismatch">Οι κωδικοί πρόσβασης δεν ταιριάζουν</string>
+    <string name="create_vault_creation_error">Δεν ήταν δυνατή η δημιουργία του θησαυροφυλακίου</string>
+    <string name="restore_vault_new_password_too_short">Ο νέος κωδικός πρόσβασης πρέπει να έχει τουλάχιστον 12 χαρακτήρες</string>
+    <string name="restore_vault_new_passwords_mismatch">Οι νέοι κωδικοί πρόσβασης δεν ταιριάζουν</string>
+    <string name="restore_vault_generic_error">Δεν ήταν δυνατή η επαναφορά του αντιγράφου ασφαλείας</string>
+    <string name="create_vault_title">Δημιουργήστε το θησαυροφυλάκιο Big MFA</string>
+    <string name="create_vault_min_chars">Ελάχιστο 12 χαρακτήρες</string>
+    <string name="create_vault_password_label">Κωδικός πρόσβασης</string>
+    <string name="create_vault_confirm_label">Επιβεβαίωση κωδικού πρόσβασης</string>
+    <string name="create_vault_create_button">Δημιουργία θησαυροφυλακίου</string>
+    <string name="create_vault_restore_button">📥 Επαναφορά υπάρχοντος αντιγράφου ασφαλείας</string>
+    <string name="restore_backup_title">Επαναφορά αντιγράφου ασφαλείας</string>
+    <string name="restore_backup_description">Εγγενής μορφή Big MFA ή συμβατή με Chrome — εντοπίζεται αυτόματα.</string>
+    <string name="restore_backup_choose_file">Επιλογή αρχείου αντιγράφου ασφαλείας</string>
+    <string name="restore_backup_file_selected">✅ Το αρχείο επιλέχθηκε</string>
+    <string name="restore_backup_backup_password_label">Κωδικός πρόσβασης αντιγράφου ασφαλείας</string>
+    <string name="restore_backup_new_password_title">ΝΕΟΣ ΚΥΡΙΟΣ ΚΩΔΙΚΟΣ ΠΡΟΣΒΑΣΗΣ</string>
+    <string name="restore_backup_new_password_hint">Διαφορετικός από τον κωδικό πρόσβασης του αντιγράφου ασφαλείας — ελάχιστο 12 χαρακτήρες.</string>
+    <string name="restore_backup_new_password_label">Νέος κύριος κωδικός πρόσβασης</string>
+    <string name="restore_backup_confirm_new_password_label">Επιβεβαίωση νέου κωδικού πρόσβασης</string>
+    <string name="restore_backup_restore_button">Επαναφορά</string>
+    <string name="restore_backup_cancel">Ακύρωση</string>
+    <string name="restore_backup_file_read_error">Δεν ήταν δυνατή η ανάγνωση του αρχείου</string>
+
+    <!-- Σφάλματα ξεκλειδώματος -->
+    <string name="unlock_error_wrong_password">Λανθασμένος κωδικός πρόσβασης</string>
+    <string name="unlock_error_corrupted_vault">Τα δεδομένα του θησαυροφυλακίου είναι κατεστραμμένα ή μη αναγνώσιμα</string>
+    <string name="unlock_error_no_vault">Δεν βρέθηκε θησαυροφυλάκιο</string>
+    <string name="unlock_error_too_many_attempts">Πάρα πολλές προσπάθειες — δοκιμάστε ξανά σε %1$d δ</string>
+    <string name="unlock_error_biometric_unavailable">Τα βιομετρικά στοιχεία δεν είναι διαθέσιμα — χρησιμοποιήστε τον κωδικό σας</string>
+    <string name="unlock_error_biometric_failed">Η βιομετρική ταυτοποίηση απέτυχε</string>
+
+    <!-- Αλλαγή κύριου κωδικού πρόσβασης -->
+    <string name="change_password_title">Αλλαγή κύριου κωδικού πρόσβασης</string>
+    <string name="change_password_current_label">ΤΡΕΧΩΝ ΚΩΔΙΚΟΣ ΠΡΟΣΒΑΣΗΣ</string>
+    <string name="change_password_new_label">ΝΕΟΣ ΚΩΔΙΚΟΣ ΠΡΟΣΒΑΣΗΣ</string>
+    <string name="change_password_confirm_label">ΕΠΙΒΕΒΑΙΩΣΗ</string>
+    <string name="change_password_button">Αλλαγή κωδικού πρόσβασης</string>
+    <string name="change_password_new_too_short">Ο νέος κωδικός πρόσβασης πρέπει να έχει τουλάχιστον 12 χαρακτήρες</string>
+    <string name="change_password_new_mismatch">Οι νέοι κωδικοί πρόσβασης δεν ταιριάζουν</string>
+    <string name="change_password_wrong_current">Ο τρέχων κωδικός πρόσβασης είναι λανθασμένος</string>
+    <string name="change_password_generic_error">Δεν ήταν δυνατή η αλλαγή του κωδικού πρόσβασης</string>
+    <string name="change_password_success_toast">Ο κωδικός πρόσβασης άλλαξε με επιτυχία</string>
+    <string name="change_password_cancel">Ακύρωση</string>
+
+    <!-- Βιομετρικά στοιχεία -->
+    <string name="biometric_setup_title">Ενεργοποίηση βιομετρικών στοιχείων</string>
+    <string name="biometric_hardware_insufficient">Η συσκευή σας δεν διαθέτει επαρκή υποστήριξη υλικού για ασφαλή ενεργοποίηση βιομετρικών στοιχείων.</string>
+    <string name="biometric_activate_prompt">Ενεργοποίηση ξεκλειδώματος με δακτυλικό αποτύπωμα</string>
+    <string name="biometric_password_confirmed_hint">Ο κωδικός πρόσβασης επιβεβαιώθηκε — τοποθετήστε το δάχτυλό σας στον αισθητήρα.</string>
+    <string name="biometric_continue_button">Συνέχεια με δακτυλικό αποτύπωμα</string>
+    <string name="biometric_confirm_password_label">Επιβεβαιώστε τον κύριο κωδικό πρόσβασης</string>
+    <string name="biometric_confirm_button">Επιβεβαίωση</string>
+    <string name="biometric_wrong_password">Λανθασμένος κωδικός πρόσβασης</string>
+    <string name="biometric_key_creation_error">Δεν ήταν δυνατή η δημιουργία του ασφαλούς κλειδιού</string>
+    <string name="biometric_cipher_error">Δεν ήταν δυνατή η προετοιμασία της κρυπτογράφησης</string>
+    <string name="biometric_enable_error">Δεν ήταν δυνατή η ενεργοποίηση των βιομετρικών στοιχείων</string>
+    <string name="biometric_auth_failed">Η βιομετρική ταυτοποίηση απέτυχε</string>
+    <string name="biometric_activated_toast">Τα βιομετρικά στοιχεία ενεργοποιήθηκαν</string>
+    <string name="biometric_deactivated_toast">Τα βιομετρικά στοιχεία απενεργοποιήθηκαν</string>
+    <string name="biometric_cancel">Ακύρωση</string>
+    <string name="biometric_row_title">Βιομετρικό ξεκλείδωμα</string>
+    <string name="biometric_row_enabled">Ενεργοποιημένο</string>
+    <string name="biometric_row_disabled">Απενεργοποιημένο</string>
+
+    <!-- Ρυθμίσεις -->
+    <string name="settings_title">Ρυθμίσεις</string>
+    <string name="settings_security_status_title">ΚΑΤΑΣΤΑΣΗ ΑΣΦΑΛΕΙΑΣ</string>
+    <string name="settings_masvs_badge">🛡 OWASP MASVS — Ενισχυμένο επίπεδο</string>
+    <string name="settings_encryption_label">ΚΡΥΠΤΟΓΡΑΦΗΣΗ</string>
+    <string name="settings_kdf_label">KDF</string>
+    <string name="settings_inactivity_label">ΧΡΟΝΟΣ ΑΔΡΑΝΕΙΑΣ</string>
+    <string name="settings_inactivity_value">2 λεπτά</string>
+    <string name="settings_bruteforce_label">ΠΡΟΣΤΑΣΙΑ ΑΠΟ BRUTE FORCE</string>
+    <string name="settings_bruteforce_value">5 προσπάθειες + HMAC</string>
+    <string name="settings_lockout_label">ΚΛΕΙΔΩΜΑ</string>
+    <string name="settings_lockout_value">Εκθετικό</string>
+    <string name="settings_salt_label">SALT</string>
+    <string name="settings_salt_value">256 bit</string>
+    <string name="settings_integrity_label">ΑΚΕΡΑΙΟΤΗΤΑ ΘΗΣΑΥΡΟΦΥΛΑΚΙΟΥ</string>
+    <string name="settings_integrity_value">HMAC-SHA256</string>
+    <string name="settings_hardware_label">ΥΠΟΣΤΗΡΙΞΗ ΥΛΙΚΟΥ</string>
+    <string name="settings_hardware_value">Ελάχιστο TEE, StrongBox εάν είναι διαθέσιμο</string>
+    <string name="settings_bruteforce_note">ℹ️ Η προστασία από brute force υπερασπίζεται έναντι επαναλαμβανόμενων προσπαθειών εντός της εφαρμογής. Δεν αντικαθιστά έναν ισχυρό κωδικό πρόσβασης: κάποιος με άμεση πρόσβαση στο αρχείο θησαυροφυλακίου στη συσκευή θα μπορούσε να επιχειρήσει αποκρυπτογράφηση εκτός σύνδεσης χωρίς να περάσει από αυτό το όριο. Χρησιμοποιήστε μια φράση πρόσβασης 16+ χαρακτήρων.</string>
+    <string name="settings_change_password_button">🔑 Αλλαγή κύριου κωδικού πρόσβασης</string>
+    <string name="settings_backup_title">ΑΝΤΙΓΡΑΦΟ ΑΣΦΑΛΕΙΑΣ</string>
+    <string name="settings_export_native_title">🛡️ Εξαγωγή μέγιστης ασφάλειας</string>
+    <string name="settings_export_native_subtitle">Argon2id + AES-256-GCM-SIV</string>
+    <string name="settings_export_chrome_title">🌐 Εξαγωγή πολλαπλών πλατφορμών</string>
+    <string name="settings_export_chrome_subtitle">PBKDF2 + AES-256-GCM — δυνατότητα εισαγωγής στο Big MFA Chrome</string>
+    <string name="settings_export_qr_title">📷 Εξαγωγή QR (καρουζέλ + ZIP)</string>
+    <string name="settings_export_qr_subtitle">Ένα QR ανά λογαριασμό, για περιήγηση ή λήψη</string>
+    <string name="settings_import_button">📥 Εισαγωγή / Επαναφορά</string>
+    <string name="settings_export_footer">Η εξαγωγή είναι κρυπτογραφημένη — τα μυστικά παραμένουν προστατευμένα ακόμη και αν το αρχείο κοινοποιηθεί.</string>
+    <string name="settings_export_native_dialog_title">Εξαγωγή μέγιστης ασφάλειας</string>
+    <string name="settings_export_chrome_dialog_title">Εξαγωγή πολλαπλών πλατφορμών</string>
+    <string name="settings_export_native_dialog_desc">🛡️ Argon2id + AES-256-GCM-SIV — αυτός ο κωδικός πρόσβασης προστατεύει το εξαγόμενο αρχείο και διαφέρει από τον κύριο κωδικό πρόσβασής σας.</string>
+    <string name="settings_export_chrome_dialog_desc">🌐 PBKDF2 + AES-256-GCM — μορφή συμβατή με την επέκταση Big MFA Chrome. Αυτός ο κωδικός πρόσβασης διαφέρει από τον κύριο κωδικό πρόσβασής σας.</string>
+    <string name="settings_export_password_label">Κωδικός πρόσβασης εξαγωγής</string>
+    <string name="settings_export_confirm_label">Επιβεβαίωση</string>
+    <string name="settings_export_min_chars_error">Ελάχιστο 8 χαρακτήρες</string>
+    <string name="settings_export_mismatch_error">Οι κωδικοί πρόσβασης δεν ταιριάζουν</string>
+    <string name="settings_export_button">Εξαγωγή</string>
+    <string name="settings_export_cancel">Ακύρωση</string>
+    <string name="settings_export_generic_error">Δεν ήταν δυνατή η δημιουργία της εξαγωγής</string>
+    <string name="settings_export_share_title">Κοινοποίηση εξαγωγής</string>
+    <string name="settings_import_dialog_title">Εισαγωγή αντιγράφου ασφαλείας</string>
+    <string name="settings_import_dialog_desc">Επιλέξτε ένα αρχείο αντιγράφου ασφαλείας (εγγενές Big MFA ή συμβατό με Chrome — η μορφή εντοπίζεται αυτόματα).</string>
+    <string name="settings_import_choose_file">Επιλογή αρχείου</string>
+    <string name="settings_import_file_selected_desc">Το αρχείο επιλέχθηκε — εισαγάγετε τον κωδικό πρόσβασης αυτού του αντιγράφου ασφαλείας.</string>
+    <string name="settings_import_password_label">Κωδικός πρόσβασης αντιγράφου ασφαλείας</string>
+    <string name="settings_import_button_confirm">Εισαγωγή</string>
+    <string name="settings_import_read_error">Δεν ήταν δυνατή η ανάγνωση του αρχείου</string>
+    <string name="settings_import_generic_error">Η εισαγωγή απέτυχε</string>
+    <string name="settings_import_success_toast">Έγινε εισαγωγή %1$d λογαριασμών</string>
+    <string name="settings_danger_zone_title">ΕΠΙΚΙΝΔΥΝΗ ΖΩΝΗ</string>
+    <string name="settings_delete_all_button">🗑 Διαγραφή όλων των δεδομένων μου</string>
+    <string name="settings_delete_all_description">Ασκεί το δικαίωμά σας στη διαγραφή (Άρθρο 17 ΓΚΠΔ). Διαγράφει όλους τους λογαριασμούς και τον κύριο κωδικό πρόσβασης. Μη αναστρέψιμη ενέργεια.</string>
+    <string name="settings_delete_confirm_title">Διαγραφή όλων των δεδομένων;</string>
+    <string name="settings_delete_confirm_desc">Όλοι οι λογαριασμοί σας θα διαγραφούν οριστικά. Αυτή η ενέργεια δεν μπορεί να αναιρεθεί.</string>
+    <string name="settings_delete_continue">Συνέχεια</string>
+    <string name="settings_delete_final_title">Τελική επιβεβαίωση</string>
+    <string name="settings_delete_final_desc">Είστε ΠΡΑΓΜΑΤΙΚΑ σίγουροι; Καμία ανάκτηση δεν θα είναι δυνατή μετά από αυτό το βήμα.</string>
+    <string name="settings_delete_final_button">Οριστική διαγραφή</string>
+    <string name="settings_delete_cancel">Ακύρωση</string>
+    <string name="settings_rgpd_badge">🔒 Συμμόρφωση με ΓΚΠΔ — 100% τοπικά δεδομένα</string>
+    <string name="settings_rgpd_title">ΑΠΟΡΡΗΤΟ ΚΑΙ ΓΚΠΔ</string>
+    <string name="settings_rgpd_controller_label">Υπεύθυνος επεξεργασίας</string>
+    <string name="settings_rgpd_controller_value">Patrick DJEUZONG – BigForTravel</string>
+    <string name="settings_rgpd_data_label">Συλλεγόμενα δεδομένα</string>
+    <string name="settings_rgpd_data_value">Ονόματα λογαριασμών, κρυπτογραφημένα κλειδιά TOTP</string>
+    <string name="settings_rgpd_storage_label">Τοποθεσία αποθήκευσης</string>
+    <string name="settings_rgpd_storage_value">Μόνο η συσκευή σας (ιδιωτική αποθήκευση της εφαρμογής, απομονωμένη από το sandbox του Android)</string>
+    <string name="settings_rgpd_transfer_label">Μεταφορά σε τρίτους</string>
+    <string name="settings_rgpd_transfer_value">Καμία αίτηση δεν πραγματοποιείται από την ίδια την εφαρμογή Big MFA. Η κρυπτογραφημένη εξαγωγή μπορεί να κοινοποιηθεί μέσω μιας εφαρμογής τρίτου μέρους της επιλογής σας, μόνο αν το ενεργοποιήσετε ρητά.</string>
+    <string name="settings_rgpd_thirdparty_label">Ενσωματωμένος κώδικας τρίτων</string>
+    <string name="settings_rgpd_thirdparty_value">Bouncy Castle (MIT), CameraX (Apache-2.0), ενσωματωμένο ML Kit barcode-scanning (Apache-2.0), ZXing (Apache-2.0) — όλα τοπικά, καμία τηλεμετρία</string>
+    <string name="settings_rgpd_retention_label">Περίοδος διατήρησης</string>
+    <string name="settings_rgpd_retention_value">Έως την απεγκατάσταση ή τη μη αυτόματη διαγραφή</string>
+    <string name="settings_rgpd_legal_label">Νομική βάση</string>
+    <string name="settings_rgpd_legal_value">Συγκατάθεση χρήστη (Άρθρο 6.1.α)</string>
+    <string name="settings_rgpd_access_label">Δικαίωμα πρόσβασης (Άρθρο 15)</string>
+    <string name="settings_rgpd_access_value">Μέσω της κρυπτογραφημένης εξαγωγής (παραπάνω)</string>
+    <string name="settings_rgpd_erasure_label">Δικαίωμα διαγραφής (Άρθρο 17)</string>
+    <string name="settings_rgpd_erasure_value">Μέσω «Διαγραφή όλων των δεδομένων μου»</string>
+    <string name="settings_rgpd_portability_label">Δικαίωμα φορητότητας δεδομένων (Άρθρο 20)</string>
+    <string name="settings_rgpd_portability_value">Μέσω της κρυπτογραφημένης εξαγωγής (εγγενής ή πολλαπλών πλατφορμών)</string>
+    <string name="settings_rgpd_dpo_label">Επικοινωνία με τον DPO</string>
+    <string name="settings_rgpd_dpo_value">contact@bigfortravel.com</string>
+    <string name="settings_rgpd_eu_label">Αρχή ΕΕ (καταγγελίες)</string>
+    <string name="settings_rgpd_eu_value">CNIL – www.cnil.fr (ευρωπαίοι χρήστες)</string>
+    <string name="settings_rgpd_cm_label">Αρχή Καμερούν (καταγγελίες)</string>
+    <string name="settings_rgpd_cm_value">ANTIC – www.antic.cm (χρήστες από το Καμερούν)</string>
+    <string name="settings_rgpd_footer">Το Big MFA δεν συλλέγει προσωπικά δεδομένα εκτός της συσκευής σας, δεν ξεκινά καμία σύνδεση δικτύου από μόνο του, και δεν κοινοποιεί καμία πληροφορία σε τρίτους. Όλα τα δεδομένα κρυπτογραφούνται με AES-256-GCM-SIV πριν από την τοπική αποθήκευση.</string>
+    <string name="settings_language_row_title">Γλώσσα</string>
+
+    <!-- BackupImporter -->
+    <string name="backup_importer_unreadable">Το αρχείο είναι μη αναγνώσιμο ή κατεστραμμένο</string>
+    <string name="backup_importer_unknown_format">Μη αναγνωρίσιμη μορφή αρχείου</string>
+    <string name="backup_importer_wrong_password">Λανθασμένος κωδικός πρόσβασης ή κατεστραμμένο αρχείο</string>
+
+    <!-- Υποστήριξη -->
+    <string name="support_title">Υποστηρίξτε το Big MFA</string>
+    <string name="support_description">Το Big MFA αναπτύσσεται και συντηρείται εθελοντικά από την BigForTravel. Χωρίς διαφημίσεις, χωρίς πώληση δεδομένων, χωρίς κρυφή συνδρομή. Αν η εφαρμογή σάς είναι χρήσιμη, μια δωρεά — έστω και μικρή — βοηθά στη χρηματοδότηση της συνεχούς ανάπτυξής της.</string>
+    <string name="support_paypal_button">Δωρεά μέσω PayPal</string>
+    <string name="support_kofi_button">Δωρεά μέσω Ko-fi</string>
+    <string name="support_disclaimer">Οι δωρεές είναι προαιρετικές και δεν παρέχουν καμία πρόσθετη λειτουργικότητα. Επαληθεύετε πάντα ότι ο εμφανιζόμενος δικαιούχος είναι BigForTravel / Patrick Djeuzong.</string>
+    <string name="support_official_site">🌐 Επίσημη ιστοσελίδα</string>
+    <string name="support_contact_us">✉️ Γράψτε μας</string>
+    <string name="support_contact_subject">Big MFA — Επικοινωνία</string>
+
+    <!-- Καρουζέλ εξαγωγής QR -->
+    <string name="export_qr_title">Εξαγωγή QR (%1$d/%2$d)</string>
+    <string name="export_qr_no_accounts">Δεν υπάρχουν λογαριασμοί προς εξαγωγή.</string>
+    <string name="export_qr_zip_button">📦 Εξαγωγή όλων των QR σε ZIP</string>
+    <string name="export_qr_close_button">Κλείσιμο</string>
+    <string name="export_qr_zip_error">Δεν ήταν δυνατή η δημιουργία του αρχείου ZIP</string>
+    <string name="export_qr_share_title">Κοινοποίηση αρχείου QR</string>
+
+    <!-- Οδηγός -->
+    <string name="guide_tab_installation">Εγκατάσταση</string>
+    <string name="guide_tab_usage">Χρήση</string>
+    <string name="guide_tab_features">Λειτουργίες</string>
+    <string name="guide_title">Οδηγός Big MFA</string>
+    <string name="guide_intro">Μια γρήγορη επισκόπηση όλων των διαθέσιμων λειτουργιών.</string>
+    <string name="guide_codes_title">🔑 Οι κωδικοί μου</string>
+    <string name="guide_codes_body">Οι κωδικοί TOTP σας ενημερώνονται σε πραγματικό χρόνο με οπτική αντίστροφη μέτρηση. Πατήστε έναν κωδικό για αντιγραφή (διαγράφεται αυτόματα από το πρόχειρο μετά από 30δ). Για λογαριασμούς HOTP, πατήστε «Δημιουργία» κάθε φορά που χρειάζεστε έναν κωδικό. Αναζητήστε, μετονομάστε ή διαγράψτε έναν λογαριασμό χρησιμοποιώντας τα εικονίδια σε κάθε γραμμή.</string>
+    <string name="guide_decoder_title">🔍 Αποκωδικοποιητής</string>
+    <string name="guide_decoder_body">Επικολλήστε ή εισαγάγετε ένα μυστικό από μια εικόνα κωδικού QR για να λάβετε άμεσα τον αντίστοιχο κωδικό TOTP, χωρίς να τον προσθέσετε στο θησαυροφυλάκιό σας. Χρήσιμο για μεμονωμένο έλεγχο.</string>
+    <string name="guide_key_title">🔐 Κλειδί</string>
+    <string name="guide_key_body">Δημιουργεί ένα τυχαίο μυστικό κλειδί, μαζί με τον αντίστοιχο κωδικό QR, για να ρυθμίσετε έναν νέο λογαριασμό σε άλλη υπηρεσία που σας ζητά να δημιουργήσετε το δικό σας μυστικό.</string>
+    <string name="guide_add_title">➕ Προσθήκη λογαριασμού</string>
+    <string name="guide_add_body">Σαρώστε τον κωδικό QR που παρέχεται από την υπηρεσία, ή εισαγάγετε το μυστικό χειροκίνητα. Οι σύνθετες επιλογές σάς επιτρέπουν να προσαρμόσετε τον αλγόριθμο, τον αριθμό ψηφίων, την περίοδο, ή να μεταβείτε σε HOTP.</string>
+    <string name="guide_biometric_title">👆 Βιομετρικό ξεκλείδωμα</string>
+    <string name="guide_biometric_body">Ενεργοποιήστε το ξεκλείδωμα με δακτυλικό αποτύπωμα από τις Ρυθμίσεις. Ο κύριος κωδικός πρόσβασής σας παραμένει πάντα διαθέσιμος ως εφεδρικός — ποτέ δεν αντικαθίσταται, μόνο συμπληρώνεται.</string>
+    <string name="guide_backup_title">💾 Αντίγραφο ασφαλείας και επαναφορά</string>
+    <string name="guide_backup_body">Δύο μορφές εξαγωγής: μέγιστη ασφάλεια (εγγενής για Android) ή συμβατή με πολλαπλές πλατφόρμες (δυνατότητα εισαγωγής στην επέκταση Chrome). Η εξαγωγή QR δημιουργεί ένα καρουζέλ κωδικών QR, μεμονωμένα ή σε αρχείο ZIP. Η επαναφορά εντοπίζει αυτόματα τη μορφή του αρχείου.</string>
+    <string name="guide_security_title">🛡 Ασφάλεια</string>
+    <string name="guide_security_body">Όλα τα δεδομένα παραμένουν αποκλειστικά στη συσκευή σας, κρυπτογραφημένα με AES-256-GCM-SIV και ένα κλειδί που προέρχεται από Argon2id. Η εφαρμογή δεν ξεκινά ποτέ σύνδεση δικτύου μόνη της.</string>
+    <string name="guide_language_title">🌐 Γλώσσα</string>
+    <string name="guide_language_body">Επιλέξτε «Αυτόματα» για να ακολουθήσετε τη γλώσσα του τηλεφώνου σας, ή επιλέξτε συγκεκριμένη γλώσσα από το υποσέλιδο των οθονών σύνδεσης.</string>
+    <string name="guide_install_step1_title">1. Δημιουργήστε το θησαυροφυλάκιό σας</string>
+    <string name="guide_install_step1_body">Κατά την πρώτη εκκίνηση, επιλέξτε «Δημιουργία θησαυροφυλακίου» για να ξεκινήσετε με ένα κενό θησαυροφυλάκιο, ή «Επαναφορά υπάρχοντος αντιγράφου ασφαλείας» αν έχετε ήδη χρησιμοποιήσει το Big MFA στο Chrome ή σε άλλη συσκευή Android.</string>
+    <string name="guide_install_step2_title">2. Επιλέξτε έναν ισχυρό κύριο κωδικό πρόσβασης</string>
+    <string name="guide_install_step2_body">Ελάχιστο 12 χαρακτήρες, αλλά στοχεύστε καλύτερα σε μια φράση πρόσβασης 16+ χαρακτήρων (για παράδειγμα, αρκετές συνδυασμένες λέξεις). Είναι το μόνο κλειδί που προστατεύει όλους τους λογαριασμούς σας.</string>
+    <string name="guide_install_step3_title">3. Κατανοήστε τη μη ανακτησιμότητα</string>
+    <string name="guide_install_step3_body">Το Big MFA δεν αποθηκεύει τον κύριο κωδικό πρόσβασής σας πουθενά, ούτε σε απλό κείμενο ούτε κρυπτογραφημένο. Αν τον ξεχάσετε και δεν έχετε εξωτερικό αντίγραφο ασφαλείας, οι λογαριασμοί σας θα καταστούν μόνιμα απρόσιτοι. Σημειώστε τον σε έναν αξιόπιστο διαχειριστή κωδικών πρόσβασης.</string>
+    <string name="guide_install_step4_title">4. Ενεργοποιήστε τα βιομετρικά στοιχεία (προαιρετικό)</string>
+    <string name="guide_install_step4_body">Από τις Ρυθμίσεις, ενεργοποιήστε το ξεκλείδωμα με δακτυλικό αποτύπωμα για ταχύτερη καθημερινή πρόσβαση. Ο κύριος κωδικός πρόσβασής σας παραμένει πάντα διαθέσιμος ως εφεδρικός.</string>
+    <string name="guide_usage_step1_title">1. Προσθέστε τον πρώτο σας λογαριασμό</string>
+    <string name="guide_usage_step1_body">Από το «+ Προσθήκη», σαρώστε τον κωδικό QR που εμφανίζεται από την υπηρεσία (ταχύτερη μέθοδος), ή εισαγάγετε χειροκίνητα το όνομα, τον εκδότη και το μυστικό Base32 αν δεν μπορείτε να σαρώσετε.</string>
+    <string name="guide_usage_step2_title">2. Χρησιμοποιήστε έναν κωδικό καθημερινά</string>
+    <string name="guide_usage_step2_body">Στο «Οι κωδικοί μου», πατήστε απευθείας σε έναν κωδικό TOTP για αντιγραφή (διαγράφεται αυτόματα από το πρόχειρο μετά από 30 δευτερόλεπτα). Για λογαριασμό HOTP, πατήστε «Δημιουργία» κάθε φορά που χρειάζεστε έναν — ο μετρητής προχωρά πάντα εμπρός, ποτέ πίσω.</string>
+    <string name="guide_usage_step3_title">3. Διαχειριστείτε τους λογαριασμούς σας</string>
+    <string name="guide_usage_step3_body">Χρησιμοποιήστε τη γραμμή αναζήτησης για να βρείτε γρήγορα έναν λογαριασμό ανάμεσα σε πολλούς. Το εικονίδιο του μολυβιού επιτρέπει τη μετονομασία, το εικονίδιο του κάδου επιτρέπει τη διαγραφή (με διπλή επιβεβαίωση, μη αναστρέψιμη ενέργεια).</string>
+    <string name="guide_usage_step4_title">4. Δημιουργήστε τακτικά αντίγραφα ασφαλείας</string>
+    <string name="guide_usage_step4_body">Από τις Ρυθμίσεις, επιλέξτε «Εξαγωγή μέγιστης ασφάλειας» για αντίγραφο ασφαλείας μόνο για Android, ή «Εξαγωγή πολλαπλών πλατφορμών» αν χρησιμοποιείτε το Big MFA και στο Chrome. Η εξαγωγή QR (καρουζέλ ή ZIP) είναι χρήσιμη για μεταφορά σε άλλον τυπικό διαχειριστή συμβατό με TOTP.</string>
+    <string name="guide_usage_step5_title">5. Αλλάξτε τον κύριο κωδικό πρόσβασής σας</string>
+    <string name="guide_usage_step5_body">Από τις Ρυθμίσεις, εισαγάγετε τον τρέχοντα κωδικό πρόσβασης και στη συνέχεια τον νέο. Οι λογαριασμοί σας και τα βιομετρικά στοιχεία σας (αν είναι ενεργοποιημένα) παραμένουν άθικτα — αλλάζει μόνο ο κωδικός πρόσβασης.</string>
+    <string name="nav_accounts">Οι κωδικοί μου</string>
+    <string name="nav_decoder">Αποκωδικοποιητής</string>
+    <string name="nav_key">Κλειδί</string>
+    <string name="nav_add">+ Προσθήκη</string>
+    <string name="nav_support">Υποστήριξη</string>
+    <string name="nav_settings">Ρυθμίσεις</string>
+    <string name="nav_guide">Οδηγός</string>
+    <string name="nav_lock_content_description">Κλείδωμα θησαυροφυλακίου</string>
+</resources>

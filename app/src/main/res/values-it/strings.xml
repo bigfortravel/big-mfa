@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Big MFA</string>
+
+    <!-- Schermata di sblocco -->
+    <string name="unlock_title">Big MFA</string>
+    <string name="unlock_subtitle">Inserisci la tua password principale</string>
+    <string name="unlock_password_label">Password principale</string>
+    <string name="unlock_button">Sblocca</string>
+    <string name="unlock_reset_vault">Reimposta la cassaforte</string>
+    <string name="unlock_biometric_content_description">Sblocca con impronta digitale</string>
+
+    <!-- Piè di pagina condiviso -->
+    <string name="footer_support">❤️ Sostieni</string>
+    <string name="footer_contact">✉️ Contattaci</string>
+    <string name="footer_language_auto">🌐 Automatico — lingua del browser</string>
+    <string name="footer_language_placeholder">Selettore lingua — presto disponibile</string>
+    <string name="footer_gplv3">Gratuito e open source (licenza GPLv3).</string>
+    <string name="language_dialog_title">Scegli la lingua</string>
+    <string name="language_option_auto">🌐 Automatico (lingua di sistema)</string>
+
+    <!-- I miei codici -->
+    <string name="accounts_empty_state">Nessun account presente.\nUsa « + Aggiungi » per crearne uno.</string>
+    <string name="accounts_search_placeholder">Cerca un account</string>
+    <string name="accounts_no_results">Nessun risultato per « %1$s »</string>
+    <string name="accounts_rename_title">Rinomina account</string>
+    <string name="accounts_name_label">Nome dell\'account</string>
+    <string name="accounts_issuer_label">Emittente (facoltativo)</string>
+    <string name="accounts_name_required_error">Il nome dell\'account è obbligatorio</string>
+    <string name="accounts_save">Salva</string>
+    <string name="accounts_cancel">Annulla</string>
+    <string name="accounts_rename_content_description">Rinomina %1$s</string>
+    <string name="accounts_delete_content_description">Elimina %1$s</string>
+    <string name="accounts_delete_confirm_title">Eliminare « %1$s »?</string>
+    <string name="accounts_delete_irreversible">Questa azione è irreversibile.</string>
+    <string name="accounts_delete_button">Elimina</string>
+    <string name="accounts_hotp_label">HOTP</string>
+    <string name="accounts_unreadable">Illeggibile</string>
+    <string name="accounts_copy_content_description">Copia</string>
+    <string name="accounts_generate_button">Genera</string>
+
+    <!-- + Aggiungi -->
+    <string name="add_account_title">Aggiungi un account</string>
+    <string name="add_account_scan_qr">📷 Scansiona un codice QR</string>
+    <string name="add_account_qr_invalid">Codice QR non valido o non riconosciuto</string>
+    <string name="add_account_cancel_scan">Annulla scansione</string>
+    <string name="add_account_name_label">Nome dell\'account</string>
+    <string name="add_account_issuer_label">Emittente (facoltativo)</string>
+    <string name="add_account_secret_label">Segreto (Base32)</string>
+    <string name="add_account_advanced_options">⚙ Opzioni avanzate (algoritmo, cifre, periodo)</string>
+    <string name="add_account_type_label">TIPO</string>
+    <string name="add_account_type_totp">TOTP (basato sul tempo — standard)</string>
+    <string name="add_account_type_hotp">HOTP (basato su contatore)</string>
+    <string name="add_account_algorithm_label">ALGORITMO</string>
+    <string name="add_account_algorithm_sha1">SHA-1 (predefinito, compatibilità universale)</string>
+    <string name="add_account_digits_label">NUMERO DI CIFRE</string>
+    <string name="add_account_digits_default">6 cifre (predefinito)</string>
+    <string name="add_account_digits_n">%1$d cifre</string>
+    <string name="add_account_period_label">PERIODO (SECONDI)</string>
+    <string name="add_account_save">Salva</string>
+    <string name="add_account_name_required">Il nome dell\'account è obbligatorio</string>
+    <string name="add_account_secret_required">Il segreto è obbligatorio</string>
+    <string name="add_account_secret_invalid">Il segreto non è un Base32 valido</string>
+    <string name="add_account_save_error">Impossibile salvare l\'account</string>
+    <string name="add_account_camera_permission_needed">È necessario l\'accesso alla fotocamera per scansionare un codice QR.</string>
+    <string name="add_account_grant_camera">Consenti l\'accesso alla fotocamera</string>
+
+    <!-- Chiave -->
+    <string name="generate_key_description">Genera una chiave segreta Base32 casuale (160 bit) compatibile con Google Authenticator, Aegis, Authy…</string>
+    <string name="generate_key_generate">Genera</string>
+    <string name="generate_key_copy">Copia</string>
+    <string name="generate_key_copied">Chiave copiata</string>
+    <string name="generate_key_show_qr">Mostra QR</string>
+    <string name="generate_key_qr_title">Codice QR</string>
+    <string name="generate_key_close">Chiudi</string>
+
+    <!-- Decoder -->
+    <string name="decoder_import_qr">Importa da un codice QR (immagine)</string>
+    <string name="decoder_no_qr_found">Nessun codice QR rilevato in questa immagine</string>
+    <string name="decoder_secret_label">CHIAVE MFA / TOTP (BASE32)</string>
+    <string name="decoder_code_placeholder">— — — — — —</string>
+    <string name="decoder_generate_code">Genera codice</string>
+    <string name="decoder_copy_content_description">Copia codice</string>
+    <string name="decoder_code_copied">Codice copiato — cancellato tra 30s</string>
+    <string name="decoder_secret_empty_error">Inserisci o importa una chiave</string>
+    <string name="decoder_secret_invalid_error">Chiave non valida</string>
+
+    <!-- Crea/Ripristina la cassaforte -->
+    <string name="create_vault_password_too_short">La password deve contenere almeno 12 caratteri</string>
+    <string name="create_vault_passwords_mismatch">Le password non corrispondono</string>
+    <string name="create_vault_creation_error">Impossibile creare la cassaforte</string>
+    <string name="restore_vault_new_password_too_short">La nuova password deve contenere almeno 12 caratteri</string>
+    <string name="restore_vault_new_passwords_mismatch">Le nuove password non corrispondono</string>
+    <string name="restore_vault_generic_error">Impossibile ripristinare il backup</string>
+    <string name="create_vault_title">Crea la tua cassaforte Big MFA</string>
+    <string name="create_vault_min_chars">Minimo 12 caratteri</string>
+    <string name="create_vault_password_label">Password</string>
+    <string name="create_vault_confirm_label">Conferma password</string>
+    <string name="create_vault_create_button">Crea cassaforte</string>
+    <string name="create_vault_restore_button">📥 Ripristina un backup esistente</string>
+    <string name="restore_backup_title">Ripristina un backup</string>
+    <string name="restore_backup_description">Formato nativo Big MFA o compatibile con Chrome — rilevato automaticamente.</string>
+    <string name="restore_backup_choose_file">Scegli il file di backup</string>
+    <string name="restore_backup_file_selected">✅ File selezionato</string>
+    <string name="restore_backup_backup_password_label">Password del backup</string>
+    <string name="restore_backup_new_password_title">NUOVA PASSWORD PRINCIPALE</string>
+    <string name="restore_backup_new_password_hint">Diversa dalla password del backup — minimo 12 caratteri.</string>
+    <string name="restore_backup_new_password_label">Nuova password principale</string>
+    <string name="restore_backup_confirm_new_password_label">Conferma la nuova password</string>
+    <string name="restore_backup_restore_button">Ripristina</string>
+    <string name="restore_backup_cancel">Annulla</string>
+    <string name="restore_backup_file_read_error">Impossibile leggere il file</string>
+
+    <!-- Errori di sblocco -->
+    <string name="unlock_error_wrong_password">Password errata</string>
+    <string name="unlock_error_corrupted_vault">I dati della cassaforte sono danneggiati o illeggibili</string>
+    <string name="unlock_error_no_vault">Nessuna cassaforte trovata</string>
+    <string name="unlock_error_too_many_attempts">Troppi tentativi — riprova tra %1$ds</string>
+    <string name="unlock_error_biometric_unavailable">Biometria non disponibile — usa la tua password</string>
+    <string name="unlock_error_biometric_failed">Autenticazione biometrica non riuscita</string>
+
+    <!-- Cambio password principale -->
+    <string name="change_password_title">Cambia la password principale</string>
+    <string name="change_password_current_label">PASSWORD ATTUALE</string>
+    <string name="change_password_new_label">NUOVA PASSWORD</string>
+    <string name="change_password_confirm_label">CONFERMA</string>
+    <string name="change_password_button">Cambia password</string>
+    <string name="change_password_new_too_short">La nuova password deve contenere almeno 12 caratteri</string>
+    <string name="change_password_new_mismatch">Le nuove password non corrispondono</string>
+    <string name="change_password_wrong_current">La password attuale non è corretta</string>
+    <string name="change_password_generic_error">Impossibile cambiare la password</string>
+    <string name="change_password_success_toast">Password cambiata con successo</string>
+    <string name="change_password_cancel">Annulla</string>
+
+    <!-- Biometria -->
+    <string name="biometric_setup_title">Attiva la biometria</string>
+    <string name="biometric_hardware_insufficient">Il tuo dispositivo non dispone di un supporto hardware sufficiente per attivare la biometria in modo sicuro.</string>
+    <string name="biometric_activate_prompt">Attiva lo sblocco con impronta digitale</string>
+    <string name="biometric_password_confirmed_hint">Password confermata — appoggia il dito sul sensore.</string>
+    <string name="biometric_continue_button">Continua con l\'impronta digitale</string>
+    <string name="biometric_confirm_password_label">Conferma la tua password principale</string>
+    <string name="biometric_confirm_button">Conferma</string>
+    <string name="biometric_wrong_password">Password errata</string>
+    <string name="biometric_key_creation_error">Impossibile creare la chiave sicura</string>
+    <string name="biometric_cipher_error">Impossibile preparare la crittografia</string>
+    <string name="biometric_enable_error">Impossibile attivare la biometria</string>
+    <string name="biometric_auth_failed">Autenticazione biometrica non riuscita</string>
+    <string name="biometric_activated_toast">Biometria attivata</string>
+    <string name="biometric_deactivated_toast">Biometria disattivata</string>
+    <string name="biometric_cancel">Annulla</string>
+    <string name="biometric_row_title">Sblocco biometrico</string>
+    <string name="biometric_row_enabled">Attivato</string>
+    <string name="biometric_row_disabled">Disattivato</string>
+
+    <!-- Impostazioni -->
+    <string name="settings_title">Impostazioni</string>
+    <string name="settings_security_status_title">STATO DI SICUREZZA</string>
+    <string name="settings_masvs_badge">🛡 OWASP MASVS — Livello rafforzato</string>
+    <string name="settings_encryption_label">CRITTOGRAFIA</string>
+    <string name="settings_kdf_label">KDF</string>
+    <string name="settings_inactivity_label">TEMPO DI INATTIVITÀ</string>
+    <string name="settings_inactivity_value">2 min</string>
+    <string name="settings_bruteforce_label">PROTEZIONE FORZA BRUTA</string>
+    <string name="settings_bruteforce_value">5 tentativi + HMAC</string>
+    <string name="settings_lockout_label">BLOCCO</string>
+    <string name="settings_lockout_value">Esponenziale</string>
+    <string name="settings_salt_label">SALT</string>
+    <string name="settings_salt_value">256 bit</string>
+    <string name="settings_integrity_label">INTEGRITÀ CASSAFORTE</string>
+    <string name="settings_integrity_value">HMAC-SHA256</string>
+    <string name="settings_hardware_label">ANCORAGGIO HARDWARE</string>
+    <string name="settings_hardware_value">TEE minimo, StrongBox se disponibile</string>
+    <string name="settings_bruteforce_note">ℹ️ La protezione contro la forza bruta difende dai tentativi ripetuti all\'interno dell\'app. Non sostituisce una password forte: chi ha accesso diretto al file della cassaforte sul dispositivo potrebbe tentare una decifrazione offline senza passare da questo limite. Usa una passphrase di 16+ caratteri.</string>
+    <string name="settings_change_password_button">🔑 Cambia la password principale</string>
+    <string name="settings_backup_title">BACKUP</string>
+    <string name="settings_export_native_title">🛡️ Esportazione massima sicurezza</string>
+    <string name="settings_export_native_subtitle">Argon2id + AES-256-GCM-SIV</string>
+    <string name="settings_export_chrome_title">🌐 Esportazione compatibile multipiattaforma</string>
+    <string name="settings_export_chrome_subtitle">PBKDF2 + AES-256-GCM — importabile in Big MFA Chrome</string>
+    <string name="settings_export_qr_title">📷 Esportazione QR (carosello + ZIP)</string>
+    <string name="settings_export_qr_subtitle">Un QR per account, da scorrere o scaricare</string>
+    <string name="settings_import_button">📥 Importa / Ripristina</string>
+    <string name="settings_export_footer">L\'esportazione è crittografata — i segreti restano protetti anche se il file viene condiviso.</string>
+    <string name="settings_export_native_dialog_title">Esportazione massima sicurezza</string>
+    <string name="settings_export_chrome_dialog_title">Esportazione compatibile multipiattaforma</string>
+    <string name="settings_export_native_dialog_desc">🛡️ Argon2id + AES-256-GCM-SIV — questa password protegge il file esportato, diversa dalla tua password principale.</string>
+    <string name="settings_export_chrome_dialog_desc">🌐 PBKDF2 + AES-256-GCM — formato compatibile con l\'estensione Chrome di Big MFA. Questa password è diversa dalla tua password principale.</string>
+    <string name="settings_export_password_label">Password di esportazione</string>
+    <string name="settings_export_confirm_label">Conferma</string>
+    <string name="settings_export_min_chars_error">Minimo 8 caratteri</string>
+    <string name="settings_export_mismatch_error">Le password non corrispondono</string>
+    <string name="settings_export_button">Esporta</string>
+    <string name="settings_export_cancel">Annulla</string>
+    <string name="settings_export_generic_error">Impossibile creare l\'esportazione</string>
+    <string name="settings_export_share_title">Condividi esportazione</string>
+    <string name="settings_import_dialog_title">Importa un backup</string>
+    <string name="settings_import_dialog_desc">Seleziona un file di backup (nativo Big MFA o compatibile con Chrome — il formato viene rilevato automaticamente).</string>
+    <string name="settings_import_choose_file">Scegli un file</string>
+    <string name="settings_import_file_selected_desc">File selezionato — inserisci la password di questo backup.</string>
+    <string name="settings_import_password_label">Password del backup</string>
+    <string name="settings_import_button_confirm">Importa</string>
+    <string name="settings_import_read_error">Impossibile leggere il file</string>
+    <string name="settings_import_generic_error">Importazione non riuscita</string>
+    <string name="settings_import_success_toast">%1$d account importati</string>
+    <string name="settings_danger_zone_title">ZONA PERICOLOSA</string>
+    <string name="settings_delete_all_button">🗑 Elimina tutti i miei dati</string>
+    <string name="settings_delete_all_description">Esercita il tuo diritto alla cancellazione (Art. 17 GDPR). Elimina tutti gli account e la password principale. Azione irreversibile.</string>
+    <string name="settings_delete_confirm_title">Eliminare tutti i dati?</string>
+    <string name="settings_delete_confirm_desc">Tutti i tuoi account verranno eliminati definitivamente. Questa azione non può essere annullata.</string>
+    <string name="settings_delete_continue">Continua</string>
+    <string name="settings_delete_final_title">Conferma finale</string>
+    <string name="settings_delete_final_desc">Sei DAVVERO sicuro? Nessun recupero sarà possibile dopo questo passaggio.</string>
+    <string name="settings_delete_final_button">Elimina definitivamente</string>
+    <string name="settings_delete_cancel">Annulla</string>
+    <string name="settings_rgpd_badge">🔒 Conforme al GDPR — Dati 100% locali</string>
+    <string name="settings_rgpd_title">PRIVACY E GDPR</string>
+    <string name="settings_rgpd_controller_label">Titolare del trattamento</string>
+    <string name="settings_rgpd_controller_value">Patrick DJEUZONG – BigForTravel</string>
+    <string name="settings_rgpd_data_label">Dati raccolti</string>
+    <string name="settings_rgpd_data_value">Nomi degli account, chiavi TOTP crittografate</string>
+    <string name="settings_rgpd_storage_label">Luogo di archiviazione</string>
+    <string name="settings_rgpd_storage_value">Solo il tuo dispositivo (archiviazione privata dell\'app, isolata dal sandbox di Android)</string>
+    <string name="settings_rgpd_transfer_label">Trasferimento a terzi</string>
+    <string name="settings_rgpd_transfer_value">Nessuna richiesta effettuata da Big MFA stessa. L\'esportazione crittografata può essere condivisa tramite un\'app di terze parti a tua scelta, solo se la attivi esplicitamente.</string>
+    <string name="settings_rgpd_thirdparty_label">Codice di terze parti integrato</string>
+    <string name="settings_rgpd_thirdparty_value">Bouncy Castle (MIT), CameraX (Apache-2.0), ML Kit barcode-scanning integrato (Apache-2.0), ZXing (Apache-2.0) — tutti locali, nessuna telemetria</string>
+    <string name="settings_rgpd_retention_label">Periodo di conservazione</string>
+    <string name="settings_rgpd_retention_value">Fino alla disinstallazione o alla cancellazione manuale</string>
+    <string name="settings_rgpd_legal_label">Base giuridica</string>
+    <string name="settings_rgpd_legal_value">Consenso dell\'utente (Art. 6.1.a)</string>
+    <string name="settings_rgpd_access_label">Diritto di accesso (Art. 15)</string>
+    <string name="settings_rgpd_access_value">Tramite l\'esportazione crittografata (sopra)</string>
+    <string name="settings_rgpd_erasure_label">Diritto alla cancellazione (Art. 17)</string>
+    <string name="settings_rgpd_erasure_value">Tramite « Elimina tutti i miei dati »</string>
+    <string name="settings_rgpd_portability_label">Diritto alla portabilità (Art. 20)</string>
+    <string name="settings_rgpd_portability_value">Tramite l\'esportazione crittografata (nativa o multipiattaforma)</string>
+    <string name="settings_rgpd_dpo_label">Contatto DPO</string>
+    <string name="settings_rgpd_dpo_value">contact@bigfortravel.com</string>
+    <string name="settings_rgpd_eu_label">Autorità UE (reclami)</string>
+    <string name="settings_rgpd_eu_value">CNIL – www.cnil.fr (utenti europei)</string>
+    <string name="settings_rgpd_cm_label">Autorità Camerun (reclami)</string>
+    <string name="settings_rgpd_cm_value">ANTIC – www.antic.cm (utenti camerunensi)</string>
+    <string name="settings_rgpd_footer">Big MFA non raccoglie alcun dato personale al di fuori del tuo dispositivo, non avvia alcuna connessione di rete autonomamente e non condivide alcuna informazione con terze parti. Tutti i dati sono crittografati con AES-256-GCM-SIV prima dell\'archiviazione locale.</string>
+    <string name="settings_language_row_title">Lingua</string>
+
+    <!-- BackupImporter -->
+    <string name="backup_importer_unreadable">File illeggibile o danneggiato</string>
+    <string name="backup_importer_unknown_format">Formato del file non riconosciuto</string>
+    <string name="backup_importer_wrong_password">Password errata o file danneggiato</string>
+
+    <!-- Sostieni -->
+    <string name="support_title">Sostieni Big MFA</string>
+    <string name="support_description">Big MFA è sviluppato e mantenuto volontariamente da BigForTravel. Nessuna pubblicità, nessuna vendita di dati, nessun abbonamento nascosto. Se l\'app ti è utile, una donazione — anche piccola — aiuta a finanziare il suo sviluppo continuo.</string>
+    <string name="support_paypal_button">Dona tramite PayPal</string>
+    <string name="support_kofi_button">Dona tramite Ko-fi</string>
+    <string name="support_disclaimer">Le donazioni sono facoltative e non concedono alcuna funzionalità aggiuntiva. Verifica sempre che il beneficiario mostrato sia BigForTravel / Patrick Djeuzong.</string>
+    <string name="support_official_site">🌐 Sito ufficiale</string>
+    <string name="support_contact_us">✉️ Scrivici</string>
+    <string name="support_contact_subject">Big MFA — Contatto</string>
+
+    <!-- Carosello esportazione QR -->
+    <string name="export_qr_title">Esportazione QR (%1$d/%2$d)</string>
+    <string name="export_qr_no_accounts">Nessun account da esportare.</string>
+    <string name="export_qr_zip_button">📦 Esporta tutti i QR in ZIP</string>
+    <string name="export_qr_close_button">Chiudi</string>
+    <string name="export_qr_zip_error">Impossibile creare l\'archivio ZIP</string>
+    <string name="export_qr_share_title">Condividi archivio QR</string>
+
+    <!-- Guida -->
+    <string name="guide_tab_installation">Installazione</string>
+    <string name="guide_tab_usage">Utilizzo</string>
+    <string name="guide_tab_features">Funzionalità</string>
+    <string name="guide_title">Guida di Big MFA</string>
+    <string name="guide_intro">Una rapida panoramica di tutte le funzionalità disponibili.</string>
+    <string name="guide_codes_title">🔑 I miei codici</string>
+    <string name="guide_codes_body">I tuoi codici TOTP si aggiornano in tempo reale con un conto alla rovescia visivo. Tocca un codice per copiarlo (cancellato automaticamente dagli appunti dopo 30s). Per gli account HOTP, tocca « Genera » ogni volta che ne hai bisogno. Cerca, rinomina o elimina un account usando le icone su ogni riga.</string>
+    <string name="guide_decoder_title">🔍 Decoder</string>
+    <string name="guide_decoder_body">Incolla o importa un segreto da un\'immagine di codice QR per ottenere immediatamente il suo codice TOTP, senza aggiungerlo alla tua cassaforte. Utile per una verifica occasionale.</string>
+    <string name="guide_key_title">🔐 Chiave</string>
+    <string name="guide_key_body">Genera una chiave segreta casuale, con il relativo codice QR, per configurare un nuovo account su un altro servizio che richiede di creare il proprio segreto.</string>
+    <string name="guide_add_title">➕ Aggiungi un account</string>
+    <string name="guide_add_body">Scansiona il codice QR fornito dal servizio, oppure inserisci manualmente il segreto. Le opzioni avanzate permettono di regolare l\'algoritmo, il numero di cifre, il periodo, o passare a HOTP.</string>
+    <string name="guide_biometric_title">👆 Sblocco biometrico</string>
+    <string name="guide_biometric_body">Attiva lo sblocco con impronta digitale dalle Impostazioni. La tua password principale resta sempre disponibile come riserva — mai sostituita, solo integrata.</string>
+    <string name="guide_backup_title">💾 Backup e ripristino</string>
+    <string name="guide_backup_body">Due formati di esportazione: massima sicurezza (nativo Android) o compatibile multipiattaforma (importabile nell\'estensione Chrome). L\'esportazione QR genera un carosello di codici QR, singoli o in archivio ZIP. Il ripristino rileva automaticamente il formato del file.</string>
+    <string name="guide_security_title">🛡 Sicurezza</string>
+    <string name="guide_security_body">Tutti i dati restano esclusivamente sul tuo dispositivo, crittografati con AES-256-GCM-SIV e una chiave derivata tramite Argon2id. L\'app non avvia mai alcuna connessione di rete autonomamente.</string>
+    <string name="guide_language_title">🌐 Lingua</string>
+    <string name="guide_language_body">Scegli « Automatico » per seguire la lingua del tuo telefono, oppure seleziona una lingua specifica dal piè di pagina delle schermate di accesso.</string>
+    <string name="guide_install_step1_title">1. Crea la tua cassaforte</string>
+    <string name="guide_install_step1_body">Al primo avvio, scegli « Crea cassaforte » per iniziare con una cassaforte vuota, oppure « Ripristina un backup esistente » se hai già usato Big MFA su Chrome o su un altro dispositivo Android.</string>
+    <string name="guide_install_step2_title">2. Scegli una password principale forte</string>
+    <string name="guide_install_step2_body">Minimo 12 caratteri, ma punta piuttosto a una passphrase di 16+ caratteri (ad esempio più parole combinate). È l\'unica chiave che protegge tutti i tuoi account.</string>
+    <string name="guide_install_step3_title">3. Comprendi l\'irrecuperabilità</string>
+    <string name="guide_install_step3_body">Big MFA non memorizza la tua password principale da nessuna parte, né in chiaro né crittografata. Se la dimentichi e non hai un backup esterno, i tuoi account diventeranno permanentemente inaccessibili. Annotala in un gestore di password affidabile.</string>
+    <string name="guide_install_step4_title">4. Attiva la biometria (facoltativo)</string>
+    <string name="guide_install_step4_body">Dalle Impostazioni, attiva lo sblocco con impronta digitale per un accesso quotidiano più rapido. La tua password principale resta sempre disponibile come riserva.</string>
+    <string name="guide_usage_step1_title">1. Aggiungi il tuo primo account</string>
+    <string name="guide_usage_step1_body">Da « + Aggiungi », scansiona il codice QR mostrato dal servizio (metodo più rapido), oppure inserisci manualmente il nome, l\'emittente e il segreto Base32 se non puoi scansionare.</string>
+    <string name="guide_usage_step2_title">2. Usa un codice quotidianamente</string>
+    <string name="guide_usage_step2_body">In « I miei codici », tocca direttamente un codice TOTP per copiarlo (cancellato automaticamente dagli appunti dopo 30 secondi). Per un account HOTP, tocca « Genera » ogni volta che ne hai bisogno — il contatore avanza sempre, mai indietro.</string>
+    <string name="guide_usage_step3_title">3. Gestisci i tuoi account</string>
+    <string name="guide_usage_step3_body">Usa la barra di ricerca per trovare rapidamente un account tra molti. L\'icona a matita permette di rinominare, l\'icona del cestino permette di eliminare (con doppia conferma, azione irreversibile).</string>
+    <string name="guide_usage_step4_title">4. Esegui backup regolarmente</string>
+    <string name="guide_usage_step4_body">Dalle Impostazioni, scegli « Esportazione massima sicurezza » per un backup solo Android, oppure « Esportazione compatibile multipiattaforma » se usi Big MFA anche su Chrome. L\'esportazione QR (carosello o ZIP) è utile per trasferire a un altro gestore compatibile con lo standard TOTP.</string>
+    <string name="guide_usage_step5_title">5. Cambia la tua password principale</string>
+    <string name="guide_usage_step5_body">Dalle Impostazioni, inserisci la password attuale e poi quella nuova. I tuoi account e la tua biometria (se attivata) restano intatti — cambia solo la password.</string>
+    <string name="nav_accounts">I miei codici</string>
+    <string name="nav_decoder">Decoder</string>
+    <string name="nav_key">Chiave</string>
+    <string name="nav_add">+ Aggiungi</string>
+    <string name="nav_support">Sostieni</string>
+    <string name="nav_settings">Impostazioni</string>
+    <string name="nav_guide">Guida</string>
+    <string name="nav_lock_content_description">Blocca la cassaforte</string>
+</resources>

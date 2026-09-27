@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Big MFA</string>
+
+    <!-- Atbloķēšanas ekrāns -->
+    <string name="unlock_title">Big MFA</string>
+    <string name="unlock_subtitle">Ievadiet galveno paroli</string>
+    <string name="unlock_password_label">Galvenā parole</string>
+    <string name="unlock_button">Atbloķēt</string>
+    <string name="unlock_reset_vault">Atiestatīt glabātuvi</string>
+    <string name="unlock_biometric_content_description">Atbloķēt ar pirkstu nospiedumu</string>
+
+    <!-- Kopīga kājene -->
+    <string name="footer_support">❤️ Atbalstīt</string>
+    <string name="footer_contact">✉️ Sazinieties ar mums</string>
+    <string name="footer_language_auto">🌐 Automātiski — pārlūkprogrammas valoda</string>
+    <string name="footer_language_placeholder">Valodas izvēle — drīzumā</string>
+    <string name="footer_gplv3">Bezmaksas un atvērtā koda (GPLv3 licence).</string>
+    <string name="language_dialog_title">Izvēlieties valodu</string>
+    <string name="language_option_auto">🌐 Automātiski (sistēmas valoda)</string>
+
+    <!-- Mani kodi -->
+    <string name="accounts_empty_state">Vēl nav kontu.\nIzmantojiet „+ Pievienot”, lai izveidotu vienu.</string>
+    <string name="accounts_search_placeholder">Meklēt kontu</string>
+    <string name="accounts_no_results">Nav rezultātu par „%1$s”</string>
+    <string name="accounts_rename_title">Pārdēvēt kontu</string>
+    <string name="accounts_name_label">Konta nosaukums</string>
+    <string name="accounts_issuer_label">Izdevējs (neobligāti)</string>
+    <string name="accounts_name_required_error">Konta nosaukums ir obligāts</string>
+    <string name="accounts_save">Saglabāt</string>
+    <string name="accounts_cancel">Atcelt</string>
+    <string name="accounts_rename_content_description">Pārdēvēt %1$s</string>
+    <string name="accounts_delete_content_description">Dzēst %1$s</string>
+    <string name="accounts_delete_confirm_title">Dzēst „%1$s”?</string>
+    <string name="accounts_delete_irreversible">Šo darbību nevar atsaukt.</string>
+    <string name="accounts_delete_button">Dzēst</string>
+    <string name="accounts_hotp_label">HOTP</string>
+    <string name="accounts_unreadable">Nav nolasāms</string>
+    <string name="accounts_copy_content_description">Kopēt</string>
+    <string name="accounts_generate_button">Ģenerēt</string>
+
+    <!-- + Pievienot -->
+    <string name="add_account_title">Pievienot kontu</string>
+    <string name="add_account_scan_qr">📷 Skenēt QR kodu</string>
+    <string name="add_account_qr_invalid">Nederīgs vai neatpazīts QR kods</string>
+    <string name="add_account_cancel_scan">Atcelt skenēšanu</string>
+    <string name="add_account_name_label">Konta nosaukums</string>
+    <string name="add_account_issuer_label">Izdevējs (neobligāti)</string>
+    <string name="add_account_secret_label">Slepenā atslēga (Base32)</string>
+    <string name="add_account_advanced_options">⚙ Papildu opcijas (algoritms, cipari, periods)</string>
+    <string name="add_account_type_label">VEIDS</string>
+    <string name="add_account_type_totp">TOTP (balstīts uz laiku — standarta)</string>
+    <string name="add_account_type_hotp">HOTP (balstīts uz skaitītāju)</string>
+    <string name="add_account_algorithm_label">ALGORITMS</string>
+    <string name="add_account_algorithm_sha1">SHA-1 (noklusējuma, universāla saderība)</string>
+    <string name="add_account_digits_label">CIPARU SKAITS</string>
+    <string name="add_account_digits_default">6 cipari (noklusējums)</string>
+    <string name="add_account_digits_n">%1$d cipari</string>
+    <string name="add_account_period_label">PERIODS (SEKUNDES)</string>
+    <string name="add_account_save">Saglabāt</string>
+    <string name="add_account_name_required">Konta nosaukums ir obligāts</string>
+    <string name="add_account_secret_required">Slepenā atslēga ir obligāta</string>
+    <string name="add_account_secret_invalid">Slepenā atslēga nav derīga Base32</string>
+    <string name="add_account_save_error">Kontu nevarēja saglabāt</string>
+    <string name="add_account_camera_permission_needed">QR koda skenēšanai nepieciešama piekļuve kamerai.</string>
+    <string name="add_account_grant_camera">Atļaut piekļuvi kamerai</string>
+
+    <!-- Atslēga -->
+    <string name="generate_key_description">Ģenerē nejaušu Base32 slepeno atslēgu (160 biti), kas ir saderīga ar Google Authenticator, Aegis, Authy…</string>
+    <string name="generate_key_generate">Ģenerēt</string>
+    <string name="generate_key_copy">Kopēt</string>
+    <string name="generate_key_copied">Atslēga kopēta</string>
+    <string name="generate_key_show_qr">Rādīt QR</string>
+    <string name="generate_key_qr_title">QR kods</string>
+    <string name="generate_key_close">Aizvērt</string>
+
+    <!-- Dekoders -->
+    <string name="decoder_import_qr">Importēt no QR koda (attēls)</string>
+    <string name="decoder_no_qr_found">Šajā attēlā netika atrasts QR kods</string>
+    <string name="decoder_secret_label">MFA / TOTP ATSLĒGA (BASE32)</string>
+    <string name="decoder_code_placeholder">— — — — — —</string>
+    <string name="decoder_generate_code">Ģenerēt kodu</string>
+    <string name="decoder_copy_content_description">Kopēt kodu</string>
+    <string name="decoder_code_copied">Kods kopēts — tiks dzēsts pēc 30s</string>
+    <string name="decoder_secret_empty_error">Ievadiet vai importējiet atslēgu</string>
+    <string name="decoder_secret_invalid_error">Nederīga atslēga</string>
+
+    <!-- Glabātuves izveide/atjaunošana -->
+    <string name="create_vault_password_too_short">Parolei jāsatur vismaz 12 rakstzīmes</string>
+    <string name="create_vault_passwords_mismatch">Paroles nesakrīt</string>
+    <string name="create_vault_creation_error">Glabātuvi nevarēja izveidot</string>
+    <string name="restore_vault_new_password_too_short">Jaunajai parolei jāsatur vismaz 12 rakstzīmes</string>
+    <string name="restore_vault_new_passwords_mismatch">Jaunās paroles nesakrīt</string>
+    <string name="restore_vault_generic_error">Dublējumu nevarēja atjaunot</string>
+    <string name="create_vault_title">Izveidojiet savu Big MFA glabātuvi</string>
+    <string name="create_vault_min_chars">Vismaz 12 rakstzīmes</string>
+    <string name="create_vault_password_label">Parole</string>
+    <string name="create_vault_confirm_label">Apstiprināt paroli</string>
+    <string name="create_vault_create_button">Izveidot glabātuvi</string>
+    <string name="create_vault_restore_button">📥 Atjaunot esošu dublējumu</string>
+    <string name="restore_backup_title">Atjaunot dublējumu</string>
+    <string name="restore_backup_description">Big MFA oriģinālais formāts vai saderīgs ar Chrome — tiek noteikts automātiski.</string>
+    <string name="restore_backup_choose_file">Izvēlēties dublējuma failu</string>
+    <string name="restore_backup_file_selected">✅ Fails izvēlēts</string>
+    <string name="restore_backup_backup_password_label">Dublējuma parole</string>
+    <string name="restore_backup_new_password_title">JAUNA GALVENĀ PAROLE</string>
+    <string name="restore_backup_new_password_hint">Atšķiras no dublējuma paroles — vismaz 12 rakstzīmes.</string>
+    <string name="restore_backup_new_password_label">Jauna galvenā parole</string>
+    <string name="restore_backup_confirm_new_password_label">Apstiprināt jauno paroli</string>
+    <string name="restore_backup_restore_button">Atjaunot</string>
+    <string name="restore_backup_cancel">Atcelt</string>
+    <string name="restore_backup_file_read_error">Failu nevarēja nolasīt</string>
+
+    <!-- Atbloķēšanas kļūdas -->
+    <string name="unlock_error_wrong_password">Nepareiza parole</string>
+    <string name="unlock_error_corrupted_vault">Glabātuves dati ir bojāti vai nenolasāmi</string>
+    <string name="unlock_error_no_vault">Glabātuve netika atrasta</string>
+    <string name="unlock_error_too_many_attempts">Pārāk daudz mēģinājumu — mēģiniet vēlreiz pēc %1$ds</string>
+    <string name="unlock_error_biometric_unavailable">Biometrija nav pieejama — izmantojiet savu paroli</string>
+    <string name="unlock_error_biometric_failed">Biometriskā autentifikācija neizdevās</string>
+
+    <!-- Galvenās paroles maiņa -->
+    <string name="change_password_title">Mainīt galveno paroli</string>
+    <string name="change_password_current_label">PAŠREIZĒJĀ PAROLE</string>
+    <string name="change_password_new_label">JAUNĀ PAROLE</string>
+    <string name="change_password_confirm_label">APSTIPRINĀT</string>
+    <string name="change_password_button">Mainīt paroli</string>
+    <string name="change_password_new_too_short">Jaunajai parolei jāsatur vismaz 12 rakstzīmes</string>
+    <string name="change_password_new_mismatch">Jaunās paroles nesakrīt</string>
+    <string name="change_password_wrong_current">Pašreizējā parole ir nepareiza</string>
+    <string name="change_password_generic_error">Paroli nevarēja mainīt</string>
+    <string name="change_password_success_toast">Parole veiksmīgi mainīta</string>
+    <string name="change_password_cancel">Atcelt</string>
+
+    <!-- Biometrija -->
+    <string name="biometric_setup_title">Aktivizēt biometriju</string>
+    <string name="biometric_hardware_insufficient">Jūsu ierīcei nav pietiekama aparatūras atbalsta, lai droši aktivizētu biometriju.</string>
+    <string name="biometric_activate_prompt">Aktivizēt atbloķēšanu ar pirkstu nospiedumu</string>
+    <string name="biometric_password_confirmed_hint">Parole apstiprināta — novietojiet pirkstu uz sensora.</string>
+    <string name="biometric_continue_button">Turpināt ar pirkstu nospiedumu</string>
+    <string name="biometric_confirm_password_label">Apstipriniet savu galveno paroli</string>
+    <string name="biometric_confirm_button">Apstiprināt</string>
+    <string name="biometric_wrong_password">Nepareiza parole</string>
+    <string name="biometric_key_creation_error">Drošo atslēgu nevarēja izveidot</string>
+    <string name="biometric_cipher_error">Šifrēšanu nevarēja sagatavot</string>
+    <string name="biometric_enable_error">Biometriju nevarēja aktivizēt</string>
+    <string name="biometric_auth_failed">Biometriskā autentifikācija neizdevās</string>
+    <string name="biometric_activated_toast">Biometrija aktivizēta</string>
+    <string name="biometric_deactivated_toast">Biometrija deaktivizēta</string>
+    <string name="biometric_cancel">Atcelt</string>
+    <string name="biometric_row_title">Biometriskā atbloķēšana</string>
+    <string name="biometric_row_enabled">Aktivizēta</string>
+    <string name="biometric_row_disabled">Deaktivizēta</string>
+
+    <!-- Iestatījumi -->
+    <string name="settings_title">Iestatījumi</string>
+    <string name="settings_security_status_title">DROŠĪBAS STĀVOKLIS</string>
+    <string name="settings_masvs_badge">🛡 OWASP MASVS — Pastiprināts līmenis</string>
+    <string name="settings_encryption_label">ŠIFRĒŠANA</string>
+    <string name="settings_kdf_label">KDF</string>
+    <string name="settings_inactivity_label">NEAKTIVITĀTES LAIKS</string>
+    <string name="settings_inactivity_value">2 min</string>
+    <string name="settings_bruteforce_label">AIZSARDZĪBA PRET UZLAUŠANU</string>
+    <string name="settings_bruteforce_value">5 mēģinājumi + HMAC</string>
+    <string name="settings_lockout_label">BLOĶĒŠANA</string>
+    <string name="settings_lockout_value">Eksponenciāla</string>
+    <string name="settings_salt_label">SĀLS</string>
+    <string name="settings_salt_value">256 biti</string>
+    <string name="settings_integrity_label">GLABĀTUVES INTEGRITĀTE</string>
+    <string name="settings_integrity_value">HMAC-SHA256</string>
+    <string name="settings_hardware_label">APARATŪRAS PIESAISTE</string>
+    <string name="settings_hardware_value">Minimums TEE, StrongBox, ja pieejams</string>
+    <string name="settings_bruteforce_note">ℹ️ Aizsardzība pret uzlaušanu aizsargā pret atkārtotiem mēģinājumiem lietotnē. Tā neaizstāj spēcīgu paroli: kāds ar tiešu piekļuvi glabātuves failam ierīcē varētu mēģināt bezsaistes atšifrēšanu, apejot šo ierobežojumu. Izmantojiet paroles frāzi ar 16+ rakstzīmēm.</string>
+    <string name="settings_change_password_button">🔑 Mainīt galveno paroli</string>
+    <string name="settings_backup_title">DUBLĒJUMS</string>
+    <string name="settings_export_native_title">🛡️ Eksports ar maksimālu drošību</string>
+    <string name="settings_export_native_subtitle">Argon2id + AES-256-GCM-SIV</string>
+    <string name="settings_export_chrome_title">🌐 Starpplatformu saderīgs eksports</string>
+    <string name="settings_export_chrome_subtitle">PBKDF2 + AES-256-GCM — importējams Big MFA Chrome</string>
+    <string name="settings_export_qr_title">📷 QR eksports (karuselis + ZIP)</string>
+    <string name="settings_export_qr_subtitle">Viens QR uz kontu, pārlūkošanai vai lejupielādei</string>
+    <string name="settings_import_button">📥 Importēt / Atjaunot</string>
+    <string name="settings_export_footer">Eksports ir šifrēts — noslēpumi paliek aizsargāti pat tad, ja fails tiek koplietots.</string>
+    <string name="settings_export_native_dialog_title">Eksports ar maksimālu drošību</string>
+    <string name="settings_export_chrome_dialog_title">Starpplatformu saderīgs eksports</string>
+    <string name="settings_export_native_dialog_desc">🛡️ Argon2id + AES-256-GCM-SIV — šī parole aizsargā eksportēto failu un atšķiras no jūsu galvenās paroles.</string>
+    <string name="settings_export_chrome_dialog_desc">🌐 PBKDF2 + AES-256-GCM — formāts, kas saderīgs ar Big MFA Chrome paplašinājumu. Šī parole atšķiras no jūsu galvenās paroles.</string>
+    <string name="settings_export_password_label">Eksporta parole</string>
+    <string name="settings_export_confirm_label">Apstiprināt</string>
+    <string name="settings_export_min_chars_error">Vismaz 8 rakstzīmes</string>
+    <string name="settings_export_mismatch_error">Paroles nesakrīt</string>
+    <string name="settings_export_button">Eksportēt</string>
+    <string name="settings_export_cancel">Atcelt</string>
+    <string name="settings_export_generic_error">Eksportu nevarēja izveidot</string>
+    <string name="settings_export_share_title">Kopīgot eksportu</string>
+    <string name="settings_import_dialog_title">Importēt dublējumu</string>
+    <string name="settings_import_dialog_desc">Izvēlieties dublējuma failu (Big MFA oriģinālais formāts vai saderīgs ar Chrome — formāts tiek noteikts automātiski).</string>
+    <string name="settings_import_choose_file">Izvēlēties failu</string>
+    <string name="settings_import_file_selected_desc">Fails izvēlēts — ievadiet šī dublējuma paroli.</string>
+    <string name="settings_import_password_label">Dublējuma parole</string>
+    <string name="settings_import_button_confirm">Importēt</string>
+    <string name="settings_import_read_error">Failu nevarēja nolasīt</string>
+    <string name="settings_import_generic_error">Importēšana neizdevās</string>
+    <string name="settings_import_success_toast">Importēti %1$d konti</string>
+    <string name="settings_danger_zone_title">BĪSTAMĀ ZONA</string>
+    <string name="settings_delete_all_button">🗑 Dzēst visus manus datus</string>
+    <string name="settings_delete_all_description">Izmanto jūsu tiesības uz dzēšanu (GDPR 17. pants). Dzēš visus kontus un galveno paroli. Neatgriezeniska darbība.</string>
+    <string name="settings_delete_confirm_title">Dzēst visus datus?</string>
+    <string name="settings_delete_confirm_desc">Visi jūsu konti tiks neatgriezeniski dzēsti. Šo darbību nevar atsaukt.</string>
+    <string name="settings_delete_continue">Turpināt</string>
+    <string name="settings_delete_final_title">Galīgais apstiprinājums</string>
+    <string name="settings_delete_final_desc">Vai tiešām esat pārliecināts? Pēc šī soļa atjaunošana nebūs iespējama.</string>
+    <string name="settings_delete_final_button">Dzēst neatgriezeniski</string>
+    <string name="settings_delete_cancel">Atcelt</string>
+    <string name="settings_rgpd_badge">🔒 Atbilst GDPR — 100% lokāli dati</string>
+    <string name="settings_rgpd_title">PRIVĀTUMS UN GDPR</string>
+    <string name="settings_rgpd_controller_label">Datu pārzinis</string>
+    <string name="settings_rgpd_controller_value">Patrick DJEUZONG – BigForTravel</string>
+    <string name="settings_rgpd_data_label">Vāktie dati</string>
+    <string name="settings_rgpd_data_value">Kontu nosaukumi, šifrētas TOTP atslēgas</string>
+    <string name="settings_rgpd_storage_label">Glabāšanas vieta</string>
+    <string name="settings_rgpd_storage_value">Tikai jūsu ierīce (lietotnes privātā glabātuve, izolēta ar Android smilšu kasti)</string>
+    <string name="settings_rgpd_transfer_label">Nodošana trešajām personām</string>
+    <string name="settings_rgpd_transfer_value">Pats Big MFA neveic nekādus pieprasījumus. Šifrēto eksportu var koplietot, izmantojot jūsu izvēlētu trešās puses lietotni, tikai tad, ja jūs to skaidri aktivizējat.</string>
+    <string name="settings_rgpd_thirdparty_label">Iekļauts trešās puses kods</string>
+    <string name="settings_rgpd_thirdparty_value">Bouncy Castle (MIT), CameraX (Apache-2.0), iekļauts ML Kit barcode-scanning (Apache-2.0), ZXing (Apache-2.0) — viss lokāli, bez telemetrijas</string>
+    <string name="settings_rgpd_retention_label">Glabāšanas periods</string>
+    <string name="settings_rgpd_retention_value">Līdz atinstalēšanai vai manuālai dzēšanai</string>
+    <string name="settings_rgpd_legal_label">Juridiskais pamats</string>
+    <string name="settings_rgpd_legal_value">Lietotāja piekrišana (6.1.a pants)</string>
+    <string name="settings_rgpd_access_label">Piekļuves tiesības (15. pants)</string>
+    <string name="settings_rgpd_access_value">Ar šifrēta eksporta starpniecību (iepriekš)</string>
+    <string name="settings_rgpd_erasure_label">Dzēšanas tiesības (17. pants)</string>
+    <string name="settings_rgpd_erasure_value">Ar „Dzēst visus manus datus” starpniecību</string>
+    <string name="settings_rgpd_portability_label">Datu pārnesamības tiesības (20. pants)</string>
+    <string name="settings_rgpd_portability_value">Ar šifrēta eksporta starpniecību (oriģinālais vai starpplatformu)</string>
+    <string name="settings_rgpd_dpo_label">DPO kontakti</string>
+    <string name="settings_rgpd_dpo_value">contact@bigfortravel.com</string>
+    <string name="settings_rgpd_eu_label">ES iestāde (sūdzības)</string>
+    <string name="settings_rgpd_eu_value">CNIL – www.cnil.fr (Eiropas lietotāji)</string>
+    <string name="settings_rgpd_cm_label">Kamerūnas iestāde (sūdzības)</string>
+    <string name="settings_rgpd_cm_value">ANTIC – www.antic.cm (Kamerūnas lietotāji)</string>
+    <string name="settings_rgpd_footer">Big MFA nevāc nekādus personas datus ārpus jūsu ierīces, pats neizveido nekādus tīkla savienojumus un nekopīgo nekādu informāciju ar trešajām personām. Visi dati tiek šifrēti ar AES-256-GCM-SIV pirms lokālas glabāšanas.</string>
+    <string name="settings_language_row_title">Valoda</string>
+
+    <!-- BackupImporter -->
+    <string name="backup_importer_unreadable">Fails nav nolasāms vai ir bojāts</string>
+    <string name="backup_importer_unknown_format">Neatpazīts faila formāts</string>
+    <string name="backup_importer_wrong_password">Nepareiza parole vai bojāts fails</string>
+
+    <!-- Atbalstīt -->
+    <string name="support_title">Atbalstiet Big MFA</string>
+    <string name="support_description">Big MFA brīvprātīgi izstrādā un uztur BigForTravel. Bez reklāmām, bez datu pārdošanas, bez slēptas abonēšanas. Ja lietotne jums ir noderīga, ziedojums — pat neliels — palīdz finansēt tās turpmāko attīstību.</string>
+    <string name="support_paypal_button">Ziedot ar PayPal</string>
+    <string name="support_kofi_button">Ziedot ar Ko-fi</string>
+    <string name="support_disclaimer">Ziedojumi ir brīvprātīgi un nepiešķir nekādas papildu funkcijas. Vienmēr pārbaudiet, vai norādītais saņēmējs ir BigForTravel / Patrick Djeuzong.</string>
+    <string name="support_official_site">🌐 Oficiālā vietne</string>
+    <string name="support_contact_us">✉️ Rakstiet mums</string>
+    <string name="support_contact_subject">Big MFA — Kontakti</string>
+
+    <!-- QR eksporta karuselis -->
+    <string name="export_qr_title">QR eksports (%1$d/%2$d)</string>
+    <string name="export_qr_no_accounts">Nav kontu eksportēšanai.</string>
+    <string name="export_qr_zip_button">📦 Eksportēt visus QR kodus kā ZIP</string>
+    <string name="export_qr_close_button">Aizvērt</string>
+    <string name="export_qr_zip_error">ZIP arhīvu nevarēja izveidot</string>
+    <string name="export_qr_share_title">Kopīgot QR arhīvu</string>
+
+    <!-- Ceļvedis -->
+    <string name="guide_tab_installation">Instalēšana</string>
+    <string name="guide_tab_usage">Lietošana</string>
+    <string name="guide_tab_features">Funkcijas</string>
+    <string name="guide_title">Big MFA ceļvedis</string>
+    <string name="guide_intro">Ātrs pārskats par visām pieejamajām funkcijām.</string>
+    <string name="guide_codes_title">🔑 Mani kodi</string>
+    <string name="guide_codes_body">Jūsu TOTP kodi tiek atjaunināti reāllaikā ar vizuālu atskaiti. Pieskarieties kodam, lai to kopētu (automātiski dzēsts no starpliktuves pēc 30s). HOTP kontiem katru reizi, kad nepieciešams kods, pieskarieties „Ģenerēt”. Meklējiet, pārdēvējiet vai dzēsiet kontu, izmantojot ikonas katrā rindā.</string>
+    <string name="guide_decoder_title">🔍 Dekoders</string>
+    <string name="guide_decoder_body">Ielīmējiet vai importējiet noslēpumu no QR koda attēla, lai nekavējoties iegūtu atbilstošo TOTP kodu, to nepievienojot glabātuvei. Noderīgi vienreizējai pārbaudei.</string>
+    <string name="guide_key_title">🔐 Atslēga</string>
+    <string name="guide_key_body">Ģenerē nejaušu slepeno atslēgu kopā ar atbilstošo QR kodu, lai iestatītu jaunu kontu citā pakalpojumā, kas lūdz izveidot savu noslēpumu.</string>
+    <string name="guide_add_title">➕ Pievienot kontu</string>
+    <string name="guide_add_body">Skenējiet pakalpojuma sniegto QR kodu vai ievadiet noslēpumu manuāli. Papildu opcijas ļauj pielāgot algoritmu, ciparu skaitu, periodu vai pārslēgties uz HOTP.</string>
+    <string name="guide_biometric_title">👆 Biometriskā atbloķēšana</string>
+    <string name="guide_biometric_body">Aktivizējiet atbloķēšanu ar pirkstu nospiedumu iestatījumos. Jūsu galvenā parole vienmēr paliek pieejama kā rezerve — nekad netiek aizstāta, tikai papildināta.</string>
+    <string name="guide_backup_title">💾 Dublēšana un atjaunošana</string>
+    <string name="guide_backup_body">Divi eksporta formāti: maksimāla drošība (oriģinālais Android) vai starpplatformu saderīgs (importējams Chrome paplašinājumā). QR eksports ģenerē QR kodu karuseli, atsevišķi vai ZIP arhīvā. Atjaunošana automātiski nosaka faila formātu.</string>
+    <string name="guide_security_title">🛡 Drošība</string>
+    <string name="guide_security_body">Visi dati paliek tikai jūsu ierīcē, šifrēti ar AES-256-GCM-SIV un atslēgu, kas iegūta, izmantojot Argon2id. Lietotne nekad pati neizveido tīkla savienojumu.</string>
+    <string name="guide_language_title">🌐 Valoda</string>
+    <string name="guide_language_body">Izvēlieties „Automātiski”, lai sekotu jūsu tālruņa valodai, vai izvēlieties konkrētu valodu pieteikšanās ekrānu kājenē.</string>
+    <string name="guide_install_step1_title">1. Izveidojiet savu glabātuvi</string>
+    <string name="guide_install_step1_body">Pirmajā palaišanas reizē izvēlieties „Izveidot glabātuvi”, lai sāktu ar tukšu glabātuvi, vai „Atjaunot esošu dublējumu”, ja jau esat izmantojis Big MFA pārlūkā Chrome vai citā Android ierīcē.</string>
+    <string name="guide_install_step2_title">2. Izvēlieties spēcīgu galveno paroli</string>
+    <string name="guide_install_step2_body">Minimums 12 rakstzīmes, bet labāk mērķējiet uz 16+ rakstzīmju paroles frāzi (piemēram, vairāki apvienoti vārdi). Tā ir vienīgā atslēga, kas aizsargā visus jūsu kontus.</string>
+    <string name="guide_install_step3_title">3. Izprotiet neatgriezeniskumu</string>
+    <string name="guide_install_step3_body">Big MFA nekur neuzglabā jūsu galveno paroli, ne parastā tekstā, ne šifrētu. Ja to aizmirsīsiet un jums nebūs ārējā dublējuma, jūsu konti kļūs pastāvīgi nepieejami. Pierakstiet to uzticamā paroļu pārvaldniekā.</string>
+    <string name="guide_install_step4_title">4. Aktivizējiet biometriju (neobligāti)</string>
+    <string name="guide_install_step4_body">Iestatījumos aktivizējiet atbloķēšanu ar pirkstu nospiedumu ātrākai ikdienas piekļuvei. Jūsu galvenā parole vienmēr paliek pieejama kā rezerve.</string>
+    <string name="guide_usage_step1_title">1. Pievienojiet savu pirmo kontu</string>
+    <string name="guide_usage_step1_body">No „+ Pievienot” skenējiet pakalpojuma rādīto QR kodu (ātrākā metode) vai manuāli ievadiet nosaukumu, izdevēju un Base32 noslēpumu, ja nevarat skenēt.</string>
+    <string name="guide_usage_step2_title">2. Izmantojiet kodu ik dienu</string>
+    <string name="guide_usage_step2_body">Sadaļā „Mani kodi” pieskarieties tieši TOTP kodam, lai to kopētu (automātiski dzēsts no starpliktuves pēc 30 sekundēm). HOTP kontam katru reizi, kad tas nepieciešams, pieskarieties „Ģenerēt” — skaitītājs vienmēr virzās uz priekšu, nekad atpakaļ.</string>
+    <string name="guide_usage_step3_title">3. Pārvaldiet savus kontus</string>
+    <string name="guide_usage_step3_body">Izmantojiet meklēšanas joslu, lai ātri atrastu kontu no daudziem. Zīmuļa ikona ļauj pārdēvēt, atkritnes ikona ļauj dzēst (ar dubultu apstiprinājumu, neatgriezeniska darbība).</string>
+    <string name="guide_usage_step4_title">4. Regulāri veidojiet dublējumus</string>
+    <string name="guide_usage_step4_body">Iestatījumos izvēlieties „Eksports ar maksimālu drošību” tikai Android dublējumam vai „Starpplatformu saderīgs eksports”, ja izmantojat Big MFA arī pārlūkā Chrome. QR eksports (karuselis vai ZIP) ir noderīgs pārejai uz citu standarta TOTP saderīgu pārvaldnieku.</string>
+    <string name="guide_usage_step5_title">5. Mainiet savu galveno paroli</string>
+    <string name="guide_usage_step5_body">Iestatījumos ievadiet pašreizējo paroli, pēc tam jauno. Jūsu konti un biometrija (ja aktivizēta) paliek neskarti — mainās tikai parole.</string>
+    <string name="nav_accounts">Mani kodi</string>
+    <string name="nav_decoder">Dekoders</string>
+    <string name="nav_key">Atslēga</string>
+    <string name="nav_add">+ Pievienot</string>
+    <string name="nav_support">Atbalstīt</string>
+    <string name="nav_settings">Iestatījumi</string>
+    <string name="nav_guide">Ceļvedis</string>
+    <string name="nav_lock_content_description">Bloķēt glabātuvi</string>
+</resources>

@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Big MFA</string>
+
+    <!-- 解鎖畫面 -->
+    <string name="unlock_title">Big MFA</string>
+    <string name="unlock_subtitle">請輸入您的主密碼</string>
+    <string name="unlock_password_label">主密碼</string>
+    <string name="unlock_button">解鎖</string>
+    <string name="unlock_reset_vault">重設保險庫</string>
+    <string name="unlock_biometric_content_description">使用指紋解鎖</string>
+
+    <!-- 共用頁尾 -->
+    <string name="footer_support">❤️ 支持</string>
+    <string name="footer_contact">✉️ 聯絡我們</string>
+    <string name="footer_language_auto">🌐 自動 — 瀏覽器語言</string>
+    <string name="footer_language_placeholder">語言選擇 — 即將推出</string>
+    <string name="footer_gplv3">免費且開源（GPLv3 授權）。</string>
+    <string name="language_dialog_title">選擇語言</string>
+    <string name="language_option_auto">🌐 自動（系統語言）</string>
+
+    <!-- 我的驗證碼 -->
+    <string name="accounts_empty_state">尚無帳戶。\n請使用「+ 新增」建立一個。</string>
+    <string name="accounts_search_placeholder">搜尋帳戶</string>
+    <string name="accounts_no_results">找不到「%1$s」的結果</string>
+    <string name="accounts_rename_title">重新命名帳戶</string>
+    <string name="accounts_name_label">帳戶名稱</string>
+    <string name="accounts_issuer_label">發行方（選填）</string>
+    <string name="accounts_name_required_error">帳戶名稱為必填項目</string>
+    <string name="accounts_save">儲存</string>
+    <string name="accounts_cancel">取消</string>
+    <string name="accounts_rename_content_description">重新命名 %1$s</string>
+    <string name="accounts_delete_content_description">刪除 %1$s</string>
+    <string name="accounts_delete_confirm_title">刪除「%1$s」？</string>
+    <string name="accounts_delete_irreversible">此操作無法復原。</string>
+    <string name="accounts_delete_button">刪除</string>
+    <string name="accounts_hotp_label">HOTP</string>
+    <string name="accounts_unreadable">無法讀取</string>
+    <string name="accounts_copy_content_description">複製</string>
+    <string name="accounts_generate_button">產生</string>
+
+    <!-- + 新增 -->
+    <string name="add_account_title">新增帳戶</string>
+    <string name="add_account_scan_qr">📷 掃描 QR 碼</string>
+    <string name="add_account_qr_invalid">無效或無法識別的 QR 碼</string>
+    <string name="add_account_cancel_scan">取消掃描</string>
+    <string name="add_account_name_label">帳戶名稱</string>
+    <string name="add_account_issuer_label">發行方（選填）</string>
+    <string name="add_account_secret_label">金鑰（Base32）</string>
+    <string name="add_account_advanced_options">⚙ 進階選項（演算法、位數、週期）</string>
+    <string name="add_account_type_label">類型</string>
+    <string name="add_account_type_totp">TOTP（基於時間 — 標準）</string>
+    <string name="add_account_type_hotp">HOTP（基於計數器）</string>
+    <string name="add_account_algorithm_label">演算法</string>
+    <string name="add_account_algorithm_sha1">SHA-1（預設，通用相容性）</string>
+    <string name="add_account_digits_label">位數</string>
+    <string name="add_account_digits_default">6 位（預設）</string>
+    <string name="add_account_digits_n">%1$d 位</string>
+    <string name="add_account_period_label">週期（秒）</string>
+    <string name="add_account_save">儲存</string>
+    <string name="add_account_name_required">帳戶名稱為必填項目</string>
+    <string name="add_account_secret_required">金鑰為必填項目</string>
+    <string name="add_account_secret_invalid">金鑰不是有效的 Base32</string>
+    <string name="add_account_save_error">無法儲存帳戶</string>
+    <string name="add_account_camera_permission_needed">掃描 QR 碼需要相機權限。</string>
+    <string name="add_account_grant_camera">授予相機權限</string>
+
+    <!-- 金鑰 -->
+    <string name="generate_key_description">產生一個隨機的 Base32 金鑰（160 位元），與 Google Authenticator、Aegis、Authy 等相容</string>
+    <string name="generate_key_generate">產生</string>
+    <string name="generate_key_copy">複製</string>
+    <string name="generate_key_copied">金鑰已複製</string>
+    <string name="generate_key_show_qr">顯示 QR 碼</string>
+    <string name="generate_key_qr_title">QR 碼</string>
+    <string name="generate_key_close">關閉</string>
+
+    <!-- 解碼器 -->
+    <string name="decoder_import_qr">從 QR 碼（圖片）匯入</string>
+    <string name="decoder_no_qr_found">在此圖片中未偵測到 QR 碼</string>
+    <string name="decoder_secret_label">MFA / TOTP 金鑰（BASE32）</string>
+    <string name="decoder_code_placeholder">— — — — — —</string>
+    <string name="decoder_generate_code">產生驗證碼</string>
+    <string name="decoder_copy_content_description">複製驗證碼</string>
+    <string name="decoder_code_copied">驗證碼已複製 — 將於 30 秒後清除</string>
+    <string name="decoder_secret_empty_error">請輸入或匯入金鑰</string>
+    <string name="decoder_secret_invalid_error">無效的金鑰</string>
+
+    <!-- 建立／還原保險庫 -->
+    <string name="create_vault_password_too_short">密碼必須至少 12 個字元</string>
+    <string name="create_vault_passwords_mismatch">密碼不相符</string>
+    <string name="create_vault_creation_error">無法建立保險庫</string>
+    <string name="restore_vault_new_password_too_short">新密碼必須至少 12 個字元</string>
+    <string name="restore_vault_new_passwords_mismatch">新密碼不相符</string>
+    <string name="restore_vault_generic_error">無法還原備份</string>
+    <string name="create_vault_title">建立您的 Big MFA 保險庫</string>
+    <string name="create_vault_min_chars">至少 12 個字元</string>
+    <string name="create_vault_password_label">密碼</string>
+    <string name="create_vault_confirm_label">確認密碼</string>
+    <string name="create_vault_create_button">建立保險庫</string>
+    <string name="create_vault_restore_button">📥 還原現有備份</string>
+    <string name="restore_backup_title">還原備份</string>
+    <string name="restore_backup_description">Big MFA 原生格式或 Chrome 相容格式 — 自動偵測。</string>
+    <string name="restore_backup_choose_file">選擇備份檔案</string>
+    <string name="restore_backup_file_selected">✅ 已選擇檔案</string>
+    <string name="restore_backup_backup_password_label">備份密碼</string>
+    <string name="restore_backup_new_password_title">新的主密碼</string>
+    <string name="restore_backup_new_password_hint">與備份密碼不同 — 至少 12 個字元。</string>
+    <string name="restore_backup_new_password_label">新的主密碼</string>
+    <string name="restore_backup_confirm_new_password_label">確認新密碼</string>
+    <string name="restore_backup_restore_button">還原</string>
+    <string name="restore_backup_cancel">取消</string>
+    <string name="restore_backup_file_read_error">無法讀取檔案</string>
+
+    <!-- 解鎖錯誤 -->
+    <string name="unlock_error_wrong_password">密碼錯誤</string>
+    <string name="unlock_error_corrupted_vault">保險庫資料已損毀或無法讀取</string>
+    <string name="unlock_error_no_vault">找不到保險庫</string>
+    <string name="unlock_error_too_many_attempts">嘗試次數過多 — 請於 %1$d 秒後再試</string>
+    <string name="unlock_error_biometric_unavailable">生物辨識無法使用 — 請使用您的密碼</string>
+    <string name="unlock_error_biometric_failed">生物辨識驗證失敗</string>
+
+    <!-- 更改主密碼 -->
+    <string name="change_password_title">更改主密碼</string>
+    <string name="change_password_current_label">目前密碼</string>
+    <string name="change_password_new_label">新密碼</string>
+    <string name="change_password_confirm_label">確認</string>
+    <string name="change_password_button">更改密碼</string>
+    <string name="change_password_new_too_short">新密碼必須至少 12 個字元</string>
+    <string name="change_password_new_mismatch">新密碼不相符</string>
+    <string name="change_password_wrong_current">目前密碼不正確</string>
+    <string name="change_password_generic_error">無法更改密碼</string>
+    <string name="change_password_success_toast">密碼已成功更改</string>
+    <string name="change_password_cancel">取消</string>
+
+    <!-- 生物辨識 -->
+    <string name="biometric_setup_title">啟用生物辨識</string>
+    <string name="biometric_hardware_insufficient">您的裝置沒有足夠的硬體支援來安全啟用生物辨識。</string>
+    <string name="biometric_activate_prompt">啟用指紋解鎖</string>
+    <string name="biometric_password_confirmed_hint">密碼已確認 — 請將手指放在感測器上。</string>
+    <string name="biometric_continue_button">以指紋繼續</string>
+    <string name="biometric_confirm_password_label">請確認您的主密碼</string>
+    <string name="biometric_confirm_button">確認</string>
+    <string name="biometric_wrong_password">密碼錯誤</string>
+    <string name="biometric_key_creation_error">無法建立安全金鑰</string>
+    <string name="biometric_cipher_error">無法準備加密</string>
+    <string name="biometric_enable_error">無法啟用生物辨識</string>
+    <string name="biometric_auth_failed">生物辨識驗證失敗</string>
+    <string name="biometric_activated_toast">生物辨識已啟用</string>
+    <string name="biometric_deactivated_toast">生物辨識已停用</string>
+    <string name="biometric_cancel">取消</string>
+    <string name="biometric_row_title">生物辨識解鎖</string>
+    <string name="biometric_row_enabled">已啟用</string>
+    <string name="biometric_row_disabled">已停用</string>
+
+    <!-- 設定 -->
+    <string name="settings_title">設定</string>
+    <string name="settings_security_status_title">安全狀態</string>
+    <string name="settings_masvs_badge">🛡 OWASP MASVS — 強化等級</string>
+    <string name="settings_encryption_label">加密</string>
+    <string name="settings_kdf_label">KDF</string>
+    <string name="settings_inactivity_label">閒置時間</string>
+    <string name="settings_inactivity_value">2 分鐘</string>
+    <string name="settings_bruteforce_label">暴力破解防護</string>
+    <string name="settings_bruteforce_value">5 次嘗試 + HMAC</string>
+    <string name="settings_lockout_label">鎖定</string>
+    <string name="settings_lockout_value">指數型</string>
+    <string name="settings_salt_label">鹽值</string>
+    <string name="settings_salt_value">256 位元</string>
+    <string name="settings_integrity_label">保險庫完整性</string>
+    <string name="settings_integrity_value">HMAC-SHA256</string>
+    <string name="settings_hardware_label">硬體錨定</string>
+    <string name="settings_hardware_value">最低 TEE，若可用則使用 StrongBox</string>
+    <string name="settings_bruteforce_note">ℹ️ 暴力破解防護可抵禦應用程式內的重複嘗試。它無法取代強密碼：能直接存取裝置上保險庫檔案的人，可能會繞過此限制嘗試離線解密。請使用 16 位元以上的密碼短語。</string>
+    <string name="settings_change_password_button">🔑 更改主密碼</string>
+    <string name="settings_backup_title">備份</string>
+    <string name="settings_export_native_title">🛡️ 最高安全性匯出</string>
+    <string name="settings_export_native_subtitle">Argon2id + AES-256-GCM-SIV</string>
+    <string name="settings_export_chrome_title">🌐 跨平台相容匯出</string>
+    <string name="settings_export_chrome_subtitle">PBKDF2 + AES-256-GCM — 可匯入 Big MFA Chrome</string>
+    <string name="settings_export_qr_title">📷 QR 匯出（輪播 + ZIP）</string>
+    <string name="settings_export_qr_subtitle">每個帳戶一個 QR 碼，供瀏覽或下載</string>
+    <string name="settings_import_button">📥 匯入／還原</string>
+    <string name="settings_export_footer">匯出的檔案已加密 — 即使檔案被分享，金鑰仍受保護。</string>
+    <string name="settings_export_native_dialog_title">最高安全性匯出</string>
+    <string name="settings_export_chrome_dialog_title">跨平台相容匯出</string>
+    <string name="settings_export_native_dialog_desc">🛡️ Argon2id + AES-256-GCM-SIV — 此密碼用於保護匯出的檔案，與您的主密碼不同。</string>
+    <string name="settings_export_chrome_dialog_desc">🌐 PBKDF2 + AES-256-GCM — 與 Big MFA Chrome 擴充功能相容的格式。此密碼與您的主密碼不同。</string>
+    <string name="settings_export_password_label">匯出密碼</string>
+    <string name="settings_export_confirm_label">確認</string>
+    <string name="settings_export_min_chars_error">至少 8 個字元</string>
+    <string name="settings_export_mismatch_error">密碼不相符</string>
+    <string name="settings_export_button">匯出</string>
+    <string name="settings_export_cancel">取消</string>
+    <string name="settings_export_generic_error">無法建立匯出</string>
+    <string name="settings_export_share_title">分享匯出檔案</string>
+    <string name="settings_import_dialog_title">匯入備份</string>
+    <string name="settings_import_dialog_desc">請選擇一個備份檔案（Big MFA 原生格式或 Chrome 相容格式 — 格式會自動偵測）。</string>
+    <string name="settings_import_choose_file">選擇檔案</string>
+    <string name="settings_import_file_selected_desc">已選擇檔案 — 請輸入此備份的密碼。</string>
+    <string name="settings_import_password_label">備份密碼</string>
+    <string name="settings_import_button_confirm">匯入</string>
+    <string name="settings_import_read_error">無法讀取檔案</string>
+    <string name="settings_import_generic_error">匯入失敗</string>
+    <string name="settings_import_success_toast">已匯入 %1$d 個帳戶</string>
+    <string name="settings_danger_zone_title">危險區域</string>
+    <string name="settings_delete_all_button">🗑 刪除我的所有資料</string>
+    <string name="settings_delete_all_description">行使您的刪除權（GDPR 第 17 條）。刪除所有帳戶及主密碼。此操作無法復原。</string>
+    <string name="settings_delete_confirm_title">刪除所有資料？</string>
+    <string name="settings_delete_confirm_desc">您所有的帳戶都將被永久刪除。此操作無法復原。</string>
+    <string name="settings_delete_continue">繼續</string>
+    <string name="settings_delete_final_title">最終確認</string>
+    <string name="settings_delete_final_desc">您真的確定嗎？此步驟完成後將無法復原。</string>
+    <string name="settings_delete_final_button">永久刪除</string>
+    <string name="settings_delete_cancel">取消</string>
+    <string name="settings_rgpd_badge">🔒 符合 GDPR — 100% 本機資料</string>
+    <string name="settings_rgpd_title">隱私權與 GDPR</string>
+    <string name="settings_rgpd_controller_label">資料控管者</string>
+    <string name="settings_rgpd_controller_value">Patrick DJEUZONG – BigForTravel</string>
+    <string name="settings_rgpd_data_label">收集的資料</string>
+    <string name="settings_rgpd_data_value">帳戶名稱、加密的 TOTP 金鑰</string>
+    <string name="settings_rgpd_storage_label">儲存位置</string>
+    <string name="settings_rgpd_storage_value">僅限您的裝置（應用程式專屬私人儲存空間，由 Android 沙盒隔離）</string>
+    <string name="settings_rgpd_transfer_label">向第三方傳輸</string>
+    <string name="settings_rgpd_transfer_value">Big MFA 本身不會發出任何請求。加密的匯出檔案僅在您明確啟用時，才能透過您選擇的第三方應用程式分享。</string>
+    <string name="settings_rgpd_thirdparty_label">內建的第三方程式碼</string>
+    <string name="settings_rgpd_thirdparty_value">Bouncy Castle (MIT)、CameraX (Apache-2.0)、內建 ML Kit barcode-scanning (Apache-2.0)、ZXing (Apache-2.0) — 全部為本機執行，無遙測資料</string>
+    <string name="settings_rgpd_retention_label">保留期限</string>
+    <string name="settings_rgpd_retention_value">直到解除安裝或手動刪除</string>
+    <string name="settings_rgpd_legal_label">法律依據</string>
+    <string name="settings_rgpd_legal_value">使用者同意（第 6.1.a 條）</string>
+    <string name="settings_rgpd_access_label">存取權（第 15 條）</string>
+    <string name="settings_rgpd_access_value">透過加密匯出（如上）</string>
+    <string name="settings_rgpd_erasure_label">刪除權（第 17 條）</string>
+    <string name="settings_rgpd_erasure_value">透過「刪除我的所有資料」</string>
+    <string name="settings_rgpd_portability_label">資料可攜權（第 20 條）</string>
+    <string name="settings_rgpd_portability_value">透過加密匯出（原生或跨平台）</string>
+    <string name="settings_rgpd_dpo_label">資料保護長聯絡方式</string>
+    <string name="settings_rgpd_dpo_value">contact@bigfortravel.com</string>
+    <string name="settings_rgpd_eu_label">歐盟主管機關（申訴）</string>
+    <string name="settings_rgpd_eu_value">CNIL – www.cnil.fr（歐洲使用者）</string>
+    <string name="settings_rgpd_cm_label">喀麥隆主管機關（申訴）</string>
+    <string name="settings_rgpd_cm_value">ANTIC – www.antic.cm（喀麥隆使用者）</string>
+    <string name="settings_rgpd_footer">Big MFA 不會收集您裝置以外的任何個人資料，不會自行發起任何網路連線，也不會與第三方分享任何資訊。所有資料在本機儲存前皆使用 AES-256-GCM-SIV 加密。</string>
+    <string name="settings_language_row_title">語言</string>
+
+    <!-- BackupImporter -->
+    <string name="backup_importer_unreadable">檔案無法讀取或已損毀</string>
+    <string name="backup_importer_unknown_format">無法辨識的檔案格式</string>
+    <string name="backup_importer_wrong_password">密碼錯誤或檔案已損毀</string>
+
+    <!-- 支持 -->
+    <string name="support_title">支持 Big MFA</string>
+    <string name="support_description">Big MFA 由 BigForTravel 志願開發與維護。無廣告、不出售資料、無隱藏訂閱。如果這款應用程式對您有幫助，即使是小額捐款也能協助資助其持續開發。</string>
+    <string name="support_paypal_button">透過 PayPal 捐款</string>
+    <string name="support_kofi_button">透過 Ko-fi 捐款</string>
+    <string name="support_disclaimer">捐款為自願性質，不會提供任何額外功能。請務必核實顯示的收款人為 BigForTravel / Patrick Djeuzong。</string>
+    <string name="support_official_site">🌐 官方網站</string>
+    <string name="support_contact_us">✉️ 寫信給我們</string>
+    <string name="support_contact_subject">Big MFA — 聯絡我們</string>
+
+    <!-- QR 匯出輪播 -->
+    <string name="export_qr_title">QR 匯出（%1$d/%2$d）</string>
+    <string name="export_qr_no_accounts">沒有可匯出的帳戶。</string>
+    <string name="export_qr_zip_button">📦 將所有 QR 碼匯出為 ZIP</string>
+    <string name="export_qr_close_button">關閉</string>
+    <string name="export_qr_zip_error">無法建立 ZIP 壓縮檔</string>
+    <string name="export_qr_share_title">分享 QR 壓縮檔</string>
+
+    <!-- 指南 -->
+    <string name="guide_tab_installation">安裝</string>
+    <string name="guide_tab_usage">使用方式</string>
+    <string name="guide_tab_features">功能</string>
+    <string name="guide_title">Big MFA 指南</string>
+    <string name="guide_intro">所有可用功能的快速概覽。</string>
+    <string name="guide_codes_title">🔑 我的驗證碼</string>
+    <string name="guide_codes_body">您的 TOTP 驗證碼會即時更新，並附有視覺化倒數計時。點擊驗證碼即可複製（30 秒後將自動從剪貼簿清除）。對於 HOTP 帳戶，每次需要驗證碼時請點擊「產生」。使用每列的圖示可以搜尋、重新命名或刪除帳戶。</string>
+    <string name="guide_decoder_title">🔍 解碼器</string>
+    <string name="guide_decoder_body">從 QR 碼圖片貼上或匯入金鑰，即可立即取得對應的 TOTP 驗證碼，而無需將其加入保險庫。適用於一次性驗證。</string>
+    <string name="guide_key_title">🔐 金鑰</string>
+    <string name="guide_key_body">產生一個隨機金鑰及其對應的 QR 碼，用於在要求您建立自己金鑰的其他服務中設定新帳戶。</string>
+    <string name="guide_add_title">➕ 新增帳戶</string>
+    <string name="guide_add_body">掃描服務提供的 QR 碼，或手動輸入金鑰。進階選項可讓您調整演算法、位數、週期，或切換為 HOTP。</string>
+    <string name="guide_biometric_title">👆 生物辨識解鎖</string>
+    <string name="guide_biometric_body">從設定中啟用指紋解鎖。您的主密碼將始終作為備援方式保留 — 永遠不會被取代，只會被補充。</string>
+    <string name="guide_backup_title">💾 備份與還原</string>
+    <string name="guide_backup_body">兩種匯出格式：最高安全性（Android 原生）或跨平台相容（可匯入 Chrome 擴充功能）。QR 匯出會產生一個 QR 碼輪播，可單獨匯出或打包成 ZIP 壓縮檔。還原時會自動偵測檔案格式。</string>
+    <string name="guide_security_title">🛡 安全性</string>
+    <string name="guide_security_body">所有資料僅保留在您的裝置上，使用 AES-256-GCM-SIV 加密，金鑰則透過 Argon2id 衍生。此應用程式絕不會自行發起任何網路連線。</string>
+    <string name="guide_language_title">🌐 語言</string>
+    <string name="guide_language_body">選擇「自動」以跟隨您手機的語言，或在登入畫面的頁尾選擇特定語言。</string>
+    <string name="guide_install_step1_title">1. 建立您的保險庫</string>
+    <string name="guide_install_step1_body">首次啟動時，選擇「建立保險庫」以空保險庫開始，或者如果您已在 Chrome 或其他 Android 裝置上使用過 Big MFA，選擇「還原現有備份」。</string>
+    <string name="guide_install_step2_title">2. 選擇一個強大的主密碼</string>
+    <string name="guide_install_step2_body">最少 12 個字元，但更建議使用 16 個字元以上的密碼短語（例如多個詞彙組合而成）。這是保護您所有帳戶的唯一金鑰。</string>
+    <string name="guide_install_step3_title">3. 了解其不可復原性</string>
+    <string name="guide_install_step3_body">Big MFA 不會以明文或加密形式在任何地方儲存您的主密碼。如果您忘記了密碼且沒有外部備份，您的帳戶將永久無法存取。請將其記錄在可靠的密碼管理器中。</string>
+    <string name="guide_install_step4_title">4. 啟用生物辨識（選填）</string>
+    <string name="guide_install_step4_body">在設定中啟用指紋解鎖，以便更快地進行日常存取。您的主密碼將始終作為備援方式保留。</string>
+    <string name="guide_usage_step1_title">1. 新增您的第一個帳戶</string>
+    <string name="guide_usage_step1_body">在「+ 新增」中，掃描服務顯示的 QR 碼（最快的方法），或者如果無法掃描，請手動輸入名稱、發行方及 Base32 金鑰。</string>
+    <string name="guide_usage_step2_title">2. 每天使用驗證碼</string>
+    <string name="guide_usage_step2_body">在「我的驗證碼」中，直接點擊 TOTP 驗證碼即可複製（30 秒後將自動從剪貼簿清除）。對於 HOTP 帳戶，每次需要時點擊「產生」— 計數器只會前進，絕不會倒退。</string>
+    <string name="guide_usage_step3_title">3. 管理您的帳戶</string>
+    <string name="guide_usage_step3_body">使用搜尋列在眾多帳戶中快速找到所需的帳戶。鉛筆圖示可用於重新命名，垃圾桶圖示可用於刪除（需二次確認，此操作無法復原）。</string>
+    <string name="guide_usage_step4_title">4. 定期備份</string>
+    <string name="guide_usage_step4_body">在設定中，選擇「最高安全性匯出」以建立僅限 Android 的備份，或者如果您在 Chrome 中也使用 Big MFA，選擇「跨平台相容匯出」。QR 匯出（輪播或 ZIP）適用於遷移至其他標準 TOTP 相容的管理器。</string>
+    <string name="guide_usage_step5_title">5. 更改您的主密碼</string>
+    <string name="guide_usage_step5_body">在設定中輸入目前密碼，然後輸入新密碼。您的帳戶及生物辨識設定（如已啟用）將保持不變 — 僅密碼會變更。</string>
+    <string name="nav_accounts">我的驗證碼</string>
+    <string name="nav_decoder">解碼器</string>
+    <string name="nav_key">金鑰</string>
+    <string name="nav_add">+ 新增</string>
+    <string name="nav_support">支持</string>
+    <string name="nav_settings">設定</string>
+    <string name="nav_guide">指南</string>
+    <string name="nav_lock_content_description">鎖定保險庫</string>
+</resources>

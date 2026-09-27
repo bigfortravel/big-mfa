@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Big MFA</string>
+
+    <!-- Obrazovka odomknutia -->
+    <string name="unlock_title">Big MFA</string>
+    <string name="unlock_subtitle">Zadajte svoje hlavné heslo</string>
+    <string name="unlock_password_label">Hlavné heslo</string>
+    <string name="unlock_button">Odomknúť</string>
+    <string name="unlock_reset_vault">Obnoviť trezor</string>
+    <string name="unlock_biometric_content_description">Odomknúť odtlačkom prsta</string>
+
+    <!-- Zdieľaná päta -->
+    <string name="footer_support">❤️ Podporiť</string>
+    <string name="footer_contact">✉️ Kontaktujte nás</string>
+    <string name="footer_language_auto">🌐 Automaticky — jazyk prehliadača</string>
+    <string name="footer_language_placeholder">Výber jazyka — čoskoro dostupné</string>
+    <string name="footer_gplv3">Bezplatné a open source (licencia GPLv3).</string>
+    <string name="language_dialog_title">Vybrať jazyk</string>
+    <string name="language_option_auto">🌐 Automaticky (jazyk systému)</string>
+
+    <!-- Moje kódy -->
+    <string name="accounts_empty_state">Zatiaľ žiadne účty.\nPoužite „+ Pridať“ na vytvorenie nového.</string>
+    <string name="accounts_search_placeholder">Hľadať účet</string>
+    <string name="accounts_no_results">Žiadne výsledky pre „%1$s“</string>
+    <string name="accounts_rename_title">Premenovať účet</string>
+    <string name="accounts_name_label">Názov účtu</string>
+    <string name="accounts_issuer_label">Vydavateľ (voliteľné)</string>
+    <string name="accounts_name_required_error">Názov účtu je povinný</string>
+    <string name="accounts_save">Uložiť</string>
+    <string name="accounts_cancel">Zrušiť</string>
+    <string name="accounts_rename_content_description">Premenovať %1$s</string>
+    <string name="accounts_delete_content_description">Odstrániť %1$s</string>
+    <string name="accounts_delete_confirm_title">Odstrániť „%1$s“?</string>
+    <string name="accounts_delete_irreversible">Táto akcia je nezvratná.</string>
+    <string name="accounts_delete_button">Odstrániť</string>
+    <string name="accounts_hotp_label">HOTP</string>
+    <string name="accounts_unreadable">Nečitateľné</string>
+    <string name="accounts_copy_content_description">Kopírovať</string>
+    <string name="accounts_generate_button">Generovať</string>
+
+    <!-- + Pridať -->
+    <string name="add_account_title">Pridať účet</string>
+    <string name="add_account_scan_qr">📷 Naskenovať QR kód</string>
+    <string name="add_account_qr_invalid">Neplatný alebo nerozpoznaný QR kód</string>
+    <string name="add_account_cancel_scan">Zrušiť skenovanie</string>
+    <string name="add_account_name_label">Názov účtu</string>
+    <string name="add_account_issuer_label">Vydavateľ (voliteľné)</string>
+    <string name="add_account_secret_label">Tajný kľúč (Base32)</string>
+    <string name="add_account_advanced_options">⚙ Pokročilé možnosti (algoritmus, číslice, perióda)</string>
+    <string name="add_account_type_label">TYP</string>
+    <string name="add_account_type_totp">TOTP (na základe času — štandardné)</string>
+    <string name="add_account_type_hotp">HOTP (na základe počítadla)</string>
+    <string name="add_account_algorithm_label">ALGORITMUS</string>
+    <string name="add_account_algorithm_sha1">SHA-1 (predvolené, univerzálna kompatibilita)</string>
+    <string name="add_account_digits_label">POČET ČÍSLIC</string>
+    <string name="add_account_digits_default">6 číslic (predvolené)</string>
+    <string name="add_account_digits_n">%1$d číslic</string>
+    <string name="add_account_period_label">PERIÓDA (SEKUNDY)</string>
+    <string name="add_account_save">Uložiť</string>
+    <string name="add_account_name_required">Názov účtu je povinný</string>
+    <string name="add_account_secret_required">Tajný kľúč je povinný</string>
+    <string name="add_account_secret_invalid">Tajný kľúč nie je platný Base32</string>
+    <string name="add_account_save_error">Účet sa nepodarilo uložiť</string>
+    <string name="add_account_camera_permission_needed">Na naskenovanie QR kódu je potrebný prístup k fotoaparátu.</string>
+    <string name="add_account_grant_camera">Povoliť prístup k fotoaparátu</string>
+
+    <!-- Kľúč -->
+    <string name="generate_key_description">Vygeneruje náhodný tajný kľúč Base32 (160 bitov) kompatibilný s Google Authenticator, Aegis, Authy…</string>
+    <string name="generate_key_generate">Generovať</string>
+    <string name="generate_key_copy">Kopírovať</string>
+    <string name="generate_key_copied">Kľúč skopírovaný</string>
+    <string name="generate_key_show_qr">Zobraziť QR</string>
+    <string name="generate_key_qr_title">QR kód</string>
+    <string name="generate_key_close">Zavrieť</string>
+
+    <!-- Dekodér -->
+    <string name="decoder_import_qr">Importovať z QR kódu (obrázok)</string>
+    <string name="decoder_no_qr_found">V tomto obrázku nebol nájdený žiadny QR kód</string>
+    <string name="decoder_secret_label">KĽÚČ MFA / TOTP (BASE32)</string>
+    <string name="decoder_code_placeholder">— — — — — —</string>
+    <string name="decoder_generate_code">Generovať kód</string>
+    <string name="decoder_copy_content_description">Kopírovať kód</string>
+    <string name="decoder_code_copied">Kód skopírovaný — vymaže sa o 30s</string>
+    <string name="decoder_secret_empty_error">Zadajte alebo importujte kľúč</string>
+    <string name="decoder_secret_invalid_error">Neplatný kľúč</string>
+
+    <!-- Vytvorenie/Obnovenie trezoru -->
+    <string name="create_vault_password_too_short">Heslo musí obsahovať aspoň 12 znakov</string>
+    <string name="create_vault_passwords_mismatch">Heslá sa nezhodujú</string>
+    <string name="create_vault_creation_error">Trezor sa nepodarilo vytvoriť</string>
+    <string name="restore_vault_new_password_too_short">Nové heslo musí obsahovať aspoň 12 znakov</string>
+    <string name="restore_vault_new_passwords_mismatch">Nové heslá sa nezhodujú</string>
+    <string name="restore_vault_generic_error">Zálohu sa nepodarilo obnoviť</string>
+    <string name="create_vault_title">Vytvorte si trezor Big MFA</string>
+    <string name="create_vault_min_chars">Minimálne 12 znakov</string>
+    <string name="create_vault_password_label">Heslo</string>
+    <string name="create_vault_confirm_label">Potvrdiť heslo</string>
+    <string name="create_vault_create_button">Vytvoriť trezor</string>
+    <string name="create_vault_restore_button">📥 Obnoviť existujúcu zálohu</string>
+    <string name="restore_backup_title">Obnoviť zálohu</string>
+    <string name="restore_backup_description">Natívny formát Big MFA alebo kompatibilný s Chrome — automaticky rozpoznané.</string>
+    <string name="restore_backup_choose_file">Vybrať súbor zálohy</string>
+    <string name="restore_backup_file_selected">✅ Súbor vybraný</string>
+    <string name="restore_backup_backup_password_label">Heslo zálohy</string>
+    <string name="restore_backup_new_password_title">NOVÉ HLAVNÉ HESLO</string>
+    <string name="restore_backup_new_password_hint">Odlišné od hesla zálohy — minimálne 12 znakov.</string>
+    <string name="restore_backup_new_password_label">Nové hlavné heslo</string>
+    <string name="restore_backup_confirm_new_password_label">Potvrdiť nové heslo</string>
+    <string name="restore_backup_restore_button">Obnoviť</string>
+    <string name="restore_backup_cancel">Zrušiť</string>
+    <string name="restore_backup_file_read_error">Súbor sa nepodarilo prečítať</string>
+
+    <!-- Chyby odomknutia -->
+    <string name="unlock_error_wrong_password">Nesprávne heslo</string>
+    <string name="unlock_error_corrupted_vault">Údaje trezoru sú poškodené alebo nečitateľné</string>
+    <string name="unlock_error_no_vault">Nebol nájdený žiadny trezor</string>
+    <string name="unlock_error_too_many_attempts">Príliš veľa pokusov — skúste znova o %1$ds</string>
+    <string name="unlock_error_biometric_unavailable">Biometria nie je k dispozícii — použite svoje heslo</string>
+    <string name="unlock_error_biometric_failed">Biometrické overenie zlyhalo</string>
+
+    <!-- Zmena hlavného hesla -->
+    <string name="change_password_title">Zmeniť hlavné heslo</string>
+    <string name="change_password_current_label">SÚČASNÉ HESLO</string>
+    <string name="change_password_new_label">NOVÉ HESLO</string>
+    <string name="change_password_confirm_label">POTVRDIŤ</string>
+    <string name="change_password_button">Zmeniť heslo</string>
+    <string name="change_password_new_too_short">Nové heslo musí obsahovať aspoň 12 znakov</string>
+    <string name="change_password_new_mismatch">Nové heslá sa nezhodujú</string>
+    <string name="change_password_wrong_current">Súčasné heslo je nesprávne</string>
+    <string name="change_password_generic_error">Heslo sa nepodarilo zmeniť</string>
+    <string name="change_password_success_toast">Heslo bolo úspešne zmenené</string>
+    <string name="change_password_cancel">Zrušiť</string>
+
+    <!-- Biometria -->
+    <string name="biometric_setup_title">Aktivovať biometriu</string>
+    <string name="biometric_hardware_insufficient">Vaše zariadenie nemá dostatočnú hardvérovú podporu na bezpečnú aktiváciu biometrie.</string>
+    <string name="biometric_activate_prompt">Aktivovať odomknutie odtlačkom prsta</string>
+    <string name="biometric_password_confirmed_hint">Heslo potvrdené — priložte prst na senzor.</string>
+    <string name="biometric_continue_button">Pokračovať odtlačkom prsta</string>
+    <string name="biometric_confirm_password_label">Potvrďte svoje hlavné heslo</string>
+    <string name="biometric_confirm_button">Potvrdiť</string>
+    <string name="biometric_wrong_password">Nesprávne heslo</string>
+    <string name="biometric_key_creation_error">Zabezpečený kľúč sa nepodarilo vytvoriť</string>
+    <string name="biometric_cipher_error">Šifrovanie sa nepodarilo pripraviť</string>
+    <string name="biometric_enable_error">Biometriu sa nepodarilo aktivovať</string>
+    <string name="biometric_auth_failed">Biometrické overenie zlyhalo</string>
+    <string name="biometric_activated_toast">Biometria aktivovaná</string>
+    <string name="biometric_deactivated_toast">Biometria deaktivovaná</string>
+    <string name="biometric_cancel">Zrušiť</string>
+    <string name="biometric_row_title">Biometrické odomknutie</string>
+    <string name="biometric_row_enabled">Aktivované</string>
+    <string name="biometric_row_disabled">Deaktivované</string>
+
+    <!-- Nastavenia -->
+    <string name="settings_title">Nastavenia</string>
+    <string name="settings_security_status_title">STAV ZABEZPEČENIA</string>
+    <string name="settings_masvs_badge">🛡 OWASP MASVS — Zvýšená úroveň</string>
+    <string name="settings_encryption_label">ŠIFROVANIE</string>
+    <string name="settings_kdf_label">KDF</string>
+    <string name="settings_inactivity_label">ČAS NEČINNOSTI</string>
+    <string name="settings_inactivity_value">2 min</string>
+    <string name="settings_bruteforce_label">OCHRANA PROTI HRUBEJ SILE</string>
+    <string name="settings_bruteforce_value">5 pokusov + HMAC</string>
+    <string name="settings_lockout_label">UZAMKNUTIE</string>
+    <string name="settings_lockout_value">Exponenciálne</string>
+    <string name="settings_salt_label">SOĽ</string>
+    <string name="settings_salt_value">256 bitov</string>
+    <string name="settings_integrity_label">INTEGRITA TREZORU</string>
+    <string name="settings_integrity_value">HMAC-SHA256</string>
+    <string name="settings_hardware_label">HARDVÉROVÉ UKOTVENIE</string>
+    <string name="settings_hardware_value">Minimálne TEE, StrongBox ak je k dispozícii</string>
+    <string name="settings_bruteforce_note">ℹ️ Ochrana proti hrubej sile bráni opakovaným pokusom v rámci aplikácie. Nenahrádza silné heslo: niekto s priamym prístupom k súboru trezoru na zariadení by mohol skúsiť offline dešifrovanie bez tohto obmedzenia. Použite heslovú frázu s dĺžkou 16+ znakov.</string>
+    <string name="settings_change_password_button">🔑 Zmeniť hlavné heslo</string>
+    <string name="settings_backup_title">ZÁLOHA</string>
+    <string name="settings_export_native_title">🛡️ Export s maximálnym zabezpečením</string>
+    <string name="settings_export_native_subtitle">Argon2id + AES-256-GCM-SIV</string>
+    <string name="settings_export_chrome_title">🌐 Multiplatformový export</string>
+    <string name="settings_export_chrome_subtitle">PBKDF2 + AES-256-GCM — možno importovať do Big MFA Chrome</string>
+    <string name="settings_export_qr_title">📷 Export QR (karusel + ZIP)</string>
+    <string name="settings_export_qr_subtitle">Jeden QR kód na účet, na prezeranie alebo stiahnutie</string>
+    <string name="settings_import_button">📥 Importovať / Obnoviť</string>
+    <string name="settings_export_footer">Export je šifrovaný — tajné kľúče zostávajú chránené aj pri zdieľaní súboru.</string>
+    <string name="settings_export_native_dialog_title">Export s maximálnym zabezpečením</string>
+    <string name="settings_export_chrome_dialog_title">Multiplatformový export</string>
+    <string name="settings_export_native_dialog_desc">🛡️ Argon2id + AES-256-GCM-SIV — toto heslo chráni exportovaný súbor a líši sa od vášho hlavného hesla.</string>
+    <string name="settings_export_chrome_dialog_desc">🌐 PBKDF2 + AES-256-GCM — formát kompatibilný s rozšírením Big MFA Chrome. Toto heslo sa líši od vášho hlavného hesla.</string>
+    <string name="settings_export_password_label">Heslo pre export</string>
+    <string name="settings_export_confirm_label">Potvrdiť</string>
+    <string name="settings_export_min_chars_error">Minimálne 8 znakov</string>
+    <string name="settings_export_mismatch_error">Heslá sa nezhodujú</string>
+    <string name="settings_export_button">Exportovať</string>
+    <string name="settings_export_cancel">Zrušiť</string>
+    <string name="settings_export_generic_error">Export sa nepodarilo vytvoriť</string>
+    <string name="settings_export_share_title">Zdieľať export</string>
+    <string name="settings_import_dialog_title">Importovať zálohu</string>
+    <string name="settings_import_dialog_desc">Vyberte súbor zálohy (natívny Big MFA alebo kompatibilný s Chrome — formát je rozpoznaný automaticky).</string>
+    <string name="settings_import_choose_file">Vybrať súbor</string>
+    <string name="settings_import_file_selected_desc">Súbor vybraný — zadajte heslo tejto zálohy.</string>
+    <string name="settings_import_password_label">Heslo zálohy</string>
+    <string name="settings_import_button_confirm">Importovať</string>
+    <string name="settings_import_read_error">Súbor sa nepodarilo prečítať</string>
+    <string name="settings_import_generic_error">Import zlyhal</string>
+    <string name="settings_import_success_toast">Importovaných účtov: %1$d</string>
+    <string name="settings_danger_zone_title">NEBEZPEČNÁ ZÓNA</string>
+    <string name="settings_delete_all_button">🗑 Odstrániť všetky moje údaje</string>
+    <string name="settings_delete_all_description">Uplatňuje vaše právo na vymazanie (čl. 17 GDPR). Odstráni všetky účty a hlavné heslo. Nezvratná akcia.</string>
+    <string name="settings_delete_confirm_title">Odstrániť všetky údaje?</string>
+    <string name="settings_delete_confirm_desc">Všetky vaše účty budú trvalo odstránené. Túto akciu nemožno vrátiť späť.</string>
+    <string name="settings_delete_continue">Pokračovať</string>
+    <string name="settings_delete_final_title">Konečné potvrdenie</string>
+    <string name="settings_delete_final_desc">Ste si NAOZAJ istí? Po tomto kroku nebude možná žiadna obnova.</string>
+    <string name="settings_delete_final_button">Trvalo odstrániť</string>
+    <string name="settings_delete_cancel">Zrušiť</string>
+    <string name="settings_rgpd_badge">🔒 V súlade s GDPR — 100% lokálne údaje</string>
+    <string name="settings_rgpd_title">SÚKROMIE A GDPR</string>
+    <string name="settings_rgpd_controller_label">Prevádzkovateľ údajov</string>
+    <string name="settings_rgpd_controller_value">Patrick DJEUZONG – BigForTravel</string>
+    <string name="settings_rgpd_data_label">Zhromažďované údaje</string>
+    <string name="settings_rgpd_data_value">Názvy účtov, šifrované kľúče TOTP</string>
+    <string name="settings_rgpd_storage_label">Miesto uloženia</string>
+    <string name="settings_rgpd_storage_value">Iba vaše zariadenie (súkromné úložisko aplikácie, izolované sandboxom Android)</string>
+    <string name="settings_rgpd_transfer_label">Prenos tretím stranám</string>
+    <string name="settings_rgpd_transfer_value">Samotná aplikácia Big MFA neodosiela žiadne žiadosti. Šifrovaný export je možné zdieľať prostredníctvom aplikácie tretej strany podľa vášho výberu, len ak to výslovne aktivujete.</string>
+    <string name="settings_rgpd_thirdparty_label">Vstavaný kód tretích strán</string>
+    <string name="settings_rgpd_thirdparty_value">Bouncy Castle (MIT), CameraX (Apache-2.0), vstavané ML Kit barcode-scanning (Apache-2.0), ZXing (Apache-2.0) — všetko lokálne, žiadna telemetria</string>
+    <string name="settings_rgpd_retention_label">Doba uchovávania</string>
+    <string name="settings_rgpd_retention_value">Do odinštalovania alebo manuálneho vymazania</string>
+    <string name="settings_rgpd_legal_label">Právny základ</string>
+    <string name="settings_rgpd_legal_value">Súhlas používateľa (čl. 6.1.a)</string>
+    <string name="settings_rgpd_access_label">Právo na prístup (čl. 15)</string>
+    <string name="settings_rgpd_access_value">Prostredníctvom šifrovaného exportu (vyššie)</string>
+    <string name="settings_rgpd_erasure_label">Právo na vymazanie (čl. 17)</string>
+    <string name="settings_rgpd_erasure_value">Prostredníctvom „Odstrániť všetky moje údaje“</string>
+    <string name="settings_rgpd_portability_label">Právo na prenosnosť údajov (čl. 20)</string>
+    <string name="settings_rgpd_portability_value">Prostredníctvom šifrovaného exportu (natívneho alebo multiplatformového)</string>
+    <string name="settings_rgpd_dpo_label">Kontakt na zodpovednú osobu</string>
+    <string name="settings_rgpd_dpo_value">contact@bigfortravel.com</string>
+    <string name="settings_rgpd_eu_label">Orgán EÚ (sťažnosti)</string>
+    <string name="settings_rgpd_eu_value">CNIL – www.cnil.fr (európski používatelia)</string>
+    <string name="settings_rgpd_cm_label">Kamerunský orgán (sťažnosti)</string>
+    <string name="settings_rgpd_cm_value">ANTIC – www.antic.cm (kamerunskí používatelia)</string>
+    <string name="settings_rgpd_footer">Big MFA nezhromažďuje žiadne osobné údaje mimo vášho zariadenia, sama neiniciuje žiadne sieťové pripojenia a nezdieľa žiadne informácie s tretími stranami. Všetky údaje sú pred lokálnym uložením šifrované pomocou AES-256-GCM-SIV.</string>
+    <string name="settings_language_row_title">Jazyk</string>
+
+    <!-- BackupImporter -->
+    <string name="backup_importer_unreadable">Súbor je nečitateľný alebo poškodený</string>
+    <string name="backup_importer_unknown_format">Nerozpoznaný formát súboru</string>
+    <string name="backup_importer_wrong_password">Nesprávne heslo alebo poškodený súbor</string>
+
+    <!-- Podporiť -->
+    <string name="support_title">Podporte Big MFA</string>
+    <string name="support_description">Big MFA vyvíja a udržiava dobrovoľne BigForTravel. Žiadne reklamy, žiadny predaj údajov, žiadne skryté predplatné. Ak je pre vás aplikácia užitočná, dar — aj malý — pomáha financovať jej ďalší vývoj.</string>
+    <string name="support_paypal_button">Darovať cez PayPal</string>
+    <string name="support_kofi_button">Darovať cez Ko-fi</string>
+    <string name="support_disclaimer">Dary sú dobrovoľné a neposkytujú žiadnu ďalšiu funkčnosť. Vždy si overte, že zobrazený príjemca je BigForTravel / Patrick Djeuzong.</string>
+    <string name="support_official_site">🌐 Oficiálna webová stránka</string>
+    <string name="support_contact_us">✉️ Napíšte nám</string>
+    <string name="support_contact_subject">Big MFA — Kontakt</string>
+
+    <!-- Karusel exportu QR -->
+    <string name="export_qr_title">Export QR (%1$d/%2$d)</string>
+    <string name="export_qr_no_accounts">Žiadne účty na export.</string>
+    <string name="export_qr_zip_button">📦 Exportovať všetky QR kódy ako ZIP</string>
+    <string name="export_qr_close_button">Zavrieť</string>
+    <string name="export_qr_zip_error">Archív ZIP sa nepodarilo vytvoriť</string>
+    <string name="export_qr_share_title">Zdieľať archív QR</string>
+
+    <!-- Sprievodca -->
+    <string name="guide_tab_installation">Inštalácia</string>
+    <string name="guide_tab_usage">Používanie</string>
+    <string name="guide_tab_features">Funkcie</string>
+    <string name="guide_title">Sprievodca Big MFA</string>
+    <string name="guide_intro">Rýchly prehľad všetkých dostupných funkcií.</string>
+    <string name="guide_codes_title">🔑 Moje kódy</string>
+    <string name="guide_codes_body">Vaše kódy TOTP sa aktualizujú v reálnom čase s vizuálnym odpočítavaním. Klepnutím na kód ho skopírujete (automaticky vymazaný zo schránky po 30s). Pri účtoch HOTP klepnite zakaždým na „Generovať“, keď kód potrebujete. Vyhľadávajte, premenujte alebo odstráňte účet pomocou ikon na každom riadku.</string>
+    <string name="guide_decoder_title">🔍 Dekodér</string>
+    <string name="guide_decoder_body">Vložte alebo importujte tajný kľúč z obrázka QR kódu, aby ste okamžite získali jeho kód TOTP bez pridania do trezoru. Užitočné na jednorazové overenie.</string>
+    <string name="guide_key_title">🔐 Kľúč</string>
+    <string name="guide_key_body">Vygeneruje náhodný tajný kľúč spolu s príslušným QR kódom na nastavenie nového účtu v inej službe, ktorá vyžaduje vytvorenie vlastného tajného kľúča.</string>
+    <string name="guide_add_title">➕ Pridať účet</string>
+    <string name="guide_add_body">Naskenujte QR kód poskytnutý službou, alebo zadajte tajný kľúč ručne. Pokročilé možnosti umožňujú upraviť algoritmus, počet číslic, periódu, alebo prepnúť na HOTP.</string>
+    <string name="guide_biometric_title">👆 Biometrické odomknutie</string>
+    <string name="guide_biometric_body">Aktivujte odomknutie odtlačkom prsta v Nastaveniach. Vaše hlavné heslo zostáva vždy dostupné ako záloha — nikdy nenahradené, iba doplnené.</string>
+    <string name="guide_backup_title">💾 Záloha a obnovenie</string>
+    <string name="guide_backup_body">Dva formáty exportu: maximálne zabezpečenie (natívne pre Android) alebo multiplatformovo kompatibilné (možno importovať do rozšírenia Chrome). Export QR vygeneruje karusel QR kódov, jednotlivo alebo v archíve ZIP. Obnovenie automaticky rozpozná formát súboru.</string>
+    <string name="guide_security_title">🛡 Zabezpečenie</string>
+    <string name="guide_security_body">Všetky údaje zostávajú výhradne na vašom zariadení, šifrované pomocou AES-256-GCM-SIV a kľúča odvodeného pomocou Argon2id. Aplikácia sama nikdy nenadviaže sieťové pripojenie.</string>
+    <string name="guide_language_title">🌐 Jazyk</string>
+    <string name="guide_language_body">Vyberte „Automaticky“ na sledovanie jazyka vášho telefónu, alebo vyberte konkrétny jazyk v päte prihlasovacích obrazoviek.</string>
+    <string name="guide_install_step1_title">1. Vytvorte si trezor</string>
+    <string name="guide_install_step1_body">Pri prvom spustení vyberte „Vytvoriť trezor“ na začatie s prázdnym trezorom, alebo „Obnoviť existujúcu zálohu“, ak ste už Big MFA používali v Chrome alebo na inom zariadení Android.</string>
+    <string name="guide_install_step2_title">2. Zvoľte si silné hlavné heslo</string>
+    <string name="guide_install_step2_body">Minimálne 12 znakov, ale zamerajte sa skôr na heslovú frázu s 16+ znakmi (napríklad viacero kombinovaných slov). Je to jediný kľúč, ktorý chráni všetky vaše účty.</string>
+    <string name="guide_install_step3_title">3. Pochopte nezvratnosť</string>
+    <string name="guide_install_step3_body">Big MFA neukladá vaše hlavné heslo nikde, ani v čistom texte, ani zašifrované. Ak ho zabudnete a nemáte externú zálohu, vaše účty sa stanú trvalo nedostupnými. Zapíšte si ho do spoľahlivého správcu hesiel.</string>
+    <string name="guide_install_step4_title">4. Aktivujte biometriu (voliteľné)</string>
+    <string name="guide_install_step4_body">V Nastaveniach aktivujte odomknutie odtlačkom prsta pre rýchlejší každodenný prístup. Vaše hlavné heslo zostáva vždy dostupné ako záloha.</string>
+    <string name="guide_usage_step1_title">1. Pridajte svoj prvý účet</string>
+    <string name="guide_usage_step1_body">V „+ Pridať“ naskenujte QR kód zobrazený službou (najrýchlejšia metóda), alebo ručne zadajte názov, vydavateľa a tajný kľúč Base32, ak nemôžete skenovať.</string>
+    <string name="guide_usage_step2_title">2. Používajte kód denne</string>
+    <string name="guide_usage_step2_body">V „Moje kódy“ klepnite priamo na kód TOTP a skopírujte ho (automaticky vymazaný zo schránky po 30 sekundách). Pri účte HOTP klepnite zakaždým na „Generovať“, keď ho potrebujete — počítadlo vždy postupuje vpred, nikdy späť.</string>
+    <string name="guide_usage_step3_title">3. Spravujte svoje účty</string>
+    <string name="guide_usage_step3_body">Použite vyhľadávací panel na rýchle nájdenie účtu medzi mnohými. Ikona ceruzky umožňuje premenovanie, ikona koša umožňuje odstránenie (s dvojitým potvrdením, nezvratná akcia).</string>
+    <string name="guide_usage_step4_title">4. Pravidelne zálohujte</string>
+    <string name="guide_usage_step4_body">V Nastaveniach vyberte „Export s maximálnym zabezpečením“ pre zálohu iba pre Android, alebo „Multiplatformový export“, ak používate Big MFA aj v Chrome. Export QR (karusel alebo ZIP) je užitočný na prenos do iného štandardného správcu kompatibilného s TOTP.</string>
+    <string name="guide_usage_step5_title">5. Zmeňte hlavné heslo</string>
+    <string name="guide_usage_step5_body">V Nastaveniach zadajte aktuálne heslo a potom nové. Vaše účty a biometria (ak je aktivovaná) zostávajú nedotknuté — mení sa iba heslo.</string>
+    <string name="nav_accounts">Moje kódy</string>
+    <string name="nav_decoder">Dekodér</string>
+    <string name="nav_key">Kľúč</string>
+    <string name="nav_add">+ Pridať</string>
+    <string name="nav_support">Podporiť</string>
+    <string name="nav_settings">Nastavenia</string>
+    <string name="nav_guide">Sprievodca</string>
+    <string name="nav_lock_content_description">Uzamknúť trezor</string>
+</resources>

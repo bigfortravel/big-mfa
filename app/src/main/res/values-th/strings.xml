@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Big MFA</string>
+
+    <!-- หน้าจอปลดล็อก -->
+    <string name="unlock_title">Big MFA</string>
+    <string name="unlock_subtitle">กรอกรหัสผ่านหลักของคุณ</string>
+    <string name="unlock_password_label">รหัสผ่านหลัก</string>
+    <string name="unlock_button">ปลดล็อก</string>
+    <string name="unlock_reset_vault">รีเซ็ตห้องนิรภัย</string>
+    <string name="unlock_biometric_content_description">ปลดล็อกด้วยลายนิ้วมือ</string>
+
+    <!-- ส่วนท้ายที่ใช้ร่วมกัน -->
+    <string name="footer_support">❤️ สนับสนุน</string>
+    <string name="footer_contact">✉️ ติดต่อเรา</string>
+    <string name="footer_language_auto">🌐 อัตโนมัติ — ภาษาของเบราว์เซอร์</string>
+    <string name="footer_language_placeholder">ตัวเลือกภาษา — เร็ว ๆ นี้</string>
+    <string name="footer_gplv3">ฟรีและโอเพนซอร์ส (สัญญาอนุญาต GPLv3)</string>
+    <string name="language_dialog_title">เลือกภาษา</string>
+    <string name="language_option_auto">🌐 อัตโนมัติ (ภาษาของระบบ)</string>
+
+    <!-- รหัสของฉัน -->
+    <string name="accounts_empty_state">ยังไม่มีบัญชี\nใช้ “+ เพิ่ม” เพื่อสร้างบัญชีใหม่</string>
+    <string name="accounts_search_placeholder">ค้นหาบัญชี</string>
+    <string name="accounts_no_results">ไม่พบผลลัพธ์สำหรับ “%1$s”</string>
+    <string name="accounts_rename_title">เปลี่ยนชื่อบัญชี</string>
+    <string name="accounts_name_label">ชื่อบัญชี</string>
+    <string name="accounts_issuer_label">ผู้ออก (ไม่บังคับ)</string>
+    <string name="accounts_name_required_error">ต้องระบุชื่อบัญชี</string>
+    <string name="accounts_save">บันทึก</string>
+    <string name="accounts_cancel">ยกเลิก</string>
+    <string name="accounts_rename_content_description">เปลี่ยนชื่อ %1$s</string>
+    <string name="accounts_delete_content_description">ลบ %1$s</string>
+    <string name="accounts_delete_confirm_title">ลบ “%1$s” ใช่หรือไม่?</string>
+    <string name="accounts_delete_irreversible">การดำเนินการนี้ไม่สามารถย้อนกลับได้</string>
+    <string name="accounts_delete_button">ลบ</string>
+    <string name="accounts_hotp_label">HOTP</string>
+    <string name="accounts_unreadable">ไม่สามารถอ่านได้</string>
+    <string name="accounts_copy_content_description">คัดลอก</string>
+    <string name="accounts_generate_button">สร้าง</string>
+
+    <!-- + เพิ่ม -->
+    <string name="add_account_title">เพิ่มบัญชี</string>
+    <string name="add_account_scan_qr">📷 สแกนรหัส QR</string>
+    <string name="add_account_qr_invalid">รหัส QR ไม่ถูกต้องหรือไม่สามารถจดจำได้</string>
+    <string name="add_account_cancel_scan">ยกเลิกการสแกน</string>
+    <string name="add_account_name_label">ชื่อบัญชี</string>
+    <string name="add_account_issuer_label">ผู้ออก (ไม่บังคับ)</string>
+    <string name="add_account_secret_label">คีย์ลับ (Base32)</string>
+    <string name="add_account_advanced_options">⚙ ตัวเลือกขั้นสูง (อัลกอริทึม จำนวนหลัก ระยะเวลา)</string>
+    <string name="add_account_type_label">ประเภท</string>
+    <string name="add_account_type_totp">TOTP (อิงตามเวลา — มาตรฐาน)</string>
+    <string name="add_account_type_hotp">HOTP (อิงตามตัวนับ)</string>
+    <string name="add_account_algorithm_label">อัลกอริทึม</string>
+    <string name="add_account_algorithm_sha1">SHA-1 (ค่าเริ่มต้น ใช้งานร่วมกันได้แพร่หลาย)</string>
+    <string name="add_account_digits_label">จำนวนหลัก</string>
+    <string name="add_account_digits_default">6 หลัก (ค่าเริ่มต้น)</string>
+    <string name="add_account_digits_n">%1$d หลัก</string>
+    <string name="add_account_period_label">ระยะเวลา (วินาที)</string>
+    <string name="add_account_save">บันทึก</string>
+    <string name="add_account_name_required">ต้องระบุชื่อบัญชี</string>
+    <string name="add_account_secret_required">ต้องระบุคีย์ลับ</string>
+    <string name="add_account_secret_invalid">คีย์ลับไม่ใช่รูปแบบ Base32 ที่ถูกต้อง</string>
+    <string name="add_account_save_error">ไม่สามารถบันทึกบัญชีได้</string>
+    <string name="add_account_camera_permission_needed">ต้องได้รับสิทธิ์เข้าถึงกล้องเพื่อสแกนรหัส QR</string>
+    <string name="add_account_grant_camera">อนุญาตให้เข้าถึงกล้อง</string>
+
+    <!-- คีย์ -->
+    <string name="generate_key_description">สร้างคีย์ลับ Base32 แบบสุ่ม (160 บิต) ที่ใช้งานร่วมกับ Google Authenticator, Aegis, Authy…</string>
+    <string name="generate_key_generate">สร้าง</string>
+    <string name="generate_key_copy">คัดลอก</string>
+    <string name="generate_key_copied">คัดลอกคีย์แล้ว</string>
+    <string name="generate_key_show_qr">แสดง QR</string>
+    <string name="generate_key_qr_title">รหัส QR</string>
+    <string name="generate_key_close">ปิด</string>
+
+    <!-- ตัวถอดรหัส -->
+    <string name="decoder_import_qr">นำเข้าจากรหัส QR (รูปภาพ)</string>
+    <string name="decoder_no_qr_found">ไม่พบรหัส QR ในรูปภาพนี้</string>
+    <string name="decoder_secret_label">คีย์ MFA / TOTP (BASE32)</string>
+    <string name="decoder_code_placeholder">— — — — — —</string>
+    <string name="decoder_generate_code">สร้างรหัส</string>
+    <string name="decoder_copy_content_description">คัดลอกรหัส</string>
+    <string name="decoder_code_copied">คัดลอกรหัสแล้ว — จะถูกลบใน 30 วินาที</string>
+    <string name="decoder_secret_empty_error">กรอกหรือนำเข้าคีย์</string>
+    <string name="decoder_secret_invalid_error">คีย์ไม่ถูกต้อง</string>
+
+    <!-- สร้าง/กู้คืนห้องนิรภัย -->
+    <string name="create_vault_password_too_short">รหัสผ่านต้องมีอย่างน้อย 12 ตัวอักษร</string>
+    <string name="create_vault_passwords_mismatch">รหัสผ่านไม่ตรงกัน</string>
+    <string name="create_vault_creation_error">ไม่สามารถสร้างห้องนิรภัยได้</string>
+    <string name="restore_vault_new_password_too_short">รหัสผ่านใหม่ต้องมีอย่างน้อย 12 ตัวอักษร</string>
+    <string name="restore_vault_new_passwords_mismatch">รหัสผ่านใหม่ไม่ตรงกัน</string>
+    <string name="restore_vault_generic_error">ไม่สามารถกู้คืนข้อมูลสำรองได้</string>
+    <string name="create_vault_title">สร้างห้องนิรภัย Big MFA ของคุณ</string>
+    <string name="create_vault_min_chars">อย่างน้อย 12 ตัวอักษร</string>
+    <string name="create_vault_password_label">รหัสผ่าน</string>
+    <string name="create_vault_confirm_label">ยืนยันรหัสผ่าน</string>
+    <string name="create_vault_create_button">สร้างห้องนิรภัย</string>
+    <string name="create_vault_restore_button">📥 กู้คืนข้อมูลสำรองที่มีอยู่</string>
+    <string name="restore_backup_title">กู้คืนข้อมูลสำรอง</string>
+    <string name="restore_backup_description">รูปแบบดั้งเดิมของ Big MFA หรือใช้งานร่วมกับ Chrome ได้ — ตรวจจับโดยอัตโนมัติ</string>
+    <string name="restore_backup_choose_file">เลือกไฟล์ข้อมูลสำรอง</string>
+    <string name="restore_backup_file_selected">✅ เลือกไฟล์แล้ว</string>
+    <string name="restore_backup_backup_password_label">รหัสผ่านของข้อมูลสำรอง</string>
+    <string name="restore_backup_new_password_title">รหัสผ่านหลักใหม่</string>
+    <string name="restore_backup_new_password_hint">แตกต่างจากรหัสผ่านของข้อมูลสำรอง — อย่างน้อย 12 ตัวอักษร</string>
+    <string name="restore_backup_new_password_label">รหัสผ่านหลักใหม่</string>
+    <string name="restore_backup_confirm_new_password_label">ยืนยันรหัสผ่านใหม่</string>
+    <string name="restore_backup_restore_button">กู้คืน</string>
+    <string name="restore_backup_cancel">ยกเลิก</string>
+    <string name="restore_backup_file_read_error">ไม่สามารถอ่านไฟล์ได้</string>
+
+    <!-- ข้อผิดพลาดในการปลดล็อก -->
+    <string name="unlock_error_wrong_password">รหัสผ่านไม่ถูกต้อง</string>
+    <string name="unlock_error_corrupted_vault">ข้อมูลในห้องนิรภัยเสียหายหรือไม่สามารถอ่านได้</string>
+    <string name="unlock_error_no_vault">ไม่พบห้องนิรภัย</string>
+    <string name="unlock_error_too_many_attempts">พยายามมากเกินไป — ลองอีกครั้งใน %1$d วินาที</string>
+    <string name="unlock_error_biometric_unavailable">ไม่สามารถใช้ไบโอเมตริกได้ — ใช้รหัสผ่านของคุณ</string>
+    <string name="unlock_error_biometric_failed">การยืนยันตัวตนด้วยไบโอเมตริกล้มเหลว</string>
+
+    <!-- การเปลี่ยนรหัสผ่านหลัก -->
+    <string name="change_password_title">เปลี่ยนรหัสผ่านหลัก</string>
+    <string name="change_password_current_label">รหัสผ่านปัจจุบัน</string>
+    <string name="change_password_new_label">รหัสผ่านใหม่</string>
+    <string name="change_password_confirm_label">ยืนยัน</string>
+    <string name="change_password_button">เปลี่ยนรหัสผ่าน</string>
+    <string name="change_password_new_too_short">รหัสผ่านใหม่ต้องมีอย่างน้อย 12 ตัวอักษร</string>
+    <string name="change_password_new_mismatch">รหัสผ่านใหม่ไม่ตรงกัน</string>
+    <string name="change_password_wrong_current">รหัสผ่านปัจจุบันไม่ถูกต้อง</string>
+    <string name="change_password_generic_error">ไม่สามารถเปลี่ยนรหัสผ่านได้</string>
+    <string name="change_password_success_toast">เปลี่ยนรหัสผ่านสำเร็จแล้ว</string>
+    <string name="change_password_cancel">ยกเลิก</string>
+
+    <!-- ไบโอเมตริก -->
+    <string name="biometric_setup_title">เปิดใช้งานไบโอเมตริก</string>
+    <string name="biometric_hardware_insufficient">อุปกรณ์ของคุณไม่มีการรองรับฮาร์ดแวร์เพียงพอสำหรับการเปิดใช้งานไบโอเมตริกอย่างปลอดภัย</string>
+    <string name="biometric_activate_prompt">เปิดใช้งานการปลดล็อกด้วยลายนิ้วมือ</string>
+    <string name="biometric_password_confirmed_hint">ยืนยันรหัสผ่านแล้ว — วางนิ้วของคุณบนเซ็นเซอร์</string>
+    <string name="biometric_continue_button">ดำเนินการต่อด้วยลายนิ้วมือ</string>
+    <string name="biometric_confirm_password_label">ยืนยันรหัสผ่านหลักของคุณ</string>
+    <string name="biometric_confirm_button">ยืนยัน</string>
+    <string name="biometric_wrong_password">รหัสผ่านไม่ถูกต้อง</string>
+    <string name="biometric_key_creation_error">ไม่สามารถสร้างคีย์ที่ปลอดภัยได้</string>
+    <string name="biometric_cipher_error">ไม่สามารถเตรียมการเข้ารหัสได้</string>
+    <string name="biometric_enable_error">ไม่สามารถเปิดใช้งานไบโอเมตริกได้</string>
+    <string name="biometric_auth_failed">การยืนยันตัวตนด้วยไบโอเมตริกล้มเหลว</string>
+    <string name="biometric_activated_toast">เปิดใช้งานไบโอเมตริกแล้ว</string>
+    <string name="biometric_deactivated_toast">ปิดใช้งานไบโอเมตริกแล้ว</string>
+    <string name="biometric_cancel">ยกเลิก</string>
+    <string name="biometric_row_title">การปลดล็อกด้วยไบโอเมตริก</string>
+    <string name="biometric_row_enabled">เปิดใช้งาน</string>
+    <string name="biometric_row_disabled">ปิดใช้งาน</string>
+
+    <!-- การตั้งค่า -->
+    <string name="settings_title">การตั้งค่า</string>
+    <string name="settings_security_status_title">สถานะความปลอดภัย</string>
+    <string name="settings_masvs_badge">🛡 OWASP MASVS — ระดับเสริมความปลอดภัย</string>
+    <string name="settings_encryption_label">การเข้ารหัส</string>
+    <string name="settings_kdf_label">KDF</string>
+    <string name="settings_inactivity_label">เวลาที่ไม่มีการใช้งาน</string>
+    <string name="settings_inactivity_value">2 นาที</string>
+    <string name="settings_bruteforce_label">การป้องกันการโจมตีแบบสุ่ม</string>
+    <string name="settings_bruteforce_value">5 ครั้ง + HMAC</string>
+    <string name="settings_lockout_label">การล็อก</string>
+    <string name="settings_lockout_value">แบบทวีคูณ</string>
+    <string name="settings_salt_label">ซอลต์</string>
+    <string name="settings_salt_value">256 บิต</string>
+    <string name="settings_integrity_label">ความสมบูรณ์ของห้องนิรภัย</string>
+    <string name="settings_integrity_value">HMAC-SHA256</string>
+    <string name="settings_hardware_label">การยึดกับฮาร์ดแวร์</string>
+    <string name="settings_hardware_value">อย่างน้อย TEE, StrongBox หากมี</string>
+    <string name="settings_bruteforce_note">ℹ️ การป้องกันการโจมตีแบบสุ่มช่วยป้องกันการพยายามซ้ำ ๆ ภายในแอป แต่ไม่ได้แทนที่รหัสผ่านที่แข็งแกร่ง: ผู้ที่มีสิทธิ์เข้าถึงไฟล์ห้องนิรภัยบนอุปกรณ์โดยตรงอาจพยายามถอดรหัสแบบออฟไลน์โดยไม่ผ่านข้อจำกัดนี้ ใช้วลีรหัสผ่านที่มีความยาว 16 ตัวอักษรขึ้นไป</string>
+    <string name="settings_change_password_button">🔑 เปลี่ยนรหัสผ่านหลัก</string>
+    <string name="settings_backup_title">ข้อมูลสำรอง</string>
+    <string name="settings_export_native_title">🛡️ ส่งออกความปลอดภัยสูงสุด</string>
+    <string name="settings_export_native_subtitle">Argon2id + AES-256-GCM-SIV</string>
+    <string name="settings_export_chrome_title">🌐 ส่งออกที่ใช้งานร่วมกันได้หลายแพลตฟอร์ม</string>
+    <string name="settings_export_chrome_subtitle">PBKDF2 + AES-256-GCM — สามารถนำเข้าไปยัง Big MFA Chrome ได้</string>
+    <string name="settings_export_qr_title">📷 ส่งออก QR (แบบหมุนวน + ZIP)</string>
+    <string name="settings_export_qr_subtitle">QR หนึ่งรหัสต่อบัญชี สำหรับเลื่อนดูหรือดาวน์โหลด</string>
+    <string name="settings_import_button">📥 นำเข้า / กู้คืน</string>
+    <string name="settings_export_footer">การส่งออกได้รับการเข้ารหัส — คีย์ลับยังคงได้รับการปกป้องแม้ว่าไฟล์จะถูกแชร์</string>
+    <string name="settings_export_native_dialog_title">ส่งออกความปลอดภัยสูงสุด</string>
+    <string name="settings_export_chrome_dialog_title">ส่งออกที่ใช้งานร่วมกันได้หลายแพลตฟอร์ม</string>
+    <string name="settings_export_native_dialog_desc">🛡️ Argon2id + AES-256-GCM-SIV — รหัสผ่านนี้ปกป้องไฟล์ที่ส่งออก และแตกต่างจากรหัสผ่านหลักของคุณ</string>
+    <string name="settings_export_chrome_dialog_desc">🌐 PBKDF2 + AES-256-GCM — รูปแบบที่ใช้งานร่วมกับส่วนขยาย Big MFA Chrome ได้ รหัสผ่านนี้แตกต่างจากรหัสผ่านหลักของคุณ</string>
+    <string name="settings_export_password_label">รหัสผ่านสำหรับส่งออก</string>
+    <string name="settings_export_confirm_label">ยืนยัน</string>
+    <string name="settings_export_min_chars_error">อย่างน้อย 8 ตัวอักษร</string>
+    <string name="settings_export_mismatch_error">รหัสผ่านไม่ตรงกัน</string>
+    <string name="settings_export_button">ส่งออก</string>
+    <string name="settings_export_cancel">ยกเลิก</string>
+    <string name="settings_export_generic_error">ไม่สามารถสร้างการส่งออกได้</string>
+    <string name="settings_export_share_title">แชร์ไฟล์ที่ส่งออก</string>
+    <string name="settings_import_dialog_title">นำเข้าข้อมูลสำรอง</string>
+    <string name="settings_import_dialog_desc">เลือกไฟล์ข้อมูลสำรอง (รูปแบบดั้งเดิมของ Big MFA หรือใช้งานร่วมกับ Chrome ได้ — รูปแบบจะถูกตรวจจับโดยอัตโนมัติ)</string>
+    <string name="settings_import_choose_file">เลือกไฟล์</string>
+    <string name="settings_import_file_selected_desc">เลือกไฟล์แล้ว — กรอกรหัสผ่านของข้อมูลสำรองนี้</string>
+    <string name="settings_import_password_label">รหัสผ่านของข้อมูลสำรอง</string>
+    <string name="settings_import_button_confirm">นำเข้า</string>
+    <string name="settings_import_read_error">ไม่สามารถอ่านไฟล์ได้</string>
+    <string name="settings_import_generic_error">การนำเข้าล้มเหลว</string>
+    <string name="settings_import_success_toast">นำเข้าบัญชีแล้ว %1$d บัญชี</string>
+    <string name="settings_danger_zone_title">โซนอันตราย</string>
+    <string name="settings_delete_all_button">🗑 ลบข้อมูลทั้งหมดของฉัน</string>
+    <string name="settings_delete_all_description">ใช้สิทธิ์ในการลบข้อมูลของคุณ (มาตรา 17 GDPR) ลบบัญชีทั้งหมดและรหัสผ่านหลัก การดำเนินการนี้ไม่สามารถย้อนกลับได้</string>
+    <string name="settings_delete_confirm_title">ลบข้อมูลทั้งหมดใช่หรือไม่?</string>
+    <string name="settings_delete_confirm_desc">บัญชีทั้งหมดของคุณจะถูกลบอย่างถาวร การดำเนินการนี้ไม่สามารถย้อนกลับได้</string>
+    <string name="settings_delete_continue">ดำเนินการต่อ</string>
+    <string name="settings_delete_final_title">การยืนยันขั้นสุดท้าย</string>
+    <string name="settings_delete_final_desc">คุณแน่ใจจริง ๆ หรือไม่? จะไม่สามารถกู้คืนได้หลังจากขั้นตอนนี้</string>
+    <string name="settings_delete_final_button">ลบอย่างถาวร</string>
+    <string name="settings_delete_cancel">ยกเลิก</string>
+    <string name="settings_rgpd_badge">🔒 สอดคล้องกับ GDPR — ข้อมูลอยู่ในเครื่อง 100%</string>
+    <string name="settings_rgpd_title">ความเป็นส่วนตัวและ GDPR</string>
+    <string name="settings_rgpd_controller_label">ผู้ควบคุมข้อมูล</string>
+    <string name="settings_rgpd_controller_value">Patrick DJEUZONG – BigForTravel</string>
+    <string name="settings_rgpd_data_label">ข้อมูลที่รวบรวม</string>
+    <string name="settings_rgpd_data_value">ชื่อบัญชี คีย์ TOTP ที่เข้ารหัส</string>
+    <string name="settings_rgpd_storage_label">ตำแหน่งการจัดเก็บ</string>
+    <string name="settings_rgpd_storage_value">อุปกรณ์ของคุณเท่านั้น (พื้นที่จัดเก็บส่วนตัวของแอป แยกออกโดยแซนด์บ็อกซ์ของ Android)</string>
+    <string name="settings_rgpd_transfer_label">การถ่ายโอนไปยังบุคคลที่สาม</string>
+    <string name="settings_rgpd_transfer_value">Big MFA เองไม่ได้ส่งคำขอใด ๆ การส่งออกที่เข้ารหัสสามารถแชร์ผ่านแอปของบุคคลที่สามตามที่คุณเลือกได้ ก็ต่อเมื่อคุณเปิดใช้งานอย่างชัดเจนเท่านั้น</string>
+    <string name="settings_rgpd_thirdparty_label">โค้ดของบุคคลที่สามที่ฝังอยู่</string>
+    <string name="settings_rgpd_thirdparty_value">Bouncy Castle (MIT), CameraX (Apache-2.0), ML Kit barcode-scanning ที่ฝังอยู่ (Apache-2.0), ZXing (Apache-2.0) — ทั้งหมดทำงานในเครื่อง ไม่มีการส่งข้อมูลทางไกล</string>
+    <string name="settings_rgpd_retention_label">ระยะเวลาการเก็บรักษา</string>
+    <string name="settings_rgpd_retention_value">จนกว่าจะถอนการติดตั้งหรือลบด้วยตนเอง</string>
+    <string name="settings_rgpd_legal_label">พื้นฐานทางกฎหมาย</string>
+    <string name="settings_rgpd_legal_value">ความยินยอมของผู้ใช้ (มาตรา 6.1.a)</string>
+    <string name="settings_rgpd_access_label">สิทธิ์ในการเข้าถึง (มาตรา 15)</string>
+    <string name="settings_rgpd_access_value">ผ่านการส่งออกที่เข้ารหัส (ด้านบน)</string>
+    <string name="settings_rgpd_erasure_label">สิทธิ์ในการลบข้อมูล (มาตรา 17)</string>
+    <string name="settings_rgpd_erasure_value">ผ่าน “ลบข้อมูลทั้งหมดของฉัน”</string>
+    <string name="settings_rgpd_portability_label">สิทธิ์ในการโอนย้ายข้อมูล (มาตรา 20)</string>
+    <string name="settings_rgpd_portability_value">ผ่านการส่งออกที่เข้ารหัส (แบบดั้งเดิมหรือหลายแพลตฟอร์ม)</string>
+    <string name="settings_rgpd_dpo_label">ติดต่อ DPO</string>
+    <string name="settings_rgpd_dpo_value">contact@bigfortravel.com</string>
+    <string name="settings_rgpd_eu_label">หน่วยงานสหภาพยุโรป (การร้องเรียน)</string>
+    <string name="settings_rgpd_eu_value">CNIL – www.cnil.fr (ผู้ใช้ในยุโรป)</string>
+    <string name="settings_rgpd_cm_label">หน่วยงานแคเมอรูน (การร้องเรียน)</string>
+    <string name="settings_rgpd_cm_value">ANTIC – www.antic.cm (ผู้ใช้ในแคเมอรูน)</string>
+    <string name="settings_rgpd_footer">Big MFA ไม่รวบรวมข้อมูลส่วนบุคคลใด ๆ นอกอุปกรณ์ของคุณ ไม่เริ่มการเชื่อมต่อเครือข่ายด้วยตัวเอง และไม่แบ่งปันข้อมูลใด ๆ กับบุคคลที่สาม ข้อมูลทั้งหมดจะถูกเข้ารหัสด้วย AES-256-GCM-SIV ก่อนการจัดเก็บในเครื่อง</string>
+    <string name="settings_language_row_title">ภาษา</string>
+
+    <!-- BackupImporter -->
+    <string name="backup_importer_unreadable">ไฟล์ไม่สามารถอ่านได้หรือเสียหาย</string>
+    <string name="backup_importer_unknown_format">รูปแบบไฟล์ไม่สามารถจดจำได้</string>
+    <string name="backup_importer_wrong_password">รหัสผ่านไม่ถูกต้องหรือไฟล์เสียหาย</string>
+
+    <!-- สนับสนุน -->
+    <string name="support_title">สนับสนุน Big MFA</string>
+    <string name="support_description">Big MFA ได้รับการพัฒนาและดูแลโดยความสมัครใจจาก BigForTravel ไม่มีโฆษณา ไม่มีการขายข้อมูล ไม่มีการสมัครสมาชิกที่ซ่อนอยู่ หากแอปนี้มีประโยชน์กับคุณ การบริจาค — แม้จะเล็กน้อย — ก็ช่วยสนับสนุนการพัฒนาอย่างต่อเนื่อง</string>
+    <string name="support_paypal_button">บริจาคผ่าน PayPal</string>
+    <string name="support_kofi_button">บริจาคผ่าน Ko-fi</string>
+    <string name="support_disclaimer">การบริจาคเป็นทางเลือกและไม่มอบฟังก์ชันเพิ่มเติมใด ๆ ตรวจสอบเสมอว่าผู้รับที่แสดงคือ BigForTravel / Patrick Djeuzong</string>
+    <string name="support_official_site">🌐 เว็บไซต์ทางการ</string>
+    <string name="support_contact_us">✉️ เขียนถึงเรา</string>
+    <string name="support_contact_subject">Big MFA — ติดต่อ</string>
+
+    <!-- แถบเลื่อนการส่งออก QR -->
+    <string name="export_qr_title">ส่งออก QR (%1$d/%2$d)</string>
+    <string name="export_qr_no_accounts">ไม่มีบัญชีให้ส่งออก</string>
+    <string name="export_qr_zip_button">📦 ส่งออกรหัส QR ทั้งหมดเป็น ZIP</string>
+    <string name="export_qr_close_button">ปิด</string>
+    <string name="export_qr_zip_error">ไม่สามารถสร้างไฟล์ ZIP ได้</string>
+    <string name="export_qr_share_title">แชร์ไฟล์เก็บถาวร QR</string>
+
+    <!-- คู่มือ -->
+    <string name="guide_tab_installation">การติดตั้ง</string>
+    <string name="guide_tab_usage">การใช้งาน</string>
+    <string name="guide_tab_features">ฟีเจอร์</string>
+    <string name="guide_title">คู่มือ Big MFA</string>
+    <string name="guide_intro">ภาพรวมอย่างรวดเร็วของฟีเจอร์ทั้งหมดที่มี</string>
+    <string name="guide_codes_title">🔑 รหัสของฉัน</string>
+    <string name="guide_codes_body">รหัส TOTP ของคุณจะอัปเดตแบบเรียลไทม์พร้อมการนับถอยหลังแบบภาพ แตะที่รหัสเพื่อคัดลอก (ลบออกจากคลิปบอร์ดโดยอัตโนมัติหลังจาก 30 วินาที) สำหรับบัญชี HOTP ให้แตะ “สร้าง” ทุกครั้งที่คุณต้องการรหัส ค้นหา เปลี่ยนชื่อ หรือลบบัญชีโดยใช้ไอคอนในแต่ละแถว</string>
+    <string name="guide_decoder_title">🔍 ตัวถอดรหัส</string>
+    <string name="guide_decoder_body">วางหรือนำเข้าคีย์ลับจากภาพรหัส QR เพื่อรับรหัส TOTP ที่เกี่ยวข้องทันที โดยไม่ต้องเพิ่มลงในห้องนิรภัยของคุณ มีประโยชน์สำหรับการตรวจสอบครั้งเดียว</string>
+    <string name="guide_key_title">🔐 คีย์</string>
+    <string name="guide_key_body">สร้างคีย์ลับแบบสุ่มพร้อมรหัส QR ที่เกี่ยวข้อง เพื่อตั้งค่าบัญชีใหม่บนบริการอื่นที่ขอให้คุณสร้างคีย์ลับของคุณเอง</string>
+    <string name="guide_add_title">➕ เพิ่มบัญชี</string>
+    <string name="guide_add_body">สแกนรหัส QR ที่บริการให้มา หรือกรอกคีย์ลับด้วยตนเอง ตัวเลือกขั้นสูงช่วยให้คุณปรับอัลกอริทึม จำนวนหลัก ระยะเวลา หรือเปลี่ยนเป็น HOTP ได้</string>
+    <string name="guide_biometric_title">👆 การปลดล็อกด้วยไบโอเมตริก</string>
+    <string name="guide_biometric_body">เปิดใช้งานการปลดล็อกด้วยลายนิ้วมือจากการตั้งค่า รหัสผ่านหลักของคุณจะยังคงพร้อมใช้งานเสมอในฐานะตัวสำรอง — ไม่เคยถูกแทนที่ เพียงเสริมเพิ่มเติมเท่านั้น</string>
+    <string name="guide_backup_title">💾 การสำรองข้อมูลและกู้คืน</string>
+    <string name="guide_backup_body">รูปแบบการส่งออกสองแบบ: ความปลอดภัยสูงสุด (แบบดั้งเดิมสำหรับ Android) หรือใช้งานร่วมกันได้หลายแพลตฟอร์ม (สามารถนำเข้าไปยังส่วนขยาย Chrome ได้) การส่งออก QR จะสร้างแถบเลื่อนของรหัส QR ทีละรายการหรือเป็นไฟล์เก็บถาวร ZIP การกู้คืนจะตรวจจับรูปแบบไฟล์โดยอัตโนมัติ</string>
+    <string name="guide_security_title">🛡 ความปลอดภัย</string>
+    <string name="guide_security_body">ข้อมูลทั้งหมดจะอยู่บนอุปกรณ์ของคุณเท่านั้น เข้ารหัสด้วย AES-256-GCM-SIV และคีย์ที่ได้มาโดยใช้ Argon2id แอปจะไม่เริ่มการเชื่อมต่อเครือข่ายด้วยตัวเองเลย</string>
+    <string name="guide_language_title">🌐 ภาษา</string>
+    <string name="guide_language_body">เลือก “อัตโนมัติ” เพื่อทำตามภาษาของโทรศัพท์ของคุณ หรือเลือกภาษาที่ต้องการจากส่วนท้ายของหน้าจอเข้าสู่ระบบ</string>
+    <string name="guide_install_step1_title">1. สร้างห้องนิรภัยของคุณ</string>
+    <string name="guide_install_step1_body">ในการเริ่มต้นครั้งแรก เลือก “สร้างห้องนิรภัย” เพื่อเริ่มด้วยห้องนิรภัยเปล่า หรือ “กู้คืนข้อมูลสำรองที่มีอยู่” หากคุณเคยใช้ Big MFA บน Chrome หรืออุปกรณ์ Android อื่นแล้ว</string>
+    <string name="guide_install_step2_title">2. เลือกรหัสผ่านหลักที่แข็งแกร่ง</string>
+    <string name="guide_install_step2_body">อย่างน้อย 12 ตัวอักษร แต่ควรตั้งเป้าไปที่วลีรหัสผ่านที่มีความยาว 16 ตัวอักษรขึ้นไป (เช่น การรวมคำหลายคำเข้าด้วยกัน) นี่คือคีย์เดียวที่ปกป้องบัญชีทั้งหมดของคุณ</string>
+    <string name="guide_install_step3_title">3. ทำความเข้าใจเรื่องการกู้คืนไม่ได้</string>
+    <string name="guide_install_step3_body">Big MFA ไม่ได้จัดเก็บรหัสผ่านหลักของคุณไว้ที่ใด ทั้งในรูปแบบข้อความธรรมดาหรือแบบเข้ารหัส หากคุณลืมและไม่มีข้อมูลสำรองภายนอก บัญชีของคุณจะไม่สามารถเข้าถึงได้อย่างถาวร จดบันทึกไว้ในตัวจัดการรหัสผ่านที่เชื่อถือได้</string>
+    <string name="guide_install_step4_title">4. เปิดใช้งานไบโอเมตริก (ไม่บังคับ)</string>
+    <string name="guide_install_step4_body">จากการตั้งค่า เปิดใช้งานการปลดล็อกด้วยลายนิ้วมือเพื่อการเข้าถึงในชีวิตประจำวันที่รวดเร็วขึ้น รหัสผ่านหลักของคุณจะยังคงพร้อมใช้งานเสมอในฐานะตัวสำรอง</string>
+    <string name="guide_usage_step1_title">1. เพิ่มบัญชีแรกของคุณ</string>
+    <string name="guide_usage_step1_body">จาก “+ เพิ่ม” สแกนรหัส QR ที่บริการแสดง (วิธีที่เร็วที่สุด) หรือกรอกชื่อ ผู้ออก และคีย์ลับ Base32 ด้วยตนเองหากคุณไม่สามารถสแกนได้</string>
+    <string name="guide_usage_step2_title">2. ใช้รหัสทุกวัน</string>
+    <string name="guide_usage_step2_body">ใน “รหัสของฉัน” แตะที่รหัส TOTP โดยตรงเพื่อคัดลอก (ลบออกจากคลิปบอร์ดโดยอัตโนมัติหลังจาก 30 วินาที) สำหรับบัญชี HOTP ให้แตะ “สร้าง” ทุกครั้งที่คุณต้องการ — ตัวนับจะเดินหน้าเสมอ ไม่เคยย้อนกลับ</string>
+    <string name="guide_usage_step3_title">3. จัดการบัญชีของคุณ</string>
+    <string name="guide_usage_step3_body">ใช้แถบค้นหาเพื่อค้นหาบัญชีอย่างรวดเร็วท่ามกลางหลายบัญชี ไอคอนดินสอช่วยให้เปลี่ยนชื่อได้ ไอคอนถังขยะช่วยให้ลบได้ (โดยยืนยันสองครั้ง เป็นการดำเนินการที่ไม่สามารถย้อนกลับได้)</string>
+    <string name="guide_usage_step4_title">4. สำรองข้อมูลอย่างสม่ำเสมอ</string>
+    <string name="guide_usage_step4_body">จากการตั้งค่า เลือก “ส่งออกความปลอดภัยสูงสุด” สำหรับข้อมูลสำรองเฉพาะ Android หรือ “ส่งออกที่ใช้งานร่วมกันได้หลายแพลตฟอร์ม” หากคุณใช้ Big MFA บน Chrome ด้วย การส่งออก QR (แบบหมุนวนหรือ ZIP) มีประโยชน์สำหรับการโอนย้ายไปยังตัวจัดการอื่นที่ใช้งานร่วมกับมาตรฐาน TOTP ได้</string>
+    <string name="guide_usage_step5_title">5. เปลี่ยนรหัสผ่านหลักของคุณ</string>
+    <string name="guide_usage_step5_body">ในการตั้งค่า กรอกรหัสผ่านปัจจุบันของคุณ จากนั้นกรอกรหัสผ่านใหม่ บัญชีและไบโอเมตริกของคุณ (หากเปิดใช้งาน) จะยังคงไม่เปลี่ยนแปลง — มีเพียงรหัสผ่านเท่านั้นที่เปลี่ยน</string>
+    <string name="nav_accounts">รหัสของฉัน</string>
+    <string name="nav_decoder">ตัวถอดรหัส</string>
+    <string name="nav_key">คีย์</string>
+    <string name="nav_add">+ เพิ่ม</string>
+    <string name="nav_support">สนับสนุน</string>
+    <string name="nav_settings">การตั้งค่า</string>
+    <string name="nav_guide">คู่มือ</string>
+    <string name="nav_lock_content_description">ล็อกห้องนิรภัย</string>
+</resources>

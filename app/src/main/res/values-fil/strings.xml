@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Big MFA</string>
+
+    <!-- Screen ng pag-unlock -->
+    <string name="unlock_title">Big MFA</string>
+    <string name="unlock_subtitle">Ilagay ang inyong master password</string>
+    <string name="unlock_password_label">Master password</string>
+    <string name="unlock_button">I-unlock</string>
+    <string name="unlock_reset_vault">I-reset ang vault</string>
+    <string name="unlock_biometric_content_description">I-unlock gamit ang fingerprint</string>
+
+    <!-- Shared na footer -->
+    <string name="footer_support">❤️ Suportahan</string>
+    <string name="footer_contact">✉️ Makipag-ugnayan sa Amin</string>
+    <string name="footer_language_auto">🌐 Awtomatiko — wika ng browser</string>
+    <string name="footer_language_placeholder">Pagpili ng wika — malapit nang available</string>
+    <string name="footer_gplv3">Libre at open source (GPLv3 license).</string>
+    <string name="language_dialog_title">Pumili ng wika</string>
+    <string name="language_option_auto">🌐 Awtomatiko (wika ng sistema)</string>
+
+    <!-- Aking mga Code -->
+    <string name="accounts_empty_state">Wala pang account.\nGamitin ang “+ Magdagdag” para gumawa ng isa.</string>
+    <string name="accounts_search_placeholder">Maghanap ng account</string>
+    <string name="accounts_no_results">Walang resulta para sa “%1$s”</string>
+    <string name="accounts_rename_title">Palitan ang pangalan ng account</string>
+    <string name="accounts_name_label">Pangalan ng account</string>
+    <string name="accounts_issuer_label">Nagbigay (opsyonal)</string>
+    <string name="accounts_name_required_error">Kinakailangan ang pangalan ng account</string>
+    <string name="accounts_save">I-save</string>
+    <string name="accounts_cancel">Kanselahin</string>
+    <string name="accounts_rename_content_description">Palitan ang pangalan ng %1$s</string>
+    <string name="accounts_delete_content_description">Burahin ang %1$s</string>
+    <string name="accounts_delete_confirm_title">Burahin ang “%1$s”?</string>
+    <string name="accounts_delete_irreversible">Hindi na mababawi ang aksyon na ito.</string>
+    <string name="accounts_delete_button">Burahin</string>
+    <string name="accounts_hotp_label">HOTP</string>
+    <string name="accounts_unreadable">Hindi mabasa</string>
+    <string name="accounts_copy_content_description">Kopyahin</string>
+    <string name="accounts_generate_button">Bumuo</string>
+
+    <!-- + Magdagdag -->
+    <string name="add_account_title">Magdagdag ng account</string>
+    <string name="add_account_scan_qr">📷 I-scan ang QR code</string>
+    <string name="add_account_qr_invalid">Hindi wasto o hindi nakikilalang QR code</string>
+    <string name="add_account_cancel_scan">Kanselahin ang pag-scan</string>
+    <string name="add_account_name_label">Pangalan ng account</string>
+    <string name="add_account_issuer_label">Nagbigay (opsyonal)</string>
+    <string name="add_account_secret_label">Lihim na susi (Base32)</string>
+    <string name="add_account_advanced_options">⚙ Mga advanced na opsyon (algorithm, digit, tagal ng panahon)</string>
+    <string name="add_account_type_label">URI</string>
+    <string name="add_account_type_totp">TOTP (batay sa oras — standard)</string>
+    <string name="add_account_type_hotp">HOTP (batay sa counter)</string>
+    <string name="add_account_algorithm_label">ALGORITHM</string>
+    <string name="add_account_algorithm_sha1">SHA-1 (default, unibersal na compatibility)</string>
+    <string name="add_account_digits_label">BILANG NG DIGIT</string>
+    <string name="add_account_digits_default">6 na digit (default)</string>
+    <string name="add_account_digits_n">%1$d na digit</string>
+    <string name="add_account_period_label">TAGAL NG PANAHON (SEGUNDO)</string>
+    <string name="add_account_save">I-save</string>
+    <string name="add_account_name_required">Kinakailangan ang pangalan ng account</string>
+    <string name="add_account_secret_required">Kinakailangan ang lihim na susi</string>
+    <string name="add_account_secret_invalid">Hindi valid na Base32 ang lihim na susi</string>
+    <string name="add_account_save_error">Hindi ma-save ang account</string>
+    <string name="add_account_camera_permission_needed">Kinakailangan ang access sa camera para makapag-scan ng QR code.</string>
+    <string name="add_account_grant_camera">Payagan ang access sa camera</string>
+
+    <!-- Susi -->
+    <string name="generate_key_description">Gumawa ng random na Base32 na lihim na susi (160 bits) na compatible sa Google Authenticator, Aegis, Authy…</string>
+    <string name="generate_key_generate">Bumuo</string>
+    <string name="generate_key_copy">Kopyahin</string>
+    <string name="generate_key_copied">Nakopya ang susi</string>
+    <string name="generate_key_show_qr">Ipakita ang QR</string>
+    <string name="generate_key_qr_title">QR code</string>
+    <string name="generate_key_close">Isara</string>
+
+    <!-- Decoder -->
+    <string name="decoder_import_qr">Mag-import mula sa QR code (imahe)</string>
+    <string name="decoder_no_qr_found">Walang na-detect na QR code sa imaheng ito</string>
+    <string name="decoder_secret_label">SUSI NG MFA / TOTP (BASE32)</string>
+    <string name="decoder_code_placeholder">— — — — — —</string>
+    <string name="decoder_generate_code">Bumuo ng code</string>
+    <string name="decoder_copy_content_description">Kopyahin ang code</string>
+    <string name="decoder_code_copied">Nakopya ang code — mabubura sa loob ng 30s</string>
+    <string name="decoder_secret_empty_error">Ilagay o mag-import ng susi</string>
+    <string name="decoder_secret_invalid_error">Hindi wastong susi</string>
+
+    <!-- Paggawa/Pagbawi ng vault -->
+    <string name="create_vault_password_too_short">Ang password ay dapat naglalaman ng hindi bababa sa 12 karakter</string>
+    <string name="create_vault_passwords_mismatch">Hindi tugma ang mga password</string>
+    <string name="create_vault_creation_error">Hindi magawa ang vault</string>
+    <string name="restore_vault_new_password_too_short">Ang bagong password ay dapat naglalaman ng hindi bababa sa 12 karakter</string>
+    <string name="restore_vault_new_passwords_mismatch">Hindi tugma ang mga bagong password</string>
+    <string name="restore_vault_generic_error">Hindi mabawi ang backup</string>
+    <string name="create_vault_title">Gumawa ng inyong Big MFA vault</string>
+    <string name="create_vault_min_chars">Minimum na 12 karakter</string>
+    <string name="create_vault_password_label">Password</string>
+    <string name="create_vault_confirm_label">Kumpirmahin ang password</string>
+    <string name="create_vault_create_button">Gumawa ng vault</string>
+    <string name="create_vault_restore_button">📥 Ibalik ang umiiral na backup</string>
+    <string name="restore_backup_title">Ibalik ang backup</string>
+    <string name="restore_backup_description">Native na Big MFA format o compatible sa Chrome — awtomatikong nade-detect.</string>
+    <string name="restore_backup_choose_file">Pumili ng backup file</string>
+    <string name="restore_backup_file_selected">✅ Napili ang file</string>
+    <string name="restore_backup_backup_password_label">Password ng backup</string>
+    <string name="restore_backup_new_password_title">BAGONG MASTER PASSWORD</string>
+    <string name="restore_backup_new_password_hint">Iba sa password ng backup — minimum na 12 karakter.</string>
+    <string name="restore_backup_new_password_label">Bagong master password</string>
+    <string name="restore_backup_confirm_new_password_label">Kumpirmahin ang bagong password</string>
+    <string name="restore_backup_restore_button">Ibalik</string>
+    <string name="restore_backup_cancel">Kanselahin</string>
+    <string name="restore_backup_file_read_error">Hindi mabasa ang file</string>
+
+    <!-- Mga error sa pag-unlock -->
+    <string name="unlock_error_wrong_password">Maling password</string>
+    <string name="unlock_error_corrupted_vault">Sira o hindi mabasa ang data ng vault</string>
+    <string name="unlock_error_no_vault">Walang nahanap na vault</string>
+    <string name="unlock_error_too_many_attempts">Sobrang dami ng pagsubok — subukan ulit pagkatapos ng %1$ds</string>
+    <string name="unlock_error_biometric_unavailable">Hindi available ang biometrics — gamitin ang inyong password</string>
+    <string name="unlock_error_biometric_failed">Nabigo ang biometric na pagpapatunay</string>
+
+    <!-- Pagbabago ng master password -->
+    <string name="change_password_title">Baguhin ang master password</string>
+    <string name="change_password_current_label">KASALUKUYANG PASSWORD</string>
+    <string name="change_password_new_label">BAGONG PASSWORD</string>
+    <string name="change_password_confirm_label">KUMPIRMAHIN</string>
+    <string name="change_password_button">Baguhin ang password</string>
+    <string name="change_password_new_too_short">Ang bagong password ay dapat naglalaman ng hindi bababa sa 12 karakter</string>
+    <string name="change_password_new_mismatch">Hindi tugma ang mga bagong password</string>
+    <string name="change_password_wrong_current">Mali ang kasalukuyang password</string>
+    <string name="change_password_generic_error">Hindi mabago ang password</string>
+    <string name="change_password_success_toast">Matagumpay na nabago ang password</string>
+    <string name="change_password_cancel">Kanselahin</string>
+
+    <!-- Biometrics -->
+    <string name="biometric_setup_title">I-activate ang biometrics</string>
+    <string name="biometric_hardware_insufficient">Ang inyong device ay walang sapat na hardware support para ligtas na ma-activate ang biometrics.</string>
+    <string name="biometric_activate_prompt">I-activate ang pag-unlock gamit ang fingerprint</string>
+    <string name="biometric_password_confirmed_hint">Nakumpirma ang password — ilagay ang inyong daliri sa sensor.</string>
+    <string name="biometric_continue_button">Magpatuloy gamit ang fingerprint</string>
+    <string name="biometric_confirm_password_label">Kumpirmahin ang inyong master password</string>
+    <string name="biometric_confirm_button">Kumpirmahin</string>
+    <string name="biometric_wrong_password">Maling password</string>
+    <string name="biometric_key_creation_error">Hindi magawa ang secure na susi</string>
+    <string name="biometric_cipher_error">Hindi maihanda ang encryption</string>
+    <string name="biometric_enable_error">Hindi ma-activate ang biometrics</string>
+    <string name="biometric_auth_failed">Nabigo ang biometric na pagpapatunay</string>
+    <string name="biometric_activated_toast">Na-activate ang biometrics</string>
+    <string name="biometric_deactivated_toast">Na-deactivate ang biometrics</string>
+    <string name="biometric_cancel">Kanselahin</string>
+    <string name="biometric_row_title">Biometric na pag-unlock</string>
+    <string name="biometric_row_enabled">Naka-activate</string>
+    <string name="biometric_row_disabled">Naka-deactivate</string>
+
+    <!-- Mga Setting -->
+    <string name="settings_title">Mga Setting</string>
+    <string name="settings_security_status_title">KATAYUAN NG SEGURIDAD</string>
+    <string name="settings_masvs_badge">🛡 OWASP MASVS — Pinalakas na antas</string>
+    <string name="settings_encryption_label">ENCRYPTION</string>
+    <string name="settings_kdf_label">KDF</string>
+    <string name="settings_inactivity_label">ORAS NG KAWALAN NG AKTIBIDAD</string>
+    <string name="settings_inactivity_value">2 min</string>
+    <string name="settings_bruteforce_label">PROTEKSYON LABAN SA BRUTE FORCE</string>
+    <string name="settings_bruteforce_value">5 pagsubok + HMAC</string>
+    <string name="settings_lockout_label">PAG-LOCK</string>
+    <string name="settings_lockout_value">Exponential</string>
+    <string name="settings_salt_label">SALT</string>
+    <string name="settings_salt_value">256 bits</string>
+    <string name="settings_integrity_label">INTEGRIDAD NG VAULT</string>
+    <string name="settings_integrity_value">HMAC-SHA256</string>
+    <string name="settings_hardware_label">HARDWARE ANCHORING</string>
+    <string name="settings_hardware_value">Minimum na TEE, StrongBox kung available</string>
+    <string name="settings_bruteforce_note">ℹ️ Ang proteksyon laban sa brute force ay nagtatanggol laban sa paulit-ulit na pagsubok sa loob ng app. Hindi ito kapalit ng malakas na password: ang isang taong may direktang access sa file ng vault sa device ay maaaring subukan ang offline decryption nang hindi dumadaan sa hangganang ito. Gumamit ng passphrase na 16+ na karakter.</string>
+    <string name="settings_change_password_button">🔑 Baguhin ang master password</string>
+    <string name="settings_backup_title">BACKUP</string>
+    <string name="settings_export_native_title">🛡️ Export na may pinakamataas na seguridad</string>
+    <string name="settings_export_native_subtitle">Argon2id + AES-256-GCM-SIV</string>
+    <string name="settings_export_chrome_title">🌐 Cross-platform na compatible na export</string>
+    <string name="settings_export_chrome_subtitle">PBKDF2 + AES-256-GCM — puwedeng i-import sa Big MFA Chrome</string>
+    <string name="settings_export_qr_title">📷 Export ng QR (carousel + ZIP)</string>
+    <string name="settings_export_qr_subtitle">Isang QR bawat account, para tignan o i-download</string>
+    <string name="settings_import_button">📥 Mag-import / Ibalik</string>
+    <string name="settings_export_footer">Naka-encrypt ang export — nananatiling protektado ang mga lihim kahit ma-share ang file.</string>
+    <string name="settings_export_native_dialog_title">Export na may pinakamataas na seguridad</string>
+    <string name="settings_export_chrome_dialog_title">Cross-platform na compatible na export</string>
+    <string name="settings_export_native_dialog_desc">🛡️ Argon2id + AES-256-GCM-SIV — pinoprotektahan ng password na ito ang na-export na file at iba ito sa inyong master password.</string>
+    <string name="settings_export_chrome_dialog_desc">🌐 PBKDF2 + AES-256-GCM — format na compatible sa Big MFA Chrome extension. Iba ang password na ito sa inyong master password.</string>
+    <string name="settings_export_password_label">Password para sa export</string>
+    <string name="settings_export_confirm_label">Kumpirmahin</string>
+    <string name="settings_export_min_chars_error">Minimum na 8 karakter</string>
+    <string name="settings_export_mismatch_error">Hindi tugma ang mga password</string>
+    <string name="settings_export_button">I-export</string>
+    <string name="settings_export_cancel">Kanselahin</string>
+    <string name="settings_export_generic_error">Hindi magawa ang export</string>
+    <string name="settings_export_share_title">I-share ang export</string>
+    <string name="settings_import_dialog_title">Mag-import ng backup</string>
+    <string name="settings_import_dialog_desc">Pumili ng backup file (native na Big MFA o compatible sa Chrome — awtomatikong nade-detect ang format).</string>
+    <string name="settings_import_choose_file">Pumili ng file</string>
+    <string name="settings_import_file_selected_desc">Napili ang file — ilagay ang password ng backup na ito.</string>
+    <string name="settings_import_password_label">Password ng backup</string>
+    <string name="settings_import_button_confirm">I-import</string>
+    <string name="settings_import_read_error">Hindi mabasa ang file</string>
+    <string name="settings_import_generic_error">Nabigo ang pag-import</string>
+    <string name="settings_import_success_toast">%1$d na account ang na-import</string>
+    <string name="settings_danger_zone_title">MAPANGANIB NA ZONA</string>
+    <string name="settings_delete_all_button">🗑 Burahin ang lahat ng aking data</string>
+    <string name="settings_delete_all_description">Ginagamit ang inyong karapatan sa pagbura (Artikulo 17 GDPR). Binubura ang lahat ng account at ang master password. Hindi na mababawi ang aksyon.</string>
+    <string name="settings_delete_confirm_title">Burahin ang lahat ng data?</string>
+    <string name="settings_delete_confirm_desc">Permanenteng mabubura ang lahat ng inyong account. Hindi na mababawi ang aksyon na ito.</string>
+    <string name="settings_delete_continue">Magpatuloy</string>
+    <string name="settings_delete_final_title">Panghuling kumpirmasyon</string>
+    <string name="settings_delete_final_desc">TALAGA ba kayong sigurado? Wala nang mabawi pagkatapos ng hakbang na ito.</string>
+    <string name="settings_delete_final_button">Permanenteng burahin</string>
+    <string name="settings_delete_cancel">Kanselahin</string>
+    <string name="settings_rgpd_badge">🔒 Sumusunod sa GDPR — 100% lokal na data</string>
+    <string name="settings_rgpd_title">PRIVACY AT GDPR</string>
+    <string name="settings_rgpd_controller_label">Data controller</string>
+    <string name="settings_rgpd_controller_value">Patrick DJEUZONG – BigForTravel</string>
+    <string name="settings_rgpd_data_label">Nakukuha na data</string>
+    <string name="settings_rgpd_data_value">Mga pangalan ng account, naka-encrypt na TOTP na susi</string>
+    <string name="settings_rgpd_storage_label">Lokasyon ng imbakan</string>
+    <string name="settings_rgpd_storage_value">Ang inyong device lamang (pribadong imbakan ng app, na-isolate ng Android sandbox)</string>
+    <string name="settings_rgpd_transfer_label">Paglilipat sa mga third party</string>
+    <string name="settings_rgpd_transfer_value">Walang hiling na ipinapadala ng Big MFA mismo. Ang naka-encrypt na export ay puwedeng i-share sa pamamagitan ng third-party app na inyong pinili, kung inyo lamang ito eksplisitong ina-activate.</string>
+    <string name="settings_rgpd_thirdparty_label">Embedded na third-party na code</string>
+    <string name="settings_rgpd_thirdparty_value">Bouncy Castle (MIT), CameraX (Apache-2.0), embedded na ML Kit barcode-scanning (Apache-2.0), ZXing (Apache-2.0) — lahat lokal, walang telemetry</string>
+    <string name="settings_rgpd_retention_label">Panahon ng pagpapanatili</string>
+    <string name="settings_rgpd_retention_value">Hanggang sa pag-uninstall o manu-manong pagbura</string>
+    <string name="settings_rgpd_legal_label">Legal na batayan</string>
+    <string name="settings_rgpd_legal_value">Pahintulot ng user (Artikulo 6.1.a)</string>
+    <string name="settings_rgpd_access_label">Karapatan sa access (Artikulo 15)</string>
+    <string name="settings_rgpd_access_value">Sa pamamagitan ng naka-encrypt na export (sa itaas)</string>
+    <string name="settings_rgpd_erasure_label">Karapatan sa pagbura (Artikulo 17)</string>
+    <string name="settings_rgpd_erasure_value">Sa pamamagitan ng “Burahin ang lahat ng aking data”</string>
+    <string name="settings_rgpd_portability_label">Karapatan sa portability ng data (Artikulo 20)</string>
+    <string name="settings_rgpd_portability_value">Sa pamamagitan ng naka-encrypt na export (native o cross-platform)</string>
+    <string name="settings_rgpd_dpo_label">Contact ng DPO</string>
+    <string name="settings_rgpd_dpo_value">contact@bigfortravel.com</string>
+    <string name="settings_rgpd_eu_label">Awtoridad ng EU (mga reklamo)</string>
+    <string name="settings_rgpd_eu_value">CNIL – www.cnil.fr (mga European na user)</string>
+    <string name="settings_rgpd_cm_label">Awtoridad ng Cameroon (mga reklamo)</string>
+    <string name="settings_rgpd_cm_value">ANTIC – www.antic.cm (mga user sa Cameroon)</string>
+    <string name="settings_rgpd_footer">Hindi kinokolekta ng Big MFA ang anumang personal na data sa labas ng inyong device, hindi ito nagsisimula ng anumang koneksyon sa network sa sarili nito, at hindi ito nagsha-share ng anumang impormasyon sa mga third party. Lahat ng data ay naka-encrypt gamit ang AES-256-GCM-SIV bago ang lokal na imbakan.</string>
+    <string name="settings_language_row_title">Wika</string>
+
+    <!-- BackupImporter -->
+    <string name="backup_importer_unreadable">Hindi mabasa o sira ang file</string>
+    <string name="backup_importer_unknown_format">Hindi nakikilalang format ng file</string>
+    <string name="backup_importer_wrong_password">Maling password o sira ang file</string>
+
+    <!-- Suportahan -->
+    <string name="support_title">Suportahan ang Big MFA</string>
+    <string name="support_description">Binuo at pinananatili nang boluntaryo ng BigForTravel ang Big MFA. Walang ad, walang pagbebenta ng data, walang nakatagong subscription. Kung kapaki-pakinabang ang app para sa inyo, ang isang donasyon — kahit maliit — ay tumutulong sa pagpopondo ng patuloy nitong pagpapaunlad.</string>
+    <string name="support_paypal_button">Mag-donate sa pamamagitan ng PayPal</string>
+    <string name="support_kofi_button">Mag-donate sa pamamagitan ng Ko-fi</string>
+    <string name="support_disclaimer">Ang mga donasyon ay opsyonal at hindi nagbibigay ng anumang karagdagang functionality. Palaging i-verify na ang ipinapakitang tatanggap ay BigForTravel / Patrick Djeuzong.</string>
+    <string name="support_official_site">🌐 Opisyal na website</string>
+    <string name="support_contact_us">✉️ Sulatan kami</string>
+    <string name="support_contact_subject">Big MFA — Contact</string>
+
+    <!-- Carousel ng QR export -->
+    <string name="export_qr_title">Export ng QR (%1$d/%2$d)</string>
+    <string name="export_qr_no_accounts">Walang account na ie-export.</string>
+    <string name="export_qr_zip_button">📦 I-export ang lahat ng QR code bilang ZIP</string>
+    <string name="export_qr_close_button">Isara</string>
+    <string name="export_qr_zip_error">Hindi magawa ang ZIP archive</string>
+    <string name="export_qr_share_title">I-share ang QR archive</string>
+
+    <!-- Gabay -->
+    <string name="guide_tab_installation">Pag-install</string>
+    <string name="guide_tab_usage">Paggamit</string>
+    <string name="guide_tab_features">Mga Feature</string>
+    <string name="guide_title">Gabay sa Big MFA</string>
+    <string name="guide_intro">Isang mabilis na pangkalahatang-ideya ng lahat ng available na feature.</string>
+    <string name="guide_codes_title">🔑 Aking mga Code</string>
+    <string name="guide_codes_body">Ang inyong mga TOTP code ay nag-a-update nang real-time na may visual na countdown. I-tap ang isang code para kopyahin ito (awtomatikong mabubura sa clipboard pagkatapos ng 30s). Para sa mga HOTP account, i-tap ang “Bumuo” tuwing kailangan ninyo ng code. Maghanap, palitan ang pangalan, o burahin ang isang account gamit ang mga icon sa bawat linya.</string>
+    <string name="guide_decoder_title">🔍 Decoder</string>
+    <string name="guide_decoder_body">I-paste o mag-import ng lihim mula sa isang imahe ng QR code para agad na makuha ang kaukulang TOTP code, nang hindi ito idinaragdag sa inyong vault. Kapaki-pakinabang para sa isang beses na pagsusuri.</string>
+    <string name="guide_key_title">🔐 Susi</string>
+    <string name="guide_key_body">Gumagawa ng random na lihim na susi, kasama ang kaukulang QR code, para mag-set up ng bagong account sa ibang serbisyo na humihiling sa inyo na gumawa ng sarili ninyong lihim.</string>
+    <string name="guide_add_title">➕ Magdagdag ng account</string>
+    <string name="guide_add_body">I-scan ang QR code na ibinigay ng serbisyo, o manu-manong ilagay ang lihim. Ang mga advanced na opsyon ay nagpapahintulot sa inyo na i-adjust ang algorithm, bilang ng digit, tagal ng panahon, o lumipat sa HOTP.</string>
+    <string name="guide_biometric_title">👆 Biometric na pag-unlock</string>
+    <string name="guide_biometric_body">I-activate ang pag-unlock gamit ang fingerprint mula sa Mga Setting. Ang inyong master password ay palaging mananatiling available bilang backup — hindi kailanman papalitan, dinadagdagan lamang.</string>
+    <string name="guide_backup_title">💾 Backup at pagbawi</string>
+    <string name="guide_backup_body">Dalawang format ng export: pinakamataas na seguridad (native para sa Android) o cross-platform na compatible (puwedeng i-import sa Chrome extension). Ang QR export ay gumagawa ng carousel ng mga QR code, isa-isa o sa ZIP archive. Awtomatikong nade-detect ng pagbawi ang format ng file.</string>
+    <string name="guide_security_title">🛡 Seguridad</string>
+    <string name="guide_security_body">Lahat ng data ay nananatiling eksklusibo sa inyong device, naka-encrypt gamit ang AES-256-GCM-SIV at isang susi na nakuha gamit ang Argon2id. Hindi kailanman nagsisimula ang app ng koneksyon sa network sa sarili nito.</string>
+    <string name="guide_language_title">🌐 Wika</string>
+    <string name="guide_language_body">Piliin ang “Awtomatiko” para sundin ang wika ng inyong telepono, o pumili ng partikular na wika mula sa footer ng mga screen ng pag-login.</string>
+    <string name="guide_install_step1_title">1. Gumawa ng inyong vault</string>
+    <string name="guide_install_step1_body">Sa unang paglunsad, piliin ang “Gumawa ng vault” para magsimula sa isang walang laman na vault, o “Ibalik ang umiiral na backup” kung nagamit na ninyo ang Big MFA sa Chrome o sa ibang Android device.</string>
+    <string name="guide_install_step2_title">2. Pumili ng malakas na master password</string>
+    <string name="guide_install_step2_body">Minimum na 12 karakter, ngunit mas mabuti ang mag-target ng passphrase na 16+ na karakter (halimbawa, ilang salitang pinagsama-sama). Ito ang tanging susi na nagpoprotekta sa lahat ng inyong account.</string>
+    <string name="guide_install_step3_title">3. Unawain ang hindi na mababawi</string>
+    <string name="guide_install_step3_body">Hindi iniimbak ng Big MFA ang inyong master password kahit saan, maging sa plain text o naka-encrypt. Kung makalimutan ninyo ito at wala kayong external na backup, permanenteng hindi na maa-access ang inyong mga account. Isulat ito sa isang maaasahang password manager.</string>
+    <string name="guide_install_step4_title">4. I-activate ang biometrics (opsyonal)</string>
+    <string name="guide_install_step4_body">Mula sa Mga Setting, i-activate ang pag-unlock gamit ang fingerprint para sa mas mabilis na araw-araw na access. Ang inyong master password ay palaging mananatiling available bilang backup.</string>
+    <string name="guide_usage_step1_title">1. Idagdag ang inyong unang account</string>
+    <string name="guide_usage_step1_body">Mula sa “+ Magdagdag”, i-scan ang QR code na ipinapakita ng serbisyo (pinakamabilis na paraan), o manu-manong ilagay ang pangalan, nagbigay, at Base32 na lihim na susi kung hindi kayo makapag-scan.</string>
+    <string name="guide_usage_step2_title">2. Gamitin ang isang code araw-araw</string>
+    <string name="guide_usage_step2_body">Sa “Aking mga Code”, direktang i-tap ang isang TOTP code para kopyahin ito (awtomatikong mabubura sa clipboard pagkatapos ng 30 segundo). Para sa isang HOTP account, i-tap ang “Bumuo” tuwing kailangan ninyo ito — palaging umuusad ang counter, hindi kailanman bumabalik.</string>
+    <string name="guide_usage_step3_title">3. Pamahalaan ang inyong mga account</string>
+    <string name="guide_usage_step3_body">Gamitin ang search bar para mabilis na mahanap ang isang account sa maraming account. Ang icon ng lapis ay nagpapahintulot ng pagpapalit ng pangalan, ang icon ng basurahan ay nagpapahintulot ng pagbura (na may dobleng kumpirmasyon, hindi na mababawi na aksyon).</string>
+    <string name="guide_usage_step4_title">4. Regular na gumawa ng backup</string>
+    <string name="guide_usage_step4_body">Mula sa Mga Setting, piliin ang “Export na may pinakamataas na seguridad” para sa backup na Android lamang, o “Cross-platform na compatible na export” kung ginagamit din ninyo ang Big MFA sa Chrome. Ang QR export (carousel o ZIP) ay kapaki-pakinabang para sa paglilipat sa ibang standard na TOTP-compatible na manager.</string>
+    <string name="guide_usage_step5_title">5. Baguhin ang inyong master password</string>
+    <string name="guide_usage_step5_body">Sa Mga Setting, ilagay ang inyong kasalukuyang password, pagkatapos ang bago. Ang inyong mga account at biometrics (kung naka-activate) ay mananatiling buo — ang password lamang ang nagbabago.</string>
+    <string name="nav_accounts">Aking mga Code</string>
+    <string name="nav_decoder">Decoder</string>
+    <string name="nav_key">Susi</string>
+    <string name="nav_add">+ Magdagdag</string>
+    <string name="nav_support">Suportahan</string>
+    <string name="nav_settings">Mga Setting</string>
+    <string name="nav_guide">Gabay</string>
+    <string name="nav_lock_content_description">I-lock ang vault</string>
+</resources>

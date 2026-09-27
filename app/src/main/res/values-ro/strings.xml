@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Big MFA</string>
+
+    <!-- Ecran de deblocare -->
+    <string name="unlock_title">Big MFA</string>
+    <string name="unlock_subtitle">Introduceți parola principală</string>
+    <string name="unlock_password_label">Parola principală</string>
+    <string name="unlock_button">Deblochează</string>
+    <string name="unlock_reset_vault">Resetează seiful</string>
+    <string name="unlock_biometric_content_description">Deblochează cu amprenta</string>
+
+    <!-- Subsol comun -->
+    <string name="footer_support">❤️ Susține</string>
+    <string name="footer_contact">✉️ Contactează-ne</string>
+    <string name="footer_language_auto">🌐 Automat — limba browserului</string>
+    <string name="footer_language_placeholder">Selector de limbă — disponibil în curând</string>
+    <string name="footer_gplv3">Gratuit și open source (licență GPLv3).</string>
+    <string name="language_dialog_title">Alege limba</string>
+    <string name="language_option_auto">🌐 Automat (limba sistemului)</string>
+
+    <!-- Codurile mele -->
+    <string name="accounts_empty_state">Încă nu există conturi.\nFolosiți „+ Adaugă” pentru a crea unul.</string>
+    <string name="accounts_search_placeholder">Caută un cont</string>
+    <string name="accounts_no_results">Niciun rezultat pentru „%1$s”</string>
+    <string name="accounts_rename_title">Redenumește contul</string>
+    <string name="accounts_name_label">Numele contului</string>
+    <string name="accounts_issuer_label">Emitent (opțional)</string>
+    <string name="accounts_name_required_error">Numele contului este obligatoriu</string>
+    <string name="accounts_save">Salvează</string>
+    <string name="accounts_cancel">Anulează</string>
+    <string name="accounts_rename_content_description">Redenumește %1$s</string>
+    <string name="accounts_delete_content_description">Șterge %1$s</string>
+    <string name="accounts_delete_confirm_title">Ștergeți „%1$s”?</string>
+    <string name="accounts_delete_irreversible">Această acțiune este ireversibilă.</string>
+    <string name="accounts_delete_button">Șterge</string>
+    <string name="accounts_hotp_label">HOTP</string>
+    <string name="accounts_unreadable">Ilizibil</string>
+    <string name="accounts_copy_content_description">Copiază</string>
+    <string name="accounts_generate_button">Generează</string>
+
+    <!-- + Adaugă -->
+    <string name="add_account_title">Adaugă un cont</string>
+    <string name="add_account_scan_qr">📷 Scanează un cod QR</string>
+    <string name="add_account_qr_invalid">Cod QR nevalid sau nerecunoscut</string>
+    <string name="add_account_cancel_scan">Anulează scanarea</string>
+    <string name="add_account_name_label">Numele contului</string>
+    <string name="add_account_issuer_label">Emitent (opțional)</string>
+    <string name="add_account_secret_label">Secret (Base32)</string>
+    <string name="add_account_advanced_options">⚙ Opțiuni avansate (algoritm, cifre, perioadă)</string>
+    <string name="add_account_type_label">TIP</string>
+    <string name="add_account_type_totp">TOTP (bazat pe timp — standard)</string>
+    <string name="add_account_type_hotp">HOTP (bazat pe contor)</string>
+    <string name="add_account_algorithm_label">ALGORITM</string>
+    <string name="add_account_algorithm_sha1">SHA-1 (implicit, compatibilitate universală)</string>
+    <string name="add_account_digits_label">NUMĂR DE CIFRE</string>
+    <string name="add_account_digits_default">6 cifre (implicit)</string>
+    <string name="add_account_digits_n">%1$d cifre</string>
+    <string name="add_account_period_label">PERIOADĂ (SECUNDE)</string>
+    <string name="add_account_save">Salvează</string>
+    <string name="add_account_name_required">Numele contului este obligatoriu</string>
+    <string name="add_account_secret_required">Secretul este obligatoriu</string>
+    <string name="add_account_secret_invalid">Secretul nu este un Base32 valid</string>
+    <string name="add_account_save_error">Contul nu a putut fi salvat</string>
+    <string name="add_account_camera_permission_needed">Este necesar accesul la cameră pentru a scana un cod QR.</string>
+    <string name="add_account_grant_camera">Acordă acces la cameră</string>
+
+    <!-- Cheie -->
+    <string name="generate_key_description">Generează o cheie secretă Base32 aleatorie (160 de biți) compatibilă cu Google Authenticator, Aegis, Authy…</string>
+    <string name="generate_key_generate">Generează</string>
+    <string name="generate_key_copy">Copiază</string>
+    <string name="generate_key_copied">Cheie copiată</string>
+    <string name="generate_key_show_qr">Afișează codul QR</string>
+    <string name="generate_key_qr_title">Cod QR</string>
+    <string name="generate_key_close">Închide</string>
+
+    <!-- Decodor -->
+    <string name="decoder_import_qr">Importă dintr-un cod QR (imagine)</string>
+    <string name="decoder_no_qr_found">Niciun cod QR detectat în această imagine</string>
+    <string name="decoder_secret_label">CHEIE MFA / TOTP (BASE32)</string>
+    <string name="decoder_code_placeholder">— — — — — —</string>
+    <string name="decoder_generate_code">Generează codul</string>
+    <string name="decoder_copy_content_description">Copiază codul</string>
+    <string name="decoder_code_copied">Cod copiat — șters în 30s</string>
+    <string name="decoder_secret_empty_error">Introduceți sau importați o cheie</string>
+    <string name="decoder_secret_invalid_error">Cheie nevalidă</string>
+
+    <!-- Creare/Restaurare seif -->
+    <string name="create_vault_password_too_short">Parola trebuie să aibă cel puțin 12 caractere</string>
+    <string name="create_vault_passwords_mismatch">Parolele nu coincid</string>
+    <string name="create_vault_creation_error">Seiful nu a putut fi creat</string>
+    <string name="restore_vault_new_password_too_short">Noua parolă trebuie să aibă cel puțin 12 caractere</string>
+    <string name="restore_vault_new_passwords_mismatch">Noile parole nu coincid</string>
+    <string name="restore_vault_generic_error">Copia de rezervă nu a putut fi restaurată</string>
+    <string name="create_vault_title">Creați-vă seiful Big MFA</string>
+    <string name="create_vault_min_chars">Minimum 12 caractere</string>
+    <string name="create_vault_password_label">Parolă</string>
+    <string name="create_vault_confirm_label">Confirmă parola</string>
+    <string name="create_vault_create_button">Creează seiful</string>
+    <string name="create_vault_restore_button">📥 Restaurează o copie de rezervă existentă</string>
+    <string name="restore_backup_title">Restaurează o copie de rezervă</string>
+    <string name="restore_backup_description">Format nativ Big MFA sau compatibil Chrome — detectat automat.</string>
+    <string name="restore_backup_choose_file">Alege fișierul de rezervă</string>
+    <string name="restore_backup_file_selected">✅ Fișier selectat</string>
+    <string name="restore_backup_backup_password_label">Parola copiei de rezervă</string>
+    <string name="restore_backup_new_password_title">PAROLA PRINCIPALĂ NOUĂ</string>
+    <string name="restore_backup_new_password_hint">Diferită de parola copiei de rezervă — minimum 12 caractere.</string>
+    <string name="restore_backup_new_password_label">Noua parolă principală</string>
+    <string name="restore_backup_confirm_new_password_label">Confirmă noua parolă</string>
+    <string name="restore_backup_restore_button">Restaurează</string>
+    <string name="restore_backup_cancel">Anulează</string>
+    <string name="restore_backup_file_read_error">Fișierul nu a putut fi citit</string>
+
+    <!-- Erori de deblocare -->
+    <string name="unlock_error_wrong_password">Parolă incorectă</string>
+    <string name="unlock_error_corrupted_vault">Datele seifului sunt corupte sau ilizibile</string>
+    <string name="unlock_error_no_vault">Niciun seif găsit</string>
+    <string name="unlock_error_too_many_attempts">Prea multe încercări — reîncercați în %1$ds</string>
+    <string name="unlock_error_biometric_unavailable">Biometria nu este disponibilă — folosiți parola</string>
+    <string name="unlock_error_biometric_failed">Autentificarea biometrică a eșuat</string>
+
+    <!-- Schimbarea parolei principale -->
+    <string name="change_password_title">Schimbă parola principală</string>
+    <string name="change_password_current_label">PAROLA ACTUALĂ</string>
+    <string name="change_password_new_label">PAROLA NOUĂ</string>
+    <string name="change_password_confirm_label">CONFIRMĂ</string>
+    <string name="change_password_button">Schimbă parola</string>
+    <string name="change_password_new_too_short">Noua parolă trebuie să aibă cel puțin 12 caractere</string>
+    <string name="change_password_new_mismatch">Noile parole nu coincid</string>
+    <string name="change_password_wrong_current">Parola actuală este incorectă</string>
+    <string name="change_password_generic_error">Parola nu a putut fi schimbată</string>
+    <string name="change_password_success_toast">Parola a fost schimbată cu succes</string>
+    <string name="change_password_cancel">Anulează</string>
+
+    <!-- Biometrie -->
+    <string name="biometric_setup_title">Activează biometria</string>
+    <string name="biometric_hardware_insufficient">Dispozitivul dvs. nu dispune de suport hardware suficient pentru a activa biometria în siguranță.</string>
+    <string name="biometric_activate_prompt">Activează deblocarea prin amprentă</string>
+    <string name="biometric_password_confirmed_hint">Parolă confirmată — puneți degetul pe senzor.</string>
+    <string name="biometric_continue_button">Continuă cu amprenta</string>
+    <string name="biometric_confirm_password_label">Confirmați parola principală</string>
+    <string name="biometric_confirm_button">Confirmă</string>
+    <string name="biometric_wrong_password">Parolă incorectă</string>
+    <string name="biometric_key_creation_error">Cheia securizată nu a putut fi creată</string>
+    <string name="biometric_cipher_error">Criptarea nu a putut fi pregătită</string>
+    <string name="biometric_enable_error">Biometria nu a putut fi activată</string>
+    <string name="biometric_auth_failed">Autentificarea biometrică a eșuat</string>
+    <string name="biometric_activated_toast">Biometrie activată</string>
+    <string name="biometric_deactivated_toast">Biometrie dezactivată</string>
+    <string name="biometric_cancel">Anulează</string>
+    <string name="biometric_row_title">Deblocare biometrică</string>
+    <string name="biometric_row_enabled">Activată</string>
+    <string name="biometric_row_disabled">Dezactivată</string>
+
+    <!-- Setări -->
+    <string name="settings_title">Setări</string>
+    <string name="settings_security_status_title">STARE DE SECURITATE</string>
+    <string name="settings_masvs_badge">🛡 OWASP MASVS — Nivel consolidat</string>
+    <string name="settings_encryption_label">CRIPTARE</string>
+    <string name="settings_kdf_label">KDF</string>
+    <string name="settings_inactivity_label">TIMP DE INACTIVITATE</string>
+    <string name="settings_inactivity_value">2 min</string>
+    <string name="settings_bruteforce_label">PROTECȚIE ÎMPOTRIVA FORȚEI BRUTE</string>
+    <string name="settings_bruteforce_value">5 încercări + HMAC</string>
+    <string name="settings_lockout_label">BLOCARE</string>
+    <string name="settings_lockout_value">Exponențială</string>
+    <string name="settings_salt_label">SARE</string>
+    <string name="settings_salt_value">256 de biți</string>
+    <string name="settings_integrity_label">INTEGRITATEA SEIFULUI</string>
+    <string name="settings_integrity_value">HMAC-SHA256</string>
+    <string name="settings_hardware_label">ANCORARE HARDWARE</string>
+    <string name="settings_hardware_value">TEE minim, StrongBox dacă este disponibil</string>
+    <string name="settings_bruteforce_note">ℹ️ Protecția împotriva forței brute apără împotriva încercărilor repetate în cadrul aplicației. Nu înlocuiește o parolă puternică: cineva cu acces direct la fișierul seifului de pe dispozitiv ar putea încerca o decriptare offline fără a trece prin această limită. Folosiți o frază de acces de 16+ caractere.</string>
+    <string name="settings_change_password_button">🔑 Schimbă parola principală</string>
+    <string name="settings_backup_title">COPIE DE REZERVĂ</string>
+    <string name="settings_export_native_title">🛡️ Export de securitate maximă</string>
+    <string name="settings_export_native_subtitle">Argon2id + AES-256-GCM-SIV</string>
+    <string name="settings_export_chrome_title">🌐 Export compatibil multiplatformă</string>
+    <string name="settings_export_chrome_subtitle">PBKDF2 + AES-256-GCM — importabil în Big MFA Chrome</string>
+    <string name="settings_export_qr_title">📷 Export QR (carusel + ZIP)</string>
+    <string name="settings_export_qr_subtitle">Un cod QR per cont, de răsfoit sau descărcat</string>
+    <string name="settings_import_button">📥 Importă / Restaurează</string>
+    <string name="settings_export_footer">Exportul este criptat — secretele rămân protejate chiar dacă fișierul este partajat.</string>
+    <string name="settings_export_native_dialog_title">Export de securitate maximă</string>
+    <string name="settings_export_chrome_dialog_title">Export compatibil multiplatformă</string>
+    <string name="settings_export_native_dialog_desc">🛡️ Argon2id + AES-256-GCM-SIV — această parolă protejează fișierul exportat, diferită de parola principală.</string>
+    <string name="settings_export_chrome_dialog_desc">🌐 PBKDF2 + AES-256-GCM — format compatibil cu extensia Chrome Big MFA. Această parolă este diferită de parola principală.</string>
+    <string name="settings_export_password_label">Parola de export</string>
+    <string name="settings_export_confirm_label">Confirmă</string>
+    <string name="settings_export_min_chars_error">Minimum 8 caractere</string>
+    <string name="settings_export_mismatch_error">Parolele nu coincid</string>
+    <string name="settings_export_button">Exportă</string>
+    <string name="settings_export_cancel">Anulează</string>
+    <string name="settings_export_generic_error">Exportul nu a putut fi creat</string>
+    <string name="settings_export_share_title">Partajează exportul</string>
+    <string name="settings_import_dialog_title">Importă o copie de rezervă</string>
+    <string name="settings_import_dialog_desc">Selectați un fișier de rezervă (nativ Big MFA sau compatibil Chrome — formatul este detectat automat).</string>
+    <string name="settings_import_choose_file">Alege un fișier</string>
+    <string name="settings_import_file_selected_desc">Fișier selectat — introduceți parola acestei copii de rezervă.</string>
+    <string name="settings_import_password_label">Parola copiei de rezervă</string>
+    <string name="settings_import_button_confirm">Importă</string>
+    <string name="settings_import_read_error">Fișierul nu a putut fi citit</string>
+    <string name="settings_import_generic_error">Importul a eșuat</string>
+    <string name="settings_import_success_toast">%1$d cont(uri) importat(e)</string>
+    <string name="settings_danger_zone_title">ZONĂ PERICULOASĂ</string>
+    <string name="settings_delete_all_button">🗑 Șterge toate datele mele</string>
+    <string name="settings_delete_all_description">Exercită dreptul la ștergere (Art. 17 GDPR). Șterge toate conturile și parola principală. Acțiune ireversibilă.</string>
+    <string name="settings_delete_confirm_title">Ștergeți toate datele?</string>
+    <string name="settings_delete_confirm_desc">Toate conturile dvs. vor fi șterse definitiv. Această acțiune nu poate fi anulată.</string>
+    <string name="settings_delete_continue">Continuă</string>
+    <string name="settings_delete_final_title">Confirmare finală</string>
+    <string name="settings_delete_final_desc">Sunteți CU ADEVĂRAT sigur? Nicio recuperare nu va fi posibilă după acest pas.</string>
+    <string name="settings_delete_final_button">Șterge definitiv</string>
+    <string name="settings_delete_cancel">Anulează</string>
+    <string name="settings_rgpd_badge">🔒 Conform GDPR — Date 100% locale</string>
+    <string name="settings_rgpd_title">CONFIDENȚIALITATE ȘI GDPR</string>
+    <string name="settings_rgpd_controller_label">Operator de date</string>
+    <string name="settings_rgpd_controller_value">Patrick DJEUZONG – BigForTravel</string>
+    <string name="settings_rgpd_data_label">Date colectate</string>
+    <string name="settings_rgpd_data_value">Nume de conturi, chei TOTP criptate</string>
+    <string name="settings_rgpd_storage_label">Locul de stocare</string>
+    <string name="settings_rgpd_storage_value">Doar dispozitivul dvs. (stocare privată a aplicației, izolată de sandbox-ul Android)</string>
+    <string name="settings_rgpd_transfer_label">Transfer către terți</string>
+    <string name="settings_rgpd_transfer_value">Nicio solicitare nu este făcută de Big MFA în sine. Exportul criptat poate fi partajat printr-o aplicație terță la alegere, doar dacă activați acest lucru explicit.</string>
+    <string name="settings_rgpd_thirdparty_label">Cod terț încorporat</string>
+    <string name="settings_rgpd_thirdparty_value">Bouncy Castle (MIT), CameraX (Apache-2.0), ML Kit barcode-scanning încorporat (Apache-2.0), ZXing (Apache-2.0) — toate locale, fără telemetrie</string>
+    <string name="settings_rgpd_retention_label">Perioadă de păstrare</string>
+    <string name="settings_rgpd_retention_value">Până la dezinstalare sau ștergere manuală</string>
+    <string name="settings_rgpd_legal_label">Bază legală</string>
+    <string name="settings_rgpd_legal_value">Consimțământul utilizatorului (Art. 6.1.a)</string>
+    <string name="settings_rgpd_access_label">Drept de acces (Art. 15)</string>
+    <string name="settings_rgpd_access_value">Prin exportul criptat (mai sus)</string>
+    <string name="settings_rgpd_erasure_label">Drept la ștergere (Art. 17)</string>
+    <string name="settings_rgpd_erasure_value">Prin „Șterge toate datele mele”</string>
+    <string name="settings_rgpd_portability_label">Drept la portabilitate (Art. 20)</string>
+    <string name="settings_rgpd_portability_value">Prin exportul criptat (nativ sau multiplatformă)</string>
+    <string name="settings_rgpd_dpo_label">Contact DPO</string>
+    <string name="settings_rgpd_dpo_value">contact@bigfortravel.com</string>
+    <string name="settings_rgpd_eu_label">Autoritate UE (reclamații)</string>
+    <string name="settings_rgpd_eu_value">CNIL – www.cnil.fr (utilizatori europeni)</string>
+    <string name="settings_rgpd_cm_label">Autoritate camerun (reclamații)</string>
+    <string name="settings_rgpd_cm_value">ANTIC – www.antic.cm (utilizatori camerunezi)</string>
+    <string name="settings_rgpd_footer">Big MFA nu colectează date personale în afara dispozitivului dvs., nu inițiază nicio conexiune la rețea din proprie inițiativă și nu partajează informații cu terți. Toate datele sunt criptate cu AES-256-GCM-SIV înainte de stocarea locală.</string>
+    <string name="settings_language_row_title">Limbă</string>
+
+    <!-- BackupImporter -->
+    <string name="backup_importer_unreadable">Fișier ilizibil sau corupt</string>
+    <string name="backup_importer_unknown_format">Format de fișier nerecunoscut</string>
+    <string name="backup_importer_wrong_password">Parolă incorectă sau fișier corupt</string>
+
+    <!-- Susține -->
+    <string name="support_title">Susține Big MFA</string>
+    <string name="support_description">Big MFA este dezvoltat și întreținut voluntar de BigForTravel. Fără reclame, fără vânzare de date, fără abonament ascuns. Dacă aplicația vă este utilă, o donație — chiar și mică — ajută la finanțarea dezvoltării continue.</string>
+    <string name="support_paypal_button">Donează prin PayPal</string>
+    <string name="support_kofi_button">Donează prin Ko-fi</string>
+    <string name="support_disclaimer">Donațiile sunt opționale și nu acordă nicio funcționalitate suplimentară. Verificați întotdeauna că beneficiarul afișat este BigForTravel / Patrick Djeuzong.</string>
+    <string name="support_official_site">🌐 Site oficial</string>
+    <string name="support_contact_us">✉️ Scrieți-ne</string>
+    <string name="support_contact_subject">Big MFA — Contact</string>
+
+    <!-- Carusel export QR -->
+    <string name="export_qr_title">Export QR (%1$d/%2$d)</string>
+    <string name="export_qr_no_accounts">Niciun cont de exportat.</string>
+    <string name="export_qr_zip_button">📦 Exportă toate codurile QR în ZIP</string>
+    <string name="export_qr_close_button">Închide</string>
+    <string name="export_qr_zip_error">Arhiva ZIP nu a putut fi creată</string>
+    <string name="export_qr_share_title">Partajează arhiva QR</string>
+
+    <!-- Ghid -->
+    <string name="guide_tab_installation">Instalare</string>
+    <string name="guide_tab_usage">Utilizare</string>
+    <string name="guide_tab_features">Funcționalități</string>
+    <string name="guide_title">Ghid Big MFA</string>
+    <string name="guide_intro">O prezentare rapidă a tuturor funcționalităților disponibile.</string>
+    <string name="guide_codes_title">🔑 Codurile mele</string>
+    <string name="guide_codes_body">Codurile TOTP se actualizează în timp real cu o numărătoare inversă vizuală. Atingeți un cod pentru a-l copia (șters automat din clipboard după 30s). Pentru conturile HOTP, atingeți „Generează” de fiecare dată când aveți nevoie de unul. Căutați, redenumiți sau ștergeți un cont folosind pictogramele de pe fiecare rând.</string>
+    <string name="guide_decoder_title">🔍 Decodor</string>
+    <string name="guide_decoder_body">Lipiți sau importați un secret dintr-o imagine de cod QR pentru a obține instantaneu codul TOTP corespunzător, fără a-l adăuga în seif. Util pentru o verificare punctuală.</string>
+    <string name="guide_key_title">🔐 Cheie</string>
+    <string name="guide_key_body">Generează o cheie secretă aleatorie, împreună cu codul QR aferent, pentru a configura un cont nou la un alt serviciu care solicită crearea propriului secret.</string>
+    <string name="guide_add_title">➕ Adaugă un cont</string>
+    <string name="guide_add_body">Scanați codul QR furnizat de serviciu sau introduceți manual secretul. Opțiunile avansate permit ajustarea algoritmului, numărului de cifre, perioadei, sau comutarea la HOTP.</string>
+    <string name="guide_biometric_title">👆 Deblocare biometrică</string>
+    <string name="guide_biometric_body">Activați deblocarea prin amprentă din Setări. Parola dvs. principală rămâne întotdeauna disponibilă ca rezervă — niciodată înlocuită, doar completată.</string>
+    <string name="guide_backup_title">💾 Copie de rezervă și restaurare</string>
+    <string name="guide_backup_body">Două formate de export: securitate maximă (nativ Android) sau compatibil multiplatformă (importabil în extensia Chrome). Exportul QR generează un carusel de coduri QR, individual sau într-o arhivă ZIP. Restaurarea detectează automat formatul fișierului.</string>
+    <string name="guide_security_title">🛡 Securitate</string>
+    <string name="guide_security_body">Toate datele rămân exclusiv pe dispozitivul dvs., criptate cu AES-256-GCM-SIV și o cheie derivată folosind Argon2id. Aplicația nu inițiază niciodată singură o conexiune la rețea.</string>
+    <string name="guide_language_title">🌐 Limbă</string>
+    <string name="guide_language_body">Alegeți „Automat” pentru a urma limba telefonului dvs., sau selectați o limbă specifică din subsolul ecranelor de autentificare.</string>
+    <string name="guide_install_step1_title">1. Creați-vă seiful</string>
+    <string name="guide_install_step1_body">La prima pornire, alegeți „Creează seiful” pentru a începe cu un seif gol, sau „Restaurează o copie de rezervă existentă” dacă ați folosit deja Big MFA în Chrome sau pe alt dispozitiv Android.</string>
+    <string name="guide_install_step2_title">2. Alegeți o parolă principală puternică</string>
+    <string name="guide_install_step2_body">Minimum 12 caractere, dar vizați mai degrabă o frază de acces de 16+ caractere (de exemplu, mai multe cuvinte combinate). Este singura cheie care protejează toate conturile dvs.</string>
+    <string name="guide_install_step3_title">3. Înțelegeți ireversibilitatea</string>
+    <string name="guide_install_step3_body">Big MFA nu stochează parola principală nicăieri, nici în clar, nici criptat. Dacă o uitați și nu aveți o copie de rezervă externă, conturile dvs. vor deveni permanent inaccesibile. Notați-o într-un manager de parole de încredere.</string>
+    <string name="guide_install_step4_title">4. Activați biometria (opțional)</string>
+    <string name="guide_install_step4_body">Din Setări, activați deblocarea prin amprentă pentru un acces zilnic mai rapid. Parola dvs. principală rămâne întotdeauna disponibilă ca rezervă.</string>
+    <string name="guide_usage_step1_title">1. Adăugați primul cont</string>
+    <string name="guide_usage_step1_body">Din „+ Adaugă”, scanați codul QR afișat de serviciu (metoda cea mai rapidă), sau introduceți manual numele, emitentul și secretul Base32 dacă nu puteți scana.</string>
+    <string name="guide_usage_step2_title">2. Folosiți un cod zilnic</string>
+    <string name="guide_usage_step2_body">În „Codurile mele”, atingeți direct un cod TOTP pentru a-l copia (șters automat din clipboard după 30 de secunde). Pentru un cont HOTP, atingeți „Generează” de fiecare dată când aveți nevoie — contorul avansează întotdeauna, niciodată nu revine.</string>
+    <string name="guide_usage_step3_title">3. Gestionați-vă conturile</string>
+    <string name="guide_usage_step3_body">Folosiți bara de căutare pentru a găsi rapid un cont printre mai multe. Pictograma creion permite redenumirea, pictograma coș permite ștergerea (cu dublă confirmare, acțiune ireversibilă).</string>
+    <string name="guide_usage_step4_title">4. Faceți copii de rezervă regulat</string>
+    <string name="guide_usage_step4_body">Din Setări, alegeți „Export de securitate maximă” pentru o copie de rezervă doar Android, sau „Export compatibil multiplatformă” dacă folosiți Big MFA și în Chrome. Exportul QR (carusel sau ZIP) este util pentru transferul către un alt manager compatibil cu standardul TOTP.</string>
+    <string name="guide_usage_step5_title">5. Schimbați-vă parola principală</string>
+    <string name="guide_usage_step5_body">Din Setări, introduceți parola actuală și apoi cea nouă. Conturile dvs. și biometria (dacă este activată) rămân intacte — doar parola se schimbă.</string>
+    <string name="nav_accounts">Codurile mele</string>
+    <string name="nav_decoder">Decodor</string>
+    <string name="nav_key">Cheie</string>
+    <string name="nav_add">+ Adaugă</string>
+    <string name="nav_support">Susține</string>
+    <string name="nav_settings">Setări</string>
+    <string name="nav_guide">Ghid</string>
+    <string name="nav_lock_content_description">Blochează seiful</string>
+</resources>

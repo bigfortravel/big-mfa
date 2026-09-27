@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Big MFA</string>
+
+    <!-- Ekran odblokowania -->
+    <string name="unlock_title">Big MFA</string>
+    <string name="unlock_subtitle">Wprowadź hasło główne</string>
+    <string name="unlock_password_label">Hasło główne</string>
+    <string name="unlock_button">Odblokuj</string>
+    <string name="unlock_reset_vault">Zresetuj sejf</string>
+    <string name="unlock_biometric_content_description">Odblokuj za pomocą odcisku palca</string>
+
+    <!-- Wspólna stopka -->
+    <string name="footer_support">❤️ Wspieraj</string>
+    <string name="footer_contact">✉️ Skontaktuj się z nami</string>
+    <string name="footer_language_auto">🌐 Automatyczny — język przeglądarki</string>
+    <string name="footer_language_placeholder">Wybór języka — wkrótce dostępny</string>
+    <string name="footer_gplv3">Bezpłatny i otwartoźródłowy (licencja GPLv3).</string>
+    <string name="language_dialog_title">Wybierz język</string>
+    <string name="language_option_auto">🌐 Automatyczny (język systemu)</string>
+
+    <!-- Moje kody -->
+    <string name="accounts_empty_state">Brak kont.\nUżyj „+ Dodaj”, aby utworzyć nowe.</string>
+    <string name="accounts_search_placeholder">Szukaj konta</string>
+    <string name="accounts_no_results">Brak wyników dla „%1$s”</string>
+    <string name="accounts_rename_title">Zmień nazwę konta</string>
+    <string name="accounts_name_label">Nazwa konta</string>
+    <string name="accounts_issuer_label">Wystawca (opcjonalnie)</string>
+    <string name="accounts_name_required_error">Nazwa konta jest wymagana</string>
+    <string name="accounts_save">Zapisz</string>
+    <string name="accounts_cancel">Anuluj</string>
+    <string name="accounts_rename_content_description">Zmień nazwę %1$s</string>
+    <string name="accounts_delete_content_description">Usuń %1$s</string>
+    <string name="accounts_delete_confirm_title">Usunąć „%1$s”?</string>
+    <string name="accounts_delete_irreversible">Ta czynność jest nieodwracalna.</string>
+    <string name="accounts_delete_button">Usuń</string>
+    <string name="accounts_hotp_label">HOTP</string>
+    <string name="accounts_unreadable">Nieczytelny</string>
+    <string name="accounts_copy_content_description">Kopiuj</string>
+    <string name="accounts_generate_button">Generuj</string>
+
+    <!-- + Dodaj -->
+    <string name="add_account_title">Dodaj konto</string>
+    <string name="add_account_scan_qr">📷 Zeskanuj kod QR</string>
+    <string name="add_account_qr_invalid">Nieprawidłowy lub nierozpoznany kod QR</string>
+    <string name="add_account_cancel_scan">Anuluj skanowanie</string>
+    <string name="add_account_name_label">Nazwa konta</string>
+    <string name="add_account_issuer_label">Wystawca (opcjonalnie)</string>
+    <string name="add_account_secret_label">Sekret (Base32)</string>
+    <string name="add_account_advanced_options">⚙ Opcje zaawansowane (algorytm, cyfry, okres)</string>
+    <string name="add_account_type_label">TYP</string>
+    <string name="add_account_type_totp">TOTP (oparty na czasie — standardowy)</string>
+    <string name="add_account_type_hotp">HOTP (oparty na liczniku)</string>
+    <string name="add_account_algorithm_label">ALGORYTM</string>
+    <string name="add_account_algorithm_sha1">SHA-1 (domyślny, uniwersalna zgodność)</string>
+    <string name="add_account_digits_label">LICZBA CYFR</string>
+    <string name="add_account_digits_default">6 cyfr (domyślnie)</string>
+    <string name="add_account_digits_n">%1$d cyfr</string>
+    <string name="add_account_period_label">OKRES (SEKUNDY)</string>
+    <string name="add_account_save">Zapisz</string>
+    <string name="add_account_name_required">Nazwa konta jest wymagana</string>
+    <string name="add_account_secret_required">Sekret jest wymagany</string>
+    <string name="add_account_secret_invalid">Sekret nie jest prawidłowym Base32</string>
+    <string name="add_account_save_error">Nie można zapisać konta</string>
+    <string name="add_account_camera_permission_needed">Dostęp do aparatu jest wymagany do zeskanowania kodu QR.</string>
+    <string name="add_account_grant_camera">Zezwól na dostęp do aparatu</string>
+
+    <!-- Klucz -->
+    <string name="generate_key_description">Generuje losowy sekretny klucz Base32 (160 bitów) zgodny z Google Authenticator, Aegis, Authy…</string>
+    <string name="generate_key_generate">Generuj</string>
+    <string name="generate_key_copy">Kopiuj</string>
+    <string name="generate_key_copied">Klucz skopiowany</string>
+    <string name="generate_key_show_qr">Pokaż QR</string>
+    <string name="generate_key_qr_title">Kod QR</string>
+    <string name="generate_key_close">Zamknij</string>
+
+    <!-- Dekoder -->
+    <string name="decoder_import_qr">Importuj z kodu QR (obraz)</string>
+    <string name="decoder_no_qr_found">Nie wykryto kodu QR na tym obrazie</string>
+    <string name="decoder_secret_label">KLUCZ MFA / TOTP (BASE32)</string>
+    <string name="decoder_code_placeholder">— — — — — —</string>
+    <string name="decoder_generate_code">Generuj kod</string>
+    <string name="decoder_copy_content_description">Kopiuj kod</string>
+    <string name="decoder_code_copied">Kod skopiowany — zostanie usunięty za 30s</string>
+    <string name="decoder_secret_empty_error">Wprowadź lub zaimportuj klucz</string>
+    <string name="decoder_secret_invalid_error">Nieprawidłowy klucz</string>
+
+    <!-- Utwórz/Przywróć sejf -->
+    <string name="create_vault_password_too_short">Hasło musi mieć co najmniej 12 znaków</string>
+    <string name="create_vault_passwords_mismatch">Hasła nie są zgodne</string>
+    <string name="create_vault_creation_error">Nie można utworzyć sejfu</string>
+    <string name="restore_vault_new_password_too_short">Nowe hasło musi mieć co najmniej 12 znaków</string>
+    <string name="restore_vault_new_passwords_mismatch">Nowe hasła nie są zgodne</string>
+    <string name="restore_vault_generic_error">Nie można przywrócić kopii zapasowej</string>
+    <string name="create_vault_title">Utwórz swój sejf Big MFA</string>
+    <string name="create_vault_min_chars">Minimum 12 znaków</string>
+    <string name="create_vault_password_label">Hasło</string>
+    <string name="create_vault_confirm_label">Potwierdź hasło</string>
+    <string name="create_vault_create_button">Utwórz sejf</string>
+    <string name="create_vault_restore_button">📥 Przywróć istniejącą kopię zapasową</string>
+    <string name="restore_backup_title">Przywróć kopię zapasową</string>
+    <string name="restore_backup_description">Format natywny Big MFA lub zgodny z Chrome — wykrywany automatycznie.</string>
+    <string name="restore_backup_choose_file">Wybierz plik kopii zapasowej</string>
+    <string name="restore_backup_file_selected">✅ Plik wybrany</string>
+    <string name="restore_backup_backup_password_label">Hasło kopii zapasowej</string>
+    <string name="restore_backup_new_password_title">NOWE HASŁO GŁÓWNE</string>
+    <string name="restore_backup_new_password_hint">Inne niż hasło kopii zapasowej — minimum 12 znaków.</string>
+    <string name="restore_backup_new_password_label">Nowe hasło główne</string>
+    <string name="restore_backup_confirm_new_password_label">Potwierdź nowe hasło</string>
+    <string name="restore_backup_restore_button">Przywróć</string>
+    <string name="restore_backup_cancel">Anuluj</string>
+    <string name="restore_backup_file_read_error">Nie można odczytać pliku</string>
+
+    <!-- Błędy odblokowania -->
+    <string name="unlock_error_wrong_password">Nieprawidłowe hasło</string>
+    <string name="unlock_error_corrupted_vault">Dane sejfu są uszkodzone lub nieczytelne</string>
+    <string name="unlock_error_no_vault">Nie znaleziono sejfu</string>
+    <string name="unlock_error_too_many_attempts">Zbyt wiele prób — spróbuj ponownie za %1$ds</string>
+    <string name="unlock_error_biometric_unavailable">Biometria niedostępna — użyj hasła</string>
+    <string name="unlock_error_biometric_failed">Uwierzytelnianie biometryczne nie powiodło się</string>
+
+    <!-- Zmiana hasła głównego -->
+    <string name="change_password_title">Zmień hasło główne</string>
+    <string name="change_password_current_label">AKTUALNE HASŁO</string>
+    <string name="change_password_new_label">NOWE HASŁO</string>
+    <string name="change_password_confirm_label">POTWIERDŹ</string>
+    <string name="change_password_button">Zmień hasło</string>
+    <string name="change_password_new_too_short">Nowe hasło musi mieć co najmniej 12 znaków</string>
+    <string name="change_password_new_mismatch">Nowe hasła nie są zgodne</string>
+    <string name="change_password_wrong_current">Aktualne hasło jest nieprawidłowe</string>
+    <string name="change_password_generic_error">Nie można zmienić hasła</string>
+    <string name="change_password_success_toast">Hasło zostało pomyślnie zmienione</string>
+    <string name="change_password_cancel">Anuluj</string>
+
+    <!-- Biometria -->
+    <string name="biometric_setup_title">Włącz biometrię</string>
+    <string name="biometric_hardware_insufficient">Twoje urządzenie nie posiada wystarczającego wsparcia sprzętowego, aby bezpiecznie włączyć biometrię.</string>
+    <string name="biometric_activate_prompt">Włącz odblokowanie odciskiem palca</string>
+    <string name="biometric_password_confirmed_hint">Hasło potwierdzone — połóż palec na czytniku.</string>
+    <string name="biometric_continue_button">Kontynuuj z odciskiem palca</string>
+    <string name="biometric_confirm_password_label">Potwierdź swoje hasło główne</string>
+    <string name="biometric_confirm_button">Potwierdź</string>
+    <string name="biometric_wrong_password">Nieprawidłowe hasło</string>
+    <string name="biometric_key_creation_error">Nie można utworzyć bezpiecznego klucza</string>
+    <string name="biometric_cipher_error">Nie można przygotować szyfrowania</string>
+    <string name="biometric_enable_error">Nie można włączyć biometrii</string>
+    <string name="biometric_auth_failed">Uwierzytelnianie biometryczne nie powiodło się</string>
+    <string name="biometric_activated_toast">Biometria włączona</string>
+    <string name="biometric_deactivated_toast">Biometria wyłączona</string>
+    <string name="biometric_cancel">Anuluj</string>
+    <string name="biometric_row_title">Odblokowanie biometryczne</string>
+    <string name="biometric_row_enabled">Włączone</string>
+    <string name="biometric_row_disabled">Wyłączone</string>
+
+    <!-- Ustawienia -->
+    <string name="settings_title">Ustawienia</string>
+    <string name="settings_security_status_title">STAN ZABEZPIECZEŃ</string>
+    <string name="settings_masvs_badge">🛡 OWASP MASVS — Poziom wzmocniony</string>
+    <string name="settings_encryption_label">SZYFROWANIE</string>
+    <string name="settings_kdf_label">KDF</string>
+    <string name="settings_inactivity_label">CZAS BEZCZYNNOŚCI</string>
+    <string name="settings_inactivity_value">2 min</string>
+    <string name="settings_bruteforce_label">OCHRONA PRZED ATAKIEM SIŁOWYM</string>
+    <string name="settings_bruteforce_value">5 prób + HMAC</string>
+    <string name="settings_lockout_label">BLOKADA</string>
+    <string name="settings_lockout_value">Wykładnicza</string>
+    <string name="settings_salt_label">SÓL</string>
+    <string name="settings_salt_value">256 bitów</string>
+    <string name="settings_integrity_label">INTEGRALNOŚĆ SEJFU</string>
+    <string name="settings_integrity_value">HMAC-SHA256</string>
+    <string name="settings_hardware_label">ZAKOTWICZENIE SPRZĘTOWE</string>
+    <string name="settings_hardware_value">Minimum TEE, StrongBox jeśli dostępny</string>
+    <string name="settings_bruteforce_note">ℹ️ Ochrona przed atakiem siłowym broni przed powtarzanymi próbami w aplikacji. Nie zastępuje silnego hasła: ktoś z bezpośrednim dostępem do pliku sejfu na urządzeniu mógłby spróbować odszyfrowania offline bez tego ograniczenia. Używaj hasła składającego się z co najmniej 16 znaków.</string>
+    <string name="settings_change_password_button">🔑 Zmień hasło główne</string>
+    <string name="settings_backup_title">KOPIA ZAPASOWA</string>
+    <string name="settings_export_native_title">🛡️ Eksport maksymalnego bezpieczeństwa</string>
+    <string name="settings_export_native_subtitle">Argon2id + AES-256-GCM-SIV</string>
+    <string name="settings_export_chrome_title">🌐 Eksport wieloplatformowy</string>
+    <string name="settings_export_chrome_subtitle">PBKDF2 + AES-256-GCM — możliwy do importu w Big MFA Chrome</string>
+    <string name="settings_export_qr_title">📷 Eksport QR (karuzela + ZIP)</string>
+    <string name="settings_export_qr_subtitle">Jeden kod QR na konto, do przeglądania lub pobrania</string>
+    <string name="settings_import_button">📥 Importuj / Przywróć</string>
+    <string name="settings_export_footer">Eksport jest zaszyfrowany — sekrety pozostają chronione nawet po udostępnieniu pliku.</string>
+    <string name="settings_export_native_dialog_title">Eksport maksymalnego bezpieczeństwa</string>
+    <string name="settings_export_chrome_dialog_title">Eksport wieloplatformowy</string>
+    <string name="settings_export_native_dialog_desc">🛡️ Argon2id + AES-256-GCM-SIV — to hasło chroni wyeksportowany plik i różni się od hasła głównego.</string>
+    <string name="settings_export_chrome_dialog_desc">🌐 PBKDF2 + AES-256-GCM — format zgodny z rozszerzeniem Big MFA Chrome. To hasło różni się od hasła głównego.</string>
+    <string name="settings_export_password_label">Hasło eksportu</string>
+    <string name="settings_export_confirm_label">Potwierdź</string>
+    <string name="settings_export_min_chars_error">Minimum 8 znaków</string>
+    <string name="settings_export_mismatch_error">Hasła nie są zgodne</string>
+    <string name="settings_export_button">Eksportuj</string>
+    <string name="settings_export_cancel">Anuluj</string>
+    <string name="settings_export_generic_error">Nie można utworzyć eksportu</string>
+    <string name="settings_export_share_title">Udostępnij eksport</string>
+    <string name="settings_import_dialog_title">Importuj kopię zapasową</string>
+    <string name="settings_import_dialog_desc">Wybierz plik kopii zapasowej (natywny Big MFA lub zgodny z Chrome — format wykrywany automatycznie).</string>
+    <string name="settings_import_choose_file">Wybierz plik</string>
+    <string name="settings_import_file_selected_desc">Plik wybrany — wprowadź hasło tej kopii zapasowej.</string>
+    <string name="settings_import_password_label">Hasło kopii zapasowej</string>
+    <string name="settings_import_button_confirm">Importuj</string>
+    <string name="settings_import_read_error">Nie można odczytać pliku</string>
+    <string name="settings_import_generic_error">Import nie powiódł się</string>
+    <string name="settings_import_success_toast">Zaimportowano %1$d kont(a)</string>
+    <string name="settings_danger_zone_title">STREFA NIEBEZPIECZNA</string>
+    <string name="settings_delete_all_button">🗑 Usuń wszystkie moje dane</string>
+    <string name="settings_delete_all_description">Korzysta z prawa do usunięcia danych (Art. 17 RODO). Usuwa wszystkie konta i hasło główne. Czynność nieodwracalna.</string>
+    <string name="settings_delete_confirm_title">Usunąć wszystkie dane?</string>
+    <string name="settings_delete_confirm_desc">Wszystkie Twoje konta zostaną trwale usunięte. Tej czynności nie można cofnąć.</string>
+    <string name="settings_delete_continue">Kontynuuj</string>
+    <string name="settings_delete_final_title">Ostateczne potwierdzenie</string>
+    <string name="settings_delete_final_desc">Czy jesteś NAPRAWDĘ pewien? Po tym kroku odzyskanie danych nie będzie możliwe.</string>
+    <string name="settings_delete_final_button">Usuń trwale</string>
+    <string name="settings_delete_cancel">Anuluj</string>
+    <string name="settings_rgpd_badge">🔒 Zgodność z RODO — Dane 100% lokalne</string>
+    <string name="settings_rgpd_title">PRYWATNOŚĆ I RODO</string>
+    <string name="settings_rgpd_controller_label">Administrator danych</string>
+    <string name="settings_rgpd_controller_value">Patrick DJEUZONG – BigForTravel</string>
+    <string name="settings_rgpd_data_label">Zbierane dane</string>
+    <string name="settings_rgpd_data_value">Nazwy kont, zaszyfrowane klucze TOTP</string>
+    <string name="settings_rgpd_storage_label">Miejsce przechowywania</string>
+    <string name="settings_rgpd_storage_value">Wyłącznie Twoje urządzenie (prywatna pamięć aplikacji, odizolowana przez piaskownicę Android)</string>
+    <string name="settings_rgpd_transfer_label">Przekazywanie osobom trzecim</string>
+    <string name="settings_rgpd_transfer_value">Żadne żądanie nie jest wysyłane przez samą aplikację Big MFA. Zaszyfrowany eksport może być udostępniony za pośrednictwem wybranej przez Ciebie aplikacji zewnętrznej, tylko jeśli wyraźnie to aktywujesz.</string>
+    <string name="settings_rgpd_thirdparty_label">Wbudowany kod zewnętrzny</string>
+    <string name="settings_rgpd_thirdparty_value">Bouncy Castle (MIT), CameraX (Apache-2.0), wbudowany ML Kit barcode-scanning (Apache-2.0), ZXing (Apache-2.0) — wszystkie lokalne, brak telemetrii</string>
+    <string name="settings_rgpd_retention_label">Okres przechowywania</string>
+    <string name="settings_rgpd_retention_value">Do momentu odinstalowania lub ręcznego usunięcia</string>
+    <string name="settings_rgpd_legal_label">Podstawa prawna</string>
+    <string name="settings_rgpd_legal_value">Zgoda użytkownika (Art. 6 ust. 1 lit. a)</string>
+    <string name="settings_rgpd_access_label">Prawo dostępu (Art. 15)</string>
+    <string name="settings_rgpd_access_value">Poprzez zaszyfrowany eksport (powyżej)</string>
+    <string name="settings_rgpd_erasure_label">Prawo do usunięcia (Art. 17)</string>
+    <string name="settings_rgpd_erasure_value">Poprzez „Usuń wszystkie moje dane”</string>
+    <string name="settings_rgpd_portability_label">Prawo do przenoszenia danych (Art. 20)</string>
+    <string name="settings_rgpd_portability_value">Poprzez zaszyfrowany eksport (natywny lub wieloplatformowy)</string>
+    <string name="settings_rgpd_dpo_label">Kontakt z IOD</string>
+    <string name="settings_rgpd_dpo_value">contact@bigfortravel.com</string>
+    <string name="settings_rgpd_eu_label">Organ UE (skargi)</string>
+    <string name="settings_rgpd_eu_value">CNIL – www.cnil.fr (użytkownicy europejscy)</string>
+    <string name="settings_rgpd_cm_label">Organ kameruński (skargi)</string>
+    <string name="settings_rgpd_cm_value">ANTIC – www.antic.cm (użytkownicy kameruńscy)</string>
+    <string name="settings_rgpd_footer">Big MFA nie zbiera żadnych danych osobowych poza Twoim urządzeniem, nie inicjuje samodzielnie żadnych połączeń sieciowych i nie udostępnia żadnych informacji osobom trzecim. Wszystkie dane są szyfrowane za pomocą AES-256-GCM-SIV przed lokalnym zapisem.</string>
+    <string name="settings_language_row_title">Język</string>
+
+    <!-- BackupImporter -->
+    <string name="backup_importer_unreadable">Plik nieczytelny lub uszkodzony</string>
+    <string name="backup_importer_unknown_format">Nierozpoznany format pliku</string>
+    <string name="backup_importer_wrong_password">Nieprawidłowe hasło lub uszkodzony plik</string>
+
+    <!-- Wspieraj -->
+    <string name="support_title">Wesprzyj Big MFA</string>
+    <string name="support_description">Big MFA jest rozwijana i utrzymywana dobrowolnie przez BigForTravel. Bez reklam, bez sprzedaży danych, bez ukrytej subskrypcji. Jeśli aplikacja jest dla Ciebie przydatna, darowizna — nawet niewielka — pomaga finansować jej dalszy rozwój.</string>
+    <string name="support_paypal_button">Wpłać przez PayPal</string>
+    <string name="support_kofi_button">Wpłać przez Ko-fi</string>
+    <string name="support_disclaimer">Darowizny są dobrowolne i nie przyznają żadnych dodatkowych funkcji. Zawsze sprawdzaj, czy wyświetlony odbiorca to BigForTravel / Patrick Djeuzong.</string>
+    <string name="support_official_site">🌐 Strona oficjalna</string>
+    <string name="support_contact_us">✉️ Napisz do nas</string>
+    <string name="support_contact_subject">Big MFA — Kontakt</string>
+
+    <!-- Karuzela eksportu QR -->
+    <string name="export_qr_title">Eksport QR (%1$d/%2$d)</string>
+    <string name="export_qr_no_accounts">Brak kont do wyeksportowania.</string>
+    <string name="export_qr_zip_button">📦 Eksportuj wszystkie kody QR jako ZIP</string>
+    <string name="export_qr_close_button">Zamknij</string>
+    <string name="export_qr_zip_error">Nie można utworzyć archiwum ZIP</string>
+    <string name="export_qr_share_title">Udostępnij archiwum QR</string>
+
+    <!-- Przewodnik -->
+    <string name="guide_tab_installation">Instalacja</string>
+    <string name="guide_tab_usage">Użytkowanie</string>
+    <string name="guide_tab_features">Funkcje</string>
+    <string name="guide_title">Przewodnik Big MFA</string>
+    <string name="guide_intro">Szybki przegląd wszystkich dostępnych funkcji.</string>
+    <string name="guide_codes_title">🔑 Moje kody</string>
+    <string name="guide_codes_body">Twoje kody TOTP odświeżają się na bieżąco z wizualnym odliczaniem. Dotknij kodu, aby go skopiować (automatycznie usuwany ze schowka po 30s). W przypadku kont HOTP dotknij „Generuj” za każdym razem, gdy potrzebujesz kodu. Wyszukuj, zmieniaj nazwę lub usuwaj konto za pomocą ikon w każdym wierszu.</string>
+    <string name="guide_decoder_title">🔍 Dekoder</string>
+    <string name="guide_decoder_body">Wklej lub zaimportuj sekret z obrazu kodu QR, aby natychmiast uzyskać jego kod TOTP, bez dodawania go do sejfu. Przydatne do jednorazowej weryfikacji.</string>
+    <string name="guide_key_title">🔐 Klucz</string>
+    <string name="guide_key_body">Generuje losowy sekretny klucz wraz z kodem QR, aby skonfigurować nowe konto w innej usłudze, która wymaga utworzenia własnego sekretu.</string>
+    <string name="guide_add_title">➕ Dodaj konto</string>
+    <string name="guide_add_body">Zeskanuj kod QR wyświetlony przez usługę lub wprowadź sekret ręcznie. Opcje zaawansowane pozwalają dostosować algorytm, liczbę cyfr, okres lub przełączyć na HOTP.</string>
+    <string name="guide_biometric_title">👆 Odblokowanie biometryczne</string>
+    <string name="guide_biometric_body">Włącz odblokowanie odciskiem palca w Ustawieniach. Twoje hasło główne zawsze pozostaje dostępne jako opcja zapasowa — nigdy nie jest zastępowane, tylko uzupełniane.</string>
+    <string name="guide_backup_title">💾 Kopia zapasowa i przywracanie</string>
+    <string name="guide_backup_body">Dwa formaty eksportu: maksymalne bezpieczeństwo (natywny dla Androida) lub zgodny wieloplatformowo (możliwy do importu w rozszerzeniu Chrome). Eksport QR generuje karuzelę kodów QR, pojedynczo lub w archiwum ZIP. Przywracanie automatycznie wykrywa format pliku.</string>
+    <string name="guide_security_title">🛡 Bezpieczeństwo</string>
+    <string name="guide_security_body">Wszystkie dane pozostają wyłącznie na Twoim urządzeniu, zaszyfrowane za pomocą AES-256-GCM-SIV i klucza wyprowadzonego za pomocą Argon2id. Aplikacja nigdy samodzielnie nie inicjuje połączenia sieciowego.</string>
+    <string name="guide_language_title">🌐 Język</string>
+    <string name="guide_language_body">Wybierz „Automatyczny”, aby podążać za językiem telefonu, lub wybierz konkretny język w stopce ekranów logowania.</string>
+    <string name="guide_install_step1_title">1. Utwórz swój sejf</string>
+    <string name="guide_install_step1_body">Przy pierwszym uruchomieniu wybierz „Utwórz sejf”, aby zacząć od pustego sejfu, lub „Przywróć istniejącą kopię zapasową”, jeśli używałeś już Big MFA w Chrome lub na innym urządzeniu z Androidem.</string>
+    <string name="guide_install_step2_title">2. Wybierz silne hasło główne</string>
+    <string name="guide_install_step2_body">Minimum 12 znaków, ale dąż raczej do hasła składającego się z 16 lub więcej znaków (na przykład kilku połączonych słów). To jedyny klucz chroniący wszystkie Twoje konta.</string>
+    <string name="guide_install_step3_title">3. Zrozum nieodwracalność</string>
+    <string name="guide_install_step3_body">Big MFA nie przechowuje hasła głównego w żadnym miejscu, ani jawnie, ani zaszyfrowane. Jeśli je zapomnisz i nie masz zewnętrznej kopii zapasowej, Twoje konta staną się trwale niedostępne. Zapisz je w niezawodnym menedżerze haseł.</string>
+    <string name="guide_install_step4_title">4. Włącz biometrię (opcjonalnie)</string>
+    <string name="guide_install_step4_body">W Ustawieniach włącz odblokowanie odciskiem palca dla szybszego codziennego dostępu. Twoje hasło główne zawsze pozostaje dostępne jako opcja zapasowa.</string>
+    <string name="guide_usage_step1_title">1. Dodaj swoje pierwsze konto</string>
+    <string name="guide_usage_step1_body">W „+ Dodaj” zeskanuj kod QR wyświetlony przez usługę (najszybsza metoda) lub wprowadź ręcznie nazwę, wystawcę i sekret Base32, jeśli nie możesz skanować.</string>
+    <string name="guide_usage_step2_title">2. Używaj kodu codziennie</string>
+    <string name="guide_usage_step2_body">W „Moje kody” dotknij bezpośrednio kodu TOTP, aby go skopiować (automatycznie usuwany ze schowka po 30 sekundach). W przypadku konta HOTP dotknij „Generuj” za każdym razem, gdy go potrzebujesz — licznik zawsze idzie do przodu, nigdy do tyłu.</string>
+    <string name="guide_usage_step3_title">3. Zarządzaj swoimi kontami</string>
+    <string name="guide_usage_step3_body">Użyj paska wyszukiwania, aby szybko znaleźć konto wśród wielu. Ikona ołówka pozwala zmienić nazwę, ikona kosza pozwala usunąć (z podwójnym potwierdzeniem, czynność nieodwracalna).</string>
+    <string name="guide_usage_step4_title">4. Twórz regularnie kopie zapasowe</string>
+    <string name="guide_usage_step4_body">W Ustawieniach wybierz „Eksport maksymalnego bezpieczeństwa” dla kopii zapasowej tylko dla Androida, lub „Eksport wieloplatformowy”, jeśli używasz Big MFA również w Chrome. Eksport QR (karuzela lub ZIP) jest przydatny do przeniesienia do innego standardowego menedżera zgodnego z TOTP.</string>
+    <string name="guide_usage_step5_title">5. Zmień swoje hasło główne</string>
+    <string name="guide_usage_step5_body">W Ustawieniach wprowadź aktualne hasło, a następnie nowe. Twoje konta i biometria (jeśli włączona) pozostają nienaruszone — zmienia się tylko hasło.</string>
+    <string name="nav_accounts">Moje kody</string>
+    <string name="nav_decoder">Dekoder</string>
+    <string name="nav_key">Klucz</string>
+    <string name="nav_add">+ Dodaj</string>
+    <string name="nav_support">Wspieraj</string>
+    <string name="nav_settings">Ustawienia</string>
+    <string name="nav_guide">Przewodnik</string>
+    <string name="nav_lock_content_description">Zablokuj sejf</string>
+</resources>

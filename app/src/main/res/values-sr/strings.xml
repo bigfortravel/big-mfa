@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Big MFA</string>
+
+    <!-- Екран за откључавање -->
+    <string name="unlock_title">Big MFA</string>
+    <string name="unlock_subtitle">Унесите главну лозинку</string>
+    <string name="unlock_password_label">Главна лозинка</string>
+    <string name="unlock_button">Откључај</string>
+    <string name="unlock_reset_vault">Ресетуј трезор</string>
+    <string name="unlock_biometric_content_description">Откључај отиском прста</string>
+
+    <!-- Заједничко подножје -->
+    <string name="footer_support">❤️ Подржи</string>
+    <string name="footer_contact">✉️ Контактирајте нас</string>
+    <string name="footer_language_auto">🌐 Аутоматски — језик прегледача</string>
+    <string name="footer_language_placeholder">Избор језика — ускоро</string>
+    <string name="footer_gplv3">Бесплатно и отвореног кода (GPLv3 лиценца).</string>
+    <string name="language_dialog_title">Изаберите језик</string>
+    <string name="language_option_auto">🌐 Аутоматски (језик система)</string>
+
+    <!-- Моји кодови -->
+    <string name="accounts_empty_state">Још увек нема налога.\nКористите „+ Додај” да направите нови.</string>
+    <string name="accounts_search_placeholder">Претражи налог</string>
+    <string name="accounts_no_results">Нема резултата за „%1$s”</string>
+    <string name="accounts_rename_title">Преименуј налог</string>
+    <string name="accounts_name_label">Назив налога</string>
+    <string name="accounts_issuer_label">Издавалац (опционо)</string>
+    <string name="accounts_name_required_error">Назив налога је обавезан</string>
+    <string name="accounts_save">Сачувај</string>
+    <string name="accounts_cancel">Откажи</string>
+    <string name="accounts_rename_content_description">Преименуј %1$s</string>
+    <string name="accounts_delete_content_description">Обриши %1$s</string>
+    <string name="accounts_delete_confirm_title">Обрисати „%1$s”?</string>
+    <string name="accounts_delete_irreversible">Ова радња је неповратна.</string>
+    <string name="accounts_delete_button">Обриши</string>
+    <string name="accounts_hotp_label">HOTP</string>
+    <string name="accounts_unreadable">Нечитљиво</string>
+    <string name="accounts_copy_content_description">Копирај</string>
+    <string name="accounts_generate_button">Генериши</string>
+
+    <!-- + Додај -->
+    <string name="add_account_title">Додај налог</string>
+    <string name="add_account_scan_qr">📷 Скенирај QR код</string>
+    <string name="add_account_qr_invalid">Неважећи или непрепознат QR код</string>
+    <string name="add_account_cancel_scan">Откажи скенирање</string>
+    <string name="add_account_name_label">Назив налога</string>
+    <string name="add_account_issuer_label">Издавалац (опционо)</string>
+    <string name="add_account_secret_label">Тајни кључ (Base32)</string>
+    <string name="add_account_advanced_options">⚙ Напредне опције (алгоритам, цифре, период)</string>
+    <string name="add_account_type_label">ТИП</string>
+    <string name="add_account_type_totp">TOTP (заснован на времену — стандардни)</string>
+    <string name="add_account_type_hotp">HOTP (заснован на бројачу)</string>
+    <string name="add_account_algorithm_label">АЛГОРИТАМ</string>
+    <string name="add_account_algorithm_sha1">SHA-1 (подразумевано, универзална компатибилност)</string>
+    <string name="add_account_digits_label">БРОЈ ЦИФАРА</string>
+    <string name="add_account_digits_default">6 цифара (подразумевано)</string>
+    <string name="add_account_digits_n">%1$d цифара</string>
+    <string name="add_account_period_label">ПЕРИОД (СЕКУНДЕ)</string>
+    <string name="add_account_save">Сачувај</string>
+    <string name="add_account_name_required">Назив налога је обавезан</string>
+    <string name="add_account_secret_required">Тајни кључ је обавезан</string>
+    <string name="add_account_secret_invalid">Тајни кључ није важећи Base32</string>
+    <string name="add_account_save_error">Налог није могао да се сачува</string>
+    <string name="add_account_camera_permission_needed">Потребан је приступ камери за скенирање QR кода.</string>
+    <string name="add_account_grant_camera">Дозволи приступ камери</string>
+
+    <!-- Кључ -->
+    <string name="generate_key_description">Генерише насумични тајни кључ Base32 (160 бита) компатибилан са Google Authenticator, Aegis, Authy…</string>
+    <string name="generate_key_generate">Генериши</string>
+    <string name="generate_key_copy">Копирај</string>
+    <string name="generate_key_copied">Кључ копиран</string>
+    <string name="generate_key_show_qr">Прикажи QR</string>
+    <string name="generate_key_qr_title">QR код</string>
+    <string name="generate_key_close">Затвори</string>
+
+    <!-- Декодер -->
+    <string name="decoder_import_qr">Увези из QR кода (слика)</string>
+    <string name="decoder_no_qr_found">На овој слици није откривен QR код</string>
+    <string name="decoder_secret_label">MFA / TOTP КЉУЧ (BASE32)</string>
+    <string name="decoder_code_placeholder">— — — — — —</string>
+    <string name="decoder_generate_code">Генериши код</string>
+    <string name="decoder_copy_content_description">Копирај код</string>
+    <string name="decoder_code_copied">Код копиран — биће обрисан за 30с</string>
+    <string name="decoder_secret_empty_error">Унесите или увезите кључ</string>
+    <string name="decoder_secret_invalid_error">Неважећи кључ</string>
+
+    <!-- Прављење/Враћање трезора -->
+    <string name="create_vault_password_too_short">Лозинка мора да садржи најмање 12 знакова</string>
+    <string name="create_vault_passwords_mismatch">Лозинке се не подударају</string>
+    <string name="create_vault_creation_error">Трезор није могао да се направи</string>
+    <string name="restore_vault_new_password_too_short">Нова лозинка мора да садржи најмање 12 знакова</string>
+    <string name="restore_vault_new_passwords_mismatch">Нове лозинке се не подударају</string>
+    <string name="restore_vault_generic_error">Резервна копија није могла да се врати</string>
+    <string name="create_vault_title">Направите свој Big MFA трезор</string>
+    <string name="create_vault_min_chars">Минимум 12 знакова</string>
+    <string name="create_vault_password_label">Лозинка</string>
+    <string name="create_vault_confirm_label">Потврди лозинку</string>
+    <string name="create_vault_create_button">Направи трезор</string>
+    <string name="create_vault_restore_button">📥 Врати постојећу резервну копију</string>
+    <string name="restore_backup_title">Врати резервну копију</string>
+    <string name="restore_backup_description">Изворни Big MFA формат или компатибилан са Chrome-ом — открива се аутоматски.</string>
+    <string name="restore_backup_choose_file">Изабери фајл резервне копије</string>
+    <string name="restore_backup_file_selected">✅ Фајл изабран</string>
+    <string name="restore_backup_backup_password_label">Лозинка резервне копије</string>
+    <string name="restore_backup_new_password_title">НОВА ГЛАВНА ЛОЗИНКА</string>
+    <string name="restore_backup_new_password_hint">Другачија од лозинке резервне копије — минимум 12 знакова.</string>
+    <string name="restore_backup_new_password_label">Нова главна лозинка</string>
+    <string name="restore_backup_confirm_new_password_label">Потврди нову лозинку</string>
+    <string name="restore_backup_restore_button">Врати</string>
+    <string name="restore_backup_cancel">Откажи</string>
+    <string name="restore_backup_file_read_error">Фајл није могао да се прочита</string>
+
+    <!-- Грешке приликом откључавања -->
+    <string name="unlock_error_wrong_password">Погрешна лозинка</string>
+    <string name="unlock_error_corrupted_vault">Подаци трезора су оштећени или нечитљиви</string>
+    <string name="unlock_error_no_vault">Трезор није пронађен</string>
+    <string name="unlock_error_too_many_attempts">Превише покушаја — покушајте поново за %1$dс</string>
+    <string name="unlock_error_biometric_unavailable">Биометрија није доступна — користите своју лозинку</string>
+    <string name="unlock_error_biometric_failed">Биометријска аутентификација није успела</string>
+
+    <!-- Промена главне лозинке -->
+    <string name="change_password_title">Промени главну лозинку</string>
+    <string name="change_password_current_label">ТРЕНУТНА ЛОЗИНКА</string>
+    <string name="change_password_new_label">НОВА ЛОЗИНКА</string>
+    <string name="change_password_confirm_label">ПОТВРДИ</string>
+    <string name="change_password_button">Промени лозинку</string>
+    <string name="change_password_new_too_short">Нова лозинка мора да садржи најмање 12 знакова</string>
+    <string name="change_password_new_mismatch">Нове лозинке се не подударају</string>
+    <string name="change_password_wrong_current">Тренутна лозинка је погрешна</string>
+    <string name="change_password_generic_error">Лозинка није могла да се промени</string>
+    <string name="change_password_success_toast">Лозинка је успешно промењена</string>
+    <string name="change_password_cancel">Откажи</string>
+
+    <!-- Биометрија -->
+    <string name="biometric_setup_title">Активирај биометрију</string>
+    <string name="biometric_hardware_insufficient">Ваш уређај нема довољну хардверску подршку за безбедно активирање биометрије.</string>
+    <string name="biometric_activate_prompt">Активирај откључавање отиском прста</string>
+    <string name="biometric_password_confirmed_hint">Лозинка потврђена — ставите прст на сензор.</string>
+    <string name="biometric_continue_button">Настави отиском прста</string>
+    <string name="biometric_confirm_password_label">Потврдите своју главну лозинку</string>
+    <string name="biometric_confirm_button">Потврди</string>
+    <string name="biometric_wrong_password">Погрешна лозинка</string>
+    <string name="biometric_key_creation_error">Безбедносни кључ није могао да се направи</string>
+    <string name="biometric_cipher_error">Шифровање није могло да се припреми</string>
+    <string name="biometric_enable_error">Биометрија није могла да се активира</string>
+    <string name="biometric_auth_failed">Биометријска аутентификација није успела</string>
+    <string name="biometric_activated_toast">Биометрија активирана</string>
+    <string name="biometric_deactivated_toast">Биометрија деактивирана</string>
+    <string name="biometric_cancel">Откажи</string>
+    <string name="biometric_row_title">Биометријско откључавање</string>
+    <string name="biometric_row_enabled">Активирано</string>
+    <string name="biometric_row_disabled">Деактивирано</string>
+
+    <!-- Подешавања -->
+    <string name="settings_title">Подешавања</string>
+    <string name="settings_security_status_title">СТАЊЕ БЕЗБЕДНОСТИ</string>
+    <string name="settings_masvs_badge">🛡 OWASP MASVS — Појачани ниво</string>
+    <string name="settings_encryption_label">ШИФРОВАЊЕ</string>
+    <string name="settings_kdf_label">KDF</string>
+    <string name="settings_inactivity_label">ВРЕМЕ НЕАКТИВНОСТИ</string>
+    <string name="settings_inactivity_value">2 мин</string>
+    <string name="settings_bruteforce_label">ЗАШТИТА ОД НАПАДА ГРУБОМ СИЛОМ</string>
+    <string name="settings_bruteforce_value">5 покушаја + HMAC</string>
+    <string name="settings_lockout_label">ЗАКЉУЧАВАЊЕ</string>
+    <string name="settings_lockout_value">Експоненцијално</string>
+    <string name="settings_salt_label">СО</string>
+    <string name="settings_salt_value">256 бита</string>
+    <string name="settings_integrity_label">ИНТЕГРИТЕТ ТРЕЗОРА</string>
+    <string name="settings_integrity_value">HMAC-SHA256</string>
+    <string name="settings_hardware_label">ХАРДВЕРСКО УСИДРЕЊЕ</string>
+    <string name="settings_hardware_value">Минимум TEE, StrongBox ако је доступан</string>
+    <string name="settings_bruteforce_note">ℹ️ Заштита од напада грубом силом штити од поновљених покушаја унутар апликације. Она не замењује јаку лозинку: неко ко има директан приступ фајлу трезора на уређају могао би да покуша дешифровање ван мреже заобилазећи ово ограничење. Користите лозинку од 16+ знакова.</string>
+    <string name="settings_change_password_button">🔑 Промени главну лозинку</string>
+    <string name="settings_backup_title">РЕЗЕРВНА КОПИЈА</string>
+    <string name="settings_export_native_title">🛡️ Извоз са максималном безбедношћу</string>
+    <string name="settings_export_native_subtitle">Argon2id + AES-256-GCM-SIV</string>
+    <string name="settings_export_chrome_title">🌐 Извоз компатибилан са више платформи</string>
+    <string name="settings_export_chrome_subtitle">PBKDF2 + AES-256-GCM — може да се увезе у Big MFA Chrome</string>
+    <string name="settings_export_qr_title">📷 QR извоз (карусел + ZIP)</string>
+    <string name="settings_export_qr_subtitle">Један QR по налогу, за прегледање или преузимање</string>
+    <string name="settings_import_button">📥 Увези / Врати</string>
+    <string name="settings_export_footer">Извоз је шифрован — тајне остају заштићене чак и ако се фајл дели.</string>
+    <string name="settings_export_native_dialog_title">Извоз са максималном безбедношћу</string>
+    <string name="settings_export_chrome_dialog_title">Извоз компатибилан са више платформи</string>
+    <string name="settings_export_native_dialog_desc">🛡️ Argon2id + AES-256-GCM-SIV — ова лозинка штити извезени фајл и разликује се од ваше главне лозинке.</string>
+    <string name="settings_export_chrome_dialog_desc">🌐 PBKDF2 + AES-256-GCM — формат компатибилан са Big MFA Chrome екстензијом. Ова лозинка се разликује од ваше главне лозинке.</string>
+    <string name="settings_export_password_label">Лозинка за извоз</string>
+    <string name="settings_export_confirm_label">Потврди</string>
+    <string name="settings_export_min_chars_error">Минимум 8 знакова</string>
+    <string name="settings_export_mismatch_error">Лозинке се не подударају</string>
+    <string name="settings_export_button">Извези</string>
+    <string name="settings_export_cancel">Откажи</string>
+    <string name="settings_export_generic_error">Извоз није могао да се направи</string>
+    <string name="settings_export_share_title">Подели извоз</string>
+    <string name="settings_import_dialog_title">Увези резервну копију</string>
+    <string name="settings_import_dialog_desc">Изаберите фајл резервне копије (изворни Big MFA или компатибилан са Chrome-ом — формат се открива аутоматски).</string>
+    <string name="settings_import_choose_file">Изабери фајл</string>
+    <string name="settings_import_file_selected_desc">Фајл изабран — унесите лозинку ове резервне копије.</string>
+    <string name="settings_import_password_label">Лозинка резервне копије</string>
+    <string name="settings_import_button_confirm">Увези</string>
+    <string name="settings_import_read_error">Фајл није могао да се прочита</string>
+    <string name="settings_import_generic_error">Увоз није успео</string>
+    <string name="settings_import_success_toast">Увезено %1$d налога</string>
+    <string name="settings_danger_zone_title">ОПАСНА ЗОНА</string>
+    <string name="settings_delete_all_button">🗑 Обриши све моје податке</string>
+    <string name="settings_delete_all_description">Остварује ваше право на брисање (Члан 17 GDPR). Брише све налоге и главну лозинку. Неповратна радња.</string>
+    <string name="settings_delete_confirm_title">Обрисати све податке?</string>
+    <string name="settings_delete_confirm_desc">Сви ваши налози ће бити трајно обрисани. Ова радња не може да се поништи.</string>
+    <string name="settings_delete_continue">Настави</string>
+    <string name="settings_delete_final_title">Коначна потврда</string>
+    <string name="settings_delete_final_desc">Да ли сте ЗАИСТА сигурни? Опоравак неће бити могућ након овог корака.</string>
+    <string name="settings_delete_final_button">Обриши трајно</string>
+    <string name="settings_delete_cancel">Откажи</string>
+    <string name="settings_rgpd_badge">🔒 Усклађено са GDPR — 100% локални подаци</string>
+    <string name="settings_rgpd_title">ПРИВАТНОСТ И GDPR</string>
+    <string name="settings_rgpd_controller_label">Контролор података</string>
+    <string name="settings_rgpd_controller_value">Patrick DJEUZONG – BigForTravel</string>
+    <string name="settings_rgpd_data_label">Прикупљени подаци</string>
+    <string name="settings_rgpd_data_value">Називи налога, шифровани TOTP кључеви</string>
+    <string name="settings_rgpd_storage_label">Место складиштења</string>
+    <string name="settings_rgpd_storage_value">Само ваш уређај (приватно складиште апликације, изоловано Android песком)</string>
+    <string name="settings_rgpd_transfer_label">Пренос трећим странама</string>
+    <string name="settings_rgpd_transfer_value">Big MFA сам не шаље никакве захтеве. Шифровани извоз може да се дели преко апликације треће стране по вашем избору, само ако то изричито активирате.</string>
+    <string name="settings_rgpd_thirdparty_label">Уграђени код треће стране</string>
+    <string name="settings_rgpd_thirdparty_value">Bouncy Castle (MIT), CameraX (Apache-2.0), уграђени ML Kit barcode-scanning (Apache-2.0), ZXing (Apache-2.0) — све локално, без телеметрије</string>
+    <string name="settings_rgpd_retention_label">Период чувања</string>
+    <string name="settings_rgpd_retention_value">До деинсталације или ручног брисања</string>
+    <string name="settings_rgpd_legal_label">Правни основ</string>
+    <string name="settings_rgpd_legal_value">Сагласност корисника (Члан 6.1.а)</string>
+    <string name="settings_rgpd_access_label">Право на приступ (Члан 15)</string>
+    <string name="settings_rgpd_access_value">Преко шифрованог извоза (изнад)</string>
+    <string name="settings_rgpd_erasure_label">Право на брисање (Члан 17)</string>
+    <string name="settings_rgpd_erasure_value">Преко „Обриши све моје податке”</string>
+    <string name="settings_rgpd_portability_label">Право на преносивост података (Члан 20)</string>
+    <string name="settings_rgpd_portability_value">Преко шифрованог извоза (изворног или са више платформи)</string>
+    <string name="settings_rgpd_dpo_label">Контакт са DPO</string>
+    <string name="settings_rgpd_dpo_value">contact@bigfortravel.com</string>
+    <string name="settings_rgpd_eu_label">Орган ЕУ (жалбе)</string>
+    <string name="settings_rgpd_eu_value">CNIL – www.cnil.fr (европски корисници)</string>
+    <string name="settings_rgpd_cm_label">Камерунски орган (жалбе)</string>
+    <string name="settings_rgpd_cm_value">ANTIC – www.antic.cm (камерунски корисници)</string>
+    <string name="settings_rgpd_footer">Big MFA не прикупља никакве личне податке изван вашег уређаја, сам не покреће никакве мрежне везе и не дели никакве информације са трећим странама. Сви подаци се шифрују помоћу AES-256-GCM-SIV пре локалног складиштења.</string>
+    <string name="settings_language_row_title">Језик</string>
+
+    <!-- BackupImporter -->
+    <string name="backup_importer_unreadable">Фајл је нечитљив или оштећен</string>
+    <string name="backup_importer_unknown_format">Непрепознат формат фајла</string>
+    <string name="backup_importer_wrong_password">Погрешна лозинка или оштећен фајл</string>
+
+    <!-- Подржи -->
+    <string name="support_title">Подржите Big MFA</string>
+    <string name="support_description">Big MFA добровољно развија и одржава BigForTravel. Без реклама, без продаје података, без скривене претплате. Ако вам је апликација корисна, донација — чак и мала — помаже у финансирању њеног даљег развоја.</string>
+    <string name="support_paypal_button">Донирај преко PayPal-а</string>
+    <string name="support_kofi_button">Донирај преко Ko-fi-ja</string>
+    <string name="support_disclaimer">Донације су добровољне и не пружају никакву додатну функционалност. Увек проверите да је приказани прималац BigForTravel / Patrick Djeuzong.</string>
+    <string name="support_official_site">🌐 Званични сајт</string>
+    <string name="support_contact_us">✉️ Пишите нам</string>
+    <string name="support_contact_subject">Big MFA — Контакт</string>
+
+    <!-- Карусел извоза QR -->
+    <string name="export_qr_title">QR извоз (%1$d/%2$d)</string>
+    <string name="export_qr_no_accounts">Нема налога за извоз.</string>
+    <string name="export_qr_zip_button">📦 Извези све QR кодове као ZIP</string>
+    <string name="export_qr_close_button">Затвори</string>
+    <string name="export_qr_zip_error">ZIP архива није могла да се направи</string>
+    <string name="export_qr_share_title">Подели QR архиву</string>
+
+    <!-- Водич -->
+    <string name="guide_tab_installation">Инсталација</string>
+    <string name="guide_tab_usage">Коришћење</string>
+    <string name="guide_tab_features">Функције</string>
+    <string name="guide_title">Big MFA водич</string>
+    <string name="guide_intro">Брз преглед свих доступних функција.</string>
+    <string name="guide_codes_title">🔑 Моји кодови</string>
+    <string name="guide_codes_body">Ваши TOTP кодови се ажурирају у реалном времену са визуелним одбројавањем. Додирните код да га копирате (аутоматски се брише из клипборда после 30с). За HOTP налоге, додирните „Генериши” сваки пут када вам је потребан код. Претражујте, преименујте или бришите налог помоћу икона у сваком реду.</string>
+    <string name="guide_decoder_title">🔍 Декодер</string>
+    <string name="guide_decoder_body">Налепите или увезите тајну из слике QR кода да бисте одмах добили одговарајући TOTP код, без додавања у ваш трезор. Корисно за једнократну проверу.</string>
+    <string name="guide_key_title">🔐 Кључ</string>
+    <string name="guide_key_body">Генерише насумични тајни кључ, заједно са одговарајућим QR кодом, за подешавање новог налога у другом сервису који тражи да направите сопствену тајну.</string>
+    <string name="guide_add_title">➕ Додај налог</string>
+    <string name="guide_add_body">Скенирајте QR код који пружа сервис, или ручно унесите тајни кључ. Напредне опције вам омогућавају да подесите алгоритам, број цифара, период, или пребаците на HOTP.</string>
+    <string name="guide_biometric_title">👆 Биометријско откључавање</string>
+    <string name="guide_biometric_body">Активирајте откључавање отиском прста из Подешавања. Ваша главна лозинка увек остаје доступна као резерва — никада се не замењује, само допуњује.</string>
+    <string name="guide_backup_title">💾 Резервна копија и враћање</string>
+    <string name="guide_backup_body">Два формата извоза: максимална безбедност (изворни за Android) или компатибилан са више платформи (може да се увезе у Chrome екстензију). QR извоз генерише карусел QR кодова, појединачно или у ZIP архиви. Враћање аутоматски открива формат фајла.</string>
+    <string name="guide_security_title">🛡 Безбедност</string>
+    <string name="guide_security_body">Сви подаци остају искључиво на вашем уређају, шифровани помоћу AES-256-GCM-SIV и кључа изведеног помоћу Argon2id. Апликација никада сама не покреће мрежну везу.</string>
+    <string name="guide_language_title">🌐 Језик</string>
+    <string name="guide_language_body">Изаберите „Аутоматски” да пратите језик вашег телефона, или изаберите одређени језик из подножја екрана за пријаву.</string>
+    <string name="guide_install_step1_title">1. Направите свој трезор</string>
+    <string name="guide_install_step1_body">При првом покретању, изаберите „Направи трезор” да почнете са празним трезором, или „Врати постојећу резервну копију” ако сте већ користили Big MFA у Chrome-у или другом Android уређају.</string>
+    <string name="guide_install_step2_title">2. Изаберите јаку главну лозинку</string>
+    <string name="guide_install_step2_body">Минимум 12 знакова, али је боље циљати лозинку од 16+ знакова (на пример, неколико комбинованих речи). То је једини кључ који штити све ваше налоге.</string>
+    <string name="guide_install_step3_title">3. Разумите неповратност</string>
+    <string name="guide_install_step3_body">Big MFA не чува вашу главну лозинку нигде, ни у обичном тексту ни шифровану. Ако је заборавите и немате спољну резервну копију, ваши налози ће постати трајно недоступни. Запишите је у поуздан менаџер лозинки.</string>
+    <string name="guide_install_step4_title">4. Активирајте биометрију (опционо)</string>
+    <string name="guide_install_step4_body">Из Подешавања, активирајте откључавање отиском прста за бржи свакодневни приступ. Ваша главна лозинка увек остаје доступна као резерва.</string>
+    <string name="guide_usage_step1_title">1. Додајте свој први налог</string>
+    <string name="guide_usage_step1_body">Из „+ Додај”, скенирајте QR код који приказује сервис (најбржи метод), или ручно унесите назив, издаваоца и Base32 тајну ако не можете да скенирате.</string>
+    <string name="guide_usage_step2_title">2. Користите код свакодневно</string>
+    <string name="guide_usage_step2_body">У „Моји кодови”, додирните директно TOTP код да га копирате (аутоматски се брише из клипборда после 30 секунди). За HOTP налог, додирните „Генериши” сваки пут када вам је потребан — бројач увек напредује, никада се не враћа.</string>
+    <string name="guide_usage_step3_title">3. Управљајте својим налозима</string>
+    <string name="guide_usage_step3_body">Користите траку за претрагу да брзо пронађете налог међу многима. Икона оловке омогућава преименовање, икона канте омогућава брисање (са двоструком потврдом, неповратна радња).</string>
+    <string name="guide_usage_step4_title">4. Редовно правите резервне копије</string>
+    <string name="guide_usage_step4_body">Из Подешавања, изаберите „Извоз са максималном безбедношћу” за резервну копију само за Android, или „Извоз компатибилан са више платформи” ако користите Big MFA и у Chrome-у. QR извоз (карусел или ZIP) је користан за пренос у други стандардни менаџер компатибилан са TOTP.</string>
+    <string name="guide_usage_step5_title">5. Промените своју главну лозинку</string>
+    <string name="guide_usage_step5_body">У Подешавањима, унесите тренутну лозинку, затим нову. Ваши налози и биометрија (ако је активирана) остају нетакнути — мења се само лозинка.</string>
+    <string name="nav_accounts">Моји кодови</string>
+    <string name="nav_decoder">Декодер</string>
+    <string name="nav_key">Кључ</string>
+    <string name="nav_add">+ Додај</string>
+    <string name="nav_support">Подржи</string>
+    <string name="nav_settings">Подешавања</string>
+    <string name="nav_guide">Водич</string>
+    <string name="nav_lock_content_description">Закључај трезор</string>
+</resources>

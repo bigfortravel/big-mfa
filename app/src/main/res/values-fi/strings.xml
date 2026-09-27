@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Big MFA</string>
+
+    <!-- Lukitusnäyttö -->
+    <string name="unlock_title">Big MFA</string>
+    <string name="unlock_subtitle">Anna pääsalasanasi</string>
+    <string name="unlock_password_label">Pääsalasana</string>
+    <string name="unlock_button">Avaa lukitus</string>
+    <string name="unlock_reset_vault">Nollaa kassakaappi</string>
+    <string name="unlock_biometric_content_description">Avaa lukitus sormenjäljellä</string>
+
+    <!-- Yhteinen alatunniste -->
+    <string name="footer_support">❤️ Tue</string>
+    <string name="footer_contact">✉️ Ota yhteyttä</string>
+    <string name="footer_language_auto">🌐 Automaattinen — selaimen kieli</string>
+    <string name="footer_language_placeholder">Kielivalitsin — tulossa pian</string>
+    <string name="footer_gplv3">Ilmainen ja avoimen lähdekoodin (GPLv3-lisenssi).</string>
+    <string name="language_dialog_title">Valitse kieli</string>
+    <string name="language_option_auto">🌐 Automaattinen (järjestelmän kieli)</string>
+
+    <!-- Koodini -->
+    <string name="accounts_empty_state">Ei vielä tilejä.\nKäytä ”+ Lisää” luodaksesi yhden.</string>
+    <string name="accounts_search_placeholder">Hae tiliä</string>
+    <string name="accounts_no_results">Ei tuloksia haulle ”%1$s”</string>
+    <string name="accounts_rename_title">Nimeä tili uudelleen</string>
+    <string name="accounts_name_label">Tilin nimi</string>
+    <string name="accounts_issuer_label">Myöntäjä (valinnainen)</string>
+    <string name="accounts_name_required_error">Tilin nimi on pakollinen</string>
+    <string name="accounts_save">Tallenna</string>
+    <string name="accounts_cancel">Peruuta</string>
+    <string name="accounts_rename_content_description">Nimeä %1$s uudelleen</string>
+    <string name="accounts_delete_content_description">Poista %1$s</string>
+    <string name="accounts_delete_confirm_title">Poistetaanko ”%1$s”?</string>
+    <string name="accounts_delete_irreversible">Tätä toimintoa ei voi peruuttaa.</string>
+    <string name="accounts_delete_button">Poista</string>
+    <string name="accounts_hotp_label">HOTP</string>
+    <string name="accounts_unreadable">Lukukelvoton</string>
+    <string name="accounts_copy_content_description">Kopioi</string>
+    <string name="accounts_generate_button">Luo</string>
+
+    <!-- + Lisää -->
+    <string name="add_account_title">Lisää tili</string>
+    <string name="add_account_scan_qr">📷 Skannaa QR-koodi</string>
+    <string name="add_account_qr_invalid">Virheellinen tai tunnistamaton QR-koodi</string>
+    <string name="add_account_cancel_scan">Peruuta skannaus</string>
+    <string name="add_account_name_label">Tilin nimi</string>
+    <string name="add_account_issuer_label">Myöntäjä (valinnainen)</string>
+    <string name="add_account_secret_label">Salaisuus (Base32)</string>
+    <string name="add_account_advanced_options">⚙ Lisäasetukset (algoritmi, numerot, jakso)</string>
+    <string name="add_account_type_label">TYYPPI</string>
+    <string name="add_account_type_totp">TOTP (aikaperusteinen — vakio)</string>
+    <string name="add_account_type_hotp">HOTP (laskuriperusteinen)</string>
+    <string name="add_account_algorithm_label">ALGORITMI</string>
+    <string name="add_account_algorithm_sha1">SHA-1 (oletus, yleismaailmallinen yhteensopivuus)</string>
+    <string name="add_account_digits_label">NUMEROIDEN MÄÄRÄ</string>
+    <string name="add_account_digits_default">6 numeroa (oletus)</string>
+    <string name="add_account_digits_n">%1$d numeroa</string>
+    <string name="add_account_period_label">JAKSO (SEKUNTIA)</string>
+    <string name="add_account_save">Tallenna</string>
+    <string name="add_account_name_required">Tilin nimi on pakollinen</string>
+    <string name="add_account_secret_required">Salaisuus on pakollinen</string>
+    <string name="add_account_secret_invalid">Salaisuus ei ole kelvollinen Base32</string>
+    <string name="add_account_save_error">Tiliä ei voitu tallentaa</string>
+    <string name="add_account_camera_permission_needed">Kameran käyttöoikeus vaaditaan QR-koodin skannaamiseen.</string>
+    <string name="add_account_grant_camera">Myönnä kameran käyttöoikeus</string>
+
+    <!-- Avain -->
+    <string name="generate_key_description">Luo satunnaisen Base32-salausavaimen (160 bittiä), joka on yhteensopiva Google Authenticatorin, Aegiksen, Authyn… kanssa</string>
+    <string name="generate_key_generate">Luo</string>
+    <string name="generate_key_copy">Kopioi</string>
+    <string name="generate_key_copied">Avain kopioitu</string>
+    <string name="generate_key_show_qr">Näytä QR</string>
+    <string name="generate_key_qr_title">QR-koodi</string>
+    <string name="generate_key_close">Sulje</string>
+
+    <!-- Dekooderi -->
+    <string name="decoder_import_qr">Tuo QR-koodista (kuva)</string>
+    <string name="decoder_no_qr_found">Tästä kuvasta ei löytynyt QR-koodia</string>
+    <string name="decoder_secret_label">MFA/TOTP-AVAIN (BASE32)</string>
+    <string name="decoder_code_placeholder">— — — — — —</string>
+    <string name="decoder_generate_code">Luo koodi</string>
+    <string name="decoder_copy_content_description">Kopioi koodi</string>
+    <string name="decoder_code_copied">Koodi kopioitu — poistetaan 30s kuluttua</string>
+    <string name="decoder_secret_empty_error">Syötä tai tuo avain</string>
+    <string name="decoder_secret_invalid_error">Virheellinen avain</string>
+
+    <!-- Kassakaapin luonti/palautus -->
+    <string name="create_vault_password_too_short">Salasanan tulee sisältää vähintään 12 merkkiä</string>
+    <string name="create_vault_passwords_mismatch">Salasanat eivät täsmää</string>
+    <string name="create_vault_creation_error">Kassakaappia ei voitu luoda</string>
+    <string name="restore_vault_new_password_too_short">Uuden salasanan tulee sisältää vähintään 12 merkkiä</string>
+    <string name="restore_vault_new_passwords_mismatch">Uudet salasanat eivät täsmää</string>
+    <string name="restore_vault_generic_error">Varmuuskopiota ei voitu palauttaa</string>
+    <string name="create_vault_title">Luo Big MFA -kassakaappisi</string>
+    <string name="create_vault_min_chars">Vähintään 12 merkkiä</string>
+    <string name="create_vault_password_label">Salasana</string>
+    <string name="create_vault_confirm_label">Vahvista salasana</string>
+    <string name="create_vault_create_button">Luo kassakaappi</string>
+    <string name="create_vault_restore_button">📥 Palauta olemassa oleva varmuuskopio</string>
+    <string name="restore_backup_title">Palauta varmuuskopio</string>
+    <string name="restore_backup_description">Natiivi Big MFA -muoto tai Chrome-yhteensopiva — tunnistetaan automaattisesti.</string>
+    <string name="restore_backup_choose_file">Valitse varmuuskopiotiedosto</string>
+    <string name="restore_backup_file_selected">✅ Tiedosto valittu</string>
+    <string name="restore_backup_backup_password_label">Varmuuskopion salasana</string>
+    <string name="restore_backup_new_password_title">UUSI PÄÄSALASANA</string>
+    <string name="restore_backup_new_password_hint">Eri kuin varmuuskopion salasana — vähintään 12 merkkiä.</string>
+    <string name="restore_backup_new_password_label">Uusi pääsalasana</string>
+    <string name="restore_backup_confirm_new_password_label">Vahvista uusi salasana</string>
+    <string name="restore_backup_restore_button">Palauta</string>
+    <string name="restore_backup_cancel">Peruuta</string>
+    <string name="restore_backup_file_read_error">Tiedostoa ei voitu lukea</string>
+
+    <!-- Lukituksen avaamisen virheet -->
+    <string name="unlock_error_wrong_password">Virheellinen salasana</string>
+    <string name="unlock_error_corrupted_vault">Kassakaapin tiedot ovat vioittuneet tai lukukelvottomat</string>
+    <string name="unlock_error_no_vault">Kassakaappia ei löytynyt</string>
+    <string name="unlock_error_too_many_attempts">Liian monta yritystä — yritä uudelleen %1$ds kuluttua</string>
+    <string name="unlock_error_biometric_unavailable">Biometriikka ei ole käytettävissä — käytä salasanaasi</string>
+    <string name="unlock_error_biometric_failed">Biometrinen todennus epäonnistui</string>
+
+    <!-- Pääsalasanan vaihto -->
+    <string name="change_password_title">Vaihda pääsalasana</string>
+    <string name="change_password_current_label">NYKYINEN SALASANA</string>
+    <string name="change_password_new_label">UUSI SALASANA</string>
+    <string name="change_password_confirm_label">VAHVISTA</string>
+    <string name="change_password_button">Vaihda salasana</string>
+    <string name="change_password_new_too_short">Uuden salasanan tulee sisältää vähintään 12 merkkiä</string>
+    <string name="change_password_new_mismatch">Uudet salasanat eivät täsmää</string>
+    <string name="change_password_wrong_current">Nykyinen salasana on virheellinen</string>
+    <string name="change_password_generic_error">Salasanaa ei voitu vaihtaa</string>
+    <string name="change_password_success_toast">Salasana vaihdettu onnistuneesti</string>
+    <string name="change_password_cancel">Peruuta</string>
+
+    <!-- Biometriikka -->
+    <string name="biometric_setup_title">Ota biometriikka käyttöön</string>
+    <string name="biometric_hardware_insufficient">Laitteessasi ei ole riittävää laitteistotukea biometriikan turvalliseen käyttöönottoon.</string>
+    <string name="biometric_activate_prompt">Ota sormenjälkilukituksen avaus käyttöön</string>
+    <string name="biometric_password_confirmed_hint">Salasana vahvistettu — aseta sormesi anturille.</string>
+    <string name="biometric_continue_button">Jatka sormenjäljellä</string>
+    <string name="biometric_confirm_password_label">Vahvista pääsalasanasi</string>
+    <string name="biometric_confirm_button">Vahvista</string>
+    <string name="biometric_wrong_password">Virheellinen salasana</string>
+    <string name="biometric_key_creation_error">Suojattua avainta ei voitu luoda</string>
+    <string name="biometric_cipher_error">Salausta ei voitu valmistella</string>
+    <string name="biometric_enable_error">Biometriikkaa ei voitu ottaa käyttöön</string>
+    <string name="biometric_auth_failed">Biometrinen todennus epäonnistui</string>
+    <string name="biometric_activated_toast">Biometriikka käytössä</string>
+    <string name="biometric_deactivated_toast">Biometriikka pois käytöstä</string>
+    <string name="biometric_cancel">Peruuta</string>
+    <string name="biometric_row_title">Biometrinen lukituksen avaus</string>
+    <string name="biometric_row_enabled">Käytössä</string>
+    <string name="biometric_row_disabled">Pois käytöstä</string>
+
+    <!-- Asetukset -->
+    <string name="settings_title">Asetukset</string>
+    <string name="settings_security_status_title">TURVALLISUUSTILA</string>
+    <string name="settings_masvs_badge">🛡 OWASP MASVS — Tehostettu taso</string>
+    <string name="settings_encryption_label">SALAUS</string>
+    <string name="settings_kdf_label">KDF</string>
+    <string name="settings_inactivity_label">EPÄAKTIIVISUUSAIKA</string>
+    <string name="settings_inactivity_value">2 min</string>
+    <string name="settings_bruteforce_label">SUOJAUS RAA\'ALTA VOIMALTA</string>
+    <string name="settings_bruteforce_value">5 yritystä + HMAC</string>
+    <string name="settings_lockout_label">LUKITUS</string>
+    <string name="settings_lockout_value">Eksponentiaalinen</string>
+    <string name="settings_salt_label">SUOLA</string>
+    <string name="settings_salt_value">256 bittiä</string>
+    <string name="settings_integrity_label">KASSAKAAPIN EHEYS</string>
+    <string name="settings_integrity_value">HMAC-SHA256</string>
+    <string name="settings_hardware_label">LAITTEISTOANKKUROINTI</string>
+    <string name="settings_hardware_value">Vähintään TEE, StrongBox jos saatavilla</string>
+    <string name="settings_bruteforce_note">ℹ️ Raa\'an voiman suojaus torjuu toistuvia yrityksiä sovelluksen sisällä. Se ei korvaa vahvaa salasanaa: joku, jolla on suora pääsy kassakaappitiedostoon laitteella, voisi yrittää offline-salauksen purkua ohittaen tämän rajan. Käytä 16+ merkin pituista salalausetta.</string>
+    <string name="settings_change_password_button">🔑 Vaihda pääsalasana</string>
+    <string name="settings_backup_title">VARMUUSKOPIO</string>
+    <string name="settings_export_native_title">🛡️ Enimmäisturvallisuuden vienti</string>
+    <string name="settings_export_native_subtitle">Argon2id + AES-256-GCM-SIV</string>
+    <string name="settings_export_chrome_title">🌐 Alustariippumaton vienti</string>
+    <string name="settings_export_chrome_subtitle">PBKDF2 + AES-256-GCM — tuotavissa Big MFA Chromeen</string>
+    <string name="settings_export_qr_title">📷 QR-vienti (karuselli + ZIP)</string>
+    <string name="settings_export_qr_subtitle">Yksi QR-koodi tiliä kohti, selattavaksi tai ladattavaksi</string>
+    <string name="settings_import_button">📥 Tuo / Palauta</string>
+    <string name="settings_export_footer">Vienti on salattu — salaisuudet pysyvät suojattuina, vaikka tiedosto jaettaisiin.</string>
+    <string name="settings_export_native_dialog_title">Enimmäisturvallisuuden vienti</string>
+    <string name="settings_export_chrome_dialog_title">Alustariippumaton vienti</string>
+    <string name="settings_export_native_dialog_desc">🛡️ Argon2id + AES-256-GCM-SIV — tämä salasana suojaa viedyn tiedoston ja eroaa pääsalasanastasi.</string>
+    <string name="settings_export_chrome_dialog_desc">🌐 PBKDF2 + AES-256-GCM — muoto, joka on yhteensopiva Big MFA Chrome -laajennuksen kanssa. Tämä salasana eroaa pääsalasanastasi.</string>
+    <string name="settings_export_password_label">Vientisalasana</string>
+    <string name="settings_export_confirm_label">Vahvista</string>
+    <string name="settings_export_min_chars_error">Vähintään 8 merkkiä</string>
+    <string name="settings_export_mismatch_error">Salasanat eivät täsmää</string>
+    <string name="settings_export_button">Vie</string>
+    <string name="settings_export_cancel">Peruuta</string>
+    <string name="settings_export_generic_error">Vientiä ei voitu luoda</string>
+    <string name="settings_export_share_title">Jaa vienti</string>
+    <string name="settings_import_dialog_title">Tuo varmuuskopio</string>
+    <string name="settings_import_dialog_desc">Valitse varmuuskopiotiedosto (natiivi Big MFA tai Chrome-yhteensopiva — muoto tunnistetaan automaattisesti).</string>
+    <string name="settings_import_choose_file">Valitse tiedosto</string>
+    <string name="settings_import_file_selected_desc">Tiedosto valittu — syötä tämän varmuuskopion salasana.</string>
+    <string name="settings_import_password_label">Varmuuskopion salasana</string>
+    <string name="settings_import_button_confirm">Tuo</string>
+    <string name="settings_import_read_error">Tiedostoa ei voitu lukea</string>
+    <string name="settings_import_generic_error">Tuonti epäonnistui</string>
+    <string name="settings_import_success_toast">%1$d tili(ä) tuotu</string>
+    <string name="settings_danger_zone_title">VAARA-ALUE</string>
+    <string name="settings_delete_all_button">🗑 Poista kaikki tietoni</string>
+    <string name="settings_delete_all_description">Käyttää oikeuttasi tietojen poistoon (GDPR:n 17 art.). Poistaa kaikki tilit ja pääsalasanan. Peruuttamaton toiminto.</string>
+    <string name="settings_delete_confirm_title">Poistetaanko kaikki tiedot?</string>
+    <string name="settings_delete_confirm_desc">Kaikki tilisi poistetaan pysyvästi. Tätä toimintoa ei voi peruuttaa.</string>
+    <string name="settings_delete_continue">Jatka</string>
+    <string name="settings_delete_final_title">Lopullinen vahvistus</string>
+    <string name="settings_delete_final_desc">Oletko VARMASTI varma? Palautus ei ole mahdollista tämän vaiheen jälkeen.</string>
+    <string name="settings_delete_final_button">Poista pysyvästi</string>
+    <string name="settings_delete_cancel">Peruuta</string>
+    <string name="settings_rgpd_badge">🔒 GDPR-yhteensopiva — 100 % paikalliset tiedot</string>
+    <string name="settings_rgpd_title">YKSITYISYYS JA GDPR</string>
+    <string name="settings_rgpd_controller_label">Rekisterinpitäjä</string>
+    <string name="settings_rgpd_controller_value">Patrick DJEUZONG – BigForTravel</string>
+    <string name="settings_rgpd_data_label">Kerätyt tiedot</string>
+    <string name="settings_rgpd_data_value">Tilien nimet, salatut TOTP-avaimet</string>
+    <string name="settings_rgpd_storage_label">Tallennuspaikka</string>
+    <string name="settings_rgpd_storage_value">Vain laitteesi (sovelluksen yksityinen tallennustila, eristetty Androidin hiekkalaatikolla)</string>
+    <string name="settings_rgpd_transfer_label">Siirto kolmansille osapuolille</string>
+    <string name="settings_rgpd_transfer_value">Big MFA itse ei tee mitään pyyntöjä. Salattu vienti voidaan jakaa valitsemasi kolmannen osapuolen sovelluksen kautta, vain jos otat tämän nimenomaisesti käyttöön.</string>
+    <string name="settings_rgpd_thirdparty_label">Sisäänrakennettu kolmannen osapuolen koodi</string>
+    <string name="settings_rgpd_thirdparty_value">Bouncy Castle (MIT), CameraX (Apache-2.0), sisäänrakennettu ML Kit barcode-scanning (Apache-2.0), ZXing (Apache-2.0) — kaikki paikallisia, ei telemetriaa</string>
+    <string name="settings_rgpd_retention_label">Säilytysaika</string>
+    <string name="settings_rgpd_retention_value">Asennuksen poistoon tai manuaaliseen poistoon asti</string>
+    <string name="settings_rgpd_legal_label">Oikeusperusta</string>
+    <string name="settings_rgpd_legal_value">Käyttäjän suostumus (6.1.a art.)</string>
+    <string name="settings_rgpd_access_label">Oikeus tarkastaa tiedot (15 art.)</string>
+    <string name="settings_rgpd_access_value">Salatun viennin kautta (yllä)</string>
+    <string name="settings_rgpd_erasure_label">Oikeus tietojen poistoon (17 art.)</string>
+    <string name="settings_rgpd_erasure_value">”Poista kaikki tietoni” -toiminnon kautta</string>
+    <string name="settings_rgpd_portability_label">Oikeus tietojen siirrettävyyteen (20 art.)</string>
+    <string name="settings_rgpd_portability_value">Salatun viennin kautta (natiivi tai alustariippumaton)</string>
+    <string name="settings_rgpd_dpo_label">Yhteystiedot (tietosuojavastaava)</string>
+    <string name="settings_rgpd_dpo_value">contact@bigfortravel.com</string>
+    <string name="settings_rgpd_eu_label">EU-viranomainen (valitukset)</string>
+    <string name="settings_rgpd_eu_value">CNIL – www.cnil.fr (eurooppalaiset käyttäjät)</string>
+    <string name="settings_rgpd_cm_label">Kamerunin viranomainen (valitukset)</string>
+    <string name="settings_rgpd_cm_value">ANTIC – www.antic.cm (kamerunilaiset käyttäjät)</string>
+    <string name="settings_rgpd_footer">Big MFA ei kerää henkilötietoja laitteesi ulkopuolelle, ei itse avaa mitään verkkoyhteyksiä eikä jaa tietoja kolmansille osapuolille. Kaikki tiedot salataan AES-256-GCM-SIV:llä ennen paikallista tallennusta.</string>
+    <string name="settings_language_row_title">Kieli</string>
+
+    <!-- BackupImporter -->
+    <string name="backup_importer_unreadable">Tiedosto on lukukelvoton tai vioittunut</string>
+    <string name="backup_importer_unknown_format">Tunnistamaton tiedostomuoto</string>
+    <string name="backup_importer_wrong_password">Virheellinen salasana tai vioittunut tiedosto</string>
+
+    <!-- Tue -->
+    <string name="support_title">Tue Big MFA:ta</string>
+    <string name="support_description">BigForTravel kehittää ja ylläpitää Big MFA:ta vapaaehtoisesti. Ei mainoksia, ei tietojen myyntiä, ei piilotettua tilausta. Jos sovellus on sinulle hyödyllinen, lahjoitus — pienikin — auttaa rahoittamaan jatkuvaa kehitystä.</string>
+    <string name="support_paypal_button">Lahjoita PayPalilla</string>
+    <string name="support_kofi_button">Lahjoita Ko-filla</string>
+    <string name="support_disclaimer">Lahjoitukset ovat vapaaehtoisia eivätkä anna mitään lisätoimintoja. Tarkista aina, että näytetty vastaanottaja on BigForTravel / Patrick Djeuzong.</string>
+    <string name="support_official_site">🌐 Virallinen verkkosivusto</string>
+    <string name="support_contact_us">✉️ Kirjoita meille</string>
+    <string name="support_contact_subject">Big MFA — Yhteydenotto</string>
+
+    <!-- QR-vientikaruselli -->
+    <string name="export_qr_title">QR-vienti (%1$d/%2$d)</string>
+    <string name="export_qr_no_accounts">Ei vietäviä tilejä.</string>
+    <string name="export_qr_zip_button">📦 Vie kaikki QR-koodit ZIP-tiedostona</string>
+    <string name="export_qr_close_button">Sulje</string>
+    <string name="export_qr_zip_error">ZIP-arkistoa ei voitu luoda</string>
+    <string name="export_qr_share_title">Jaa QR-arkisto</string>
+
+    <!-- Opas -->
+    <string name="guide_tab_installation">Asennus</string>
+    <string name="guide_tab_usage">Käyttö</string>
+    <string name="guide_tab_features">Ominaisuudet</string>
+    <string name="guide_title">Big MFA -opas</string>
+    <string name="guide_intro">Nopea yleiskatsaus kaikkiin käytettävissä oleviin ominaisuuksiin.</string>
+    <string name="guide_codes_title">🔑 Koodini</string>
+    <string name="guide_codes_body">TOTP-koodisi päivittyvät reaaliajassa visuaalisella lähtölaskennalla. Napauta koodia kopioidaksesi sen (poistetaan automaattisesti leikepöydältä 30s kuluttua). HOTP-tileille napauta ”Luo” aina kun tarvitset koodin. Etsi, nimeä uudelleen tai poista tili kunkin rivin kuvakkeilla.</string>
+    <string name="guide_decoder_title">🔍 Dekooderi</string>
+    <string name="guide_decoder_body">Liitä tai tuo salaisuus QR-koodikuvasta saadaksesi välittömästi sen TOTP-koodin lisäämättä sitä kassakaappiisi. Hyödyllinen kertaluontoiseen tarkistukseen.</string>
+    <string name="guide_key_title">🔐 Avain</string>
+    <string name="guide_key_body">Luo satunnaisen salausavaimen sekä siihen liittyvän QR-koodin uuden tilin määrittämiseksi toisessa palvelussa, joka pyytää luomaan oman salaisuuden.</string>
+    <string name="guide_add_title">➕ Lisää tili</string>
+    <string name="guide_add_body">Skannaa palvelun näyttämä QR-koodi tai syötä salaisuus manuaalisesti. Lisäasetusten avulla voit säätää algoritmia, numeroiden määrää, jaksoa tai vaihtaa HOTP:hen.</string>
+    <string name="guide_biometric_title">👆 Biometrinen lukituksen avaus</string>
+    <string name="guide_biometric_body">Ota sormenjälkilukituksen avaus käyttöön Asetuksista. Pääsalasanasi pysyy aina saatavilla varana — ei koskaan korvattuna, vain täydennettynä.</string>
+    <string name="guide_backup_title">💾 Varmuuskopiointi ja palautus</string>
+    <string name="guide_backup_body">Kaksi vientimuotoa: enimmäisturvallisuus (natiivi Androidille) tai alustariippumaton (tuotavissa Chrome-laajennukseen). QR-vienti luo karusellin QR-koodeja, joko yksitellen tai ZIP-arkistona. Palautus tunnistaa tiedostomuodon automaattisesti.</string>
+    <string name="guide_security_title">🛡 Turvallisuus</string>
+    <string name="guide_security_body">Kaikki tiedot pysyvät yksinomaan laitteellasi, salattuna AES-256-GCM-SIV:llä ja Argon2id:llä johdetulla avaimella. Sovellus ei koskaan itse avaa verkkoyhteyttä.</string>
+    <string name="guide_language_title">🌐 Kieli</string>
+    <string name="guide_language_body">Valitse ”Automaattinen” seurataksesi puhelimesi kieltä, tai valitse tietty kieli kirjautumisnäyttöjen alatunnisteesta.</string>
+    <string name="guide_install_step1_title">1. Luo kassakaappisi</string>
+    <string name="guide_install_step1_body">Valitse ensimmäisellä käynnistyskerralla ”Luo kassakaappi” aloittaaksesi tyhjällä kassakaapilla, tai ”Palauta olemassa oleva varmuuskopio”, jos olet jo käyttänyt Big MFA:ta Chromessa tai toisella Android-laitteella.</string>
+    <string name="guide_install_step2_title">2. Valitse vahva pääsalasana</string>
+    <string name="guide_install_step2_body">Vähintään 12 merkkiä, mutta tähtää mieluummin 16+ merkin salalauseeseen (esimerkiksi useita yhdistettyjä sanoja). Se on ainoa avain, joka suojaa kaikkia tilejäsi.</string>
+    <string name="guide_install_step3_title">3. Ymmärrä palautumattomuus</string>
+    <string name="guide_install_step3_body">Big MFA ei tallenna pääsalasanaasi minnekään, ei selväkielisenä eikä salattuna. Jos unohdat sen etkä sinulla ole ulkoista varmuuskopiota, tilisi tulevat pysyvästi saavuttamattomiin. Kirjoita se muistiin luotettavaan salasananhallintaan.</string>
+    <string name="guide_install_step4_title">4. Ota biometriikka käyttöön (valinnainen)</string>
+    <string name="guide_install_step4_body">Ota Asetuksista sormenjälkilukituksen avaus käyttöön nopeampaa päivittäistä käyttöä varten. Pääsalasanasi pysyy aina saatavilla varana.</string>
+    <string name="guide_usage_step1_title">1. Lisää ensimmäinen tilisi</string>
+    <string name="guide_usage_step1_body">Skannaa kohdassa ”+ Lisää” palvelun näyttämä QR-koodi (nopein tapa), tai syötä manuaalisesti nimi, myöntäjä ja Base32-salaisuus, jos et voi skannata.</string>
+    <string name="guide_usage_step2_title">2. Käytä koodia päivittäin</string>
+    <string name="guide_usage_step2_body">Napauta kohdassa ”Koodini” suoraan TOTP-koodia kopioidaksesi sen (poistetaan automaattisesti leikepöydältä 30 sekunnin kuluttua). HOTP-tilille napauta ”Luo” aina kun tarvitset yhden — laskuri etenee aina eteenpäin, ei koskaan taaksepäin.</string>
+    <string name="guide_usage_step3_title">3. Hallitse tilejäsi</string>
+    <string name="guide_usage_step3_body">Käytä hakupalkkia löytääksesi nopeasti tilin monien joukosta. Kynäkuvake mahdollistaa uudelleennimeämisen, roskakorikuvake poistamisen (kaksinkertaisella vahvistuksella, peruuttamaton toiminto).</string>
+    <string name="guide_usage_step4_title">4. Ota varmuuskopioita säännöllisesti</string>
+    <string name="guide_usage_step4_body">Valitse Asetuksista ”Enimmäisturvallisuuden vienti” pelkkää Android-varmuuskopiota varten, tai ”Alustariippumaton vienti”, jos käytät Big MFA:ta myös Chromessa. QR-vienti (karuselli tai ZIP) on hyödyllinen siirtämiseen toiseen vakiomuotoiseen TOTP-yhteensopivaan hallintaan.</string>
+    <string name="guide_usage_step5_title">5. Vaihda pääsalasanasi</string>
+    <string name="guide_usage_step5_body">Syötä Asetuksissa nykyinen salasanasi ja sitten uusi. Tilisi ja biometriikkasi (jos käytössä) pysyvät ennallaan — vain salasana muuttuu.</string>
+    <string name="nav_accounts">Koodini</string>
+    <string name="nav_decoder">Dekooderi</string>
+    <string name="nav_key">Avain</string>
+    <string name="nav_add">+ Lisää</string>
+    <string name="nav_support">Tue</string>
+    <string name="nav_settings">Asetukset</string>
+    <string name="nav_guide">Opas</string>
+    <string name="nav_lock_content_description">Lukitse kassakaappi</string>
+</resources>

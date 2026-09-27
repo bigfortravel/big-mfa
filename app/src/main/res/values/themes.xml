@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Thème minimal, requis par AppCompatActivity (pour le sélecteur
+         de langue), mais SANS AUCUN EFFET visuel réel - l'apparence de
+         l'app reste entièrement pilotée par BigMFATheme en Compose. -->
+    <style name="Theme.BigMFA" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="android:windowIsTranslucent">false</item>
+    </style>
+</resources>

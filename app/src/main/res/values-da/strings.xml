@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Big MFA</string>
+
+    <!-- Låseskærm -->
+    <string name="unlock_title">Big MFA</string>
+    <string name="unlock_subtitle">Indtast din hovedadgangskode</string>
+    <string name="unlock_password_label">Hovedadgangskode</string>
+    <string name="unlock_button">Lås op</string>
+    <string name="unlock_reset_vault">Nulstil boksen</string>
+    <string name="unlock_biometric_content_description">Lås op med fingeraftryk</string>
+
+    <!-- Fælles sidefod -->
+    <string name="footer_support">❤️ Støt</string>
+    <string name="footer_contact">✉️ Kontakt os</string>
+    <string name="footer_language_auto">🌐 Automatisk — browsersprog</string>
+    <string name="footer_language_placeholder">Sprogvælger — kommer snart</string>
+    <string name="footer_gplv3">Gratis og open source (GPLv3-licens).</string>
+    <string name="language_dialog_title">Vælg sprog</string>
+    <string name="language_option_auto">🌐 Automatisk (systemsprog)</string>
+
+    <!-- Mine koder -->
+    <string name="accounts_empty_state">Ingen konti endnu.\nBrug “+ Tilføj” for at oprette en.</string>
+    <string name="accounts_search_placeholder">Søg efter en konto</string>
+    <string name="accounts_no_results">Ingen resultater for “%1$s”</string>
+    <string name="accounts_rename_title">Omdøb konto</string>
+    <string name="accounts_name_label">Kontonavn</string>
+    <string name="accounts_issuer_label">Udsteder (valgfrit)</string>
+    <string name="accounts_name_required_error">Kontonavn er påkrævet</string>
+    <string name="accounts_save">Gem</string>
+    <string name="accounts_cancel">Annuller</string>
+    <string name="accounts_rename_content_description">Omdøb %1$s</string>
+    <string name="accounts_delete_content_description">Slet %1$s</string>
+    <string name="accounts_delete_confirm_title">Slet “%1$s”?</string>
+    <string name="accounts_delete_irreversible">Denne handling kan ikke fortrydes.</string>
+    <string name="accounts_delete_button">Slet</string>
+    <string name="accounts_hotp_label">HOTP</string>
+    <string name="accounts_unreadable">Ulæselig</string>
+    <string name="accounts_copy_content_description">Kopiér</string>
+    <string name="accounts_generate_button">Generer</string>
+
+    <!-- + Tilføj -->
+    <string name="add_account_title">Tilføj en konto</string>
+    <string name="add_account_scan_qr">📷 Scan en QR-kode</string>
+    <string name="add_account_qr_invalid">Ugyldig eller ukendt QR-kode</string>
+    <string name="add_account_cancel_scan">Annuller scanning</string>
+    <string name="add_account_name_label">Kontonavn</string>
+    <string name="add_account_issuer_label">Udsteder (valgfrit)</string>
+    <string name="add_account_secret_label">Hemmelighed (Base32)</string>
+    <string name="add_account_advanced_options">⚙ Avancerede indstillinger (algoritme, cifre, periode)</string>
+    <string name="add_account_type_label">TYPE</string>
+    <string name="add_account_type_totp">TOTP (tidsbaseret — standard)</string>
+    <string name="add_account_type_hotp">HOTP (tællerbaseret)</string>
+    <string name="add_account_algorithm_label">ALGORITME</string>
+    <string name="add_account_algorithm_sha1">SHA-1 (standard, universel kompatibilitet)</string>
+    <string name="add_account_digits_label">ANTAL CIFRE</string>
+    <string name="add_account_digits_default">6 cifre (standard)</string>
+    <string name="add_account_digits_n">%1$d cifre</string>
+    <string name="add_account_period_label">PERIODE (SEKUNDER)</string>
+    <string name="add_account_save">Gem</string>
+    <string name="add_account_name_required">Kontonavn er påkrævet</string>
+    <string name="add_account_secret_required">Hemmeligheden er påkrævet</string>
+    <string name="add_account_secret_invalid">Hemmeligheden er ikke gyldig Base32</string>
+    <string name="add_account_save_error">Kunne ikke gemme kontoen</string>
+    <string name="add_account_camera_permission_needed">Kameraadgang er nødvendig for at scanne en QR-kode.</string>
+    <string name="add_account_grant_camera">Giv kameraadgang</string>
+
+    <!-- Nøgle -->
+    <string name="generate_key_description">Genererer en tilfældig Base32-hemmelighedsnøgle (160 bit), kompatibel med Google Authenticator, Aegis, Authy…</string>
+    <string name="generate_key_generate">Generer</string>
+    <string name="generate_key_copy">Kopiér</string>
+    <string name="generate_key_copied">Nøgle kopieret</string>
+    <string name="generate_key_show_qr">Vis QR</string>
+    <string name="generate_key_qr_title">QR-kode</string>
+    <string name="generate_key_close">Luk</string>
+
+    <!-- Dekoder -->
+    <string name="decoder_import_qr">Importer fra en QR-kode (billede)</string>
+    <string name="decoder_no_qr_found">Ingen QR-kode fundet i dette billede</string>
+    <string name="decoder_secret_label">MFA/TOTP-NØGLE (BASE32)</string>
+    <string name="decoder_code_placeholder">— — — — — —</string>
+    <string name="decoder_generate_code">Generer kode</string>
+    <string name="decoder_copy_content_description">Kopiér kode</string>
+    <string name="decoder_code_copied">Kode kopieret — slettes om 30s</string>
+    <string name="decoder_secret_empty_error">Indtast eller importer en nøgle</string>
+    <string name="decoder_secret_invalid_error">Ugyldig nøgle</string>
+
+    <!-- Opret/Gendan boksen -->
+    <string name="create_vault_password_too_short">Adgangskoden skal indeholde mindst 12 tegn</string>
+    <string name="create_vault_passwords_mismatch">Adgangskoderne stemmer ikke overens</string>
+    <string name="create_vault_creation_error">Kunne ikke oprette boksen</string>
+    <string name="restore_vault_new_password_too_short">Den nye adgangskode skal indeholde mindst 12 tegn</string>
+    <string name="restore_vault_new_passwords_mismatch">De nye adgangskoder stemmer ikke overens</string>
+    <string name="restore_vault_generic_error">Kunne ikke gendanne sikkerhedskopien</string>
+    <string name="create_vault_title">Opret din Big MFA-boks</string>
+    <string name="create_vault_min_chars">Minimum 12 tegn</string>
+    <string name="create_vault_password_label">Adgangskode</string>
+    <string name="create_vault_confirm_label">Bekræft adgangskode</string>
+    <string name="create_vault_create_button">Opret boks</string>
+    <string name="create_vault_restore_button">📥 Gendan en eksisterende sikkerhedskopi</string>
+    <string name="restore_backup_title">Gendan en sikkerhedskopi</string>
+    <string name="restore_backup_description">Nativt Big MFA-format eller Chrome-kompatibelt — registreres automatisk.</string>
+    <string name="restore_backup_choose_file">Vælg sikkerhedskopifil</string>
+    <string name="restore_backup_file_selected">✅ Fil valgt</string>
+    <string name="restore_backup_backup_password_label">Adgangskode til sikkerhedskopien</string>
+    <string name="restore_backup_new_password_title">NY HOVEDADGANGSKODE</string>
+    <string name="restore_backup_new_password_hint">Adskiller sig fra sikkerhedskopiens adgangskode — minimum 12 tegn.</string>
+    <string name="restore_backup_new_password_label">Ny hovedadgangskode</string>
+    <string name="restore_backup_confirm_new_password_label">Bekræft ny adgangskode</string>
+    <string name="restore_backup_restore_button">Gendan</string>
+    <string name="restore_backup_cancel">Annuller</string>
+    <string name="restore_backup_file_read_error">Kunne ikke læse filen</string>
+
+    <!-- Oplåsningsfejl -->
+    <string name="unlock_error_wrong_password">Forkert adgangskode</string>
+    <string name="unlock_error_corrupted_vault">Boksens data er beskadiget eller ulæselige</string>
+    <string name="unlock_error_no_vault">Ingen boks fundet</string>
+    <string name="unlock_error_too_many_attempts">For mange forsøg — prøv igen om %1$ds</string>
+    <string name="unlock_error_biometric_unavailable">Biometri ikke tilgængelig — brug din adgangskode</string>
+    <string name="unlock_error_biometric_failed">Biometrisk godkendelse mislykkedes</string>
+
+    <!-- Skift af hovedadgangskode -->
+    <string name="change_password_title">Skift hovedadgangskode</string>
+    <string name="change_password_current_label">NUVÆRENDE ADGANGSKODE</string>
+    <string name="change_password_new_label">NY ADGANGSKODE</string>
+    <string name="change_password_confirm_label">BEKRÆFT</string>
+    <string name="change_password_button">Skift adgangskode</string>
+    <string name="change_password_new_too_short">Den nye adgangskode skal indeholde mindst 12 tegn</string>
+    <string name="change_password_new_mismatch">De nye adgangskoder stemmer ikke overens</string>
+    <string name="change_password_wrong_current">Den nuværende adgangskode er forkert</string>
+    <string name="change_password_generic_error">Kunne ikke skifte adgangskode</string>
+    <string name="change_password_success_toast">Adgangskoden er ændret</string>
+    <string name="change_password_cancel">Annuller</string>
+
+    <!-- Biometri -->
+    <string name="biometric_setup_title">Aktivér biometri</string>
+    <string name="biometric_hardware_insufficient">Din enhed har ikke tilstrækkelig hardwareunderstøttelse til at aktivere biometri sikkert.</string>
+    <string name="biometric_activate_prompt">Aktivér oplåsning med fingeraftryk</string>
+    <string name="biometric_password_confirmed_hint">Adgangskode bekræftet — placer din finger på sensoren.</string>
+    <string name="biometric_continue_button">Fortsæt med fingeraftryk</string>
+    <string name="biometric_confirm_password_label">Bekræft din hovedadgangskode</string>
+    <string name="biometric_confirm_button">Bekræft</string>
+    <string name="biometric_wrong_password">Forkert adgangskode</string>
+    <string name="biometric_key_creation_error">Kunne ikke oprette den sikre nøgle</string>
+    <string name="biometric_cipher_error">Kunne ikke forberede krypteringen</string>
+    <string name="biometric_enable_error">Kunne ikke aktivere biometri</string>
+    <string name="biometric_auth_failed">Biometrisk godkendelse mislykkedes</string>
+    <string name="biometric_activated_toast">Biometri aktiveret</string>
+    <string name="biometric_deactivated_toast">Biometri deaktiveret</string>
+    <string name="biometric_cancel">Annuller</string>
+    <string name="biometric_row_title">Biometrisk oplåsning</string>
+    <string name="biometric_row_enabled">Aktiveret</string>
+    <string name="biometric_row_disabled">Deaktiveret</string>
+
+    <!-- Indstillinger -->
+    <string name="settings_title">Indstillinger</string>
+    <string name="settings_security_status_title">SIKKERHEDSSTATUS</string>
+    <string name="settings_masvs_badge">🛡 OWASP MASVS — Forstærket niveau</string>
+    <string name="settings_encryption_label">KRYPTERING</string>
+    <string name="settings_kdf_label">KDF</string>
+    <string name="settings_inactivity_label">INAKTIVITETSTID</string>
+    <string name="settings_inactivity_value">2 min.</string>
+    <string name="settings_bruteforce_label">BESKYTTELSE MOD BRUTE FORCE</string>
+    <string name="settings_bruteforce_value">5 forsøg + HMAC</string>
+    <string name="settings_lockout_label">LÅSNING</string>
+    <string name="settings_lockout_value">Eksponentiel</string>
+    <string name="settings_salt_label">SALT</string>
+    <string name="settings_salt_value">256 bit</string>
+    <string name="settings_integrity_label">BOKSENS INTEGRITET</string>
+    <string name="settings_integrity_value">HMAC-SHA256</string>
+    <string name="settings_hardware_label">HARDWAREFORANKRING</string>
+    <string name="settings_hardware_value">Mindst TEE, StrongBox hvis tilgængelig</string>
+    <string name="settings_bruteforce_note">ℹ️ Brute force-beskyttelsen forsvarer mod gentagne forsøg i appen. Den erstatter ikke en stærk adgangskode: nogen med direkte adgang til boksfilen på enheden kunne forsøge en offline-dekryptering uden at skulle igennem denne grænse. Brug en adgangssætning på 16+ tegn.</string>
+    <string name="settings_change_password_button">🔑 Skift hovedadgangskode</string>
+    <string name="settings_backup_title">SIKKERHEDSKOPI</string>
+    <string name="settings_export_native_title">🛡️ Eksport med maksimal sikkerhed</string>
+    <string name="settings_export_native_subtitle">Argon2id + AES-256-GCM-SIV</string>
+    <string name="settings_export_chrome_title">🌐 Platformuafhængig eksport</string>
+    <string name="settings_export_chrome_subtitle">PBKDF2 + AES-256-GCM — kan importeres i Big MFA Chrome</string>
+    <string name="settings_export_qr_title">📷 QR-eksport (karrusel + ZIP)</string>
+    <string name="settings_export_qr_subtitle">Én QR pr. konto, til at gennemse eller downloade</string>
+    <string name="settings_import_button">📥 Importer / Gendan</string>
+    <string name="settings_export_footer">Eksporten er krypteret — hemmelighederne forbliver beskyttet, selv hvis filen deles.</string>
+    <string name="settings_export_native_dialog_title">Eksport med maksimal sikkerhed</string>
+    <string name="settings_export_chrome_dialog_title">Platformuafhængig eksport</string>
+    <string name="settings_export_native_dialog_desc">🛡️ Argon2id + AES-256-GCM-SIV — denne adgangskode beskytter den eksporterede fil og adskiller sig fra din hovedadgangskode.</string>
+    <string name="settings_export_chrome_dialog_desc">🌐 PBKDF2 + AES-256-GCM — format kompatibelt med Big MFA Chrome-udvidelsen. Denne adgangskode adskiller sig fra din hovedadgangskode.</string>
+    <string name="settings_export_password_label">Eksportadgangskode</string>
+    <string name="settings_export_confirm_label">Bekræft</string>
+    <string name="settings_export_min_chars_error">Minimum 8 tegn</string>
+    <string name="settings_export_mismatch_error">Adgangskoderne stemmer ikke overens</string>
+    <string name="settings_export_button">Eksporter</string>
+    <string name="settings_export_cancel">Annuller</string>
+    <string name="settings_export_generic_error">Kunne ikke oprette eksporten</string>
+    <string name="settings_export_share_title">Del eksport</string>
+    <string name="settings_import_dialog_title">Importer en sikkerhedskopi</string>
+    <string name="settings_import_dialog_desc">Vælg en sikkerhedskopifil (nativt Big MFA eller Chrome-kompatibel — formatet registreres automatisk).</string>
+    <string name="settings_import_choose_file">Vælg en fil</string>
+    <string name="settings_import_file_selected_desc">Fil valgt — indtast adgangskoden til denne sikkerhedskopi.</string>
+    <string name="settings_import_password_label">Adgangskode til sikkerhedskopien</string>
+    <string name="settings_import_button_confirm">Importer</string>
+    <string name="settings_import_read_error">Kunne ikke læse filen</string>
+    <string name="settings_import_generic_error">Import mislykkedes</string>
+    <string name="settings_import_success_toast">%1$d konto(er) importeret</string>
+    <string name="settings_danger_zone_title">FARLIG ZONE</string>
+    <string name="settings_delete_all_button">🗑 Slet alle mine data</string>
+    <string name="settings_delete_all_description">Udøver din ret til sletning (Art. 17 GDPR). Sletter alle konti og hovedadgangskoden. Handlingen kan ikke fortrydes.</string>
+    <string name="settings_delete_confirm_title">Slet alle data?</string>
+    <string name="settings_delete_confirm_desc">Alle dine konti bliver slettet permanent. Denne handling kan ikke fortrydes.</string>
+    <string name="settings_delete_continue">Fortsæt</string>
+    <string name="settings_delete_final_title">Endelig bekræftelse</string>
+    <string name="settings_delete_final_desc">Er du HELT sikker? Ingen gendannelse vil være mulig efter dette trin.</string>
+    <string name="settings_delete_final_button">Slet permanent</string>
+    <string name="settings_delete_cancel">Annuller</string>
+    <string name="settings_rgpd_badge">🔒 GDPR-kompatibel — 100 % lokale data</string>
+    <string name="settings_rgpd_title">PRIVATLIV OG GDPR</string>
+    <string name="settings_rgpd_controller_label">Dataansvarlig</string>
+    <string name="settings_rgpd_controller_value">Patrick DJEUZONG – BigForTravel</string>
+    <string name="settings_rgpd_data_label">Indsamlede data</string>
+    <string name="settings_rgpd_data_value">Kontonavne, krypterede TOTP-nøgler</string>
+    <string name="settings_rgpd_storage_label">Lagringssted</string>
+    <string name="settings_rgpd_storage_value">Kun din enhed (appens private lagring, isoleret af Androids sandkasse)</string>
+    <string name="settings_rgpd_transfer_label">Overførsel til tredjepart</string>
+    <string name="settings_rgpd_transfer_value">Ingen anmodning foretages af Big MFA selv. Den krypterede eksport kan deles via en tredjepartsapp efter eget valg, kun hvis du udtrykkeligt aktiverer dette.</string>
+    <string name="settings_rgpd_thirdparty_label">Indlejret tredjepartskode</string>
+    <string name="settings_rgpd_thirdparty_value">Bouncy Castle (MIT), CameraX (Apache-2.0), indlejret ML Kit barcode-scanning (Apache-2.0), ZXing (Apache-2.0) — alt lokalt, ingen telemetri</string>
+    <string name="settings_rgpd_retention_label">Opbevaringsperiode</string>
+    <string name="settings_rgpd_retention_value">Indtil afinstallation eller manuel sletning</string>
+    <string name="settings_rgpd_legal_label">Retsgrundlag</string>
+    <string name="settings_rgpd_legal_value">Brugerens samtykke (Art. 6.1.a)</string>
+    <string name="settings_rgpd_access_label">Ret til indsigt (Art. 15)</string>
+    <string name="settings_rgpd_access_value">Via den krypterede eksport (ovenfor)</string>
+    <string name="settings_rgpd_erasure_label">Ret til sletning (Art. 17)</string>
+    <string name="settings_rgpd_erasure_value">Via “Slet alle mine data”</string>
+    <string name="settings_rgpd_portability_label">Ret til dataportabilitet (Art. 20)</string>
+    <string name="settings_rgpd_portability_value">Via den krypterede eksport (nativ eller platformuafhængig)</string>
+    <string name="settings_rgpd_dpo_label">Kontakt DPO</string>
+    <string name="settings_rgpd_dpo_value">contact@bigfortravel.com</string>
+    <string name="settings_rgpd_eu_label">EU-myndighed (klager)</string>
+    <string name="settings_rgpd_eu_value">CNIL – www.cnil.fr (europæiske brugere)</string>
+    <string name="settings_rgpd_cm_label">Cameroun-myndighed (klager)</string>
+    <string name="settings_rgpd_cm_value">ANTIC – www.antic.cm (cameroun-brugere)</string>
+    <string name="settings_rgpd_footer">Big MFA indsamler ikke personlige data uden for din enhed, opretter ikke selv netværksforbindelser og deler ikke oplysninger med tredjeparter. Alle data krypteres med AES-256-GCM-SIV før lokal lagring.</string>
+    <string name="settings_language_row_title">Sprog</string>
+
+    <!-- BackupImporter -->
+    <string name="backup_importer_unreadable">Filen er ulæselig eller beskadiget</string>
+    <string name="backup_importer_unknown_format">Ukendt filformat</string>
+    <string name="backup_importer_wrong_password">Forkert adgangskode eller beskadiget fil</string>
+
+    <!-- Støt -->
+    <string name="support_title">Støt Big MFA</string>
+    <string name="support_description">Big MFA udvikles og vedligeholdes frivilligt af BigForTravel. Ingen annoncer, intet salg af data, intet skjult abonnement. Hvis appen er nyttig for dig, hjælper en donation — selv en lille — med at finansiere den fortsatte udvikling.</string>
+    <string name="support_paypal_button">Donér via PayPal</string>
+    <string name="support_kofi_button">Donér via Ko-fi</string>
+    <string name="support_disclaimer">Donationer er frivillige og giver ingen ekstra funktionalitet. Kontrollér altid, at den viste modtager er BigForTravel / Patrick Djeuzong.</string>
+    <string name="support_official_site">🌐 Officiel hjemmeside</string>
+    <string name="support_contact_us">✉️ Skriv til os</string>
+    <string name="support_contact_subject">Big MFA — Kontakt</string>
+
+    <!-- QR-eksportkarrusel -->
+    <string name="export_qr_title">QR-eksport (%1$d/%2$d)</string>
+    <string name="export_qr_no_accounts">Ingen konti at eksportere.</string>
+    <string name="export_qr_zip_button">📦 Eksporter alle QR-koder som ZIP</string>
+    <string name="export_qr_close_button">Luk</string>
+    <string name="export_qr_zip_error">Kunne ikke oprette ZIP-arkivet</string>
+    <string name="export_qr_share_title">Del QR-arkiv</string>
+
+    <!-- Guide -->
+    <string name="guide_tab_installation">Installation</string>
+    <string name="guide_tab_usage">Anvendelse</string>
+    <string name="guide_tab_features">Funktioner</string>
+    <string name="guide_title">Big MFA-guide</string>
+    <string name="guide_intro">Et hurtigt overblik over alle tilgængelige funktioner.</string>
+    <string name="guide_codes_title">🔑 Mine koder</string>
+    <string name="guide_codes_body">Dine TOTP-koder opdateres i realtid med en visuel nedtælling. Tryk på en kode for at kopiere den (slettes automatisk fra udklipsholderen efter 30s). For HOTP-konti, tryk på “Generer”, hver gang du har brug for en. Søg, omdøb eller slet en konto med ikonerne på hver linje.</string>
+    <string name="guide_decoder_title">🔍 Dekoder</string>
+    <string name="guide_decoder_body">Indsæt eller importer en hemmelighed fra et QR-kodebillede for straks at få dens TOTP-kode uden at tilføje den til din boks. Nyttigt til en engangskontrol.</string>
+    <string name="guide_key_title">🔐 Nøgle</string>
+    <string name="guide_key_body">Genererer en tilfældig hemmelighedsnøgle med tilhørende QR-kode til at konfigurere en ny konto hos en anden tjeneste, der beder dig oprette din egen hemmelighed.</string>
+    <string name="guide_add_title">➕ Tilføj en konto</string>
+    <string name="guide_add_body">Scan den QR-kode, tjenesten viser, eller indtast hemmeligheden manuelt. De avancerede indstillinger giver dig mulighed for at justere algoritmen, antallet af cifre, perioden, eller skifte til HOTP.</string>
+    <string name="guide_biometric_title">👆 Biometrisk oplåsning</string>
+    <string name="guide_biometric_body">Aktivér oplåsning med fingeraftryk i Indstillinger. Din hovedadgangskode forbliver altid tilgængelig som reserve — aldrig erstattet, kun suppleret.</string>
+    <string name="guide_backup_title">💾 Sikkerhedskopiering og gendannelse</string>
+    <string name="guide_backup_body">To eksportformater: maksimal sikkerhed (nativt til Android) eller platformuafhængigt kompatibelt (kan importeres i Chrome-udvidelsen). QR-eksporten genererer en karrusel af QR-koder, enkeltvis eller som ZIP-arkiv. Gendannelse registrerer automatisk filformatet.</string>
+    <string name="guide_security_title">🛡 Sikkerhed</string>
+    <string name="guide_security_body">Alle data forbliver udelukkende på din enhed, krypteret med AES-256-GCM-SIV og en nøgle udledt med Argon2id. Appen opretter aldrig selv en netværksforbindelse.</string>
+    <string name="guide_language_title">🌐 Sprog</string>
+    <string name="guide_language_body">Vælg “Automatisk” for at følge din telefons sprog, eller vælg et bestemt sprog i sidefoden på loginskærmene.</string>
+    <string name="guide_install_step1_title">1. Opret din boks</string>
+    <string name="guide_install_step1_body">Ved første start, vælg “Opret boks” for at starte med en tom boks, eller “Gendan en eksisterende sikkerhedskopi”, hvis du allerede har brugt Big MFA i Chrome eller på en anden Android-enhed.</string>
+    <string name="guide_install_step2_title">2. Vælg en stærk hovedadgangskode</string>
+    <string name="guide_install_step2_body">Minimum 12 tegn, men sigt hellere efter en adgangssætning på 16+ tegn (for eksempel flere kombinerede ord). Det er den eneste nøgle, der beskytter alle dine konti.</string>
+    <string name="guide_install_step3_title">3. Forstå at det ikke kan gendannes</string>
+    <string name="guide_install_step3_body">Big MFA gemmer ikke din hovedadgangskode nogen steder, hverken i klartekst eller krypteret. Hvis du glemmer den og ikke har en ekstern sikkerhedskopi, bliver dine konti permanent utilgængelige. Skriv den ned i en pålidelig adgangskodeadministrator.</string>
+    <string name="guide_install_step4_title">4. Aktivér biometri (valgfrit)</string>
+    <string name="guide_install_step4_body">Aktivér oplåsning med fingeraftryk i Indstillinger for hurtigere daglig adgang. Din hovedadgangskode forbliver altid tilgængelig som reserve.</string>
+    <string name="guide_usage_step1_title">1. Tilføj din første konto</string>
+    <string name="guide_usage_step1_body">Under “+ Tilføj”, scan den QR-kode, tjenesten viser (hurtigste metode), eller indtast manuelt navn, udsteder og Base32-hemmelighed, hvis du ikke kan scanne.</string>
+    <string name="guide_usage_step2_title">2. Brug en kode dagligt</string>
+    <string name="guide_usage_step2_body">Under “Mine koder”, tryk direkte på en TOTP-kode for at kopiere den (slettes automatisk fra udklipsholderen efter 30 sekunder). For en HOTP-konto, tryk på “Generer”, hver gang du har brug for en — tælleren bevæger sig altid fremad, aldrig baglæns.</string>
+    <string name="guide_usage_step3_title">3. Administrer dine konti</string>
+    <string name="guide_usage_step3_body">Brug søgefeltet til hurtigt at finde en konto blandt flere. Blyantikonet lader dig omdøbe, papirkurvsikonet lader dig slette (med dobbelt bekræftelse, en handling der ikke kan fortrydes).</string>
+    <string name="guide_usage_step4_title">4. Tag sikkerhedskopier regelmæssigt</string>
+    <string name="guide_usage_step4_body">Vælg “Eksport med maksimal sikkerhed” i Indstillinger for en ren Android-sikkerhedskopi, eller “Platformuafhængig eksport”, hvis du også bruger Big MFA i Chrome. QR-eksporten (karrusel eller ZIP) er nyttig til at overføre til en anden standard TOTP-kompatibel administrator.</string>
+    <string name="guide_usage_step5_title">5. Skift din hovedadgangskode</string>
+    <string name="guide_usage_step5_body">Indtast din nuværende adgangskode i Indstillinger og derefter den nye. Dine konti og din biometri (hvis aktiveret) forbliver intakte — kun adgangskoden ændres.</string>
+    <string name="nav_accounts">Mine koder</string>
+    <string name="nav_decoder">Dekoder</string>
+    <string name="nav_key">Nøgle</string>
+    <string name="nav_add">+ Tilføj</string>
+    <string name="nav_support">Støt</string>
+    <string name="nav_settings">Indstillinger</string>
+    <string name="nav_guide">Guide</string>
+    <string name="nav_lock_content_description">Lås boksen</string>
+</resources>

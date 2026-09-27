@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Big MFA</string>
+
+    <!-- Atrakinimo ekranas -->
+    <string name="unlock_title">Big MFA</string>
+    <string name="unlock_subtitle">Įveskite savo pagrindinį slaptažodį</string>
+    <string name="unlock_password_label">Pagrindinis slaptažodis</string>
+    <string name="unlock_button">Atrakinti</string>
+    <string name="unlock_reset_vault">Iš naujo nustatyti saugyklą</string>
+    <string name="unlock_biometric_content_description">Atrakinti pirštų antspaudu</string>
+
+    <!-- Bendra poraštė -->
+    <string name="footer_support">❤️ Paremti</string>
+    <string name="footer_contact">✉️ Susisiekite su mumis</string>
+    <string name="footer_language_auto">🌐 Automatiškai — naršyklės kalba</string>
+    <string name="footer_language_placeholder">Kalbos pasirinkimas — netrukus</string>
+    <string name="footer_gplv3">Nemokama ir atvirojo kodo (GPLv3 licencija).</string>
+    <string name="language_dialog_title">Pasirinkite kalbą</string>
+    <string name="language_option_auto">🌐 Automatiškai (sistemos kalba)</string>
+
+    <!-- Mano kodai -->
+    <string name="accounts_empty_state">Kol kas nėra paskyrų.\nNaudokite „+ Pridėti”, kad sukurtumėte vieną.</string>
+    <string name="accounts_search_placeholder">Ieškoti paskyros</string>
+    <string name="accounts_no_results">Nėra rezultatų pagal „%1$s”</string>
+    <string name="accounts_rename_title">Pervadinti paskyrą</string>
+    <string name="accounts_name_label">Paskyros pavadinimas</string>
+    <string name="accounts_issuer_label">Išdavėjas (neprivaloma)</string>
+    <string name="accounts_name_required_error">Paskyros pavadinimas yra privalomas</string>
+    <string name="accounts_save">Išsaugoti</string>
+    <string name="accounts_cancel">Atšaukti</string>
+    <string name="accounts_rename_content_description">Pervadinti %1$s</string>
+    <string name="accounts_delete_content_description">Ištrinti %1$s</string>
+    <string name="accounts_delete_confirm_title">Ištrinti „%1$s”?</string>
+    <string name="accounts_delete_irreversible">Šio veiksmo negalima anuliuoti.</string>
+    <string name="accounts_delete_button">Ištrinti</string>
+    <string name="accounts_hotp_label">HOTP</string>
+    <string name="accounts_unreadable">Neįskaitoma</string>
+    <string name="accounts_copy_content_description">Kopijuoti</string>
+    <string name="accounts_generate_button">Generuoti</string>
+
+    <!-- + Pridėti -->
+    <string name="add_account_title">Pridėti paskyrą</string>
+    <string name="add_account_scan_qr">📷 Nuskaityti QR kodą</string>
+    <string name="add_account_qr_invalid">Netinkamas arba neatpažintas QR kodas</string>
+    <string name="add_account_cancel_scan">Atšaukti nuskaitymą</string>
+    <string name="add_account_name_label">Paskyros pavadinimas</string>
+    <string name="add_account_issuer_label">Išdavėjas (neprivaloma)</string>
+    <string name="add_account_secret_label">Slaptasis raktas (Base32)</string>
+    <string name="add_account_advanced_options">⚙ Papildomos parinktys (algoritmas, skaitmenys, periodas)</string>
+    <string name="add_account_type_label">TIPAS</string>
+    <string name="add_account_type_totp">TOTP (pagrįstas laiku — standartinis)</string>
+    <string name="add_account_type_hotp">HOTP (pagrįstas skaitikliu)</string>
+    <string name="add_account_algorithm_label">ALGORITMAS</string>
+    <string name="add_account_algorithm_sha1">SHA-1 (numatytasis, universalus suderinamumas)</string>
+    <string name="add_account_digits_label">SKAITMENŲ SKAIČIUS</string>
+    <string name="add_account_digits_default">6 skaitmenys (numatyta)</string>
+    <string name="add_account_digits_n">%1$d skaitmenys</string>
+    <string name="add_account_period_label">PERIODAS (SEKUNDĖS)</string>
+    <string name="add_account_save">Išsaugoti</string>
+    <string name="add_account_name_required">Paskyros pavadinimas yra privalomas</string>
+    <string name="add_account_secret_required">Slaptasis raktas yra privalomas</string>
+    <string name="add_account_secret_invalid">Slaptasis raktas nėra tinkamas Base32</string>
+    <string name="add_account_save_error">Nepavyko išsaugoti paskyros</string>
+    <string name="add_account_camera_permission_needed">Norint nuskaityti QR kodą, reikalinga prieiga prie kameros.</string>
+    <string name="add_account_grant_camera">Suteikti prieigą prie kameros</string>
+
+    <!-- Raktas -->
+    <string name="generate_key_description">Sugeneruoja atsitiktinį Base32 slaptąjį raktą (160 bitų), suderinamą su Google Authenticator, Aegis, Authy…</string>
+    <string name="generate_key_generate">Generuoti</string>
+    <string name="generate_key_copy">Kopijuoti</string>
+    <string name="generate_key_copied">Raktas nukopijuotas</string>
+    <string name="generate_key_show_qr">Rodyti QR</string>
+    <string name="generate_key_qr_title">QR kodas</string>
+    <string name="generate_key_close">Uždaryti</string>
+
+    <!-- Dekoderis -->
+    <string name="decoder_import_qr">Importuoti iš QR kodo (vaizdas)</string>
+    <string name="decoder_no_qr_found">Šiame vaizde neaptiktas QR kodas</string>
+    <string name="decoder_secret_label">MFA / TOTP RAKTAS (BASE32)</string>
+    <string name="decoder_code_placeholder">— — — — — —</string>
+    <string name="decoder_generate_code">Generuoti kodą</string>
+    <string name="decoder_copy_content_description">Kopijuoti kodą</string>
+    <string name="decoder_code_copied">Kodas nukopijuotas — bus ištrintas po 30s</string>
+    <string name="decoder_secret_empty_error">Įveskite arba importuokite raktą</string>
+    <string name="decoder_secret_invalid_error">Netinkamas raktas</string>
+
+    <!-- Saugyklos kūrimas/atkūrimas -->
+    <string name="create_vault_password_too_short">Slaptažodis turi būti sudarytas bent iš 12 simbolių</string>
+    <string name="create_vault_passwords_mismatch">Slaptažodžiai nesutampa</string>
+    <string name="create_vault_creation_error">Nepavyko sukurti saugyklos</string>
+    <string name="restore_vault_new_password_too_short">Naujas slaptažodis turi būti sudarytas bent iš 12 simbolių</string>
+    <string name="restore_vault_new_passwords_mismatch">Nauji slaptažodžiai nesutampa</string>
+    <string name="restore_vault_generic_error">Nepavyko atkurti atsarginės kopijos</string>
+    <string name="create_vault_title">Sukurkite savo Big MFA saugyklą</string>
+    <string name="create_vault_min_chars">Mažiausiai 12 simbolių</string>
+    <string name="create_vault_password_label">Slaptažodis</string>
+    <string name="create_vault_confirm_label">Patvirtinti slaptažodį</string>
+    <string name="create_vault_create_button">Sukurti saugyklą</string>
+    <string name="create_vault_restore_button">📥 Atkurti esamą atsarginę kopiją</string>
+    <string name="restore_backup_title">Atkurti atsarginę kopiją</string>
+    <string name="restore_backup_description">Originalus Big MFA formatas arba suderinamas su Chrome — aptinkama automatiškai.</string>
+    <string name="restore_backup_choose_file">Pasirinkti atsarginės kopijos failą</string>
+    <string name="restore_backup_file_selected">✅ Failas pasirinktas</string>
+    <string name="restore_backup_backup_password_label">Atsarginės kopijos slaptažodis</string>
+    <string name="restore_backup_new_password_title">NAUJAS PAGRINDINIS SLAPTAŽODIS</string>
+    <string name="restore_backup_new_password_hint">Skiriasi nuo atsarginės kopijos slaptažodžio — mažiausiai 12 simbolių.</string>
+    <string name="restore_backup_new_password_label">Naujas pagrindinis slaptažodis</string>
+    <string name="restore_backup_confirm_new_password_label">Patvirtinti naują slaptažodį</string>
+    <string name="restore_backup_restore_button">Atkurti</string>
+    <string name="restore_backup_cancel">Atšaukti</string>
+    <string name="restore_backup_file_read_error">Nepavyko perskaityti failo</string>
+
+    <!-- Atrakinimo klaidos -->
+    <string name="unlock_error_wrong_password">Neteisingas slaptažodis</string>
+    <string name="unlock_error_corrupted_vault">Saugyklos duomenys sugadinti arba neįskaitomi</string>
+    <string name="unlock_error_no_vault">Saugykla nerasta</string>
+    <string name="unlock_error_too_many_attempts">Per daug bandymų — bandykite dar kartą po %1$ds</string>
+    <string name="unlock_error_biometric_unavailable">Biometrija nepasiekiama — naudokite savo slaptažodį</string>
+    <string name="unlock_error_biometric_failed">Biometrinis tapatybės nustatymas nepavyko</string>
+
+    <!-- Pagrindinio slaptažodžio keitimas -->
+    <string name="change_password_title">Keisti pagrindinį slaptažodį</string>
+    <string name="change_password_current_label">DABARTINIS SLAPTAŽODIS</string>
+    <string name="change_password_new_label">NAUJAS SLAPTAŽODIS</string>
+    <string name="change_password_confirm_label">PATVIRTINTI</string>
+    <string name="change_password_button">Keisti slaptažodį</string>
+    <string name="change_password_new_too_short">Naujas slaptažodis turi būti sudarytas bent iš 12 simbolių</string>
+    <string name="change_password_new_mismatch">Nauji slaptažodžiai nesutampa</string>
+    <string name="change_password_wrong_current">Dabartinis slaptažodis neteisingas</string>
+    <string name="change_password_generic_error">Nepavyko pakeisti slaptažodžio</string>
+    <string name="change_password_success_toast">Slaptažodis sėkmingai pakeistas</string>
+    <string name="change_password_cancel">Atšaukti</string>
+
+    <!-- Biometrija -->
+    <string name="biometric_setup_title">Aktyvinti biometriją</string>
+    <string name="biometric_hardware_insufficient">Jūsų įrenginys neturi pakankamos aparatinės įrangos palaikymo, kad saugiai aktyvintų biometriją.</string>
+    <string name="biometric_activate_prompt">Aktyvinti atrakinimą pirštų antspaudu</string>
+    <string name="biometric_password_confirmed_hint">Slaptažodis patvirtintas — uždėkite pirštą ant jutiklio.</string>
+    <string name="biometric_continue_button">Tęsti su pirštų antspaudu</string>
+    <string name="biometric_confirm_password_label">Patvirtinkite savo pagrindinį slaptažodį</string>
+    <string name="biometric_confirm_button">Patvirtinti</string>
+    <string name="biometric_wrong_password">Neteisingas slaptažodis</string>
+    <string name="biometric_key_creation_error">Nepavyko sukurti saugaus rakto</string>
+    <string name="biometric_cipher_error">Nepavyko paruošti šifravimo</string>
+    <string name="biometric_enable_error">Nepavyko aktyvinti biometrijos</string>
+    <string name="biometric_auth_failed">Biometrinis tapatybės nustatymas nepavyko</string>
+    <string name="biometric_activated_toast">Biometrija aktyvinta</string>
+    <string name="biometric_deactivated_toast">Biometrija deaktyvinta</string>
+    <string name="biometric_cancel">Atšaukti</string>
+    <string name="biometric_row_title">Biometrinis atrakinimas</string>
+    <string name="biometric_row_enabled">Aktyvinta</string>
+    <string name="biometric_row_disabled">Deaktyvinta</string>
+
+    <!-- Nustatymai -->
+    <string name="settings_title">Nustatymai</string>
+    <string name="settings_security_status_title">SAUGUMO BŪSENA</string>
+    <string name="settings_masvs_badge">🛡 OWASP MASVS — Sustiprintas lygis</string>
+    <string name="settings_encryption_label">ŠIFRAVIMAS</string>
+    <string name="settings_kdf_label">KDF</string>
+    <string name="settings_inactivity_label">NEAKTYVUMO LAIKAS</string>
+    <string name="settings_inactivity_value">2 min</string>
+    <string name="settings_bruteforce_label">APSAUGA NUO GRUBIOS JĖGOS ATAKŲ</string>
+    <string name="settings_bruteforce_value">5 bandymai + HMAC</string>
+    <string name="settings_lockout_label">UŽRAKINIMAS</string>
+    <string name="settings_lockout_value">Eksponentinis</string>
+    <string name="settings_salt_label">DRUSKA</string>
+    <string name="settings_salt_value">256 bitai</string>
+    <string name="settings_integrity_label">SAUGYKLOS VIENTISUMAS</string>
+    <string name="settings_integrity_value">HMAC-SHA256</string>
+    <string name="settings_hardware_label">APARATINĖS ĮRANGOS PRIVIRIJIMAS</string>
+    <string name="settings_hardware_value">Mažiausiai TEE, StrongBox jei pasiekiama</string>
+    <string name="settings_bruteforce_note">ℹ️ Apsauga nuo grubios jėgos atakų gina nuo pakartotinių bandymų programėlėje. Ji nepakeičia stipraus slaptažodžio: asmuo, turintis tiesioginę prieigą prie saugyklos failo įrenginyje, galėtų bandyti atlikti atkodavimą neprisijungus, apeidamas šį apribojimą. Naudokite 16+ simbolių slaptafrazę.</string>
+    <string name="settings_change_password_button">🔑 Keisti pagrindinį slaptažodį</string>
+    <string name="settings_backup_title">ATSARGINĖ KOPIJA</string>
+    <string name="settings_export_native_title">🛡️ Eksportas su maksimaliu saugumu</string>
+    <string name="settings_export_native_subtitle">Argon2id + AES-256-GCM-SIV</string>
+    <string name="settings_export_chrome_title">🌐 Suderinamas eksportas tarp platformų</string>
+    <string name="settings_export_chrome_subtitle">PBKDF2 + AES-256-GCM — galima importuoti į Big MFA Chrome</string>
+    <string name="settings_export_qr_title">📷 QR eksportas (karuselė + ZIP)</string>
+    <string name="settings_export_qr_subtitle">Vienas QR kiekvienai paskyrai, naršymui arba atsisiuntimui</string>
+    <string name="settings_import_button">📥 Importuoti / Atkurti</string>
+    <string name="settings_export_footer">Eksportas užšifruotas — paslaptys lieka apsaugotos net jei failas bendrinamas.</string>
+    <string name="settings_export_native_dialog_title">Eksportas su maksimaliu saugumu</string>
+    <string name="settings_export_chrome_dialog_title">Suderinamas eksportas tarp platformų</string>
+    <string name="settings_export_native_dialog_desc">🛡️ Argon2id + AES-256-GCM-SIV — šis slaptažodis apsaugo eksportuotą failą ir skiriasi nuo jūsų pagrindinio slaptažodžio.</string>
+    <string name="settings_export_chrome_dialog_desc">🌐 PBKDF2 + AES-256-GCM — formatas, suderinamas su Big MFA Chrome plėtiniu. Šis slaptažodis skiriasi nuo jūsų pagrindinio slaptažodžio.</string>
+    <string name="settings_export_password_label">Eksporto slaptažodis</string>
+    <string name="settings_export_confirm_label">Patvirtinti</string>
+    <string name="settings_export_min_chars_error">Mažiausiai 8 simboliai</string>
+    <string name="settings_export_mismatch_error">Slaptažodžiai nesutampa</string>
+    <string name="settings_export_button">Eksportuoti</string>
+    <string name="settings_export_cancel">Atšaukti</string>
+    <string name="settings_export_generic_error">Nepavyko sukurti eksporto</string>
+    <string name="settings_export_share_title">Bendrinti eksportą</string>
+    <string name="settings_import_dialog_title">Importuoti atsarginę kopiją</string>
+    <string name="settings_import_dialog_desc">Pasirinkite atsarginės kopijos failą (originalus Big MFA arba suderinamas su Chrome — formatas aptinkamas automatiškai).</string>
+    <string name="settings_import_choose_file">Pasirinkti failą</string>
+    <string name="settings_import_file_selected_desc">Failas pasirinktas — įveskite šios atsarginės kopijos slaptažodį.</string>
+    <string name="settings_import_password_label">Atsarginės kopijos slaptažodis</string>
+    <string name="settings_import_button_confirm">Importuoti</string>
+    <string name="settings_import_read_error">Nepavyko perskaityti failo</string>
+    <string name="settings_import_generic_error">Importavimas nepavyko</string>
+    <string name="settings_import_success_toast">Importuota %1$d paskyrų</string>
+    <string name="settings_danger_zone_title">PAVOJINGA ZONA</string>
+    <string name="settings_delete_all_button">🗑 Ištrinti visus mano duomenis</string>
+    <string name="settings_delete_all_description">Pasinaudoja jūsų teise į ištrynimą (BDAR 17 straipsnis). Ištrina visas paskyras ir pagrindinį slaptažodį. Negrįžtamas veiksmas.</string>
+    <string name="settings_delete_confirm_title">Ištrinti visus duomenis?</string>
+    <string name="settings_delete_confirm_desc">Visos jūsų paskyros bus visam laikui ištrintos. Šio veiksmo negalima anuliuoti.</string>
+    <string name="settings_delete_continue">Tęsti</string>
+    <string name="settings_delete_final_title">Galutinis patvirtinimas</string>
+    <string name="settings_delete_final_desc">Ar tikrai esate tikri? Po šio žingsnio atkūrimas nebus įmanomas.</string>
+    <string name="settings_delete_final_button">Ištrinti visam laikui</string>
+    <string name="settings_delete_cancel">Atšaukti</string>
+    <string name="settings_rgpd_badge">🔒 Atitinka BDAR — 100% vietiniai duomenys</string>
+    <string name="settings_rgpd_title">PRIVATUMAS IR BDAR</string>
+    <string name="settings_rgpd_controller_label">Duomenų valdytojas</string>
+    <string name="settings_rgpd_controller_value">Patrick DJEUZONG – BigForTravel</string>
+    <string name="settings_rgpd_data_label">Renkami duomenys</string>
+    <string name="settings_rgpd_data_value">Paskyrų pavadinimai, užšifruoti TOTP raktai</string>
+    <string name="settings_rgpd_storage_label">Saugojimo vieta</string>
+    <string name="settings_rgpd_storage_value">Tik jūsų įrenginys (privati programėlės saugykla, izoliuota Android smėlio dėže)</string>
+    <string name="settings_rgpd_transfer_label">Perdavimas trečiosioms šalims</string>
+    <string name="settings_rgpd_transfer_value">Pats Big MFA nesiunčia jokių užklausų. Užšifruotu eksportu galima dalytis per jūsų pasirinktą trečiosios šalies programėlę tik tuo atveju, jei tai aiškiai aktyvinate.</string>
+    <string name="settings_rgpd_thirdparty_label">Įterptas trečiosios šalies kodas</string>
+    <string name="settings_rgpd_thirdparty_value">Bouncy Castle (MIT), CameraX (Apache-2.0), įterptas ML Kit barcode-scanning (Apache-2.0), ZXing (Apache-2.0) — visi vietiniai, be telemetrijos</string>
+    <string name="settings_rgpd_retention_label">Saugojimo laikotarpis</string>
+    <string name="settings_rgpd_retention_value">Iki pašalinimo arba rankinio ištrynimo</string>
+    <string name="settings_rgpd_legal_label">Teisinis pagrindas</string>
+    <string name="settings_rgpd_legal_value">Naudotojo sutikimas (6.1.a straipsnis)</string>
+    <string name="settings_rgpd_access_label">Teisė susipažinti (15 straipsnis)</string>
+    <string name="settings_rgpd_access_value">Per užšifruotą eksportą (aukščiau)</string>
+    <string name="settings_rgpd_erasure_label">Teisė būti pamirštam (17 straipsnis)</string>
+    <string name="settings_rgpd_erasure_value">Per „Ištrinti visus mano duomenis”</string>
+    <string name="settings_rgpd_portability_label">Teisė į duomenų perkeliamumą (20 straipsnis)</string>
+    <string name="settings_rgpd_portability_value">Per užšifruotą eksportą (originalų arba tarpplatforminį)</string>
+    <string name="settings_rgpd_dpo_label">DPO kontaktai</string>
+    <string name="settings_rgpd_dpo_value">contact@bigfortravel.com</string>
+    <string name="settings_rgpd_eu_label">ES institucija (skundai)</string>
+    <string name="settings_rgpd_eu_value">CNIL – www.cnil.fr (Europos naudotojai)</string>
+    <string name="settings_rgpd_cm_label">Kameruno institucija (skundai)</string>
+    <string name="settings_rgpd_cm_value">ANTIC – www.antic.cm (Kameruno naudotojai)</string>
+    <string name="settings_rgpd_footer">Big MFA nerenka jokių asmens duomenų už jūsų įrenginio ribų, pati nesukuria jokių tinklo ryšių ir nesidalija jokia informacija su trečiosiomis šalimis. Visi duomenys šifruojami naudojant AES-256-GCM-SIV prieš vietinį saugojimą.</string>
+    <string name="settings_language_row_title">Kalba</string>
+
+    <!-- BackupImporter -->
+    <string name="backup_importer_unreadable">Failas neįskaitomas arba sugadintas</string>
+    <string name="backup_importer_unknown_format">Neatpažintas failo formatas</string>
+    <string name="backup_importer_wrong_password">Neteisingas slaptažodis arba sugadintas failas</string>
+
+    <!-- Paremti -->
+    <string name="support_title">Paremkite Big MFA</string>
+    <string name="support_description">Big MFA savanoriškai kuria ir prižiūri BigForTravel. Jokios reklamos, jokio duomenų pardavimo, jokios paslėptos prenumeratos. Jei programėlė jums naudinga, auka — net nedidelė — padeda finansuoti tolesnį jos vystymą.</string>
+    <string name="support_paypal_button">Aukoti per PayPal</string>
+    <string name="support_kofi_button">Aukoti per Ko-fi</string>
+    <string name="support_disclaimer">Aukos yra neprivalomos ir nesuteikia jokios papildomos funkcijos. Visada patikrinkite, ar rodomas gavėjas yra BigForTravel / Patrick Djeuzong.</string>
+    <string name="support_official_site">🌐 Oficiali svetainė</string>
+    <string name="support_contact_us">✉️ Parašykite mums</string>
+    <string name="support_contact_subject">Big MFA — Kontaktai</string>
+
+    <!-- QR eksporto karuselė -->
+    <string name="export_qr_title">QR eksportas (%1$d/%2$d)</string>
+    <string name="export_qr_no_accounts">Nėra paskyrų eksportuoti.</string>
+    <string name="export_qr_zip_button">📦 Eksportuoti visus QR kodus kaip ZIP</string>
+    <string name="export_qr_close_button">Uždaryti</string>
+    <string name="export_qr_zip_error">Nepavyko sukurti ZIP archyvo</string>
+    <string name="export_qr_share_title">Bendrinti QR archyvą</string>
+
+    <!-- Vadovas -->
+    <string name="guide_tab_installation">Diegimas</string>
+    <string name="guide_tab_usage">Naudojimas</string>
+    <string name="guide_tab_features">Funkcijos</string>
+    <string name="guide_title">Big MFA vadovas</string>
+    <string name="guide_intro">Greita visų prieinamų funkcijų apžvalga.</string>
+    <string name="guide_codes_title">🔑 Mano kodai</string>
+    <string name="guide_codes_body">Jūsų TOTP kodai atnaujinami realiuoju laiku su vizualia atgaline atskaita. Palieskite kodą, kad jį nukopijuotumėte (automatiškai ištrinama iš iškarpinės po 30s). HOTP paskyroms kiekvieną kartą, kai jums reikia kodo, palieskite „Generuoti”. Ieškokite, pervadinkite arba ištrinkite paskyrą naudodami piktogramas kiekvienoje eilutėje.</string>
+    <string name="guide_decoder_title">🔍 Dekoderis</string>
+    <string name="guide_decoder_body">Įklijuokite arba importuokite paslaptį iš QR kodo vaizdo, kad iš karto gautumėte atitinkamą TOTP kodą, nepridedant jo į savo saugyklą. Naudinga vienkartiniam patikrinimui.</string>
+    <string name="guide_key_title">🔐 Raktas</string>
+    <string name="guide_key_body">Sugeneruoja atsitiktinį slaptąjį raktą kartu su atitinkamu QR kodu, kad būtų galima nustatyti naują paskyrą kitoje paslaugoje, kuri prašo jūsų sukurti savo paslaptį.</string>
+    <string name="guide_add_title">➕ Pridėti paskyrą</string>
+    <string name="guide_add_body">Nuskaitykite paslaugos pateiktą QR kodą arba įveskite paslaptį rankiniu būdu. Papildomos parinktys leidžia koreguoti algoritmą, skaitmenų skaičių, periodą arba perjungti į HOTP.</string>
+    <string name="guide_biometric_title">👆 Biometrinis atrakinimas</string>
+    <string name="guide_biometric_body">Aktyvinkite atrakinimą pirštų antspaudu Nustatymuose. Jūsų pagrindinis slaptažodis visada lieka pasiekiamas kaip atsarginis variantas — niekada nepakeičiamas, tik papildomas.</string>
+    <string name="guide_backup_title">💾 Atsarginė kopija ir atkūrimas</string>
+    <string name="guide_backup_body">Du eksporto formatai: maksimalus saugumas (originalus Android) arba suderinamas tarp platformų (galima importuoti į Chrome plėtinį). QR eksportas sukuria QR kodų karuselę, atskirai arba ZIP archyve. Atkūrimas automatiškai aptinka failo formatą.</string>
+    <string name="guide_security_title">🛡 Saugumas</string>
+    <string name="guide_security_body">Visi duomenys lieka tik jūsų įrenginyje, užšifruoti naudojant AES-256-GCM-SIV ir raktą, gautą naudojant Argon2id. Programėlė niekada pati nesukuria tinklo ryšio.</string>
+    <string name="guide_language_title">🌐 Kalba</string>
+    <string name="guide_language_body">Pasirinkite „Automatiškai”, kad sektumėte savo telefono kalbą, arba pasirinkite konkrečią kalbą prisijungimo ekranų poraštėje.</string>
+    <string name="guide_install_step1_title">1. Sukurkite savo saugyklą</string>
+    <string name="guide_install_step1_body">Pirmojo paleidimo metu pasirinkite „Sukurti saugyklą”, kad pradėtumėte su tuščia saugykla, arba „Atkurti esamą atsarginę kopiją”, jei jau naudojote Big MFA sistemoje Chrome arba kitame Android įrenginyje.</string>
+    <string name="guide_install_step2_title">2. Pasirinkite stiprų pagrindinį slaptažodį</string>
+    <string name="guide_install_step2_body">Mažiausiai 12 simbolių, tačiau geriau siekite 16+ simbolių slaptafrazės (pavyzdžiui, keli sujungti žodžiai). Tai vienintelis raktas, apsaugantis visas jūsų paskyras.</string>
+    <string name="guide_install_step3_title">3. Suprasti neatšaukiamumą</string>
+    <string name="guide_install_step3_body">Big MFA niekur nesaugo jūsų pagrindinio slaptažodžio, nei paprastu tekstu, nei užšifruoto. Jei jį pamiršite ir neturite išorinės atsarginės kopijos, jūsų paskyros taps visam laikui neprieinamos. Užsirašykite jį patikimame slaptažodžių tvarkytuve.</string>
+    <string name="guide_install_step4_title">4. Aktyvinkite biometriją (neprivaloma)</string>
+    <string name="guide_install_step4_body">Nustatymuose aktyvinkite atrakinimą pirštų antspaudu greitesnei kasdienei prieigai. Jūsų pagrindinis slaptažodis visada lieka pasiekiamas kaip atsarginis variantas.</string>
+    <string name="guide_usage_step1_title">1. Pridėkite savo pirmą paskyrą</string>
+    <string name="guide_usage_step1_body">Iš „+ Pridėti” nuskaitykite paslaugos rodomą QR kodą (greičiausias būdas) arba rankiniu būdu įveskite pavadinimą, išdavėją ir Base32 paslaptį, jei negalite nuskaityti.</string>
+    <string name="guide_usage_step2_title">2. Naudokite kodą kasdien</string>
+    <string name="guide_usage_step2_body">„Mano kodai” palieskite tiesiai TOTP kodą, kad jį nukopijuotumėte (automatiškai ištrinama iš iškarpinės po 30 sekundžių). HOTP paskyrai kiekvieną kartą, kai jo reikia, palieskite „Generuoti” — skaitiklis visada juda pirmyn, niekada atgal.</string>
+    <string name="guide_usage_step3_title">3. Tvarkykite savo paskyras</string>
+    <string name="guide_usage_step3_body">Naudokite paieškos juostą, kad greitai rastumėte paskyrą tarp daugelio. Pieštuko piktograma leidžia pervadinti, šiukšliadėžės piktograma leidžia ištrinti (su dvigubu patvirtinimu, negrįžtamas veiksmas).</string>
+    <string name="guide_usage_step4_title">4. Reguliariai kurkite atsargines kopijas</string>
+    <string name="guide_usage_step4_body">Nustatymuose pasirinkite „Eksportas su maksimaliu saugumu” tik Android atsarginei kopijai arba „Suderinamas eksportas tarp platformų”, jei taip pat naudojate Big MFA sistemoje Chrome. QR eksportas (karuselė arba ZIP) naudingas perkeliant į kitą standartinį TOTP suderinamą tvarkytuvą.</string>
+    <string name="guide_usage_step5_title">5. Pakeiskite savo pagrindinį slaptažodį</string>
+    <string name="guide_usage_step5_body">Nustatymuose įveskite dabartinį slaptažodį, tada naują. Jūsų paskyros ir biometrija (jei aktyvinta) lieka nepakitusios — keičiasi tik slaptažodis.</string>
+    <string name="nav_accounts">Mano kodai</string>
+    <string name="nav_decoder">Dekoderis</string>
+    <string name="nav_key">Raktas</string>
+    <string name="nav_add">+ Pridėti</string>
+    <string name="nav_support">Paremti</string>
+    <string name="nav_settings">Nustatymai</string>
+    <string name="nav_guide">Vadovas</string>
+    <string name="nav_lock_content_description">Užrakinti saugyklą</string>
+</resources>

@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Big MFA</string>
+
+    <!-- 解锁屏幕 -->
+    <string name="unlock_title">Big MFA</string>
+    <string name="unlock_subtitle">请输入您的主密码</string>
+    <string name="unlock_password_label">主密码</string>
+    <string name="unlock_button">解锁</string>
+    <string name="unlock_reset_vault">重置保险库</string>
+    <string name="unlock_biometric_content_description">使用指纹解锁</string>
+
+    <!-- 共享页脚 -->
+    <string name="footer_support">❤️ 支持</string>
+    <string name="footer_contact">✉️ 联系我们</string>
+    <string name="footer_language_auto">🌐 自动 — 浏览器语言</string>
+    <string name="footer_language_placeholder">语言选择 — 即将推出</string>
+    <string name="footer_gplv3">免费且开源（GPLv3 许可证）。</string>
+    <string name="language_dialog_title">选择语言</string>
+    <string name="language_option_auto">🌐 自动（系统语言）</string>
+
+    <!-- 我的验证码 -->
+    <string name="accounts_empty_state">暂无账户。\n使用“+ 添加”创建一个。</string>
+    <string name="accounts_search_placeholder">搜索账户</string>
+    <string name="accounts_no_results">未找到“%1$s”的结果</string>
+    <string name="accounts_rename_title">重命名账户</string>
+    <string name="accounts_name_label">账户名称</string>
+    <string name="accounts_issuer_label">发行方（可选）</string>
+    <string name="accounts_name_required_error">账户名称为必填项</string>
+    <string name="accounts_save">保存</string>
+    <string name="accounts_cancel">取消</string>
+    <string name="accounts_rename_content_description">重命名 %1$s</string>
+    <string name="accounts_delete_content_description">删除 %1$s</string>
+    <string name="accounts_delete_confirm_title">删除“%1$s”？</string>
+    <string name="accounts_delete_irreversible">此操作无法撤销。</string>
+    <string name="accounts_delete_button">删除</string>
+    <string name="accounts_hotp_label">HOTP</string>
+    <string name="accounts_unreadable">无法读取</string>
+    <string name="accounts_copy_content_description">复制</string>
+    <string name="accounts_generate_button">生成</string>
+
+    <!-- + 添加 -->
+    <string name="add_account_title">添加账户</string>
+    <string name="add_account_scan_qr">📷 扫描二维码</string>
+    <string name="add_account_qr_invalid">无效或无法识别的二维码</string>
+    <string name="add_account_cancel_scan">取消扫描</string>
+    <string name="add_account_name_label">账户名称</string>
+    <string name="add_account_issuer_label">发行方（可选）</string>
+    <string name="add_account_secret_label">密钥（Base32）</string>
+    <string name="add_account_advanced_options">⚙ 高级选项（算法、位数、周期）</string>
+    <string name="add_account_type_label">类型</string>
+    <string name="add_account_type_totp">TOTP（基于时间 — 标准）</string>
+    <string name="add_account_type_hotp">HOTP（基于计数器）</string>
+    <string name="add_account_algorithm_label">算法</string>
+    <string name="add_account_algorithm_sha1">SHA-1（默认，通用兼容性）</string>
+    <string name="add_account_digits_label">位数</string>
+    <string name="add_account_digits_default">6 位（默认）</string>
+    <string name="add_account_digits_n">%1$d 位</string>
+    <string name="add_account_period_label">周期（秒）</string>
+    <string name="add_account_save">保存</string>
+    <string name="add_account_name_required">账户名称为必填项</string>
+    <string name="add_account_secret_required">密钥为必填项</string>
+    <string name="add_account_secret_invalid">密钥不是有效的 Base32</string>
+    <string name="add_account_save_error">无法保存账户</string>
+    <string name="add_account_camera_permission_needed">扫描二维码需要相机权限。</string>
+    <string name="add_account_grant_camera">授予相机权限</string>
+
+    <!-- 密钥 -->
+    <string name="generate_key_description">生成一个随机的 Base32 密钥（160 位），兼容 Google Authenticator、Aegis、Authy 等应用</string>
+    <string name="generate_key_generate">生成</string>
+    <string name="generate_key_copy">复制</string>
+    <string name="generate_key_copied">密钥已复制</string>
+    <string name="generate_key_show_qr">显示二维码</string>
+    <string name="generate_key_qr_title">二维码</string>
+    <string name="generate_key_close">关闭</string>
+
+    <!-- 解码器 -->
+    <string name="decoder_import_qr">从二维码（图片）导入</string>
+    <string name="decoder_no_qr_found">在此图片中未检测到二维码</string>
+    <string name="decoder_secret_label">MFA / TOTP 密钥（BASE32）</string>
+    <string name="decoder_code_placeholder">— — — — — —</string>
+    <string name="decoder_generate_code">生成验证码</string>
+    <string name="decoder_copy_content_description">复制验证码</string>
+    <string name="decoder_code_copied">验证码已复制 — 30 秒后清除</string>
+    <string name="decoder_secret_empty_error">请输入或导入密钥</string>
+    <string name="decoder_secret_invalid_error">无效密钥</string>
+
+    <!-- 创建/恢复保险库 -->
+    <string name="create_vault_password_too_short">密码必须至少为 12 个字符</string>
+    <string name="create_vault_passwords_mismatch">密码不匹配</string>
+    <string name="create_vault_creation_error">无法创建保险库</string>
+    <string name="restore_vault_new_password_too_short">新密码必须至少为 12 个字符</string>
+    <string name="restore_vault_new_passwords_mismatch">新密码不匹配</string>
+    <string name="restore_vault_generic_error">无法恢复备份</string>
+    <string name="create_vault_title">创建您的 Big MFA 保险库</string>
+    <string name="create_vault_min_chars">至少 12 个字符</string>
+    <string name="create_vault_password_label">密码</string>
+    <string name="create_vault_confirm_label">确认密码</string>
+    <string name="create_vault_create_button">创建保险库</string>
+    <string name="create_vault_restore_button">📥 恢复现有备份</string>
+    <string name="restore_backup_title">恢复备份</string>
+    <string name="restore_backup_description">Big MFA 原生格式或 Chrome 兼容格式 — 自动检测。</string>
+    <string name="restore_backup_choose_file">选择备份文件</string>
+    <string name="restore_backup_file_selected">✅ 已选择文件</string>
+    <string name="restore_backup_backup_password_label">备份密码</string>
+    <string name="restore_backup_new_password_title">新主密码</string>
+    <string name="restore_backup_new_password_hint">与备份密码不同 — 至少 12 个字符。</string>
+    <string name="restore_backup_new_password_label">新主密码</string>
+    <string name="restore_backup_confirm_new_password_label">确认新密码</string>
+    <string name="restore_backup_restore_button">恢复</string>
+    <string name="restore_backup_cancel">取消</string>
+    <string name="restore_backup_file_read_error">无法读取文件</string>
+
+    <!-- 解锁错误 -->
+    <string name="unlock_error_wrong_password">密码错误</string>
+    <string name="unlock_error_corrupted_vault">保险库数据已损坏或无法读取</string>
+    <string name="unlock_error_no_vault">未找到保险库</string>
+    <string name="unlock_error_too_many_attempts">尝试次数过多 — 请在 %1$d 秒后重试</string>
+    <string name="unlock_error_biometric_unavailable">生物识别不可用 — 请使用您的密码</string>
+    <string name="unlock_error_biometric_failed">生物识别认证失败</string>
+
+    <!-- 更改主密码 -->
+    <string name="change_password_title">更改主密码</string>
+    <string name="change_password_current_label">当前密码</string>
+    <string name="change_password_new_label">新密码</string>
+    <string name="change_password_confirm_label">确认</string>
+    <string name="change_password_button">更改密码</string>
+    <string name="change_password_new_too_short">新密码必须至少为 12 个字符</string>
+    <string name="change_password_new_mismatch">新密码不匹配</string>
+    <string name="change_password_wrong_current">当前密码不正确</string>
+    <string name="change_password_generic_error">无法更改密码</string>
+    <string name="change_password_success_toast">密码已成功更改</string>
+    <string name="change_password_cancel">取消</string>
+
+    <!-- 生物识别 -->
+    <string name="biometric_setup_title">启用生物识别</string>
+    <string name="biometric_hardware_insufficient">您的设备没有足够的硬件支持来安全启用生物识别。</string>
+    <string name="biometric_activate_prompt">启用指纹解锁</string>
+    <string name="biometric_password_confirmed_hint">密码已确认 — 请将手指放在传感器上。</string>
+    <string name="biometric_continue_button">使用指纹继续</string>
+    <string name="biometric_confirm_password_label">请确认您的主密码</string>
+    <string name="biometric_confirm_button">确认</string>
+    <string name="biometric_wrong_password">密码错误</string>
+    <string name="biometric_key_creation_error">无法创建安全密钥</string>
+    <string name="biometric_cipher_error">无法准备加密</string>
+    <string name="biometric_enable_error">无法启用生物识别</string>
+    <string name="biometric_auth_failed">生物识别认证失败</string>
+    <string name="biometric_activated_toast">生物识别已启用</string>
+    <string name="biometric_deactivated_toast">生物识别已禁用</string>
+    <string name="biometric_cancel">取消</string>
+    <string name="biometric_row_title">生物识别解锁</string>
+    <string name="biometric_row_enabled">已启用</string>
+    <string name="biometric_row_disabled">已禁用</string>
+
+    <!-- 设置 -->
+    <string name="settings_title">设置</string>
+    <string name="settings_security_status_title">安全状态</string>
+    <string name="settings_masvs_badge">🛡 OWASP MASVS — 增强级别</string>
+    <string name="settings_encryption_label">加密</string>
+    <string name="settings_kdf_label">KDF</string>
+    <string name="settings_inactivity_label">不活动时间</string>
+    <string name="settings_inactivity_value">2 分钟</string>
+    <string name="settings_bruteforce_label">暴力破解防护</string>
+    <string name="settings_bruteforce_value">5 次尝试 + HMAC</string>
+    <string name="settings_lockout_label">锁定</string>
+    <string name="settings_lockout_value">指数级</string>
+    <string name="settings_salt_label">盐值</string>
+    <string name="settings_salt_value">256 位</string>
+    <string name="settings_integrity_label">保险库完整性</string>
+    <string name="settings_integrity_value">HMAC-SHA256</string>
+    <string name="settings_hardware_label">硬件锚定</string>
+    <string name="settings_hardware_value">最低 TEE，如可用则使用 StrongBox</string>
+    <string name="settings_bruteforce_note">ℹ️ 暴力破解防护可抵御应用内的重复尝试。它不能替代强密码：能够直接访问设备上保险库文件的人可能会绕过此限制尝试离线解密。请使用 16 位以上的密码短语。</string>
+    <string name="settings_change_password_button">🔑 更改主密码</string>
+    <string name="settings_backup_title">备份</string>
+    <string name="settings_export_native_title">🛡️ 最高安全性导出</string>
+    <string name="settings_export_native_subtitle">Argon2id + AES-256-GCM-SIV</string>
+    <string name="settings_export_chrome_title">🌐 跨平台兼容导出</string>
+    <string name="settings_export_chrome_subtitle">PBKDF2 + AES-256-GCM — 可导入 Big MFA Chrome</string>
+    <string name="settings_export_qr_title">📷 二维码导出（轮播 + ZIP）</string>
+    <string name="settings_export_qr_subtitle">每个账户一个二维码，可浏览或下载</string>
+    <string name="settings_import_button">📥 导入 / 恢复</string>
+    <string name="settings_export_footer">导出的文件已加密 — 即使文件被共享，密钥仍受到保护。</string>
+    <string name="settings_export_native_dialog_title">最高安全性导出</string>
+    <string name="settings_export_chrome_dialog_title">跨平台兼容导出</string>
+    <string name="settings_export_native_dialog_desc">🛡️ Argon2id + AES-256-GCM-SIV — 此密码用于保护导出的文件，与您的主密码不同。</string>
+    <string name="settings_export_chrome_dialog_desc">🌐 PBKDF2 + AES-256-GCM — 与 Big MFA Chrome 扩展程序兼容的格式。此密码与您的主密码不同。</string>
+    <string name="settings_export_password_label">导出密码</string>
+    <string name="settings_export_confirm_label">确认</string>
+    <string name="settings_export_min_chars_error">至少 8 个字符</string>
+    <string name="settings_export_mismatch_error">密码不匹配</string>
+    <string name="settings_export_button">导出</string>
+    <string name="settings_export_cancel">取消</string>
+    <string name="settings_export_generic_error">无法创建导出</string>
+    <string name="settings_export_share_title">分享导出文件</string>
+    <string name="settings_import_dialog_title">导入备份</string>
+    <string name="settings_import_dialog_desc">请选择一个备份文件（Big MFA 原生格式或 Chrome 兼容格式 — 格式会自动检测）。</string>
+    <string name="settings_import_choose_file">选择文件</string>
+    <string name="settings_import_file_selected_desc">已选择文件 — 请输入此备份的密码。</string>
+    <string name="settings_import_password_label">备份密码</string>
+    <string name="settings_import_button_confirm">导入</string>
+    <string name="settings_import_read_error">无法读取文件</string>
+    <string name="settings_import_generic_error">导入失败</string>
+    <string name="settings_import_success_toast">已导入 %1$d 个账户</string>
+    <string name="settings_danger_zone_title">危险区域</string>
+    <string name="settings_delete_all_button">🗑 删除我的所有数据</string>
+    <string name="settings_delete_all_description">行使您的删除权（GDPR 第 17 条）。删除所有账户和主密码。此操作不可撤销。</string>
+    <string name="settings_delete_confirm_title">删除所有数据？</string>
+    <string name="settings_delete_confirm_desc">您的所有账户将被永久删除。此操作无法撤销。</string>
+    <string name="settings_delete_continue">继续</string>
+    <string name="settings_delete_final_title">最终确认</string>
+    <string name="settings_delete_final_desc">您真的确定吗？此步骤完成后将无法恢复。</string>
+    <string name="settings_delete_final_button">永久删除</string>
+    <string name="settings_delete_cancel">取消</string>
+    <string name="settings_rgpd_badge">🔒 符合 GDPR — 100% 本地数据</string>
+    <string name="settings_rgpd_title">隐私与 GDPR</string>
+    <string name="settings_rgpd_controller_label">数据控制者</string>
+    <string name="settings_rgpd_controller_value">Patrick DJEUZONG – BigForTravel</string>
+    <string name="settings_rgpd_data_label">收集的数据</string>
+    <string name="settings_rgpd_data_value">账户名称、加密的 TOTP 密钥</string>
+    <string name="settings_rgpd_storage_label">存储位置</string>
+    <string name="settings_rgpd_storage_value">仅您的设备（应用专属私有存储，由 Android 沙盒隔离）</string>
+    <string name="settings_rgpd_transfer_label">向第三方传输</string>
+    <string name="settings_rgpd_transfer_value">Big MFA 本身不会发出任何请求。加密的导出文件只有在您明确启用时才能通过您选择的第三方应用共享。</string>
+    <string name="settings_rgpd_thirdparty_label">内置第三方代码</string>
+    <string name="settings_rgpd_thirdparty_value">Bouncy Castle (MIT)、CameraX (Apache-2.0)、内置 ML Kit barcode-scanning (Apache-2.0)、ZXing (Apache-2.0) — 均为本地运行，无遥测数据</string>
+    <string name="settings_rgpd_retention_label">保留期限</string>
+    <string name="settings_rgpd_retention_value">直至卸载或手动删除</string>
+    <string name="settings_rgpd_legal_label">法律依据</string>
+    <string name="settings_rgpd_legal_value">用户同意（第 6.1.a 条）</string>
+    <string name="settings_rgpd_access_label">访问权（第 15 条）</string>
+    <string name="settings_rgpd_access_value">通过加密导出（如上）</string>
+    <string name="settings_rgpd_erasure_label">删除权（第 17 条）</string>
+    <string name="settings_rgpd_erasure_value">通过“删除我的所有数据”</string>
+    <string name="settings_rgpd_portability_label">数据可携权（第 20 条）</string>
+    <string name="settings_rgpd_portability_value">通过加密导出（原生或跨平台）</string>
+    <string name="settings_rgpd_dpo_label">数据保护官联系方式</string>
+    <string name="settings_rgpd_dpo_value">contact@bigfortravel.com</string>
+    <string name="settings_rgpd_eu_label">欧盟机构（投诉）</string>
+    <string name="settings_rgpd_eu_value">CNIL – www.cnil.fr（欧洲用户）</string>
+    <string name="settings_rgpd_cm_label">喀麦隆机构（投诉）</string>
+    <string name="settings_rgpd_cm_value">ANTIC – www.antic.cm（喀麦隆用户）</string>
+    <string name="settings_rgpd_footer">Big MFA 不会收集设备外的任何个人数据，不会自行发起任何网络连接，也不会与第三方共享任何信息。所有数据在本地存储前均使用 AES-256-GCM-SIV 加密。</string>
+    <string name="settings_language_row_title">语言</string>
+
+    <!-- BackupImporter -->
+    <string name="backup_importer_unreadable">文件无法读取或已损坏</string>
+    <string name="backup_importer_unknown_format">无法识别的文件格式</string>
+    <string name="backup_importer_wrong_password">密码错误或文件已损坏</string>
+
+    <!-- 支持 -->
+    <string name="support_title">支持 Big MFA</string>
+    <string name="support_description">Big MFA 由 BigForTravel 志愿开发和维护。无广告，不出售数据，无隐藏订阅。如果这款应用对您有帮助，即使是小额捐赠也能帮助资助其持续开发。</string>
+    <string name="support_paypal_button">通过 PayPal 捐赠</string>
+    <string name="support_kofi_button">通过 Ko-fi 捐赠</string>
+    <string name="support_disclaimer">捐赠是自愿的，不会授予任何额外功能。请始终核实显示的收款人是 BigForTravel / Patrick Djeuzong。</string>
+    <string name="support_official_site">🌐 官方网站</string>
+    <string name="support_contact_us">✉️ 给我们写信</string>
+    <string name="support_contact_subject">Big MFA — 联系我们</string>
+
+    <!-- 二维码导出轮播 -->
+    <string name="export_qr_title">二维码导出（%1$d/%2$d）</string>
+    <string name="export_qr_no_accounts">没有可导出的账户。</string>
+    <string name="export_qr_zip_button">📦 将所有二维码导出为 ZIP</string>
+    <string name="export_qr_close_button">关闭</string>
+    <string name="export_qr_zip_error">无法创建 ZIP 压缩包</string>
+    <string name="export_qr_share_title">分享二维码压缩包</string>
+
+    <!-- 指南 -->
+    <string name="guide_tab_installation">安装</string>
+    <string name="guide_tab_usage">使用</string>
+    <string name="guide_tab_features">功能</string>
+    <string name="guide_title">Big MFA 指南</string>
+    <string name="guide_intro">所有可用功能的快速概览。</string>
+    <string name="guide_codes_title">🔑 我的验证码</string>
+    <string name="guide_codes_body">您的 TOTP 验证码会实时刷新，并带有可视化倒计时。点击验证码即可复制（30 秒后自动从剪贴板清除）。对于 HOTP 账户，每次需要验证码时点击“生成”。使用每行的图标可以搜索、重命名或删除账户。</string>
+    <string name="guide_decoder_title">🔍 解码器</string>
+    <string name="guide_decoder_body">从二维码图片粘贴或导入密钥，即可立即获取对应的 TOTP 验证码，而无需将其添加到保险库中。适用于一次性验证。</string>
+    <string name="guide_key_title">🔐 密钥</string>
+    <string name="guide_key_body">生成一个随机密钥及其对应的二维码，用于在要求您创建自己密钥的其他服务中设置新账户。</string>
+    <string name="guide_add_title">➕ 添加账户</string>
+    <string name="guide_add_body">扫描服务提供的二维码，或手动输入密钥。高级选项允许您调整算法、位数、周期，或切换为 HOTP。</string>
+    <string name="guide_biometric_title">👆 生物识别解锁</string>
+    <string name="guide_biometric_body">在设置中启用指纹解锁。您的主密码始终作为备用方式保留 — 永远不会被替代，只会被补充。</string>
+    <string name="guide_backup_title">💾 备份与恢复</string>
+    <string name="guide_backup_body">两种导出格式：最高安全性（Android 原生）或跨平台兼容（可导入 Chrome 扩展程序）。二维码导出会生成一个二维码轮播，可以单独导出或打包为 ZIP 压缩包。恢复时会自动检测文件格式。</string>
+    <string name="guide_security_title">🛡 安全</string>
+    <string name="guide_security_body">所有数据仅保留在您的设备上，使用 AES-256-GCM-SIV 加密，密钥通过 Argon2id 派生。应用本身从不发起任何网络连接。</string>
+    <string name="guide_language_title">🌐 语言</string>
+    <string name="guide_language_body">选择“自动”以跟随您手机的语言，或在登录屏幕的页脚中选择特定语言。</string>
+    <string name="guide_install_step1_title">1. 创建您的保险库</string>
+    <string name="guide_install_step1_body">首次启动时，选择“创建保险库”以空保险库开始，或者如果您已在 Chrome 或其他 Android 设备上使用过 Big MFA，选择“恢复现有备份”。</string>
+    <string name="guide_install_step2_title">2. 选择一个强主密码</string>
+    <string name="guide_install_step2_body">最少 12 个字符，但更推荐使用 16 位以上的密码短语（例如多个词组合而成）。这是保护您所有账户的唯一密钥。</string>
+    <string name="guide_install_step3_title">3. 了解其不可恢复性</string>
+    <string name="guide_install_step3_body">Big MFA 不会以明文或加密形式在任何地方存储您的主密码。如果您忘记了密码且没有外部备份，您的账户将永久无法访问。请将其记录在可靠的密码管理器中。</string>
+    <string name="guide_install_step4_title">4. 启用生物识别（可选）</string>
+    <string name="guide_install_step4_body">在设置中启用指纹解锁，以便更快地进行日常访问。您的主密码始终作为备用方式保留。</string>
+    <string name="guide_usage_step1_title">1. 添加您的第一个账户</string>
+    <string name="guide_usage_step1_body">在“+ 添加”中，扫描服务显示的二维码（最快方法），或者如果无法扫描，请手动输入名称、发行方和 Base32 密钥。</string>
+    <string name="guide_usage_step2_title">2. 每天使用验证码</string>
+    <string name="guide_usage_step2_body">在“我的验证码”中，直接点击 TOTP 验证码即可复制（30 秒后自动从剪贴板清除）。对于 HOTP 账户，每次需要时点击“生成”— 计数器始终向前推进，绝不会后退。</string>
+    <string name="guide_usage_step3_title">3. 管理您的账户</string>
+    <string name="guide_usage_step3_body">使用搜索栏在多个账户中快速找到需要的账户。铅笔图标可用于重命名，垃圾桶图标可用于删除（需二次确认，操作不可撤销）。</string>
+    <string name="guide_usage_step4_title">4. 定期备份</string>
+    <string name="guide_usage_step4_body">在设置中，选择“最高安全性导出”以创建仅限 Android 的备份，或者如果您在 Chrome 中也使用 Big MFA，选择“跨平台兼容导出”。二维码导出（轮播或 ZIP）适用于迁移到其他标准 TOTP 兼容的管理器。</string>
+    <string name="guide_usage_step5_title">5. 更改您的主密码</string>
+    <string name="guide_usage_step5_body">在设置中输入当前密码，然后输入新密码。您的账户和生物识别设置（如已启用）将保持不变 — 仅密码会发生更改。</string>
+    <string name="nav_accounts">我的验证码</string>
+    <string name="nav_decoder">解码器</string>
+    <string name="nav_key">密钥</string>
+    <string name="nav_add">+ 添加</string>
+    <string name="nav_support">支持</string>
+    <string name="nav_settings">设置</string>
+    <string name="nav_guide">指南</string>
+    <string name="nav_lock_content_description">锁定保险库</string>
+</resources>

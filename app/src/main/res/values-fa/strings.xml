@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Big MFA</string>
+
+    <!-- صفحه باز کردن قفل -->
+    <string name="unlock_title">Big MFA</string>
+    <string name="unlock_subtitle">رمز عبور اصلی خود را وارد کنید</string>
+    <string name="unlock_password_label">رمز عبور اصلی</string>
+    <string name="unlock_button">باز کردن قفل</string>
+    <string name="unlock_reset_vault">بازنشانی صندوق</string>
+    <string name="unlock_biometric_content_description">باز کردن قفل با اثر انگشت</string>
+
+    <!-- پاورقی مشترک -->
+    <string name="footer_support">❤️ حمایت کنید</string>
+    <string name="footer_contact">✉️ تماس با ما</string>
+    <string name="footer_language_auto">🌐 خودکار — زبان مرورگر</string>
+    <string name="footer_language_placeholder">انتخاب زبان — به‌زودی</string>
+    <string name="footer_gplv3">رایگان و متن‌باز (مجوز GPLv3).</string>
+    <string name="language_dialog_title">انتخاب زبان</string>
+    <string name="language_option_auto">🌐 خودکار (زبان سیستم)</string>
+
+    <!-- کدهای من -->
+    <string name="accounts_empty_state">هنوز حسابی وجود ندارد.\nبرای ایجاد یکی از «+ افزودن» استفاده کنید.</string>
+    <string name="accounts_search_placeholder">جستجوی حساب</string>
+    <string name="accounts_no_results">نتیجه‌ای برای «%1$s» یافت نشد</string>
+    <string name="accounts_rename_title">تغییر نام حساب</string>
+    <string name="accounts_name_label">نام حساب</string>
+    <string name="accounts_issuer_label">صادرکننده (اختیاری)</string>
+    <string name="accounts_name_required_error">نام حساب الزامی است</string>
+    <string name="accounts_save">ذخیره</string>
+    <string name="accounts_cancel">لغو</string>
+    <string name="accounts_rename_content_description">تغییر نام %1$s</string>
+    <string name="accounts_delete_content_description">حذف %1$s</string>
+    <string name="accounts_delete_confirm_title">«%1$s» حذف شود؟</string>
+    <string name="accounts_delete_irreversible">این عملیات غیرقابل بازگشت است.</string>
+    <string name="accounts_delete_button">حذف</string>
+    <string name="accounts_hotp_label">HOTP</string>
+    <string name="accounts_unreadable">غیرقابل خواندن</string>
+    <string name="accounts_copy_content_description">کپی</string>
+    <string name="accounts_generate_button">ایجاد</string>
+
+    <!-- + افزودن -->
+    <string name="add_account_title">افزودن حساب</string>
+    <string name="add_account_scan_qr">📷 اسکن کد QR</string>
+    <string name="add_account_qr_invalid">کد QR نامعتبر یا ناشناخته</string>
+    <string name="add_account_cancel_scan">لغو اسکن</string>
+    <string name="add_account_name_label">نام حساب</string>
+    <string name="add_account_issuer_label">صادرکننده (اختیاری)</string>
+    <string name="add_account_secret_label">کلید مخفی (Base32)</string>
+    <string name="add_account_advanced_options">⚙ گزینه‌های پیشرفته (الگوریتم، ارقام، دوره)</string>
+    <string name="add_account_type_label">نوع</string>
+    <string name="add_account_type_totp">TOTP (بر اساس زمان — استاندارد)</string>
+    <string name="add_account_type_hotp">HOTP (بر اساس شمارنده)</string>
+    <string name="add_account_algorithm_label">الگوریتم</string>
+    <string name="add_account_algorithm_sha1">SHA-1 (پیش‌فرض، سازگاری جهانی)</string>
+    <string name="add_account_digits_label">تعداد ارقام</string>
+    <string name="add_account_digits_default">۶ رقم (پیش‌فرض)</string>
+    <string name="add_account_digits_n">%1$d رقم</string>
+    <string name="add_account_period_label">دوره (ثانیه)</string>
+    <string name="add_account_save">ذخیره</string>
+    <string name="add_account_name_required">نام حساب الزامی است</string>
+    <string name="add_account_secret_required">کلید مخفی الزامی است</string>
+    <string name="add_account_secret_invalid">کلید مخفی یک Base32 معتبر نیست</string>
+    <string name="add_account_save_error">حساب ذخیره نشد</string>
+    <string name="add_account_camera_permission_needed">برای اسکن کد QR دسترسی به دوربین لازم است.</string>
+    <string name="add_account_grant_camera">اجازه دسترسی به دوربین</string>
+
+    <!-- کلید -->
+    <string name="generate_key_description">یک کلید مخفی تصادفی Base32 (۱۶۰ بیت) سازگار با Google Authenticator، Aegis، Authy… ایجاد می‌کند</string>
+    <string name="generate_key_generate">ایجاد</string>
+    <string name="generate_key_copy">کپی</string>
+    <string name="generate_key_copied">کلید کپی شد</string>
+    <string name="generate_key_show_qr">نمایش QR</string>
+    <string name="generate_key_qr_title">کد QR</string>
+    <string name="generate_key_close">بستن</string>
+
+    <!-- رمزگشا -->
+    <string name="decoder_import_qr">وارد کردن از کد QR (تصویر)</string>
+    <string name="decoder_no_qr_found">هیچ کد QR در این تصویر شناسایی نشد</string>
+    <string name="decoder_secret_label">کلید MFA / TOTP (BASE32)</string>
+    <string name="decoder_code_placeholder">— — — — — —</string>
+    <string name="decoder_generate_code">ایجاد کد</string>
+    <string name="decoder_copy_content_description">کپی کد</string>
+    <string name="decoder_code_copied">کد کپی شد — تا ۳۰ ثانیه دیگر پاک می‌شود</string>
+    <string name="decoder_secret_empty_error">کلیدی وارد یا وارد کنید</string>
+    <string name="decoder_secret_invalid_error">کلید نامعتبر</string>
+
+    <!-- ایجاد/بازیابی صندوق -->
+    <string name="create_vault_password_too_short">رمز عبور باید حداقل ۱۲ کاراکتر داشته باشد</string>
+    <string name="create_vault_passwords_mismatch">رمزهای عبور مطابقت ندارند</string>
+    <string name="create_vault_creation_error">صندوق ایجاد نشد</string>
+    <string name="restore_vault_new_password_too_short">رمز عبور جدید باید حداقل ۱۲ کاراکتر داشته باشد</string>
+    <string name="restore_vault_new_passwords_mismatch">رمزهای عبور جدید مطابقت ندارند</string>
+    <string name="restore_vault_generic_error">نسخه پشتیبان بازیابی نشد</string>
+    <string name="create_vault_title">صندوق Big MFA خود را ایجاد کنید</string>
+    <string name="create_vault_min_chars">حداقل ۱۲ کاراکتر</string>
+    <string name="create_vault_password_label">رمز عبور</string>
+    <string name="create_vault_confirm_label">تأیید رمز عبور</string>
+    <string name="create_vault_create_button">ایجاد صندوق</string>
+    <string name="create_vault_restore_button">📥 بازیابی نسخه پشتیبان موجود</string>
+    <string name="restore_backup_title">بازیابی نسخه پشتیبان</string>
+    <string name="restore_backup_description">فرمت اصلی Big MFA یا سازگار با Chrome — به‌طور خودکار شناسایی می‌شود.</string>
+    <string name="restore_backup_choose_file">انتخاب فایل نسخه پشتیبان</string>
+    <string name="restore_backup_file_selected">✅ فایل انتخاب شد</string>
+    <string name="restore_backup_backup_password_label">رمز عبور نسخه پشتیبان</string>
+    <string name="restore_backup_new_password_title">رمز عبور اصلی جدید</string>
+    <string name="restore_backup_new_password_hint">متفاوت از رمز عبور نسخه پشتیبان — حداقل ۱۲ کاراکتر.</string>
+    <string name="restore_backup_new_password_label">رمز عبور اصلی جدید</string>
+    <string name="restore_backup_confirm_new_password_label">تأیید رمز عبور جدید</string>
+    <string name="restore_backup_restore_button">بازیابی</string>
+    <string name="restore_backup_cancel">لغو</string>
+    <string name="restore_backup_file_read_error">فایل خوانده نشد</string>
+
+    <!-- خطاهای باز کردن قفل -->
+    <string name="unlock_error_wrong_password">رمز عبور اشتباه</string>
+    <string name="unlock_error_corrupted_vault">داده‌های صندوق خراب یا غیرقابل خواندن هستند</string>
+    <string name="unlock_error_no_vault">صندوقی یافت نشد</string>
+    <string name="unlock_error_too_many_attempts">تعداد تلاش‌ها بیش از حد است — پس از %1$d ثانیه دوباره تلاش کنید</string>
+    <string name="unlock_error_biometric_unavailable">بیومتریک در دسترس نیست — از رمز عبور خود استفاده کنید</string>
+    <string name="unlock_error_biometric_failed">احراز هویت بیومتریک ناموفق بود</string>
+
+    <!-- تغییر رمز عبور اصلی -->
+    <string name="change_password_title">تغییر رمز عبور اصلی</string>
+    <string name="change_password_current_label">رمز عبور فعلی</string>
+    <string name="change_password_new_label">رمز عبور جدید</string>
+    <string name="change_password_confirm_label">تأیید</string>
+    <string name="change_password_button">تغییر رمز عبور</string>
+    <string name="change_password_new_too_short">رمز عبور جدید باید حداقل ۱۲ کاراکتر داشته باشد</string>
+    <string name="change_password_new_mismatch">رمزهای عبور جدید مطابقت ندارند</string>
+    <string name="change_password_wrong_current">رمز عبور فعلی نادرست است</string>
+    <string name="change_password_generic_error">رمز عبور تغییر نکرد</string>
+    <string name="change_password_success_toast">رمز عبور با موفقیت تغییر کرد</string>
+    <string name="change_password_cancel">لغو</string>
+
+    <!-- بیومتریک -->
+    <string name="biometric_setup_title">فعال‌سازی بیومتریک</string>
+    <string name="biometric_hardware_insufficient">دستگاه شما پشتیبانی سخت‌افزاری کافی برای فعال‌سازی ایمن بیومتریک را ندارد.</string>
+    <string name="biometric_activate_prompt">فعال‌سازی باز کردن قفل با اثر انگشت</string>
+    <string name="biometric_password_confirmed_hint">رمز عبور تأیید شد — انگشت خود را روی حسگر قرار دهید.</string>
+    <string name="biometric_continue_button">ادامه با اثر انگشت</string>
+    <string name="biometric_confirm_password_label">رمز عبور اصلی خود را تأیید کنید</string>
+    <string name="biometric_confirm_button">تأیید</string>
+    <string name="biometric_wrong_password">رمز عبور اشتباه</string>
+    <string name="biometric_key_creation_error">کلید امن ایجاد نشد</string>
+    <string name="biometric_cipher_error">رمزگذاری آماده نشد</string>
+    <string name="biometric_enable_error">بیومتریک فعال نشد</string>
+    <string name="biometric_auth_failed">احراز هویت بیومتریک ناموفق بود</string>
+    <string name="biometric_activated_toast">بیومتریک فعال شد</string>
+    <string name="biometric_deactivated_toast">بیومتریک غیرفعال شد</string>
+    <string name="biometric_cancel">لغو</string>
+    <string name="biometric_row_title">باز کردن قفل بیومتریک</string>
+    <string name="biometric_row_enabled">فعال</string>
+    <string name="biometric_row_disabled">غیرفعال</string>
+
+    <!-- تنظیمات -->
+    <string name="settings_title">تنظیمات</string>
+    <string name="settings_security_status_title">وضعیت امنیت</string>
+    <string name="settings_masvs_badge">🛡 OWASP MASVS — سطح تقویت‌شده</string>
+    <string name="settings_encryption_label">رمزگذاری</string>
+    <string name="settings_kdf_label">KDF</string>
+    <string name="settings_inactivity_label">زمان عدم فعالیت</string>
+    <string name="settings_inactivity_value">۲ دقیقه</string>
+    <string name="settings_bruteforce_label">محافظت در برابر حمله جستجوی فراگیر</string>
+    <string name="settings_bruteforce_value">۵ تلاش + HMAC</string>
+    <string name="settings_lockout_label">قفل شدن</string>
+    <string name="settings_lockout_value">نمایی</string>
+    <string name="settings_salt_label">نمک</string>
+    <string name="settings_salt_value">۲۵۶ بیت</string>
+    <string name="settings_integrity_label">یکپارچگی صندوق</string>
+    <string name="settings_integrity_value">HMAC-SHA256</string>
+    <string name="settings_hardware_label">لنگر سخت‌افزاری</string>
+    <string name="settings_hardware_value">حداقل TEE، StrongBox در صورت وجود</string>
+    <string name="settings_bruteforce_note">ℹ️ محافظت در برابر حمله جستجوی فراگیر از تلاش‌های مکرر درون برنامه محافظت می‌کند. این جایگزین یک رمز عبور قوی نیست: شخصی که به فایل صندوق روی دستگاه دسترسی مستقیم دارد ممکن است بدون عبور از این محدودیت، رمزگشایی آفلاین را امتحان کند. از یک عبارت رمز ۱۶+ کاراکتری استفاده کنید.</string>
+    <string name="settings_change_password_button">🔑 تغییر رمز عبور اصلی</string>
+    <string name="settings_backup_title">نسخه پشتیبان</string>
+    <string name="settings_export_native_title">🛡️ خروجی با حداکثر امنیت</string>
+    <string name="settings_export_native_subtitle">Argon2id + AES-256-GCM-SIV</string>
+    <string name="settings_export_chrome_title">🌐 خروجی سازگار چندسکویی</string>
+    <string name="settings_export_chrome_subtitle">PBKDF2 + AES-256-GCM — قابل وارد کردن در Big MFA Chrome</string>
+    <string name="settings_export_qr_title">📷 خروجی QR (چرخشی + ZIP)</string>
+    <string name="settings_export_qr_subtitle">یک QR برای هر حساب، برای مرور یا دانلود</string>
+    <string name="settings_import_button">📥 وارد کردن / بازیابی</string>
+    <string name="settings_export_footer">خروجی رمزگذاری شده است — حتی در صورت اشتراک‌گذاری فایل، اسرار محافظت‌شده باقی می‌مانند.</string>
+    <string name="settings_export_native_dialog_title">خروجی با حداکثر امنیت</string>
+    <string name="settings_export_chrome_dialog_title">خروجی سازگار چندسکویی</string>
+    <string name="settings_export_native_dialog_desc">🛡️ Argon2id + AES-256-GCM-SIV — این رمز عبور فایل خروجی گرفته‌شده را محافظت می‌کند و با رمز عبور اصلی شما متفاوت است.</string>
+    <string name="settings_export_chrome_dialog_desc">🌐 PBKDF2 + AES-256-GCM — فرمتی سازگار با افزونه Big MFA Chrome. این رمز عبور با رمز عبور اصلی شما متفاوت است.</string>
+    <string name="settings_export_password_label">رمز عبور خروجی</string>
+    <string name="settings_export_confirm_label">تأیید</string>
+    <string name="settings_export_min_chars_error">حداقل ۸ کاراکتر</string>
+    <string name="settings_export_mismatch_error">رمزهای عبور مطابقت ندارند</string>
+    <string name="settings_export_button">خروجی</string>
+    <string name="settings_export_cancel">لغو</string>
+    <string name="settings_export_generic_error">خروجی ایجاد نشد</string>
+    <string name="settings_export_share_title">اشتراک‌گذاری خروجی</string>
+    <string name="settings_import_dialog_title">وارد کردن نسخه پشتیبان</string>
+    <string name="settings_import_dialog_desc">یک فایل نسخه پشتیبان انتخاب کنید (فرمت اصلی Big MFA یا سازگار با Chrome — فرمت به‌طور خودکار شناسایی می‌شود).</string>
+    <string name="settings_import_choose_file">انتخاب فایل</string>
+    <string name="settings_import_file_selected_desc">فایل انتخاب شد — رمز عبور این نسخه پشتیبان را وارد کنید.</string>
+    <string name="settings_import_password_label">رمز عبور نسخه پشتیبان</string>
+    <string name="settings_import_button_confirm">وارد کردن</string>
+    <string name="settings_import_read_error">فایل خوانده نشد</string>
+    <string name="settings_import_generic_error">وارد کردن ناموفق بود</string>
+    <string name="settings_import_success_toast">%1$d حساب وارد شد</string>
+    <string name="settings_danger_zone_title">منطقه خطر</string>
+    <string name="settings_delete_all_button">🗑 حذف تمام داده‌های من</string>
+    <string name="settings_delete_all_description">حق شما برای حذف را اعمال می‌کند (ماده ۱۷ GDPR). تمام حساب‌ها و رمز عبور اصلی را حذف می‌کند. عملیات غیرقابل بازگشت.</string>
+    <string name="settings_delete_confirm_title">تمام داده‌ها حذف شود؟</string>
+    <string name="settings_delete_confirm_desc">تمام حساب‌های شما برای همیشه حذف خواهند شد. این عملیات قابل بازگشت نیست.</string>
+    <string name="settings_delete_continue">ادامه</string>
+    <string name="settings_delete_final_title">تأیید نهایی</string>
+    <string name="settings_delete_final_desc">آیا واقعاً مطمئن هستید؟ پس از این مرحله هیچ بازیابی ممکن نخواهد بود.</string>
+    <string name="settings_delete_final_button">حذف دائمی</string>
+    <string name="settings_delete_cancel">لغو</string>
+    <string name="settings_rgpd_badge">🔒 مطابق با GDPR — داده‌های ۱۰۰٪ محلی</string>
+    <string name="settings_rgpd_title">حریم خصوصی و GDPR</string>
+    <string name="settings_rgpd_controller_label">کنترل‌کننده داده</string>
+    <string name="settings_rgpd_controller_value">Patrick DJEUZONG – BigForTravel</string>
+    <string name="settings_rgpd_data_label">داده‌های جمع‌آوری‌شده</string>
+    <string name="settings_rgpd_data_value">نام حساب‌ها، کلیدهای TOTP رمزگذاری‌شده</string>
+    <string name="settings_rgpd_storage_label">محل ذخیره‌سازی</string>
+    <string name="settings_rgpd_storage_value">فقط دستگاه شما (ذخیره‌سازی خصوصی برنامه، جدا شده توسط sandbox اندروید)</string>
+    <string name="settings_rgpd_transfer_label">انتقال به اشخاص ثالث</string>
+    <string name="settings_rgpd_transfer_value">خود Big MFA هیچ درخواستی ارسال نمی‌کند. خروجی رمزگذاری‌شده تنها در صورتی که شما آن را صراحتاً فعال کنید، می‌تواند از طریق برنامه شخص ثالث انتخابی شما به اشتراک گذاشته شود.</string>
+    <string name="settings_rgpd_thirdparty_label">کد شخص ثالث تعبیه‌شده</string>
+    <string name="settings_rgpd_thirdparty_value">Bouncy Castle (MIT)، CameraX (Apache-2.0)، ML Kit barcode-scanning تعبیه‌شده (Apache-2.0)، ZXing (Apache-2.0) — همگی محلی، بدون ارسال داده از راه دور</string>
+    <string name="settings_rgpd_retention_label">مدت زمان نگهداری</string>
+    <string name="settings_rgpd_retention_value">تا زمان حذف نصب یا حذف دستی</string>
+    <string name="settings_rgpd_legal_label">مبنای قانونی</string>
+    <string name="settings_rgpd_legal_value">رضایت کاربر (ماده ۶.۱.الف)</string>
+    <string name="settings_rgpd_access_label">حق دسترسی (ماده ۱۵)</string>
+    <string name="settings_rgpd_access_value">از طریق خروجی رمزگذاری‌شده (بالا)</string>
+    <string name="settings_rgpd_erasure_label">حق حذف (ماده ۱۷)</string>
+    <string name="settings_rgpd_erasure_value">از طریق «حذف تمام داده‌های من»</string>
+    <string name="settings_rgpd_portability_label">حق قابلیت انتقال داده (ماده ۲۰)</string>
+    <string name="settings_rgpd_portability_value">از طریق خروجی رمزگذاری‌شده (اصلی یا چندسکویی)</string>
+    <string name="settings_rgpd_dpo_label">تماس با DPO</string>
+    <string name="settings_rgpd_dpo_value">contact@bigfortravel.com</string>
+    <string name="settings_rgpd_eu_label">مقام اتحادیه اروپا (شکایات)</string>
+    <string name="settings_rgpd_eu_value">CNIL – www.cnil.fr (کاربران اروپایی)</string>
+    <string name="settings_rgpd_cm_label">مقام کامرون (شکایات)</string>
+    <string name="settings_rgpd_cm_value">ANTIC – www.antic.cm (کاربران کامرون)</string>
+    <string name="settings_rgpd_footer">Big MFA هیچ داده شخصی خارج از دستگاه شما جمع‌آوری نمی‌کند، خود هیچ اتصال شبکه‌ای را آغاز نمی‌کند، و هیچ اطلاعاتی را با اشخاص ثالث به اشتراک نمی‌گذارد. تمام داده‌ها قبل از ذخیره‌سازی محلی با AES-256-GCM-SIV رمزگذاری می‌شوند.</string>
+    <string name="settings_language_row_title">زبان</string>
+
+    <!-- BackupImporter -->
+    <string name="backup_importer_unreadable">فایل غیرقابل خواندن یا خراب است</string>
+    <string name="backup_importer_unknown_format">فرمت فایل ناشناخته</string>
+    <string name="backup_importer_wrong_password">رمز عبور اشتباه یا فایل خراب</string>
+
+    <!-- حمایت کنید -->
+    <string name="support_title">از Big MFA حمایت کنید</string>
+    <string name="support_description">Big MFA به‌طور داوطلبانه توسط BigForTravel توسعه و نگهداری می‌شود. بدون تبلیغات، بدون فروش داده، بدون اشتراک پنهان. اگر این برنامه برای شما مفید است، یک کمک مالی — حتی کوچک — به تأمین مالی توسعه مستمر آن کمک می‌کند.</string>
+    <string name="support_paypal_button">کمک مالی از طریق PayPal</string>
+    <string name="support_kofi_button">کمک مالی از طریق Ko-fi</string>
+    <string name="support_disclaimer">کمک‌های مالی اختیاری هستند و هیچ قابلیت اضافی اعطا نمی‌کنند. همیشه بررسی کنید که دریافت‌کننده نمایش‌داده‌شده BigForTravel / Patrick Djeuzong باشد.</string>
+    <string name="support_official_site">🌐 وب‌سایت رسمی</string>
+    <string name="support_contact_us">✉️ به ما بنویسید</string>
+    <string name="support_contact_subject">Big MFA — تماس</string>
+
+    <!-- چرخشی خروجی QR -->
+    <string name="export_qr_title">خروجی QR (%1$d/%2$d)</string>
+    <string name="export_qr_no_accounts">هیچ حسابی برای خروجی وجود ندارد.</string>
+    <string name="export_qr_zip_button">📦 خروجی گرفتن از تمام کدهای QR به‌صورت ZIP</string>
+    <string name="export_qr_close_button">بستن</string>
+    <string name="export_qr_zip_error">آرشیو ZIP ایجاد نشد</string>
+    <string name="export_qr_share_title">اشتراک‌گذاری آرشیو QR</string>
+
+    <!-- راهنما -->
+    <string name="guide_tab_installation">نصب</string>
+    <string name="guide_tab_usage">استفاده</string>
+    <string name="guide_tab_features">ویژگی‌ها</string>
+    <string name="guide_title">راهنمای Big MFA</string>
+    <string name="guide_intro">مروری سریع بر تمام ویژگی‌های موجود.</string>
+    <string name="guide_codes_title">🔑 کدهای من</string>
+    <string name="guide_codes_body">کدهای TOTP شما به‌صورت لحظه‌ای با شمارش معکوس تصویری به‌روزرسانی می‌شوند. برای کپی کردن روی یک کد ضربه بزنید (به‌طور خودکار پس از ۳۰ ثانیه از کلیپ‌بورد پاک می‌شود). برای حساب‌های HOTP، هر بار که به کد نیاز دارید روی «ایجاد» ضربه بزنید. با استفاده از نمادهای هر ردیف، حساب را جستجو، تغییر نام یا حذف کنید.</string>
+    <string name="guide_decoder_title">🔍 رمزگشا</string>
+    <string name="guide_decoder_body">یک راز را از تصویر کد QR جای‌گذاری یا وارد کنید تا بلافاصله کد TOTP مربوطه را دریافت کنید، بدون افزودن آن به صندوق شما. برای بررسی یک‌باره مفید است.</string>
+    <string name="guide_key_title">🔐 کلید</string>
+    <string name="guide_key_body">یک کلید مخفی تصادفی، همراه با کد QR مربوطه، برای راه‌اندازی یک حساب جدید در سرویس دیگری که از شما می‌خواهد راز خود را ایجاد کنید، تولید می‌کند.</string>
+    <string name="guide_add_title">➕ افزودن حساب</string>
+    <string name="guide_add_body">کد QR ارائه‌شده توسط سرویس را اسکن کنید، یا راز را به‌صورت دستی وارد کنید. گزینه‌های پیشرفته به شما امکان می‌دهد الگوریتم، تعداد ارقام، دوره را تنظیم کنید، یا به HOTP تغییر دهید.</string>
+    <string name="guide_biometric_title">👆 باز کردن قفل بیومتریک</string>
+    <string name="guide_biometric_body">باز کردن قفل با اثر انگشت را از تنظیمات فعال کنید. رمز عبور اصلی شما همیشه به‌عنوان پشتیبان در دسترس باقی می‌ماند — هرگز جایگزین نمی‌شود، فقط تکمیل می‌شود.</string>
+    <string name="guide_backup_title">💾 پشتیبان‌گیری و بازیابی</string>
+    <string name="guide_backup_body">دو فرمت خروجی: حداکثر امنیت (اصلی برای اندروید) یا سازگار چندسکویی (قابل وارد کردن به افزونه Chrome). خروجی QR یک چرخشی از کدهای QR ایجاد می‌کند، جداگانه یا در یک آرشیو ZIP. بازیابی به‌طور خودکار فرمت فایل را شناسایی می‌کند.</string>
+    <string name="guide_security_title">🛡 امنیت</string>
+    <string name="guide_security_body">تمام داده‌ها به‌طور انحصاری روی دستگاه شما باقی می‌مانند، با AES-256-GCM-SIV رمزگذاری شده و کلیدی که با استفاده از Argon2id به دست آمده است. برنامه هرگز خودش اتصال شبکه را آغاز نمی‌کند.</string>
+    <string name="guide_language_title">🌐 زبان</string>
+    <string name="guide_language_body">«خودکار» را انتخاب کنید تا زبان تلفن خود را دنبال کنید، یا یک زبان خاص را از پاورقی صفحات ورود انتخاب کنید.</string>
+    <string name="guide_install_step1_title">۱. صندوق خود را ایجاد کنید</string>
+    <string name="guide_install_step1_body">در اولین راه‌اندازی، «ایجاد صندوق» را برای شروع با یک صندوق خالی انتخاب کنید، یا «بازیابی نسخه پشتیبان موجود» را در صورتی که قبلاً از Big MFA در Chrome یا دستگاه اندروید دیگری استفاده کرده‌اید.</string>
+    <string name="guide_install_step2_title">۲. یک رمز عبور اصلی قوی انتخاب کنید</string>
+    <string name="guide_install_step2_body">حداقل ۱۲ کاراکتر، اما بهتر است هدف خود را روی یک عبارت رمز ۱۶+ کاراکتری قرار دهید (مثلاً چند کلمه ترکیب‌شده). این تنها کلیدی است که از تمام حساب‌های شما محافظت می‌کند.</string>
+    <string name="guide_install_step3_title">۳. غیرقابل بازیابی بودن را درک کنید</string>
+    <string name="guide_install_step3_body">Big MFA رمز عبور اصلی شما را هیچ‌جا ذخیره نمی‌کند، نه به‌صورت متن ساده و نه رمزگذاری‌شده. اگر آن را فراموش کنید و نسخه پشتیبان خارجی نداشته باشید، حساب‌های شما برای همیشه غیرقابل دسترس خواهند شد. آن را در یک مدیر رمز عبور قابل اعتماد یادداشت کنید.</string>
+    <string name="guide_install_step4_title">۴. بیومتریک را فعال کنید (اختیاری)</string>
+    <string name="guide_install_step4_body">از تنظیمات، باز کردن قفل با اثر انگشت را برای دسترسی روزانه سریع‌تر فعال کنید. رمز عبور اصلی شما همیشه به‌عنوان پشتیبان در دسترس باقی می‌ماند.</string>
+    <string name="guide_usage_step1_title">۱. اولین حساب خود را اضافه کنید</string>
+    <string name="guide_usage_step1_body">از «+ افزودن»، کد QR نمایش‌داده‌شده توسط سرویس را اسکن کنید (سریع‌ترین روش)، یا در صورتی که نمی‌توانید اسکن کنید، نام، صادرکننده و راز Base32 را به‌صورت دستی وارد کنید.</string>
+    <string name="guide_usage_step2_title">۲. هر روز از یک کد استفاده کنید</string>
+    <string name="guide_usage_step2_body">در «کدهای من»، مستقیماً روی یک کد TOTP ضربه بزنید تا آن را کپی کنید (به‌طور خودکار پس از ۳۰ ثانیه از کلیپ‌بورد پاک می‌شود). برای حساب HOTP، هر بار که به آن نیاز دارید روی «ایجاد» ضربه بزنید — شمارنده همیشه به جلو می‌رود، هرگز به عقب برنمی‌گردد.</string>
+    <string name="guide_usage_step3_title">۳. حساب‌های خود را مدیریت کنید</string>
+    <string name="guide_usage_step3_body">از نوار جستجو برای یافتن سریع یک حساب از میان بسیاری استفاده کنید. نماد مداد امکان تغییر نام را می‌دهد، نماد سطل زباله امکان حذف را می‌دهد (با تأیید دوگانه، عملیات غیرقابل بازگشت).</string>
+    <string name="guide_usage_step4_title">۴. به‌طور منظم پشتیبان بگیرید</string>
+    <string name="guide_usage_step4_body">از تنظیمات، «خروجی با حداکثر امنیت» را برای نسخه پشتیبان مخصوص اندروید انتخاب کنید، یا «خروجی سازگار چندسکویی» را در صورتی که از Big MFA در Chrome نیز استفاده می‌کنید. خروجی QR (چرخشی یا ZIP) برای انتقال به یک مدیر استاندارد سازگار با TOTP دیگر مفید است.</string>
+    <string name="guide_usage_step5_title">۵. رمز عبور اصلی خود را تغییر دهید</string>
+    <string name="guide_usage_step5_body">در تنظیمات، رمز عبور فعلی خود را وارد کنید، سپس رمز عبور جدید را. حساب‌ها و بیومتریک شما (در صورت فعال بودن) دست‌نخورده باقی می‌مانند — فقط رمز عبور تغییر می‌کند.</string>
+    <string name="nav_accounts">کدهای من</string>
+    <string name="nav_decoder">رمزگشا</string>
+    <string name="nav_key">کلید</string>
+    <string name="nav_add">+ افزودن</string>
+    <string name="nav_support">حمایت کنید</string>
+    <string name="nav_settings">تنظیمات</string>
+    <string name="nav_guide">راهنما</string>
+    <string name="nav_lock_content_description">قفل کردن صندوق</string>
+</resources>

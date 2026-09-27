@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Big MFA</string>
+
+    <!-- מסך ביטול נעילה -->
+    <string name="unlock_title">Big MFA</string>
+    <string name="unlock_subtitle">הזן את הסיסמה הראשית שלך</string>
+    <string name="unlock_password_label">סיסמה ראשית</string>
+    <string name="unlock_button">בטל נעילה</string>
+    <string name="unlock_reset_vault">אפס את הכספת</string>
+    <string name="unlock_biometric_content_description">בטל נעילה באמצעות טביעת אצבע</string>
+
+    <!-- כותרת תחתונה משותפת -->
+    <string name="footer_support">❤️ תמכו</string>
+    <string name="footer_contact">✉️ צרו קשר</string>
+    <string name="footer_language_auto">🌐 אוטומטי — שפת הדפדפן</string>
+    <string name="footer_language_placeholder">בחירת שפה — בקרוב</string>
+    <string name="footer_gplv3">חינם ובקוד פתוח (רישיון GPLv3).</string>
+    <string name="language_dialog_title">בחר שפה</string>
+    <string name="language_option_auto">🌐 אוטומטי (שפת המערכת)</string>
+
+    <!-- הקודים שלי -->
+    <string name="accounts_empty_state">אין עדיין חשבונות.\nהשתמשו ב-„+ הוסף” כדי ליצור אחד.</string>
+    <string name="accounts_search_placeholder">חיפוש חשבון</string>
+    <string name="accounts_no_results">אין תוצאות עבור „%1$s”</string>
+    <string name="accounts_rename_title">שנה שם חשבון</string>
+    <string name="accounts_name_label">שם החשבון</string>
+    <string name="accounts_issuer_label">מנפיק (אופציונלי)</string>
+    <string name="accounts_name_required_error">שם החשבון הוא שדה חובה</string>
+    <string name="accounts_save">שמור</string>
+    <string name="accounts_cancel">ביטול</string>
+    <string name="accounts_rename_content_description">שנה שם %1$s</string>
+    <string name="accounts_delete_content_description">מחק %1$s</string>
+    <string name="accounts_delete_confirm_title">למחוק את „%1$s”?</string>
+    <string name="accounts_delete_irreversible">פעולה זו אינה הפיכה.</string>
+    <string name="accounts_delete_button">מחק</string>
+    <string name="accounts_hotp_label">HOTP</string>
+    <string name="accounts_unreadable">לא ניתן לקריאה</string>
+    <string name="accounts_copy_content_description">העתק</string>
+    <string name="accounts_generate_button">צור</string>
+
+    <!-- + הוסף -->
+    <string name="add_account_title">הוספת חשבון</string>
+    <string name="add_account_scan_qr">📷 סרוק קוד QR</string>
+    <string name="add_account_qr_invalid">קוד QR לא תקין או לא מזוהה</string>
+    <string name="add_account_cancel_scan">בטל את הסריקה</string>
+    <string name="add_account_name_label">שם החשבון</string>
+    <string name="add_account_issuer_label">מנפיק (אופציונלי)</string>
+    <string name="add_account_secret_label">מפתח סודי (Base32)</string>
+    <string name="add_account_advanced_options">⚙ אפשרויות מתקדמות (אלגוריתם, ספרות, תקופה)</string>
+    <string name="add_account_type_label">סוג</string>
+    <string name="add_account_type_totp">TOTP (מבוסס זמן — סטנדרטי)</string>
+    <string name="add_account_type_hotp">HOTP (מבוסס מונה)</string>
+    <string name="add_account_algorithm_label">אלגוריתם</string>
+    <string name="add_account_algorithm_sha1">SHA-1 (ברירת מחדל, תאימות אוניברסלית)</string>
+    <string name="add_account_digits_label">מספר ספרות</string>
+    <string name="add_account_digits_default">6 ספרות (ברירת מחדל)</string>
+    <string name="add_account_digits_n">%1$d ספרות</string>
+    <string name="add_account_period_label">תקופה (שניות)</string>
+    <string name="add_account_save">שמור</string>
+    <string name="add_account_name_required">שם החשבון הוא שדה חובה</string>
+    <string name="add_account_secret_required">המפתח הסודי הוא שדה חובה</string>
+    <string name="add_account_secret_invalid">המפתח הסודי אינו Base32 תקין</string>
+    <string name="add_account_save_error">לא ניתן היה לשמור את החשבון</string>
+    <string name="add_account_camera_permission_needed">נדרשת גישה למצלמה כדי לסרוק קוד QR.</string>
+    <string name="add_account_grant_camera">אפשר גישה למצלמה</string>
+
+    <!-- מפתח -->
+    <string name="generate_key_description">יוצר מפתח סודי אקראי בפורמט Base32 (160 סיביות) התואם ל-Google Authenticator, Aegis, Authy…</string>
+    <string name="generate_key_generate">צור</string>
+    <string name="generate_key_copy">העתק</string>
+    <string name="generate_key_copied">המפתח הועתק</string>
+    <string name="generate_key_show_qr">הצג QR</string>
+    <string name="generate_key_qr_title">קוד QR</string>
+    <string name="generate_key_close">סגור</string>
+
+    <!-- מפענח -->
+    <string name="decoder_import_qr">ייבוא מקוד QR (תמונה)</string>
+    <string name="decoder_no_qr_found">לא זוהה קוד QR בתמונה זו</string>
+    <string name="decoder_secret_label">מפתח MFA / TOTP (BASE32)</string>
+    <string name="decoder_code_placeholder">— — — — — —</string>
+    <string name="decoder_generate_code">צור קוד</string>
+    <string name="decoder_copy_content_description">העתק קוד</string>
+    <string name="decoder_code_copied">הקוד הועתק — יימחק בעוד 30 שניות</string>
+    <string name="decoder_secret_empty_error">הזן או ייבא מפתח</string>
+    <string name="decoder_secret_invalid_error">מפתח לא תקין</string>
+
+    <!-- יצירת/שחזור כספת -->
+    <string name="create_vault_password_too_short">הסיסמה חייבת להכיל לפחות 12 תווים</string>
+    <string name="create_vault_passwords_mismatch">הסיסמאות אינן תואמות</string>
+    <string name="create_vault_creation_error">לא ניתן היה ליצור את הכספת</string>
+    <string name="restore_vault_new_password_too_short">הסיסמה החדשה חייבת להכיל לפחות 12 תווים</string>
+    <string name="restore_vault_new_passwords_mismatch">הסיסמאות החדשות אינן תואמות</string>
+    <string name="restore_vault_generic_error">לא ניתן היה לשחזר את הגיבוי</string>
+    <string name="create_vault_title">צור את כספת Big MFA שלך</string>
+    <string name="create_vault_min_chars">מינימום 12 תווים</string>
+    <string name="create_vault_password_label">סיסמה</string>
+    <string name="create_vault_confirm_label">אשר סיסמה</string>
+    <string name="create_vault_create_button">צור כספת</string>
+    <string name="create_vault_restore_button">📥 שחזר גיבוי קיים</string>
+    <string name="restore_backup_title">שחזור גיבוי</string>
+    <string name="restore_backup_description">פורמט מקורי של Big MFA או תואם ל-Chrome — מזוהה אוטומטית.</string>
+    <string name="restore_backup_choose_file">בחר קובץ גיבוי</string>
+    <string name="restore_backup_file_selected">✅ הקובץ נבחר</string>
+    <string name="restore_backup_backup_password_label">סיסמת הגיבוי</string>
+    <string name="restore_backup_new_password_title">סיסמה ראשית חדשה</string>
+    <string name="restore_backup_new_password_hint">שונה מסיסמת הגיבוי — מינימום 12 תווים.</string>
+    <string name="restore_backup_new_password_label">סיסמה ראשית חדשה</string>
+    <string name="restore_backup_confirm_new_password_label">אשר את הסיסמה החדשה</string>
+    <string name="restore_backup_restore_button">שחזר</string>
+    <string name="restore_backup_cancel">ביטול</string>
+    <string name="restore_backup_file_read_error">לא ניתן היה לקרוא את הקובץ</string>
+
+    <!-- שגיאות ביטול נעילה -->
+    <string name="unlock_error_wrong_password">סיסמה שגויה</string>
+    <string name="unlock_error_corrupted_vault">נתוני הכספת פגומים או לא ניתנים לקריאה</string>
+    <string name="unlock_error_no_vault">לא נמצאה כספת</string>
+    <string name="unlock_error_too_many_attempts">יותר מדי ניסיונות — נסה שוב בעוד %1$d שניות</string>
+    <string name="unlock_error_biometric_unavailable">ביומטריה אינה זמינה — השתמש בסיסמה שלך</string>
+    <string name="unlock_error_biometric_failed">האימות הביומטרי נכשל</string>
+
+    <!-- שינוי סיסמה ראשית -->
+    <string name="change_password_title">שנה סיסמה ראשית</string>
+    <string name="change_password_current_label">סיסמה נוכחית</string>
+    <string name="change_password_new_label">סיסמה חדשה</string>
+    <string name="change_password_confirm_label">אישור</string>
+    <string name="change_password_button">שנה סיסמה</string>
+    <string name="change_password_new_too_short">הסיסמה החדשה חייבת להכיל לפחות 12 תווים</string>
+    <string name="change_password_new_mismatch">הסיסמאות החדשות אינן תואמות</string>
+    <string name="change_password_wrong_current">הסיסמה הנוכחית שגויה</string>
+    <string name="change_password_generic_error">לא ניתן היה לשנות את הסיסמה</string>
+    <string name="change_password_success_toast">הסיסמה שונתה בהצלחה</string>
+    <string name="change_password_cancel">ביטול</string>
+
+    <!-- ביומטריה -->
+    <string name="biometric_setup_title">הפעל ביומטריה</string>
+    <string name="biometric_hardware_insufficient">למכשיר שלך אין תמיכת חומרה מספקת כדי להפעיל ביומטריה בבטחה.</string>
+    <string name="biometric_activate_prompt">הפעל ביטול נעילה באמצעות טביעת אצבע</string>
+    <string name="biometric_password_confirmed_hint">הסיסמה אושרה — הנח את האצבע שלך על החיישן.</string>
+    <string name="biometric_continue_button">המשך עם טביעת אצבע</string>
+    <string name="biometric_confirm_password_label">אשר את הסיסמה הראשית שלך</string>
+    <string name="biometric_confirm_button">אישור</string>
+    <string name="biometric_wrong_password">סיסמה שגויה</string>
+    <string name="biometric_key_creation_error">לא ניתן היה ליצור את המפתח המאובטח</string>
+    <string name="biometric_cipher_error">לא ניתן היה להכין את ההצפנה</string>
+    <string name="biometric_enable_error">לא ניתן היה להפעיל ביומטריה</string>
+    <string name="biometric_auth_failed">האימות הביומטרי נכשל</string>
+    <string name="biometric_activated_toast">הביומטריה הופעלה</string>
+    <string name="biometric_deactivated_toast">הביומטריה בוטלה</string>
+    <string name="biometric_cancel">ביטול</string>
+    <string name="biometric_row_title">ביטול נעילה ביומטרי</string>
+    <string name="biometric_row_enabled">מופעל</string>
+    <string name="biometric_row_disabled">מבוטל</string>
+
+    <!-- הגדרות -->
+    <string name="settings_title">הגדרות</string>
+    <string name="settings_security_status_title">מצב אבטחה</string>
+    <string name="settings_masvs_badge">🛡 OWASP MASVS — רמה משופרת</string>
+    <string name="settings_encryption_label">הצפנה</string>
+    <string name="settings_kdf_label">KDF</string>
+    <string name="settings_inactivity_label">זמן חוסר פעילות</string>
+    <string name="settings_inactivity_value">2 דקות</string>
+    <string name="settings_bruteforce_label">הגנה מפני התקפת כוח גס</string>
+    <string name="settings_bruteforce_value">5 ניסיונות + HMAC</string>
+    <string name="settings_lockout_label">נעילה</string>
+    <string name="settings_lockout_value">אקספוננציאלי</string>
+    <string name="settings_salt_label">מלח</string>
+    <string name="settings_salt_value">256 סיביות</string>
+    <string name="settings_integrity_label">שלמות הכספת</string>
+    <string name="settings_integrity_value">HMAC-SHA256</string>
+    <string name="settings_hardware_label">עיגון חומרה</string>
+    <string name="settings_hardware_value">מינימום TEE, StrongBox אם זמין</string>
+    <string name="settings_bruteforce_note">ℹ️ ההגנה מפני התקפת כוח גס מגנה מפני ניסיונות חוזרים בתוך האפליקציה. היא אינה מחליפה סיסמה חזקה: מישהו עם גישה ישירה לקובץ הכספת במכשיר עשוי לנסות פענוח לא מקוון תוך עקיפת המגבלה הזו. השתמש בביטוי סיסמה בן 16+ תווים.</string>
+    <string name="settings_change_password_button">🔑 שנה סיסמה ראשית</string>
+    <string name="settings_backup_title">גיבוי</string>
+    <string name="settings_export_native_title">🛡️ ייצוא באבטחה מרבית</string>
+    <string name="settings_export_native_subtitle">Argon2id + AES-256-GCM-SIV</string>
+    <string name="settings_export_chrome_title">🌐 ייצוא תואם רב-פלטפורמות</string>
+    <string name="settings_export_chrome_subtitle">PBKDF2 + AES-256-GCM — ניתן לייבוא ל-Big MFA Chrome</string>
+    <string name="settings_export_qr_title">📷 ייצוא QR (קרוסלה + ZIP)</string>
+    <string name="settings_export_qr_subtitle">קוד QR אחד לכל חשבון, לגלישה או הורדה</string>
+    <string name="settings_import_button">📥 ייבוא / שחזור</string>
+    <string name="settings_export_footer">הייצוא מוצפן — הסודות נשארים מוגנים גם אם הקובץ משותף.</string>
+    <string name="settings_export_native_dialog_title">ייצוא באבטחה מרבית</string>
+    <string name="settings_export_chrome_dialog_title">ייצוא תואם רב-פלטפורמות</string>
+    <string name="settings_export_native_dialog_desc">🛡️ Argon2id + AES-256-GCM-SIV — סיסמה זו מגנה על הקובץ המיוצא ושונה מהסיסמה הראשית שלך.</string>
+    <string name="settings_export_chrome_dialog_desc">🌐 PBKDF2 + AES-256-GCM — פורמט תואם לתוסף Big MFA Chrome. סיסמה זו שונה מהסיסמה הראשית שלך.</string>
+    <string name="settings_export_password_label">סיסמת ייצוא</string>
+    <string name="settings_export_confirm_label">אישור</string>
+    <string name="settings_export_min_chars_error">מינימום 8 תווים</string>
+    <string name="settings_export_mismatch_error">הסיסמאות אינן תואמות</string>
+    <string name="settings_export_button">ייצוא</string>
+    <string name="settings_export_cancel">ביטול</string>
+    <string name="settings_export_generic_error">לא ניתן היה ליצור את הייצוא</string>
+    <string name="settings_export_share_title">שתף ייצוא</string>
+    <string name="settings_import_dialog_title">ייבוא גיבוי</string>
+    <string name="settings_import_dialog_desc">בחר קובץ גיבוי (מקורי של Big MFA או תואם ל-Chrome — הפורמט מזוהה אוטומטית).</string>
+    <string name="settings_import_choose_file">בחר קובץ</string>
+    <string name="settings_import_file_selected_desc">הקובץ נבחר — הזן את סיסמת הגיבוי הזה.</string>
+    <string name="settings_import_password_label">סיסמת הגיבוי</string>
+    <string name="settings_import_button_confirm">ייבוא</string>
+    <string name="settings_import_read_error">לא ניתן היה לקרוא את הקובץ</string>
+    <string name="settings_import_generic_error">הייבוא נכשל</string>
+    <string name="settings_import_success_toast">%1$d חשבונות יובאו</string>
+    <string name="settings_danger_zone_title">אזור סכנה</string>
+    <string name="settings_delete_all_button">🗑 מחק את כל הנתונים שלי</string>
+    <string name="settings_delete_all_description">מפעיל את זכותך למחיקה (סעיף 17 GDPR). מוחק את כל החשבונות ואת הסיסמה הראשית. פעולה בלתי הפיכה.</string>
+    <string name="settings_delete_confirm_title">למחוק את כל הנתונים?</string>
+    <string name="settings_delete_confirm_desc">כל החשבונות שלך יימחקו לצמיתות. לא ניתן לבטל פעולה זו.</string>
+    <string name="settings_delete_continue">המשך</string>
+    <string name="settings_delete_final_title">אישור סופי</string>
+    <string name="settings_delete_final_desc">האם אתה בטוח לגמרי? לא תהיה אפשרות שחזור לאחר שלב זה.</string>
+    <string name="settings_delete_final_button">מחק לצמיתות</string>
+    <string name="settings_delete_cancel">ביטול</string>
+    <string name="settings_rgpd_badge">🔒 תואם GDPR — נתונים מקומיים ב-100%</string>
+    <string name="settings_rgpd_title">פרטיות ו-GDPR</string>
+    <string name="settings_rgpd_controller_label">בקר נתונים</string>
+    <string name="settings_rgpd_controller_value">Patrick DJEUZONG – BigForTravel</string>
+    <string name="settings_rgpd_data_label">נתונים שנאספים</string>
+    <string name="settings_rgpd_data_value">שמות חשבונות, מפתחות TOTP מוצפנים</string>
+    <string name="settings_rgpd_storage_label">מיקום אחסון</string>
+    <string name="settings_rgpd_storage_value">רק המכשיר שלך (אחסון פרטי של האפליקציה, מבודד על ידי ה-sandbox של Android)</string>
+    <string name="settings_rgpd_transfer_label">העברה לצדדים שלישיים</string>
+    <string name="settings_rgpd_transfer_value">Big MFA עצמה אינה שולחת שום בקשה. ניתן לשתף את הייצוא המוצפן דרך אפליקציית צד שלישי לבחירתך, רק אם תפעיל זאת במפורש.</string>
+    <string name="settings_rgpd_thirdparty_label">קוד צד שלישי משובץ</string>
+    <string name="settings_rgpd_thirdparty_value">Bouncy Castle (MIT), CameraX (Apache-2.0), ML Kit barcode-scanning משובץ (Apache-2.0), ZXing (Apache-2.0) — הכל מקומי, ללא טלמטריה</string>
+    <string name="settings_rgpd_retention_label">תקופת שמירה</string>
+    <string name="settings_rgpd_retention_value">עד להסרת ההתקנה או מחיקה ידנית</string>
+    <string name="settings_rgpd_legal_label">בסיס משפטי</string>
+    <string name="settings_rgpd_legal_value">הסכמת המשתמש (סעיף 6.1.א)</string>
+    <string name="settings_rgpd_access_label">זכות גישה (סעיף 15)</string>
+    <string name="settings_rgpd_access_value">באמצעות הייצוא המוצפן (לעיל)</string>
+    <string name="settings_rgpd_erasure_label">זכות מחיקה (סעיף 17)</string>
+    <string name="settings_rgpd_erasure_value">באמצעות „מחק את כל הנתונים שלי”</string>
+    <string name="settings_rgpd_portability_label">זכות ניידות נתונים (סעיף 20)</string>
+    <string name="settings_rgpd_portability_value">באמצעות הייצוא המוצפן (מקורי או רב-פלטפורמות)</string>
+    <string name="settings_rgpd_dpo_label">איש קשר DPO</string>
+    <string name="settings_rgpd_dpo_value">contact@bigfortravel.com</string>
+    <string name="settings_rgpd_eu_label">רשות האיחוד האירופי (תלונות)</string>
+    <string name="settings_rgpd_eu_value">CNIL – www.cnil.fr (משתמשים אירופאים)</string>
+    <string name="settings_rgpd_cm_label">רשות קמרון (תלונות)</string>
+    <string name="settings_rgpd_cm_value">ANTIC – www.antic.cm (משתמשים בקמרון)</string>
+    <string name="settings_rgpd_footer">Big MFA אינה אוספת שום מידע אישי מחוץ למכשיר שלך, אינה יוזמת שום חיבור רשת בעצמה, ואינה משתפת שום מידע עם צדדים שלישיים. כל הנתונים מוצפנים באמצעות AES-256-GCM-SIV לפני האחסון המקומי.</string>
+    <string name="settings_language_row_title">שפה</string>
+
+    <!-- BackupImporter -->
+    <string name="backup_importer_unreadable">הקובץ אינו קריא או פגום</string>
+    <string name="backup_importer_unknown_format">פורמט קובץ לא מזוהה</string>
+    <string name="backup_importer_wrong_password">סיסמה שגויה או קובץ פגום</string>
+
+    <!-- תמכו -->
+    <string name="support_title">תמכו ב-Big MFA</string>
+    <string name="support_description">Big MFA מפותחת ומתוחזקת בהתנדבות על ידי BigForTravel. ללא פרסומות, ללא מכירת נתונים, ללא מנוי נסתר. אם האפליקציה שימושית עבורך, תרומה — גם קטנה — עוזרת לממן את המשך הפיתוח שלה.</string>
+    <string name="support_paypal_button">תרום דרך PayPal</string>
+    <string name="support_kofi_button">תרום דרך Ko-fi</string>
+    <string name="support_disclaimer">התרומות הן וולונטריות ואינן מעניקות שום פונקציונליות נוספת. תמיד ודא שהמקבל המוצג הוא BigForTravel / Patrick Djeuzong.</string>
+    <string name="support_official_site">🌐 אתר רשמי</string>
+    <string name="support_contact_us">✉️ כתבו לנו</string>
+    <string name="support_contact_subject">Big MFA — יצירת קשר</string>
+
+    <!-- קרוסלת ייצוא QR -->
+    <string name="export_qr_title">ייצוא QR (%1$d/%2$d)</string>
+    <string name="export_qr_no_accounts">אין חשבונות לייצוא.</string>
+    <string name="export_qr_zip_button">📦 ייצא את כל קודי ה-QR כ-ZIP</string>
+    <string name="export_qr_close_button">סגור</string>
+    <string name="export_qr_zip_error">לא ניתן היה ליצור את קובץ ה-ZIP</string>
+    <string name="export_qr_share_title">שתף ארכיון QR</string>
+
+    <!-- מדריך -->
+    <string name="guide_tab_installation">התקנה</string>
+    <string name="guide_tab_usage">שימוש</string>
+    <string name="guide_tab_features">תכונות</string>
+    <string name="guide_title">מדריך Big MFA</string>
+    <string name="guide_intro">סקירה מהירה של כל התכונות הזמינות.</string>
+    <string name="guide_codes_title">🔑 הקודים שלי</string>
+    <string name="guide_codes_body">קודי ה-TOTP שלך מתעדכנים בזמן אמת עם ספירה לאחור חזותית. הקש על קוד כדי להעתיק אותו (נמחק אוטומטית מהלוח בעוד 30 שניות). עבור חשבונות HOTP, הקש על „צור” בכל פעם שאתה צריך קוד. חפש, שנה שם או מחק חשבון באמצעות הסמלים בכל שורה.</string>
+    <string name="guide_decoder_title">🔍 מפענח</string>
+    <string name="guide_decoder_body">הדבק או ייבא סוד מתמונת קוד QR כדי לקבל מיד את קוד ה-TOTP המתאים, מבלי להוסיף אותו לכספת שלך. שימושי לבדיקה חד-פעמית.</string>
+    <string name="guide_key_title">🔐 מפתח</string>
+    <string name="guide_key_body">יוצר מפתח סודי אקראי, יחד עם קוד ה-QR המתאים, כדי להגדיר חשבון חדש בשירות אחר שמבקש ממך ליצור סוד משלך.</string>
+    <string name="guide_add_title">➕ הוספת חשבון</string>
+    <string name="guide_add_body">סרוק את קוד ה-QR שסופק על ידי השירות, או הזן את הסוד ידנית. האפשרויות המתקדמות מאפשרות לך להתאים את האלגוריתם, מספר הספרות, התקופה, או לעבור ל-HOTP.</string>
+    <string name="guide_biometric_title">👆 ביטול נעילה ביומטרי</string>
+    <string name="guide_biometric_body">הפעל ביטול נעילה באמצעות טביעת אצבע מתוך ההגדרות. הסיסמה הראשית שלך תמיד נשארת זמינה כגיבוי — לעולם לא מוחלפת, רק משלימה.</string>
+    <string name="guide_backup_title">💾 גיבוי ושחזור</string>
+    <string name="guide_backup_body">שני פורמטים לייצוא: אבטחה מרבית (מקורי ל-Android) או תואם רב-פלטפורמות (ניתן לייבוא לתוסף Chrome). ייצוא QR יוצר קרוסלה של קודי QR, בנפרד או בארכיון ZIP. השחזור מזהה את פורמט הקובץ אוטומטית.</string>
+    <string name="guide_security_title">🛡 אבטחה</string>
+    <string name="guide_security_body">כל הנתונים נשארים באופן בלעדי במכשיר שלך, מוצפנים באמצעות AES-256-GCM-SIV ומפתח שנגזר באמצעות Argon2id. האפליקציה לעולם אינה יוזמת חיבור רשת בעצמה.</string>
+    <string name="guide_language_title">🌐 שפה</string>
+    <string name="guide_language_body">בחר „אוטומטי” כדי לעקוב אחר שפת הטלפון שלך, או בחר שפה ספציפית מתחתית מסכי ההתחברות.</string>
+    <string name="guide_install_step1_title">1. צור את הכספת שלך</string>
+    <string name="guide_install_step1_body">בהפעלה הראשונה, בחר „צור כספת” כדי להתחיל עם כספת ריקה, או „שחזר גיבוי קיים” אם כבר השתמשת ב-Big MFA ב-Chrome או במכשיר Android אחר.</string>
+    <string name="guide_install_step2_title">2. בחר סיסמה ראשית חזקה</string>
+    <string name="guide_install_step2_body">מינימום 12 תווים, אך עדיף לכוון לביטוי סיסמה בן 16+ תווים (למשל, כמה מילים משולבות). זהו המפתח היחיד המגן על כל החשבונות שלך.</string>
+    <string name="guide_install_step3_title">3. הבן את חוסר האפשרות לשחזר</string>
+    <string name="guide_install_step3_body">Big MFA אינה מאחסנת את הסיסמה הראשית שלך בשום מקום, לא כטקסט רגיל ולא מוצפנת. אם תשכח אותה ואין לך גיבוי חיצוני, החשבונות שלך יהפכו לבלתי נגישים לצמיתות. רשום אותה במנהל סיסמאות אמין.</string>
+    <string name="guide_install_step4_title">4. הפעל ביומטריה (אופציונלי)</string>
+    <string name="guide_install_step4_body">מתוך ההגדרות, הפעל ביטול נעילה באמצעות טביעת אצבע לגישה יומיומית מהירה יותר. הסיסמה הראשית שלך תמיד נשארת זמינה כגיבוי.</string>
+    <string name="guide_usage_step1_title">1. הוסף את החשבון הראשון שלך</string>
+    <string name="guide_usage_step1_body">מתוך „+ הוסף”, סרוק את קוד ה-QR המוצג על ידי השירות (השיטה המהירה ביותר), או הזן ידנית את השם, המנפיק והסוד ב-Base32 אם אינך יכול לסרוק.</string>
+    <string name="guide_usage_step2_title">2. השתמש בקוד מדי יום</string>
+    <string name="guide_usage_step2_body">ב-„הקודים שלי”, הקש ישירות על קוד TOTP כדי להעתיק אותו (נמחק אוטומטית מהלוח בעוד 30 שניות). עבור חשבון HOTP, הקש על „צור” בכל פעם שאתה צריך אותו — המונה תמיד מתקדם, לעולם אינו חוזר אחורה.</string>
+    <string name="guide_usage_step3_title">3. נהל את החשבונות שלך</string>
+    <string name="guide_usage_step3_body">השתמש בשורת החיפוש כדי למצוא במהירות חשבון מבין רבים. סמל העיפרון מאפשר שינוי שם, סמל פח האשפה מאפשר מחיקה (עם אישור כפול, פעולה בלתי הפיכה).</string>
+    <string name="guide_usage_step4_title">4. גבה באופן קבוע</string>
+    <string name="guide_usage_step4_body">מתוך ההגדרות, בחר „ייצוא באבטחה מרבית” לגיבוי ייעודי ל-Android בלבד, או „ייצוא תואם רב-פלטפורמות” אם אתה משתמש ב-Big MFA גם ב-Chrome. ייצוא QR (קרוסלה או ZIP) שימושי להעברה למנהל סטנדרטי אחר התואם ל-TOTP.</string>
+    <string name="guide_usage_step5_title">5. שנה את הסיסמה הראשית שלך</string>
+    <string name="guide_usage_step5_body">בהגדרות, הזן את הסיסמה הנוכחית שלך, ולאחר מכן את החדשה. החשבונות והביומטריה שלך (אם מופעלת) נשארים ללא שינוי — רק הסיסמה משתנה.</string>
+    <string name="nav_accounts">הקודים שלי</string>
+    <string name="nav_decoder">מפענח</string>
+    <string name="nav_key">מפתח</string>
+    <string name="nav_add">+ הוסף</string>
+    <string name="nav_support">תמכו</string>
+    <string name="nav_settings">הגדרות</string>
+    <string name="nav_guide">מדריך</string>
+    <string name="nav_lock_content_description">נעל את הכספת</string>
+</resources>

@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Big MFA</string>
+
+    <!-- Екран розблокування -->
+    <string name="unlock_title">Big MFA</string>
+    <string name="unlock_subtitle">Введіть головний пароль</string>
+    <string name="unlock_password_label">Головний пароль</string>
+    <string name="unlock_button">Розблокувати</string>
+    <string name="unlock_reset_vault">Скинути сховище</string>
+    <string name="unlock_biometric_content_description">Розблокувати за відбитком пальця</string>
+
+    <!-- Спільний нижній колонтитул -->
+    <string name="footer_support">❤️ Підтримати</string>
+    <string name="footer_contact">✉️ Зв\'язатися з нами</string>
+    <string name="footer_language_auto">🌐 Автоматично — мова браузера</string>
+    <string name="footer_language_placeholder">Вибір мови — скоро буде доступно</string>
+    <string name="footer_gplv3">Безкоштовно та з відкритим кодом (ліцензія GPLv3).</string>
+    <string name="language_dialog_title">Вибрати мову</string>
+    <string name="language_option_auto">🌐 Автоматично (мова системи)</string>
+
+    <!-- Мої коди -->
+    <string name="accounts_empty_state">Поки що немає облікових записів.\nВикористайте «+ Додати», щоб створити новий.</string>
+    <string name="accounts_search_placeholder">Пошук облікового запису</string>
+    <string name="accounts_no_results">Немає результатів для «%1$s»</string>
+    <string name="accounts_rename_title">Перейменувати обліковий запис</string>
+    <string name="accounts_name_label">Назва облікового запису</string>
+    <string name="accounts_issuer_label">Видавець (необов\'язково)</string>
+    <string name="accounts_name_required_error">Назва облікового запису обов\'язкова</string>
+    <string name="accounts_save">Зберегти</string>
+    <string name="accounts_cancel">Скасувати</string>
+    <string name="accounts_rename_content_description">Перейменувати %1$s</string>
+    <string name="accounts_delete_content_description">Видалити %1$s</string>
+    <string name="accounts_delete_confirm_title">Видалити «%1$s»?</string>
+    <string name="accounts_delete_irreversible">Цю дію неможливо скасувати.</string>
+    <string name="accounts_delete_button">Видалити</string>
+    <string name="accounts_hotp_label">HOTP</string>
+    <string name="accounts_unreadable">Нечитабельно</string>
+    <string name="accounts_copy_content_description">Копіювати</string>
+    <string name="accounts_generate_button">Згенерувати</string>
+
+    <!-- + Додати -->
+    <string name="add_account_title">Додати обліковий запис</string>
+    <string name="add_account_scan_qr">📷 Сканувати QR-код</string>
+    <string name="add_account_qr_invalid">Недійсний або нерозпізнаний QR-код</string>
+    <string name="add_account_cancel_scan">Скасувати сканування</string>
+    <string name="add_account_name_label">Назва облікового запису</string>
+    <string name="add_account_issuer_label">Видавець (необов\'язково)</string>
+    <string name="add_account_secret_label">Секрет (Base32)</string>
+    <string name="add_account_advanced_options">⚙ Додаткові параметри (алгоритм, цифри, період)</string>
+    <string name="add_account_type_label">ТИП</string>
+    <string name="add_account_type_totp">TOTP (на основі часу — стандартний)</string>
+    <string name="add_account_type_hotp">HOTP (на основі лічильника)</string>
+    <string name="add_account_algorithm_label">АЛГОРИТМ</string>
+    <string name="add_account_algorithm_sha1">SHA-1 (за замовчуванням, універсальна сумісність)</string>
+    <string name="add_account_digits_label">КІЛЬКІСТЬ ЦИФР</string>
+    <string name="add_account_digits_default">6 цифр (за замовчуванням)</string>
+    <string name="add_account_digits_n">%1$d цифр</string>
+    <string name="add_account_period_label">ПЕРІОД (СЕКУНДИ)</string>
+    <string name="add_account_save">Зберегти</string>
+    <string name="add_account_name_required">Назва облікового запису обов\'язкова</string>
+    <string name="add_account_secret_required">Секрет обов\'язковий</string>
+    <string name="add_account_secret_invalid">Секрет не є дійсним Base32</string>
+    <string name="add_account_save_error">Не вдалося зберегти обліковий запис</string>
+    <string name="add_account_camera_permission_needed">Для сканування QR-коду потрібен доступ до камери.</string>
+    <string name="add_account_grant_camera">Надати доступ до камери</string>
+
+    <!-- Ключ -->
+    <string name="generate_key_description">Генерує випадковий секретний ключ Base32 (160 біт), сумісний з Google Authenticator, Aegis, Authy…</string>
+    <string name="generate_key_generate">Згенерувати</string>
+    <string name="generate_key_copy">Копіювати</string>
+    <string name="generate_key_copied">Ключ скопійовано</string>
+    <string name="generate_key_show_qr">Показати QR</string>
+    <string name="generate_key_qr_title">QR-код</string>
+    <string name="generate_key_close">Закрити</string>
+
+    <!-- Декодер -->
+    <string name="decoder_import_qr">Імпортувати з QR-коду (зображення)</string>
+    <string name="decoder_no_qr_found">На цьому зображенні не знайдено QR-код</string>
+    <string name="decoder_secret_label">КЛЮЧ MFA / TOTP (BASE32)</string>
+    <string name="decoder_code_placeholder">— — — — — —</string>
+    <string name="decoder_generate_code">Згенерувати код</string>
+    <string name="decoder_copy_content_description">Копіювати код</string>
+    <string name="decoder_code_copied">Код скопійовано — буде видалено через 30с</string>
+    <string name="decoder_secret_empty_error">Введіть або імпортуйте ключ</string>
+    <string name="decoder_secret_invalid_error">Недійсний ключ</string>
+
+    <!-- Створення/Відновлення сховища -->
+    <string name="create_vault_password_too_short">Пароль має містити щонайменше 12 символів</string>
+    <string name="create_vault_passwords_mismatch">Паролі не збігаються</string>
+    <string name="create_vault_creation_error">Не вдалося створити сховище</string>
+    <string name="restore_vault_new_password_too_short">Новий пароль має містити щонайменше 12 символів</string>
+    <string name="restore_vault_new_passwords_mismatch">Нові паролі не збігаються</string>
+    <string name="restore_vault_generic_error">Не вдалося відновити резервну копію</string>
+    <string name="create_vault_title">Створіть своє сховище Big MFA</string>
+    <string name="create_vault_min_chars">Мінімум 12 символів</string>
+    <string name="create_vault_password_label">Пароль</string>
+    <string name="create_vault_confirm_label">Підтвердіть пароль</string>
+    <string name="create_vault_create_button">Створити сховище</string>
+    <string name="create_vault_restore_button">📥 Відновити наявну резервну копію</string>
+    <string name="restore_backup_title">Відновити резервну копію</string>
+    <string name="restore_backup_description">Власний формат Big MFA або сумісний з Chrome — визначається автоматично.</string>
+    <string name="restore_backup_choose_file">Вибрати файл резервної копії</string>
+    <string name="restore_backup_file_selected">✅ Файл вибрано</string>
+    <string name="restore_backup_backup_password_label">Пароль резервної копії</string>
+    <string name="restore_backup_new_password_title">НОВИЙ ГОЛОВНИЙ ПАРОЛЬ</string>
+    <string name="restore_backup_new_password_hint">Відрізняється від пароля резервної копії — мінімум 12 символів.</string>
+    <string name="restore_backup_new_password_label">Новий головний пароль</string>
+    <string name="restore_backup_confirm_new_password_label">Підтвердіть новий пароль</string>
+    <string name="restore_backup_restore_button">Відновити</string>
+    <string name="restore_backup_cancel">Скасувати</string>
+    <string name="restore_backup_file_read_error">Не вдалося прочитати файл</string>
+
+    <!-- Помилки розблокування -->
+    <string name="unlock_error_wrong_password">Неправильний пароль</string>
+    <string name="unlock_error_corrupted_vault">Дані сховища пошкоджені або нечитабельні</string>
+    <string name="unlock_error_no_vault">Сховище не знайдено</string>
+    <string name="unlock_error_too_many_attempts">Забагато спроб — спробуйте ще раз через %1$dс</string>
+    <string name="unlock_error_biometric_unavailable">Біометрія недоступна — використайте свій пароль</string>
+    <string name="unlock_error_biometric_failed">Біометрична автентифікація не вдалася</string>
+
+    <!-- Зміна головного пароля -->
+    <string name="change_password_title">Змінити головний пароль</string>
+    <string name="change_password_current_label">ПОТОЧНИЙ ПАРОЛЬ</string>
+    <string name="change_password_new_label">НОВИЙ ПАРОЛЬ</string>
+    <string name="change_password_confirm_label">ПІДТВЕРДИТИ</string>
+    <string name="change_password_button">Змінити пароль</string>
+    <string name="change_password_new_too_short">Новий пароль має містити щонайменше 12 символів</string>
+    <string name="change_password_new_mismatch">Нові паролі не збігаються</string>
+    <string name="change_password_wrong_current">Поточний пароль неправильний</string>
+    <string name="change_password_generic_error">Не вдалося змінити пароль</string>
+    <string name="change_password_success_toast">Пароль успішно змінено</string>
+    <string name="change_password_cancel">Скасувати</string>
+
+    <!-- Біометрія -->
+    <string name="biometric_setup_title">Увімкнути біометрію</string>
+    <string name="biometric_hardware_insufficient">Ваш пристрій не має достатньої апаратної підтримки для безпечного ввімкнення біометрії.</string>
+    <string name="biometric_activate_prompt">Увімкнути розблокування за відбитком пальця</string>
+    <string name="biometric_password_confirmed_hint">Пароль підтверджено — прикладіть палець до сенсора.</string>
+    <string name="biometric_continue_button">Продовжити з відбитком пальця</string>
+    <string name="biometric_confirm_password_label">Підтвердіть головний пароль</string>
+    <string name="biometric_confirm_button">Підтвердити</string>
+    <string name="biometric_wrong_password">Неправильний пароль</string>
+    <string name="biometric_key_creation_error">Не вдалося створити безпечний ключ</string>
+    <string name="biometric_cipher_error">Не вдалося підготувати шифрування</string>
+    <string name="biometric_enable_error">Не вдалося ввімкнути біометрію</string>
+    <string name="biometric_auth_failed">Біометрична автентифікація не вдалася</string>
+    <string name="biometric_activated_toast">Біометрію ввімкнено</string>
+    <string name="biometric_deactivated_toast">Біометрію вимкнено</string>
+    <string name="biometric_cancel">Скасувати</string>
+    <string name="biometric_row_title">Біометричне розблокування</string>
+    <string name="biometric_row_enabled">Увімкнено</string>
+    <string name="biometric_row_disabled">Вимкнено</string>
+
+    <!-- Налаштування -->
+    <string name="settings_title">Налаштування</string>
+    <string name="settings_security_status_title">СТАН БЕЗПЕКИ</string>
+    <string name="settings_masvs_badge">🛡 OWASP MASVS — Посилений рівень</string>
+    <string name="settings_encryption_label">ШИФРУВАННЯ</string>
+    <string name="settings_kdf_label">KDF</string>
+    <string name="settings_inactivity_label">ЧАС БЕЗДІЯЛЬНОСТІ</string>
+    <string name="settings_inactivity_value">2 хв</string>
+    <string name="settings_bruteforce_label">ЗАХИСТ ВІД ПІДБОРУ</string>
+    <string name="settings_bruteforce_value">5 спроб + HMAC</string>
+    <string name="settings_lockout_label">БЛОКУВАННЯ</string>
+    <string name="settings_lockout_value">Експоненційне</string>
+    <string name="settings_salt_label">СІЛЬ</string>
+    <string name="settings_salt_value">256 біт</string>
+    <string name="settings_integrity_label">ЦІЛІСНІСТЬ СХОВИЩА</string>
+    <string name="settings_integrity_value">HMAC-SHA256</string>
+    <string name="settings_hardware_label">АПАРАТНА ПРИВ\'ЯЗКА</string>
+    <string name="settings_hardware_value">Мінімум TEE, StrongBox за наявності</string>
+    <string name="settings_bruteforce_note">ℹ️ Захист від підбору захищає від повторних спроб у межах застосунку. Він не замінює надійний пароль: той, хто має прямий доступ до файлу сховища на пристрої, може спробувати офлайн-розшифрування, обходячи це обмеження. Використовуйте кодову фразу з 16+ символів.</string>
+    <string name="settings_change_password_button">🔑 Змінити головний пароль</string>
+    <string name="settings_backup_title">РЕЗЕРВНА КОПІЯ</string>
+    <string name="settings_export_native_title">🛡️ Експорт з максимальною безпекою</string>
+    <string name="settings_export_native_subtitle">Argon2id + AES-256-GCM-SIV</string>
+    <string name="settings_export_chrome_title">🌐 Кросплатформний експорт</string>
+    <string name="settings_export_chrome_subtitle">PBKDF2 + AES-256-GCM — можна імпортувати в Big MFA Chrome</string>
+    <string name="settings_export_qr_title">📷 Експорт QR (карусель + ZIP)</string>
+    <string name="settings_export_qr_subtitle">Один QR-код на обліковий запис, для перегляду або завантаження</string>
+    <string name="settings_import_button">📥 Імпорт / Відновлення</string>
+    <string name="settings_export_footer">Експорт зашифровано — секрети залишаються захищеними, навіть якщо файл буде передано.</string>
+    <string name="settings_export_native_dialog_title">Експорт з максимальною безпекою</string>
+    <string name="settings_export_chrome_dialog_title">Кросплатформний експорт</string>
+    <string name="settings_export_native_dialog_desc">🛡️ Argon2id + AES-256-GCM-SIV — цей пароль захищає експортований файл і відрізняється від вашого головного пароля.</string>
+    <string name="settings_export_chrome_dialog_desc">🌐 PBKDF2 + AES-256-GCM — формат, сумісний з розширенням Big MFA Chrome. Цей пароль відрізняється від вашого головного пароля.</string>
+    <string name="settings_export_password_label">Пароль для експорту</string>
+    <string name="settings_export_confirm_label">Підтвердити</string>
+    <string name="settings_export_min_chars_error">Мінімум 8 символів</string>
+    <string name="settings_export_mismatch_error">Паролі не збігаються</string>
+    <string name="settings_export_button">Експортувати</string>
+    <string name="settings_export_cancel">Скасувати</string>
+    <string name="settings_export_generic_error">Не вдалося створити експорт</string>
+    <string name="settings_export_share_title">Поділитися експортом</string>
+    <string name="settings_import_dialog_title">Імпортувати резервну копію</string>
+    <string name="settings_import_dialog_desc">Виберіть файл резервної копії (власний формат Big MFA або сумісний з Chrome — формат визначається автоматично).</string>
+    <string name="settings_import_choose_file">Вибрати файл</string>
+    <string name="settings_import_file_selected_desc">Файл вибрано — введіть пароль цієї резервної копії.</string>
+    <string name="settings_import_password_label">Пароль резервної копії</string>
+    <string name="settings_import_button_confirm">Імпортувати</string>
+    <string name="settings_import_read_error">Не вдалося прочитати файл</string>
+    <string name="settings_import_generic_error">Помилка імпорту</string>
+    <string name="settings_import_success_toast">Імпортовано облікових записів: %1$d</string>
+    <string name="settings_danger_zone_title">НЕБЕЗПЕЧНА ЗОНА</string>
+    <string name="settings_delete_all_button">🗑 Видалити всі мої дані</string>
+    <string name="settings_delete_all_description">Реалізує ваше право на видалення (ст. 17 GDPR). Видаляє всі облікові записи та головний пароль. Незворотна дія.</string>
+    <string name="settings_delete_confirm_title">Видалити всі дані?</string>
+    <string name="settings_delete_confirm_desc">Усі ваші облікові записи буде остаточно видалено. Цю дію неможливо скасувати.</string>
+    <string name="settings_delete_continue">Продовжити</string>
+    <string name="settings_delete_final_title">Остаточне підтвердження</string>
+    <string name="settings_delete_final_desc">Ви ДІЙСНО впевнені? Після цього кроку відновлення буде неможливим.</string>
+    <string name="settings_delete_final_button">Видалити остаточно</string>
+    <string name="settings_delete_cancel">Скасувати</string>
+    <string name="settings_rgpd_badge">🔒 Відповідає GDPR — 100% локальні дані</string>
+    <string name="settings_rgpd_title">КОНФІДЕНЦІЙНІСТЬ ТА GDPR</string>
+    <string name="settings_rgpd_controller_label">Оператор даних</string>
+    <string name="settings_rgpd_controller_value">Patrick DJEUZONG – BigForTravel</string>
+    <string name="settings_rgpd_data_label">Зібрані дані</string>
+    <string name="settings_rgpd_data_value">Назви облікових записів, зашифровані ключі TOTP</string>
+    <string name="settings_rgpd_storage_label">Місце зберігання</string>
+    <string name="settings_rgpd_storage_value">Лише ваш пристрій (приватне сховище застосунку, ізольоване пісочницею Android)</string>
+    <string name="settings_rgpd_transfer_label">Передача третім особам</string>
+    <string name="settings_rgpd_transfer_value">Сам застосунок Big MFA не надсилає жодних запитів. Зашифрованим експортом можна поділитися через стороннiй застосунок на ваш вибір, лише якщо ви явно це активуєте.</string>
+    <string name="settings_rgpd_thirdparty_label">Вбудований сторонній код</string>
+    <string name="settings_rgpd_thirdparty_value">Bouncy Castle (MIT), CameraX (Apache-2.0), вбудований ML Kit barcode-scanning (Apache-2.0), ZXing (Apache-2.0) — усе локально, без телеметрії</string>
+    <string name="settings_rgpd_retention_label">Термін зберігання</string>
+    <string name="settings_rgpd_retention_value">До видалення застосунку або ручного видалення даних</string>
+    <string name="settings_rgpd_legal_label">Правова основа</string>
+    <string name="settings_rgpd_legal_value">Згода користувача (ст. 6.1.a)</string>
+    <string name="settings_rgpd_access_label">Право на доступ (ст. 15)</string>
+    <string name="settings_rgpd_access_value">Через зашифрований експорт (вище)</string>
+    <string name="settings_rgpd_erasure_label">Право на видалення (ст. 17)</string>
+    <string name="settings_rgpd_erasure_value">Через «Видалити всі мої дані»</string>
+    <string name="settings_rgpd_portability_label">Право на переносимість даних (ст. 20)</string>
+    <string name="settings_rgpd_portability_value">Через зашифрований експорт (власний або кросплатформний)</string>
+    <string name="settings_rgpd_dpo_label">Контакт з DPO</string>
+    <string name="settings_rgpd_dpo_value">contact@bigfortravel.com</string>
+    <string name="settings_rgpd_eu_label">Орган ЄС (скарги)</string>
+    <string name="settings_rgpd_eu_value">CNIL – www.cnil.fr (європейські користувачі)</string>
+    <string name="settings_rgpd_cm_label">Орган Камеруну (скарги)</string>
+    <string name="settings_rgpd_cm_value">ANTIC – www.antic.cm (користувачі з Камеруну)</string>
+    <string name="settings_rgpd_footer">Big MFA не збирає жодних персональних даних поза вашим пристроєм, самостійно не ініціює мережеві з\'єднання та не передає жодної інформації третім особам. Усі дані шифруються за допомогою AES-256-GCM-SIV перед локальним збереженням.</string>
+    <string name="settings_language_row_title">Мова</string>
+
+    <!-- BackupImporter -->
+    <string name="backup_importer_unreadable">Файл нечитабельний або пошкоджений</string>
+    <string name="backup_importer_unknown_format">Нерозпізнаний формат файлу</string>
+    <string name="backup_importer_wrong_password">Неправильний пароль або пошкоджений файл</string>
+
+    <!-- Підтримати -->
+    <string name="support_title">Підтримати Big MFA</string>
+    <string name="support_description">Big MFA розробляється та підтримується на добровільних засадах компанією BigForTravel. Жодної реклами, жодного продажу даних, жодної прихованої підписки. Якщо застосунок вам корисний, пожертва — навіть невелика — допомагає фінансувати його подальшу розробку.</string>
+    <string name="support_paypal_button">Пожертвувати через PayPal</string>
+    <string name="support_kofi_button">Пожертвувати через Ko-fi</string>
+    <string name="support_disclaimer">Пожертви є добровільними та не надають жодних додаткових функцій. Завжди перевіряйте, що вказаним отримувачем є BigForTravel / Patrick Djeuzong.</string>
+    <string name="support_official_site">🌐 Офіційний сайт</string>
+    <string name="support_contact_us">✉️ Напишіть нам</string>
+    <string name="support_contact_subject">Big MFA — Контакт</string>
+
+    <!-- Карусель експорту QR -->
+    <string name="export_qr_title">Експорт QR (%1$d/%2$d)</string>
+    <string name="export_qr_no_accounts">Немає облікових записів для експорту.</string>
+    <string name="export_qr_zip_button">📦 Експортувати всі QR-коди у ZIP</string>
+    <string name="export_qr_close_button">Закрити</string>
+    <string name="export_qr_zip_error">Не вдалося створити архів ZIP</string>
+    <string name="export_qr_share_title">Поділитися архівом QR</string>
+
+    <!-- Посібник -->
+    <string name="guide_tab_installation">Встановлення</string>
+    <string name="guide_tab_usage">Використання</string>
+    <string name="guide_tab_features">Функції</string>
+    <string name="guide_title">Посібник Big MFA</string>
+    <string name="guide_intro">Швидкий огляд усіх доступних функцій.</string>
+    <string name="guide_codes_title">🔑 Мої коди</string>
+    <string name="guide_codes_body">Ваші коди TOTP оновлюються в реальному часі з візуальним зворотним відліком. Натисніть на код, щоб скопіювати його (автоматично видаляється з буфера обміну через 30с). Для облікових записів HOTP натискайте «Згенерувати» щоразу, коли вам потрібен код. Шукайте, перейменовуйте або видаляйте обліковий запис за допомогою значків у кожному рядку.</string>
+    <string name="guide_decoder_title">🔍 Декодер</string>
+    <string name="guide_decoder_body">Вставте або імпортуйте секрет із зображення QR-коду, щоб миттєво отримати відповідний код TOTP, не додаючи його до сховища. Корисно для одноразової перевірки.</string>
+    <string name="guide_key_title">🔐 Ключ</string>
+    <string name="guide_key_body">Генерує випадковий секретний ключ разом із відповідним QR-кодом для налаштування нового облікового запису в іншій службі, яка просить створити власний секрет.</string>
+    <string name="guide_add_title">➕ Додати обліковий запис</string>
+    <string name="guide_add_body">Відскануйте QR-код, наданий службою, або введіть секрет вручну. Додаткові параметри дозволяють налаштувати алгоритм, кількість цифр, період або перейти на HOTP.</string>
+    <string name="guide_biometric_title">👆 Біометричне розблокування</string>
+    <string name="guide_biometric_body">Увімкніть розблокування за відбитком пальця в Налаштуваннях. Ваш головний пароль завжди залишається доступним як резервний варіант — ніколи не замінюється, лише доповнюється.</string>
+    <string name="guide_backup_title">💾 Резервне копіювання та відновлення</string>
+    <string name="guide_backup_body">Два формати експорту: максимальна безпека (власний для Android) або кросплатформна сумісність (можна імпортувати в розширення Chrome). Експорт QR створює карусель QR-кодів, окремо або в архіві ZIP. Відновлення автоматично визначає формат файлу.</string>
+    <string name="guide_security_title">🛡 Безпека</string>
+    <string name="guide_security_body">Усі дані залишаються виключно на вашому пристрої, зашифровані за допомогою AES-256-GCM-SIV і ключа, отриманого за допомогою Argon2id. Застосунок ніколи самостійно не ініціює мережеве з\'єднання.</string>
+    <string name="guide_language_title">🌐 Мова</string>
+    <string name="guide_language_body">Виберіть «Автоматично», щоб слідувати мові вашого телефону, або виберіть конкретну мову в нижньому колонтитулі екранів входу.</string>
+    <string name="guide_install_step1_title">1. Створіть своє сховище</string>
+    <string name="guide_install_step1_body">При першому запуску виберіть «Створити сховище», щоб почати з порожнього сховища, або «Відновити наявну резервну копію», якщо ви вже використовували Big MFA у Chrome або на іншому пристрої Android.</string>
+    <string name="guide_install_step2_title">2. Виберіть надійний головний пароль</string>
+    <string name="guide_install_step2_body">Мінімум 12 символів, але краще прагніть до кодової фрази з 16+ символів (наприклад, кілька об\'єднаних слів). Це єдиний ключ, який захищає всі ваші облікові записи.</string>
+    <string name="guide_install_step3_title">3. Зрозумійте незворотність</string>
+    <string name="guide_install_step3_body">Big MFA ніде не зберігає ваш головний пароль, ні у відкритому вигляді, ні зашифрованим. Якщо ви його забудете і не маєте зовнішньої резервної копії, ваші облікові записи стануть назавжди недоступними. Запишіть його в надійний менеджер паролів.</string>
+    <string name="guide_install_step4_title">4. Увімкніть біометрію (необов\'язково)</string>
+    <string name="guide_install_step4_body">У Налаштуваннях увімкніть розблокування за відбитком пальця для швидшого щоденного доступу. Ваш головний пароль завжди залишається доступним як резервний варіант.</string>
+    <string name="guide_usage_step1_title">1. Додайте свій перший обліковий запис</string>
+    <string name="guide_usage_step1_body">У розділі «+ Додати» відскануйте QR-код, показаний службою (найшвидший спосіб), або введіть вручну назву, видавця та секрет Base32, якщо ви не можете сканувати.</string>
+    <string name="guide_usage_step2_title">2. Використовуйте код щодня</string>
+    <string name="guide_usage_step2_body">У розділі «Мої коди» натисніть безпосередньо на код TOTP, щоб скопіювати його (автоматично видаляється з буфера обміну через 30 секунд). Для облікового запису HOTP натискайте «Згенерувати» щоразу, коли він вам потрібен — лічильник завжди рухається вперед, ніколи назад.</string>
+    <string name="guide_usage_step3_title">3. Керуйте своїми обліковими записами</string>
+    <string name="guide_usage_step3_body">Використовуйте рядок пошуку, щоб швидко знайти обліковий запис серед багатьох. Значок олівця дозволяє перейменувати, значок кошика дозволяє видалити (з подвійним підтвердженням, незворотна дія).</string>
+    <string name="guide_usage_step4_title">4. Регулярно робіть резервні копії</string>
+    <string name="guide_usage_step4_body">У Налаштуваннях виберіть «Експорт з максимальною безпекою» для резервної копії лише для Android, або «Кросплатформний експорт», якщо ви також використовуєте Big MFA у Chrome. Експорт QR (карусель або ZIP) корисний для перенесення в інший стандартний менеджер, сумісний з TOTP.</string>
+    <string name="guide_usage_step5_title">5. Змініть головний пароль</string>
+    <string name="guide_usage_step5_body">У Налаштуваннях введіть поточний пароль, а потім новий. Ваші облікові записи та біометрія (якщо ввімкнена) залишаються незмінними — змінюється лише пароль.</string>
+    <string name="nav_accounts">Мої коди</string>
+    <string name="nav_decoder">Декодер</string>
+    <string name="nav_key">Ключ</string>
+    <string name="nav_add">+ Додати</string>
+    <string name="nav_support">Підтримати</string>
+    <string name="nav_settings">Налаштування</string>
+    <string name="nav_guide">Посібник</string>
+    <string name="nav_lock_content_description">Заблокувати сховище</string>
+</resources>

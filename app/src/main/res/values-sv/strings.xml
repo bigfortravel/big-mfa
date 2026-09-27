@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Big MFA</string>
+
+    <!-- Låsskärm -->
+    <string name="unlock_title">Big MFA</string>
+    <string name="unlock_subtitle">Ange ditt huvudlösenord</string>
+    <string name="unlock_password_label">Huvudlösenord</string>
+    <string name="unlock_button">Lås upp</string>
+    <string name="unlock_reset_vault">Återställ valvet</string>
+    <string name="unlock_biometric_content_description">Lås upp med fingeravtryck</string>
+
+    <!-- Delad sidfot -->
+    <string name="footer_support">❤️ Stöd</string>
+    <string name="footer_contact">✉️ Kontakta oss</string>
+    <string name="footer_language_auto">🌐 Automatiskt — webbläsarens språk</string>
+    <string name="footer_language_placeholder">Språkval — kommer snart</string>
+    <string name="footer_gplv3">Gratis och öppen källkod (GPLv3-licens).</string>
+    <string name="language_dialog_title">Välj språk</string>
+    <string name="language_option_auto">🌐 Automatiskt (systemspråk)</string>
+
+    <!-- Mina koder -->
+    <string name="accounts_empty_state">Inga konton ännu.\nAnvänd ”+ Lägg till” för att skapa ett.</string>
+    <string name="accounts_search_placeholder">Sök ett konto</string>
+    <string name="accounts_no_results">Inga resultat för ”%1$s”</string>
+    <string name="accounts_rename_title">Byt namn på kontot</string>
+    <string name="accounts_name_label">Kontonamn</string>
+    <string name="accounts_issuer_label">Utfärdare (valfritt)</string>
+    <string name="accounts_name_required_error">Kontonamnet är obligatoriskt</string>
+    <string name="accounts_save">Spara</string>
+    <string name="accounts_cancel">Avbryt</string>
+    <string name="accounts_rename_content_description">Byt namn på %1$s</string>
+    <string name="accounts_delete_content_description">Ta bort %1$s</string>
+    <string name="accounts_delete_confirm_title">Ta bort ”%1$s”?</string>
+    <string name="accounts_delete_irreversible">Denna åtgärd är oåterkallelig.</string>
+    <string name="accounts_delete_button">Ta bort</string>
+    <string name="accounts_hotp_label">HOTP</string>
+    <string name="accounts_unreadable">Oläsbar</string>
+    <string name="accounts_copy_content_description">Kopiera</string>
+    <string name="accounts_generate_button">Generera</string>
+
+    <!-- + Lägg till -->
+    <string name="add_account_title">Lägg till ett konto</string>
+    <string name="add_account_scan_qr">📷 Skanna en QR-kod</string>
+    <string name="add_account_qr_invalid">Ogiltig eller okänd QR-kod</string>
+    <string name="add_account_cancel_scan">Avbryt skanning</string>
+    <string name="add_account_name_label">Kontonamn</string>
+    <string name="add_account_issuer_label">Utfärdare (valfritt)</string>
+    <string name="add_account_secret_label">Hemlighet (Base32)</string>
+    <string name="add_account_advanced_options">⚙ Avancerade alternativ (algoritm, siffror, period)</string>
+    <string name="add_account_type_label">TYP</string>
+    <string name="add_account_type_totp">TOTP (tidsbaserad — standard)</string>
+    <string name="add_account_type_hotp">HOTP (räknarbaserad)</string>
+    <string name="add_account_algorithm_label">ALGORITM</string>
+    <string name="add_account_algorithm_sha1">SHA-1 (standard, universell kompatibilitet)</string>
+    <string name="add_account_digits_label">ANTAL SIFFROR</string>
+    <string name="add_account_digits_default">6 siffror (standard)</string>
+    <string name="add_account_digits_n">%1$d siffror</string>
+    <string name="add_account_period_label">PERIOD (SEKUNDER)</string>
+    <string name="add_account_save">Spara</string>
+    <string name="add_account_name_required">Kontonamnet är obligatoriskt</string>
+    <string name="add_account_secret_required">Hemligheten är obligatorisk</string>
+    <string name="add_account_secret_invalid">Hemligheten är inte en giltig Base32</string>
+    <string name="add_account_save_error">Kunde inte spara kontot</string>
+    <string name="add_account_camera_permission_needed">Kameraåtkomst krävs för att skanna en QR-kod.</string>
+    <string name="add_account_grant_camera">Bevilja kameraåtkomst</string>
+
+    <!-- Nyckel -->
+    <string name="generate_key_description">Genererar en slumpmässig Base32-hemlighetsnyckel (160 bitar) kompatibel med Google Authenticator, Aegis, Authy…</string>
+    <string name="generate_key_generate">Generera</string>
+    <string name="generate_key_copy">Kopiera</string>
+    <string name="generate_key_copied">Nyckel kopierad</string>
+    <string name="generate_key_show_qr">Visa QR</string>
+    <string name="generate_key_qr_title">QR-kod</string>
+    <string name="generate_key_close">Stäng</string>
+
+    <!-- Avkodare -->
+    <string name="decoder_import_qr">Importera från en QR-kod (bild)</string>
+    <string name="decoder_no_qr_found">Ingen QR-kod hittades i den här bilden</string>
+    <string name="decoder_secret_label">MFA/TOTP-NYCKEL (BASE32)</string>
+    <string name="decoder_code_placeholder">— — — — — —</string>
+    <string name="decoder_generate_code">Generera kod</string>
+    <string name="decoder_copy_content_description">Kopiera kod</string>
+    <string name="decoder_code_copied">Kod kopierad — raderas om 30s</string>
+    <string name="decoder_secret_empty_error">Ange eller importera en nyckel</string>
+    <string name="decoder_secret_invalid_error">Ogiltig nyckel</string>
+
+    <!-- Skapa/Återställ valvet -->
+    <string name="create_vault_password_too_short">Lösenordet måste innehålla minst 12 tecken</string>
+    <string name="create_vault_passwords_mismatch">Lösenorden matchar inte</string>
+    <string name="create_vault_creation_error">Kunde inte skapa valvet</string>
+    <string name="restore_vault_new_password_too_short">Det nya lösenordet måste innehålla minst 12 tecken</string>
+    <string name="restore_vault_new_passwords_mismatch">De nya lösenorden matchar inte</string>
+    <string name="restore_vault_generic_error">Kunde inte återställa säkerhetskopian</string>
+    <string name="create_vault_title">Skapa ditt Big MFA-valv</string>
+    <string name="create_vault_min_chars">Minst 12 tecken</string>
+    <string name="create_vault_password_label">Lösenord</string>
+    <string name="create_vault_confirm_label">Bekräfta lösenord</string>
+    <string name="create_vault_create_button">Skapa valv</string>
+    <string name="create_vault_restore_button">📥 Återställ en befintlig säkerhetskopia</string>
+    <string name="restore_backup_title">Återställ en säkerhetskopia</string>
+    <string name="restore_backup_description">Nativt Big MFA-format eller Chrome-kompatibelt — identifieras automatiskt.</string>
+    <string name="restore_backup_choose_file">Välj säkerhetskopiefil</string>
+    <string name="restore_backup_file_selected">✅ Fil vald</string>
+    <string name="restore_backup_backup_password_label">Lösenord för säkerhetskopian</string>
+    <string name="restore_backup_new_password_title">NYTT HUVUDLÖSENORD</string>
+    <string name="restore_backup_new_password_hint">Skiljer sig från säkerhetskopians lösenord — minst 12 tecken.</string>
+    <string name="restore_backup_new_password_label">Nytt huvudlösenord</string>
+    <string name="restore_backup_confirm_new_password_label">Bekräfta nytt lösenord</string>
+    <string name="restore_backup_restore_button">Återställ</string>
+    <string name="restore_backup_cancel">Avbryt</string>
+    <string name="restore_backup_file_read_error">Kunde inte läsa filen</string>
+
+    <!-- Upplåsningsfel -->
+    <string name="unlock_error_wrong_password">Felaktigt lösenord</string>
+    <string name="unlock_error_corrupted_vault">Valvdata är skadad eller oläsbar</string>
+    <string name="unlock_error_no_vault">Inget valv hittades</string>
+    <string name="unlock_error_too_many_attempts">För många försök — försök igen om %1$ds</string>
+    <string name="unlock_error_biometric_unavailable">Biometri inte tillgänglig — använd ditt lösenord</string>
+    <string name="unlock_error_biometric_failed">Biometrisk autentisering misslyckades</string>
+
+    <!-- Byte av huvudlösenord -->
+    <string name="change_password_title">Byt huvudlösenord</string>
+    <string name="change_password_current_label">NUVARANDE LÖSENORD</string>
+    <string name="change_password_new_label">NYTT LÖSENORD</string>
+    <string name="change_password_confirm_label">BEKRÄFTA</string>
+    <string name="change_password_button">Byt lösenord</string>
+    <string name="change_password_new_too_short">Det nya lösenordet måste innehålla minst 12 tecken</string>
+    <string name="change_password_new_mismatch">De nya lösenorden matchar inte</string>
+    <string name="change_password_wrong_current">Det nuvarande lösenordet är felaktigt</string>
+    <string name="change_password_generic_error">Kunde inte byta lösenord</string>
+    <string name="change_password_success_toast">Lösenordet har bytts</string>
+    <string name="change_password_cancel">Avbryt</string>
+
+    <!-- Biometri -->
+    <string name="biometric_setup_title">Aktivera biometri</string>
+    <string name="biometric_hardware_insufficient">Din enhet har inte tillräckligt maskinvarustöd för att aktivera biometri på ett säkert sätt.</string>
+    <string name="biometric_activate_prompt">Aktivera upplåsning med fingeravtryck</string>
+    <string name="biometric_password_confirmed_hint">Lösenord bekräftat — placera fingret på sensorn.</string>
+    <string name="biometric_continue_button">Fortsätt med fingeravtryck</string>
+    <string name="biometric_confirm_password_label">Bekräfta ditt huvudlösenord</string>
+    <string name="biometric_confirm_button">Bekräfta</string>
+    <string name="biometric_wrong_password">Felaktigt lösenord</string>
+    <string name="biometric_key_creation_error">Kunde inte skapa den säkra nyckeln</string>
+    <string name="biometric_cipher_error">Kunde inte förbereda krypteringen</string>
+    <string name="biometric_enable_error">Kunde inte aktivera biometri</string>
+    <string name="biometric_auth_failed">Biometrisk autentisering misslyckades</string>
+    <string name="biometric_activated_toast">Biometri aktiverad</string>
+    <string name="biometric_deactivated_toast">Biometri inaktiverad</string>
+    <string name="biometric_cancel">Avbryt</string>
+    <string name="biometric_row_title">Biometrisk upplåsning</string>
+    <string name="biometric_row_enabled">Aktiverad</string>
+    <string name="biometric_row_disabled">Inaktiverad</string>
+
+    <!-- Inställningar -->
+    <string name="settings_title">Inställningar</string>
+    <string name="settings_security_status_title">SÄKERHETSSTATUS</string>
+    <string name="settings_masvs_badge">🛡 OWASP MASVS — Förstärkt nivå</string>
+    <string name="settings_encryption_label">KRYPTERING</string>
+    <string name="settings_kdf_label">KDF</string>
+    <string name="settings_inactivity_label">INAKTIVITETSTID</string>
+    <string name="settings_inactivity_value">2 min</string>
+    <string name="settings_bruteforce_label">SKYDD MOT BRUTE FORCE</string>
+    <string name="settings_bruteforce_value">5 försök + HMAC</string>
+    <string name="settings_lockout_label">LÅSNING</string>
+    <string name="settings_lockout_value">Exponentiell</string>
+    <string name="settings_salt_label">SALT</string>
+    <string name="settings_salt_value">256 bitar</string>
+    <string name="settings_integrity_label">VALVETS INTEGRITET</string>
+    <string name="settings_integrity_value">HMAC-SHA256</string>
+    <string name="settings_hardware_label">MASKINVARUFÖRANKRING</string>
+    <string name="settings_hardware_value">Minst TEE, StrongBox om tillgängligt</string>
+    <string name="settings_bruteforce_note">ℹ️ Skyddet mot brute force försvarar mot upprepade försök inom appen. Det ersätter inte ett starkt lösenord: någon med direkt åtkomst till valvfilen på enheten skulle kunna försöka en offlinedekryptering utan att gå igenom denna gräns. Använd en lösenfras på 16+ tecken.</string>
+    <string name="settings_change_password_button">🔑 Byt huvudlösenord</string>
+    <string name="settings_backup_title">SÄKERHETSKOPIA</string>
+    <string name="settings_export_native_title">🛡️ Export med maximal säkerhet</string>
+    <string name="settings_export_native_subtitle">Argon2id + AES-256-GCM-SIV</string>
+    <string name="settings_export_chrome_title">🌐 Plattformsoberoende export</string>
+    <string name="settings_export_chrome_subtitle">PBKDF2 + AES-256-GCM — kan importeras i Big MFA Chrome</string>
+    <string name="settings_export_qr_title">📷 QR-export (karusell + ZIP)</string>
+    <string name="settings_export_qr_subtitle">En QR-kod per konto, för att bläddra eller ladda ner</string>
+    <string name="settings_import_button">📥 Importera / Återställ</string>
+    <string name="settings_export_footer">Exporten är krypterad — hemligheterna förblir skyddade även om filen delas.</string>
+    <string name="settings_export_native_dialog_title">Export med maximal säkerhet</string>
+    <string name="settings_export_chrome_dialog_title">Plattformsoberoende export</string>
+    <string name="settings_export_native_dialog_desc">🛡️ Argon2id + AES-256-GCM-SIV — detta lösenord skyddar den exporterade filen och skiljer sig från ditt huvudlösenord.</string>
+    <string name="settings_export_chrome_dialog_desc">🌐 PBKDF2 + AES-256-GCM — format kompatibelt med Big MFA Chrome-tillägget. Detta lösenord skiljer sig från ditt huvudlösenord.</string>
+    <string name="settings_export_password_label">Exportlösenord</string>
+    <string name="settings_export_confirm_label">Bekräfta</string>
+    <string name="settings_export_min_chars_error">Minst 8 tecken</string>
+    <string name="settings_export_mismatch_error">Lösenorden matchar inte</string>
+    <string name="settings_export_button">Exportera</string>
+    <string name="settings_export_cancel">Avbryt</string>
+    <string name="settings_export_generic_error">Kunde inte skapa exporten</string>
+    <string name="settings_export_share_title">Dela export</string>
+    <string name="settings_import_dialog_title">Importera en säkerhetskopia</string>
+    <string name="settings_import_dialog_desc">Välj en säkerhetskopiefil (nativt Big MFA eller Chrome-kompatibel — formatet identifieras automatiskt).</string>
+    <string name="settings_import_choose_file">Välj en fil</string>
+    <string name="settings_import_file_selected_desc">Fil vald — ange lösenordet för denna säkerhetskopia.</string>
+    <string name="settings_import_password_label">Lösenord för säkerhetskopian</string>
+    <string name="settings_import_button_confirm">Importera</string>
+    <string name="settings_import_read_error">Kunde inte läsa filen</string>
+    <string name="settings_import_generic_error">Importen misslyckades</string>
+    <string name="settings_import_success_toast">%1$d konto(n) importerade</string>
+    <string name="settings_danger_zone_title">FARLIG ZON</string>
+    <string name="settings_delete_all_button">🗑 Ta bort alla mina data</string>
+    <string name="settings_delete_all_description">Utövar din rätt till radering (Art. 17 GDPR). Tar bort alla konton och huvudlösenordet. Oåterkallelig åtgärd.</string>
+    <string name="settings_delete_confirm_title">Ta bort all data?</string>
+    <string name="settings_delete_confirm_desc">Alla dina konton kommer att raderas permanent. Denna åtgärd kan inte ångras.</string>
+    <string name="settings_delete_continue">Fortsätt</string>
+    <string name="settings_delete_final_title">Slutgiltig bekräftelse</string>
+    <string name="settings_delete_final_desc">Är du VERKLIGEN säker? Ingen återställning kommer att vara möjlig efter detta steg.</string>
+    <string name="settings_delete_final_button">Ta bort permanent</string>
+    <string name="settings_delete_cancel">Avbryt</string>
+    <string name="settings_rgpd_badge">🔒 GDPR-kompatibel — 100 % lokal data</string>
+    <string name="settings_rgpd_title">INTEGRITET OCH GDPR</string>
+    <string name="settings_rgpd_controller_label">Personuppgiftsansvarig</string>
+    <string name="settings_rgpd_controller_value">Patrick DJEUZONG – BigForTravel</string>
+    <string name="settings_rgpd_data_label">Insamlad data</string>
+    <string name="settings_rgpd_data_value">Kontonamn, krypterade TOTP-nycklar</string>
+    <string name="settings_rgpd_storage_label">Lagringsplats</string>
+    <string name="settings_rgpd_storage_value">Endast din enhet (appens privata lagring, isolerad av Androids sandlåda)</string>
+    <string name="settings_rgpd_transfer_label">Överföring till tredje part</string>
+    <string name="settings_rgpd_transfer_value">Ingen begäran görs av Big MFA själv. Den krypterade exporten kan delas via en tredjepartsapp du väljer, endast om du uttryckligen aktiverar detta.</string>
+    <string name="settings_rgpd_thirdparty_label">Inbäddad tredjepartskod</string>
+    <string name="settings_rgpd_thirdparty_value">Bouncy Castle (MIT), CameraX (Apache-2.0), inbäddad ML Kit barcode-scanning (Apache-2.0), ZXing (Apache-2.0) — allt lokalt, ingen telemetri</string>
+    <string name="settings_rgpd_retention_label">Lagringstid</string>
+    <string name="settings_rgpd_retention_value">Fram till avinstallation eller manuell radering</string>
+    <string name="settings_rgpd_legal_label">Rättslig grund</string>
+    <string name="settings_rgpd_legal_value">Användarens samtycke (Art. 6.1.a)</string>
+    <string name="settings_rgpd_access_label">Rätt till tillgång (Art. 15)</string>
+    <string name="settings_rgpd_access_value">Via den krypterade exporten (ovan)</string>
+    <string name="settings_rgpd_erasure_label">Rätt till radering (Art. 17)</string>
+    <string name="settings_rgpd_erasure_value">Via ”Ta bort alla mina data”</string>
+    <string name="settings_rgpd_portability_label">Rätt till dataportabilitet (Art. 20)</string>
+    <string name="settings_rgpd_portability_value">Via den krypterade exporten (nativ eller plattformsoberoende)</string>
+    <string name="settings_rgpd_dpo_label">Kontakt DPO</string>
+    <string name="settings_rgpd_dpo_value">contact@bigfortravel.com</string>
+    <string name="settings_rgpd_eu_label">EU-myndighet (klagomål)</string>
+    <string name="settings_rgpd_eu_value">CNIL – www.cnil.fr (europeiska användare)</string>
+    <string name="settings_rgpd_cm_label">Kamerunsk myndighet (klagomål)</string>
+    <string name="settings_rgpd_cm_value">ANTIC – www.antic.cm (kamerunska användare)</string>
+    <string name="settings_rgpd_footer">Big MFA samlar inte in några personuppgifter utanför din enhet, initierar inte några nätverksanslutningar på egen hand och delar inte information med tredje part. All data krypteras med AES-256-GCM-SIV före lokal lagring.</string>
+    <string name="settings_language_row_title">Språk</string>
+
+    <!-- BackupImporter -->
+    <string name="backup_importer_unreadable">Filen är oläsbar eller skadad</string>
+    <string name="backup_importer_unknown_format">Filformatet känns inte igen</string>
+    <string name="backup_importer_wrong_password">Felaktigt lösenord eller skadad fil</string>
+
+    <!-- Stöd -->
+    <string name="support_title">Stöd Big MFA</string>
+    <string name="support_description">Big MFA utvecklas och underhålls ideellt av BigForTravel. Inga annonser, ingen försäljning av data, ingen dold prenumeration. Om appen är användbar för dig hjälper en donation — även en liten — till att finansiera den fortsatta utvecklingen.</string>
+    <string name="support_paypal_button">Donera via PayPal</string>
+    <string name="support_kofi_button">Donera via Ko-fi</string>
+    <string name="support_disclaimer">Donationer är frivilliga och ger inga extra funktioner. Kontrollera alltid att den visade mottagaren är BigForTravel / Patrick Djeuzong.</string>
+    <string name="support_official_site">🌐 Officiell webbplats</string>
+    <string name="support_contact_us">✉️ Skriv till oss</string>
+    <string name="support_contact_subject">Big MFA — Kontakt</string>
+
+    <!-- QR-exportkarusell -->
+    <string name="export_qr_title">QR-export (%1$d/%2$d)</string>
+    <string name="export_qr_no_accounts">Inga konton att exportera.</string>
+    <string name="export_qr_zip_button">📦 Exportera alla QR-koder som ZIP</string>
+    <string name="export_qr_close_button">Stäng</string>
+    <string name="export_qr_zip_error">Kunde inte skapa ZIP-arkivet</string>
+    <string name="export_qr_share_title">Dela QR-arkiv</string>
+
+    <!-- Guide -->
+    <string name="guide_tab_installation">Installation</string>
+    <string name="guide_tab_usage">Användning</string>
+    <string name="guide_tab_features">Funktioner</string>
+    <string name="guide_title">Big MFA-guide</string>
+    <string name="guide_intro">En snabb översikt över alla tillgängliga funktioner.</string>
+    <string name="guide_codes_title">🔑 Mina koder</string>
+    <string name="guide_codes_body">Dina TOTP-koder uppdateras i realtid med en visuell nedräkning. Tryck på en kod för att kopiera den (raderas automatiskt från urklipp efter 30s). För HOTP-konton, tryck på ”Generera” varje gång du behöver en. Sök, byt namn på eller ta bort ett konto med ikonerna på varje rad.</string>
+    <string name="guide_decoder_title">🔍 Avkodare</string>
+    <string name="guide_decoder_body">Klistra in eller importera en hemlighet från en QR-kodbild för att direkt få dess TOTP-kod, utan att lägga till den i ditt valv. Praktiskt för en engångskontroll.</string>
+    <string name="guide_key_title">🔐 Nyckel</string>
+    <string name="guide_key_body">Genererar en slumpmässig hemlighetsnyckel, tillsammans med dess QR-kod, för att konfigurera ett nytt konto hos en annan tjänst som ber dig skapa din egen hemlighet.</string>
+    <string name="guide_add_title">➕ Lägg till ett konto</string>
+    <string name="guide_add_body">Skanna QR-koden som visas av tjänsten, eller ange hemligheten manuellt. De avancerade alternativen låter dig justera algoritmen, antalet siffror, perioden, eller växla till HOTP.</string>
+    <string name="guide_biometric_title">👆 Biometrisk upplåsning</string>
+    <string name="guide_biometric_body">Aktivera upplåsning med fingeravtryck i Inställningar. Ditt huvudlösenord finns alltid kvar som reserv — aldrig ersatt, bara kompletterat.</string>
+    <string name="guide_backup_title">💾 Säkerhetskopiering och återställning</string>
+    <string name="guide_backup_body">Två exportformat: maximal säkerhet (nativ för Android) eller plattformsoberoende kompatibel (kan importeras i Chrome-tillägget). QR-exporten genererar en karusell med QR-koder, enskilt eller som ZIP-arkiv. Återställning identifierar automatiskt filformatet.</string>
+    <string name="guide_security_title">🛡 Säkerhet</string>
+    <string name="guide_security_body">All data förblir uteslutande på din enhet, krypterad med AES-256-GCM-SIV och en nyckel härledd med Argon2id. Appen initierar aldrig någon nätverksanslutning själv.</string>
+    <string name="guide_language_title">🌐 Språk</string>
+    <string name="guide_language_body">Välj ”Automatiskt” för att följa din telefons språk, eller välj ett specifikt språk i sidfoten på inloggningsskärmarna.</string>
+    <string name="guide_install_step1_title">1. Skapa ditt valv</string>
+    <string name="guide_install_step1_body">Vid första start, välj ”Skapa valv” för att börja med ett tomt valv, eller ”Återställ en befintlig säkerhetskopia” om du redan har använt Big MFA i Chrome eller på en annan Android-enhet.</string>
+    <string name="guide_install_step2_title">2. Välj ett starkt huvudlösenord</string>
+    <string name="guide_install_step2_body">Minst 12 tecken, men sikta hellre på en lösenfras med 16 eller fler tecken (till exempel flera kombinerade ord). Det är den enda nyckeln som skyddar alla dina konton.</string>
+    <string name="guide_install_step3_title">3. Förstå att det är oåterkalleligt</string>
+    <string name="guide_install_step3_body">Big MFA lagrar inte ditt huvudlösenord någonstans, varken i klartext eller krypterat. Om du glömmer det och inte har en extern säkerhetskopia blir dina konton permanent otillgängliga. Skriv ner det i en pålitlig lösenordshanterare.</string>
+    <string name="guide_install_step4_title">4. Aktivera biometri (valfritt)</string>
+    <string name="guide_install_step4_body">Aktivera upplåsning med fingeravtryck i Inställningar för snabbare daglig åtkomst. Ditt huvudlösenord finns alltid kvar som reserv.</string>
+    <string name="guide_usage_step1_title">1. Lägg till ditt första konto</string>
+    <string name="guide_usage_step1_body">Under ”+ Lägg till”, skanna QR-koden som visas av tjänsten (snabbaste metoden), eller ange manuellt namn, utfärdare och Base32-hemlighet om du inte kan skanna.</string>
+    <string name="guide_usage_step2_title">2. Använd en kod dagligen</string>
+    <string name="guide_usage_step2_body">Under ”Mina koder”, tryck direkt på en TOTP-kod för att kopiera den (raderas automatiskt från urklipp efter 30 sekunder). För ett HOTP-konto, tryck på ”Generera” varje gång du behöver en — räknaren rör sig alltid framåt, aldrig bakåt.</string>
+    <string name="guide_usage_step3_title">3. Hantera dina konton</string>
+    <string name="guide_usage_step3_body">Använd sökfältet för att snabbt hitta ett konto bland flera. Pennikonen låter dig byta namn, papperskorgsikonen låter dig ta bort (med dubbel bekräftelse, oåterkallelig åtgärd).</string>
+    <string name="guide_usage_step4_title">4. Säkerhetskopiera regelbundet</string>
+    <string name="guide_usage_step4_body">Välj ”Export med maximal säkerhet” i Inställningar för en säkerhetskopia enbart för Android, eller ”Plattformsoberoende export” om du också använder Big MFA i Chrome. QR-exporten (karusell eller ZIP) är användbar för att överföra till en annan standardmässigt TOTP-kompatibel hanterare.</string>
+    <string name="guide_usage_step5_title">5. Byt ditt huvudlösenord</string>
+    <string name="guide_usage_step5_body">Ange ditt nuvarande lösenord i Inställningar och sedan det nya. Dina konton och din biometri (om aktiverad) förblir intakta — endast lösenordet ändras.</string>
+    <string name="nav_accounts">Mina koder</string>
+    <string name="nav_decoder">Avkodare</string>
+    <string name="nav_key">Nyckel</string>
+    <string name="nav_add">+ Lägg till</string>
+    <string name="nav_support">Stöd</string>
+    <string name="nav_settings">Inställningar</string>
+    <string name="nav_guide">Guide</string>
+    <string name="nav_lock_content_description">Lås valvet</string>
+</resources>

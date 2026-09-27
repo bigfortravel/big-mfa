@@ -1,0 +1,40 @@
+Big MFA — Mentions de bibliothèques tierces
+=============================================
+
+Big MFA est distribué sous licence GNU General Public License v3.0
+(voir le fichier LICENSE). Ce logiciel intègre également les
+bibliothèques open source suivantes, chacune sous sa propre licence :
+
+Bouncy Castle
+-------------
+Licence : MIT
+https://www.bouncycastle.org/licence.html
+Copyright (c) 2000-2024 The Legion of the Bouncy Castle Inc.
+
+CameraX
+-------
+Licence : Apache License 2.0
+https://www.apache.org/licenses/LICENSE-2.0
+Copyright (c) The Android Open Source Project
+
+ML Kit (barcode-scanning)
+--------------------------
+Licence : Apache License 2.0
+https://www.apache.org/licenses/LICENSE-2.0
+Copyright (c) Google LLC
+
+ZXing ("Zebra Crossing")
+-------------------------
+Licence : Apache License 2.0
+https://www.apache.org/licenses/LICENSE-2.0
+Copyright (c) ZXing authors
+
+AndroidX (Jetpack Compose, Navigation, Biometric, AppCompat, etc.)
+--------------------------------------------------------------------
+Licence : Apache License 2.0
+https://www.apache.org/licenses/LICENSE-2.0
+Copyright (c) The Android Open Source Project
+
+Le texte complet de la licence Apache 2.0 est disponible à l'adresse
+ci-dessus. Le texte complet de la licence MIT est disponible à
+l'adresse indiquée pour Bouncy Castle.

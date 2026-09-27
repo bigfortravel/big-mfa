@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Big MFA</string>
+
+    <!-- Skrin buka kunci -->
+    <string name="unlock_title">Big MFA</string>
+    <string name="unlock_subtitle">Masukkan kata laluan induk anda</string>
+    <string name="unlock_password_label">Kata laluan induk</string>
+    <string name="unlock_button">Buka Kunci</string>
+    <string name="unlock_reset_vault">Tetapkan semula bilik kebal</string>
+    <string name="unlock_biometric_content_description">Buka kunci dengan cap jari</string>
+
+    <!-- Kaki halaman bersama -->
+    <string name="footer_support">❤️ Sokong</string>
+    <string name="footer_contact">✉️ Hubungi Kami</string>
+    <string name="footer_language_auto">🌐 Automatik — bahasa pelayar</string>
+    <string name="footer_language_placeholder">Pemilih bahasa — akan datang</string>
+    <string name="footer_gplv3">Percuma dan sumber terbuka (lesen GPLv3).</string>
+    <string name="language_dialog_title">Pilih bahasa</string>
+    <string name="language_option_auto">🌐 Automatik (bahasa sistem)</string>
+
+    <!-- Kod Saya -->
+    <string name="accounts_empty_state">Belum ada akaun.\nGunakan “+ Tambah” untuk mencipta satu.</string>
+    <string name="accounts_search_placeholder">Cari akaun</string>
+    <string name="accounts_no_results">Tiada hasil untuk “%1$s”</string>
+    <string name="accounts_rename_title">Namakan semula akaun</string>
+    <string name="accounts_name_label">Nama akaun</string>
+    <string name="accounts_issuer_label">Pengeluar (pilihan)</string>
+    <string name="accounts_name_required_error">Nama akaun diperlukan</string>
+    <string name="accounts_save">Simpan</string>
+    <string name="accounts_cancel">Batal</string>
+    <string name="accounts_rename_content_description">Namakan semula %1$s</string>
+    <string name="accounts_delete_content_description">Padam %1$s</string>
+    <string name="accounts_delete_confirm_title">Padam “%1$s”?</string>
+    <string name="accounts_delete_irreversible">Tindakan ini tidak boleh dibuat asal.</string>
+    <string name="accounts_delete_button">Padam</string>
+    <string name="accounts_hotp_label">HOTP</string>
+    <string name="accounts_unreadable">Tidak boleh dibaca</string>
+    <string name="accounts_copy_content_description">Salin</string>
+    <string name="accounts_generate_button">Jana</string>
+
+    <!-- + Tambah -->
+    <string name="add_account_title">Tambah akaun</string>
+    <string name="add_account_scan_qr">📷 Imbas kod QR</string>
+    <string name="add_account_qr_invalid">Kod QR tidak sah atau tidak dikenali</string>
+    <string name="add_account_cancel_scan">Batal imbasan</string>
+    <string name="add_account_name_label">Nama akaun</string>
+    <string name="add_account_issuer_label">Pengeluar (pilihan)</string>
+    <string name="add_account_secret_label">Rahsia (Base32)</string>
+    <string name="add_account_advanced_options">⚙ Pilihan lanjutan (algoritma, digit, tempoh)</string>
+    <string name="add_account_type_label">JENIS</string>
+    <string name="add_account_type_totp">TOTP (berasaskan masa — standard)</string>
+    <string name="add_account_type_hotp">HOTP (berasaskan kaunter)</string>
+    <string name="add_account_algorithm_label">ALGORITMA</string>
+    <string name="add_account_algorithm_sha1">SHA-1 (lalai, keserasian sejagat)</string>
+    <string name="add_account_digits_label">BILANGAN DIGIT</string>
+    <string name="add_account_digits_default">6 digit (lalai)</string>
+    <string name="add_account_digits_n">%1$d digit</string>
+    <string name="add_account_period_label">TEMPOH (SAAT)</string>
+    <string name="add_account_save">Simpan</string>
+    <string name="add_account_name_required">Nama akaun diperlukan</string>
+    <string name="add_account_secret_required">Rahsia diperlukan</string>
+    <string name="add_account_secret_invalid">Rahsia bukan Base32 yang sah</string>
+    <string name="add_account_save_error">Akaun tidak dapat disimpan</string>
+    <string name="add_account_camera_permission_needed">Akses kamera diperlukan untuk mengimbas kod QR.</string>
+    <string name="add_account_grant_camera">Benarkan akses kamera</string>
+
+    <!-- Kunci -->
+    <string name="generate_key_description">Menjana kunci rahsia Base32 rawak (160 bit) yang serasi dengan Google Authenticator, Aegis, Authy…</string>
+    <string name="generate_key_generate">Jana</string>
+    <string name="generate_key_copy">Salin</string>
+    <string name="generate_key_copied">Kunci disalin</string>
+    <string name="generate_key_show_qr">Tunjuk QR</string>
+    <string name="generate_key_qr_title">Kod QR</string>
+    <string name="generate_key_close">Tutup</string>
+
+    <!-- Penyahkod -->
+    <string name="decoder_import_qr">Import daripada kod QR (imej)</string>
+    <string name="decoder_no_qr_found">Tiada kod QR dikesan dalam imej ini</string>
+    <string name="decoder_secret_label">KUNCI MFA / TOTP (BASE32)</string>
+    <string name="decoder_code_placeholder">— — — — — —</string>
+    <string name="decoder_generate_code">Jana kod</string>
+    <string name="decoder_copy_content_description">Salin kod</string>
+    <string name="decoder_code_copied">Kod disalin — akan dipadamkan dalam 30s</string>
+    <string name="decoder_secret_empty_error">Masukkan atau import kunci</string>
+    <string name="decoder_secret_invalid_error">Kunci tidak sah</string>
+
+    <!-- Cipta/Pulihkan bilik kebal -->
+    <string name="create_vault_password_too_short">Kata laluan mesti mengandungi sekurang-kurangnya 12 aksara</string>
+    <string name="create_vault_passwords_mismatch">Kata laluan tidak sepadan</string>
+    <string name="create_vault_creation_error">Bilik kebal tidak dapat dicipta</string>
+    <string name="restore_vault_new_password_too_short">Kata laluan baharu mesti mengandungi sekurang-kurangnya 12 aksara</string>
+    <string name="restore_vault_new_passwords_mismatch">Kata laluan baharu tidak sepadan</string>
+    <string name="restore_vault_generic_error">Sandaran tidak dapat dipulihkan</string>
+    <string name="create_vault_title">Cipta bilik kebal Big MFA anda</string>
+    <string name="create_vault_min_chars">Minimum 12 aksara</string>
+    <string name="create_vault_password_label">Kata laluan</string>
+    <string name="create_vault_confirm_label">Sahkan kata laluan</string>
+    <string name="create_vault_create_button">Cipta bilik kebal</string>
+    <string name="create_vault_restore_button">📥 Pulihkan sandaran sedia ada</string>
+    <string name="restore_backup_title">Pulihkan sandaran</string>
+    <string name="restore_backup_description">Format asli Big MFA atau serasi dengan Chrome — dikesan secara automatik.</string>
+    <string name="restore_backup_choose_file">Pilih fail sandaran</string>
+    <string name="restore_backup_file_selected">✅ Fail dipilih</string>
+    <string name="restore_backup_backup_password_label">Kata laluan sandaran</string>
+    <string name="restore_backup_new_password_title">KATA LALUAN INDUK BAHARU</string>
+    <string name="restore_backup_new_password_hint">Berbeza daripada kata laluan sandaran — minimum 12 aksara.</string>
+    <string name="restore_backup_new_password_label">Kata laluan induk baharu</string>
+    <string name="restore_backup_confirm_new_password_label">Sahkan kata laluan baharu</string>
+    <string name="restore_backup_restore_button">Pulihkan</string>
+    <string name="restore_backup_cancel">Batal</string>
+    <string name="restore_backup_file_read_error">Fail tidak dapat dibaca</string>
+
+    <!-- Ralat buka kunci -->
+    <string name="unlock_error_wrong_password">Kata laluan salah</string>
+    <string name="unlock_error_corrupted_vault">Data bilik kebal rosak atau tidak boleh dibaca</string>
+    <string name="unlock_error_no_vault">Tiada bilik kebal ditemui</string>
+    <string name="unlock_error_too_many_attempts">Terlalu banyak percubaan — cuba lagi dalam %1$ds</string>
+    <string name="unlock_error_biometric_unavailable">Biometrik tidak tersedia — gunakan kata laluan anda</string>
+    <string name="unlock_error_biometric_failed">Pengesahan biometrik gagal</string>
+
+    <!-- Perubahan kata laluan induk -->
+    <string name="change_password_title">Tukar kata laluan induk</string>
+    <string name="change_password_current_label">KATA LALUAN SEMASA</string>
+    <string name="change_password_new_label">KATA LALUAN BAHARU</string>
+    <string name="change_password_confirm_label">SAHKAN</string>
+    <string name="change_password_button">Tukar kata laluan</string>
+    <string name="change_password_new_too_short">Kata laluan baharu mesti mengandungi sekurang-kurangnya 12 aksara</string>
+    <string name="change_password_new_mismatch">Kata laluan baharu tidak sepadan</string>
+    <string name="change_password_wrong_current">Kata laluan semasa tidak betul</string>
+    <string name="change_password_generic_error">Kata laluan tidak dapat ditukar</string>
+    <string name="change_password_success_toast">Kata laluan berjaya ditukar</string>
+    <string name="change_password_cancel">Batal</string>
+
+    <!-- Biometrik -->
+    <string name="biometric_setup_title">Aktifkan biometrik</string>
+    <string name="biometric_hardware_insufficient">Peranti anda tidak mempunyai sokongan perkakasan yang mencukupi untuk mengaktifkan biometrik dengan selamat.</string>
+    <string name="biometric_activate_prompt">Aktifkan buka kunci dengan cap jari</string>
+    <string name="biometric_password_confirmed_hint">Kata laluan disahkan — letakkan jari anda pada penderia.</string>
+    <string name="biometric_continue_button">Teruskan dengan cap jari</string>
+    <string name="biometric_confirm_password_label">Sahkan kata laluan induk anda</string>
+    <string name="biometric_confirm_button">Sahkan</string>
+    <string name="biometric_wrong_password">Kata laluan salah</string>
+    <string name="biometric_key_creation_error">Kunci selamat tidak dapat dicipta</string>
+    <string name="biometric_cipher_error">Penyulitan tidak dapat disediakan</string>
+    <string name="biometric_enable_error">Biometrik tidak dapat diaktifkan</string>
+    <string name="biometric_auth_failed">Pengesahan biometrik gagal</string>
+    <string name="biometric_activated_toast">Biometrik diaktifkan</string>
+    <string name="biometric_deactivated_toast">Biometrik dinyahaktifkan</string>
+    <string name="biometric_cancel">Batal</string>
+    <string name="biometric_row_title">Buka kunci biometrik</string>
+    <string name="biometric_row_enabled">Diaktifkan</string>
+    <string name="biometric_row_disabled">Dinyahaktifkan</string>
+
+    <!-- Tetapan -->
+    <string name="settings_title">Tetapan</string>
+    <string name="settings_security_status_title">STATUS KESELAMATAN</string>
+    <string name="settings_masvs_badge">🛡 OWASP MASVS — Tahap dipertingkatkan</string>
+    <string name="settings_encryption_label">PENYULITAN</string>
+    <string name="settings_kdf_label">KDF</string>
+    <string name="settings_inactivity_label">MASA TIDAK AKTIF</string>
+    <string name="settings_inactivity_value">2 minit</string>
+    <string name="settings_bruteforce_label">PERLINDUNGAN BRUTE FORCE</string>
+    <string name="settings_bruteforce_value">5 percubaan + HMAC</string>
+    <string name="settings_lockout_label">KUNCIAN</string>
+    <string name="settings_lockout_value">Eksponen</string>
+    <string name="settings_salt_label">GARAM</string>
+    <string name="settings_salt_value">256 bit</string>
+    <string name="settings_integrity_label">INTEGRITI BILIK KEBAL</string>
+    <string name="settings_integrity_value">HMAC-SHA256</string>
+    <string name="settings_hardware_label">SAUH PERKAKASAN</string>
+    <string name="settings_hardware_value">Minimum TEE, StrongBox jika tersedia</string>
+    <string name="settings_bruteforce_note">ℹ️ Perlindungan brute force mempertahankan daripada percubaan berulang dalam aplikasi. Ia tidak menggantikan kata laluan yang kuat: seseorang dengan akses langsung ke fail bilik kebal pada peranti boleh cuba nyahsulitan luar talian tanpa melalui had ini. Gunakan frasa laluan 16+ aksara.</string>
+    <string name="settings_change_password_button">🔑 Tukar kata laluan induk</string>
+    <string name="settings_backup_title">SANDARAN</string>
+    <string name="settings_export_native_title">🛡️ Eksport keselamatan maksimum</string>
+    <string name="settings_export_native_subtitle">Argon2id + AES-256-GCM-SIV</string>
+    <string name="settings_export_chrome_title">🌐 Eksport serasi merentas platform</string>
+    <string name="settings_export_chrome_subtitle">PBKDF2 + AES-256-GCM — boleh diimport ke Big MFA Chrome</string>
+    <string name="settings_export_qr_title">📷 Eksport QR (karusel + ZIP)</string>
+    <string name="settings_export_qr_subtitle">Satu QR bagi setiap akaun, untuk semak imbas atau muat turun</string>
+    <string name="settings_import_button">📥 Import / Pulihkan</string>
+    <string name="settings_export_footer">Eksport ini disulitkan — rahsia kekal dilindungi walaupun fail dikongsi.</string>
+    <string name="settings_export_native_dialog_title">Eksport keselamatan maksimum</string>
+    <string name="settings_export_chrome_dialog_title">Eksport serasi merentas platform</string>
+    <string name="settings_export_native_dialog_desc">🛡️ Argon2id + AES-256-GCM-SIV — kata laluan ini melindungi fail yang dieksport dan berbeza daripada kata laluan induk anda.</string>
+    <string name="settings_export_chrome_dialog_desc">🌐 PBKDF2 + AES-256-GCM — format yang serasi dengan sambungan Big MFA Chrome. Kata laluan ini berbeza daripada kata laluan induk anda.</string>
+    <string name="settings_export_password_label">Kata laluan eksport</string>
+    <string name="settings_export_confirm_label">Sahkan</string>
+    <string name="settings_export_min_chars_error">Minimum 8 aksara</string>
+    <string name="settings_export_mismatch_error">Kata laluan tidak sepadan</string>
+    <string name="settings_export_button">Eksport</string>
+    <string name="settings_export_cancel">Batal</string>
+    <string name="settings_export_generic_error">Eksport tidak dapat dicipta</string>
+    <string name="settings_export_share_title">Kongsi eksport</string>
+    <string name="settings_import_dialog_title">Import sandaran</string>
+    <string name="settings_import_dialog_desc">Pilih fail sandaran (asli Big MFA atau serasi dengan Chrome — format dikesan secara automatik).</string>
+    <string name="settings_import_choose_file">Pilih fail</string>
+    <string name="settings_import_file_selected_desc">Fail dipilih — masukkan kata laluan sandaran ini.</string>
+    <string name="settings_import_password_label">Kata laluan sandaran</string>
+    <string name="settings_import_button_confirm">Import</string>
+    <string name="settings_import_read_error">Fail tidak dapat dibaca</string>
+    <string name="settings_import_generic_error">Import gagal</string>
+    <string name="settings_import_success_toast">%1$d akaun diimport</string>
+    <string name="settings_danger_zone_title">ZON BAHAYA</string>
+    <string name="settings_delete_all_button">🗑 Padam semua data saya</string>
+    <string name="settings_delete_all_description">Melaksanakan hak anda untuk pemadaman (Artikel 17 GDPR). Memadam semua akaun dan kata laluan induk. Tindakan tidak boleh dibuat asal.</string>
+    <string name="settings_delete_confirm_title">Padam semua data?</string>
+    <string name="settings_delete_confirm_desc">Semua akaun anda akan dipadamkan secara kekal. Tindakan ini tidak boleh dibuat asal.</string>
+    <string name="settings_delete_continue">Teruskan</string>
+    <string name="settings_delete_final_title">Pengesahan akhir</string>
+    <string name="settings_delete_final_desc">Adakah anda BENAR-BENAR pasti? Tiada pemulihan akan dapat dilakukan selepas langkah ini.</string>
+    <string name="settings_delete_final_button">Padam secara kekal</string>
+    <string name="settings_delete_cancel">Batal</string>
+    <string name="settings_rgpd_badge">🔒 Mematuhi GDPR — Data 100% tempatan</string>
+    <string name="settings_rgpd_title">PRIVASI DAN GDPR</string>
+    <string name="settings_rgpd_controller_label">Pengawal data</string>
+    <string name="settings_rgpd_controller_value">Patrick DJEUZONG – BigForTravel</string>
+    <string name="settings_rgpd_data_label">Data dikumpul</string>
+    <string name="settings_rgpd_data_value">Nama akaun, kunci TOTP yang disulitkan</string>
+    <string name="settings_rgpd_storage_label">Lokasi penyimpanan</string>
+    <string name="settings_rgpd_storage_value">Hanya peranti anda (storan peribadi aplikasi, diasingkan oleh kotak pasir Android)</string>
+    <string name="settings_rgpd_transfer_label">Pemindahan kepada pihak ketiga</string>
+    <string name="settings_rgpd_transfer_value">Tiada permintaan dibuat oleh Big MFA itu sendiri. Eksport yang disulitkan boleh dikongsi melalui aplikasi pihak ketiga pilihan anda, hanya jika anda mengaktifkannya secara khusus.</string>
+    <string name="settings_rgpd_thirdparty_label">Kod pihak ketiga terbenam</string>
+    <string name="settings_rgpd_thirdparty_value">Bouncy Castle (MIT), CameraX (Apache-2.0), ML Kit barcode-scanning terbenam (Apache-2.0), ZXing (Apache-2.0) — semua tempatan, tiada telemetri</string>
+    <string name="settings_rgpd_retention_label">Tempoh penyimpanan</string>
+    <string name="settings_rgpd_retention_value">Sehingga penyahpasangan atau pemadaman manual</string>
+    <string name="settings_rgpd_legal_label">Asas undang-undang</string>
+    <string name="settings_rgpd_legal_value">Persetujuan pengguna (Artikel 6.1.a)</string>
+    <string name="settings_rgpd_access_label">Hak akses (Artikel 15)</string>
+    <string name="settings_rgpd_access_value">Melalui eksport yang disulitkan (di atas)</string>
+    <string name="settings_rgpd_erasure_label">Hak pemadaman (Artikel 17)</string>
+    <string name="settings_rgpd_erasure_value">Melalui “Padam semua data saya”</string>
+    <string name="settings_rgpd_portability_label">Hak kemudahalihan data (Artikel 20)</string>
+    <string name="settings_rgpd_portability_value">Melalui eksport yang disulitkan (asli atau merentas platform)</string>
+    <string name="settings_rgpd_dpo_label">Hubungan DPO</string>
+    <string name="settings_rgpd_dpo_value">contact@bigfortravel.com</string>
+    <string name="settings_rgpd_eu_label">Pihak berkuasa EU (aduan)</string>
+    <string name="settings_rgpd_eu_value">CNIL – www.cnil.fr (pengguna Eropah)</string>
+    <string name="settings_rgpd_cm_label">Pihak berkuasa Cameroon (aduan)</string>
+    <string name="settings_rgpd_cm_value">ANTIC – www.antic.cm (pengguna Cameroon)</string>
+    <string name="settings_rgpd_footer">Big MFA tidak mengumpul sebarang data peribadi di luar peranti anda, tidak memulakan sebarang sambungan rangkaian dengan sendiri, dan tidak berkongsi sebarang maklumat dengan pihak ketiga. Semua data disulitkan dengan AES-256-GCM-SIV sebelum penyimpanan tempatan.</string>
+    <string name="settings_language_row_title">Bahasa</string>
+
+    <!-- BackupImporter -->
+    <string name="backup_importer_unreadable">Fail tidak boleh dibaca atau rosak</string>
+    <string name="backup_importer_unknown_format">Format fail tidak dikenali</string>
+    <string name="backup_importer_wrong_password">Kata laluan salah atau fail rosak</string>
+
+    <!-- Sokong -->
+    <string name="support_title">Sokong Big MFA</string>
+    <string name="support_description">Big MFA dibangunkan dan diselenggara secara sukarela oleh BigForTravel. Tiada iklan, tiada jualan data, tiada langganan tersembunyi. Jika aplikasi ini berguna kepada anda, sumbangan — walaupun kecil — membantu membiayai pembangunan berterusannya.</string>
+    <string name="support_paypal_button">Derma melalui PayPal</string>
+    <string name="support_kofi_button">Derma melalui Ko-fi</string>
+    <string name="support_disclaimer">Sumbangan adalah pilihan dan tidak memberikan sebarang fungsi tambahan. Sentiasa sahkan bahawa penerima yang dipaparkan ialah BigForTravel / Patrick Djeuzong.</string>
+    <string name="support_official_site">🌐 Laman web rasmi</string>
+    <string name="support_contact_us">✉️ Tulis kepada kami</string>
+    <string name="support_contact_subject">Big MFA — Hubungi</string>
+
+    <!-- Karusel eksport QR -->
+    <string name="export_qr_title">Eksport QR (%1$d/%2$d)</string>
+    <string name="export_qr_no_accounts">Tiada akaun untuk dieksport.</string>
+    <string name="export_qr_zip_button">📦 Eksport semua kod QR sebagai ZIP</string>
+    <string name="export_qr_close_button">Tutup</string>
+    <string name="export_qr_zip_error">Arkib ZIP tidak dapat dicipta</string>
+    <string name="export_qr_share_title">Kongsi arkib QR</string>
+
+    <!-- Panduan -->
+    <string name="guide_tab_installation">Pemasangan</string>
+    <string name="guide_tab_usage">Penggunaan</string>
+    <string name="guide_tab_features">Ciri-ciri</string>
+    <string name="guide_title">Panduan Big MFA</string>
+    <string name="guide_intro">Gambaran keseluruhan pantas semua ciri yang tersedia.</string>
+    <string name="guide_codes_title">🔑 Kod Saya</string>
+    <string name="guide_codes_body">Kod TOTP anda dikemas kini secara masa nyata dengan pengiraan detik visual. Ketik kod untuk menyalinnya (dipadamkan secara automatik daripada papan klip selepas 30s). Untuk akaun HOTP, ketik “Jana” setiap kali anda memerlukan kod. Cari, namakan semula atau padam akaun menggunakan ikon pada setiap baris.</string>
+    <string name="guide_decoder_title">🔍 Penyahkod</string>
+    <string name="guide_decoder_body">Tampal atau import rahsia daripada imej kod QR untuk mendapatkan kod TOTP yang sepadan dengan serta-merta, tanpa menambahkannya ke bilik kebal anda. Berguna untuk semakan sekali sahaja.</string>
+    <string name="guide_key_title">🔐 Kunci</string>
+    <string name="guide_key_body">Menjana kunci rahsia rawak, bersama kod QR yang berkaitan, untuk menyediakan akaun baharu pada perkhidmatan lain yang meminta anda mencipta rahsia anda sendiri.</string>
+    <string name="guide_add_title">➕ Tambah akaun</string>
+    <string name="guide_add_body">Imbas kod QR yang disediakan oleh perkhidmatan, atau masukkan rahsia secara manual. Pilihan lanjutan membolehkan anda melaraskan algoritma, bilangan digit, tempoh, atau bertukar kepada HOTP.</string>
+    <string name="guide_biometric_title">👆 Buka kunci biometrik</string>
+    <string name="guide_biometric_body">Aktifkan buka kunci dengan cap jari daripada Tetapan. Kata laluan induk anda sentiasa kekal tersedia sebagai sandaran — tidak pernah digantikan, hanya dilengkapkan.</string>
+    <string name="guide_backup_title">💾 Sandaran dan pemulihan</string>
+    <string name="guide_backup_body">Dua format eksport: keselamatan maksimum (asli untuk Android) atau serasi merentas platform (boleh diimport ke sambungan Chrome). Eksport QR menjana karusel kod QR, secara individu atau dalam arkib ZIP. Pemulihan mengesan format fail secara automatik.</string>
+    <string name="guide_security_title">🛡 Keselamatan</string>
+    <string name="guide_security_body">Semua data kekal secara eksklusif pada peranti anda, disulitkan dengan AES-256-GCM-SIV dan kunci yang diperoleh menggunakan Argon2id. Aplikasi tidak pernah memulakan sambungan rangkaian dengan sendiri.</string>
+    <string name="guide_language_title">🌐 Bahasa</string>
+    <string name="guide_language_body">Pilih “Automatik” untuk mengikut bahasa telefon anda, atau pilih bahasa tertentu daripada kaki halaman skrin log masuk.</string>
+    <string name="guide_install_step1_title">1. Cipta bilik kebal anda</string>
+    <string name="guide_install_step1_body">Semasa pelancaran pertama, pilih “Cipta bilik kebal” untuk bermula dengan bilik kebal kosong, atau “Pulihkan sandaran sedia ada” jika anda telah menggunakan Big MFA pada Chrome atau peranti Android lain.</string>
+    <string name="guide_install_step2_title">2. Pilih kata laluan induk yang kuat</string>
+    <string name="guide_install_step2_body">Minimum 12 aksara, tetapi lebih baik sasarkan frasa laluan 16+ aksara (contohnya beberapa perkataan digabungkan). Ia adalah satu-satunya kunci yang melindungi semua akaun anda.</string>
+    <string name="guide_install_step3_title">3. Fahami sifat tidak boleh dipulihkan</string>
+    <string name="guide_install_step3_body">Big MFA tidak menyimpan kata laluan induk anda di mana-mana, sama ada dalam teks biasa atau disulitkan. Jika anda lupa dan tiada sandaran luaran, akaun anda akan menjadi tidak boleh diakses secara kekal. Catatkannya dalam pengurus kata laluan yang boleh dipercayai.</string>
+    <string name="guide_install_step4_title">4. Aktifkan biometrik (pilihan)</string>
+    <string name="guide_install_step4_body">Daripada Tetapan, aktifkan buka kunci dengan cap jari untuk akses harian yang lebih pantas. Kata laluan induk anda sentiasa kekal tersedia sebagai sandaran.</string>
+    <string name="guide_usage_step1_title">1. Tambah akaun pertama anda</string>
+    <string name="guide_usage_step1_body">Daripada “+ Tambah”, imbas kod QR yang dipaparkan oleh perkhidmatan (kaedah paling pantas), atau masukkan secara manual nama, pengeluar dan rahsia Base32 jika anda tidak boleh mengimbas.</string>
+    <string name="guide_usage_step2_title">2. Gunakan kod setiap hari</string>
+    <string name="guide_usage_step2_body">Dalam “Kod Saya”, ketik terus pada kod TOTP untuk menyalinnya (dipadamkan secara automatik daripada papan klip selepas 30 saat). Untuk akaun HOTP, ketik “Jana” setiap kali anda memerlukannya — kaunter sentiasa bergerak ke hadapan, tidak pernah ke belakang.</string>
+    <string name="guide_usage_step3_title">3. Urus akaun anda</string>
+    <string name="guide_usage_step3_body">Gunakan bar carian untuk mencari akaun dengan cepat di kalangan yang banyak. Ikon pensel membolehkan penamaan semula, ikon tong sampah membolehkan pemadaman (dengan pengesahan berganda, tindakan tidak boleh dibuat asal).</string>
+    <string name="guide_usage_step4_title">4. Buat sandaran secara berkala</string>
+    <string name="guide_usage_step4_body">Daripada Tetapan, pilih “Eksport keselamatan maksimum” untuk sandaran khas Android, atau “Eksport serasi merentas platform” jika anda juga menggunakan Big MFA pada Chrome. Eksport QR (karusel atau ZIP) berguna untuk berpindah ke pengurus lain yang serasi dengan piawaian TOTP.</string>
+    <string name="guide_usage_step5_title">5. Tukar kata laluan induk anda</string>
+    <string name="guide_usage_step5_body">Dalam Tetapan, masukkan kata laluan semasa anda, kemudian yang baharu. Akaun dan biometrik anda (jika diaktifkan) kekal utuh — hanya kata laluan berubah.</string>
+    <string name="nav_accounts">Kod Saya</string>
+    <string name="nav_decoder">Penyahkod</string>
+    <string name="nav_key">Kunci</string>
+    <string name="nav_add">+ Tambah</string>
+    <string name="nav_support">Sokong</string>
+    <string name="nav_settings">Tetapan</string>
+    <string name="nav_guide">Panduan</string>
+    <string name="nav_lock_content_description">Kunci bilik kebal</string>
+</resources>

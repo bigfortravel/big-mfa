@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Big MFA</string>
+
+    <!-- अनलॉक स्क्रीन -->
+    <string name="unlock_title">Big MFA</string>
+    <string name="unlock_subtitle">अपना मास्टर पासवर्ड दर्ज करें</string>
+    <string name="unlock_password_label">मास्टर पासवर्ड</string>
+    <string name="unlock_button">अनलॉक करें</string>
+    <string name="unlock_reset_vault">वॉल्ट रीसेट करें</string>
+    <string name="unlock_biometric_content_description">फिंगरप्रिंट से अनलॉक करें</string>
+
+    <!-- साझा फुटर -->
+    <string name="footer_support">❤️ समर्थन करें</string>
+    <string name="footer_contact">✉️ हमसे संपर्क करें</string>
+    <string name="footer_language_auto">🌐 स्वचालित — ब्राउज़र की भाषा</string>
+    <string name="footer_language_placeholder">भाषा चयनकर्ता — जल्द ही उपलब्ध</string>
+    <string name="footer_gplv3">मुफ़्त और ओपन सोर्स (GPLv3 लाइसेंस)।</string>
+    <string name="language_dialog_title">भाषा चुनें</string>
+    <string name="language_option_auto">🌐 स्वचालित (सिस्टम भाषा)</string>
+
+    <!-- मेरे कोड -->
+    <string name="accounts_empty_state">अभी तक कोई खाता नहीं है।\nएक बनाने के लिए “+ जोड़ें” का उपयोग करें।</string>
+    <string name="accounts_search_placeholder">खाता खोजें</string>
+    <string name="accounts_no_results">“%1$s” के लिए कोई परिणाम नहीं मिला</string>
+    <string name="accounts_rename_title">खाते का नाम बदलें</string>
+    <string name="accounts_name_label">खाते का नाम</string>
+    <string name="accounts_issuer_label">जारीकर्ता (वैकल्पिक)</string>
+    <string name="accounts_name_required_error">खाते का नाम आवश्यक है</string>
+    <string name="accounts_save">सहेजें</string>
+    <string name="accounts_cancel">रद्द करें</string>
+    <string name="accounts_rename_content_description">%1$s का नाम बदलें</string>
+    <string name="accounts_delete_content_description">%1$s हटाएं</string>
+    <string name="accounts_delete_confirm_title">“%1$s” हटाएं?</string>
+    <string name="accounts_delete_irreversible">यह क्रिया वापस नहीं ली जा सकती।</string>
+    <string name="accounts_delete_button">हटाएं</string>
+    <string name="accounts_hotp_label">HOTP</string>
+    <string name="accounts_unreadable">पढ़ा नहीं जा सकता</string>
+    <string name="accounts_copy_content_description">कॉपी करें</string>
+    <string name="accounts_generate_button">जनरेट करें</string>
+
+    <!-- + जोड़ें -->
+    <string name="add_account_title">खाता जोड़ें</string>
+    <string name="add_account_scan_qr">📷 QR कोड स्कैन करें</string>
+    <string name="add_account_qr_invalid">अमान्य या अपरिचित QR कोड</string>
+    <string name="add_account_cancel_scan">स्कैन रद्द करें</string>
+    <string name="add_account_name_label">खाते का नाम</string>
+    <string name="add_account_issuer_label">जारीकर्ता (वैकल्पिक)</string>
+    <string name="add_account_secret_label">सीक्रेट (Base32)</string>
+    <string name="add_account_advanced_options">⚙ उन्नत विकल्प (एल्गोरिदम, अंक, अवधि)</string>
+    <string name="add_account_type_label">प्रकार</string>
+    <string name="add_account_type_totp">TOTP (समय-आधारित — मानक)</string>
+    <string name="add_account_type_hotp">HOTP (काउंटर-आधारित)</string>
+    <string name="add_account_algorithm_label">एल्गोरिदम</string>
+    <string name="add_account_algorithm_sha1">SHA-1 (डिफ़ॉल्ट, सार्वभौमिक संगतता)</string>
+    <string name="add_account_digits_label">अंकों की संख्या</string>
+    <string name="add_account_digits_default">6 अंक (डिफ़ॉल्ट)</string>
+    <string name="add_account_digits_n">%1$d अंक</string>
+    <string name="add_account_period_label">अवधि (सेकंड)</string>
+    <string name="add_account_save">सहेजें</string>
+    <string name="add_account_name_required">खाते का नाम आवश्यक है</string>
+    <string name="add_account_secret_required">सीक्रेट आवश्यक है</string>
+    <string name="add_account_secret_invalid">सीक्रेट मान्य Base32 नहीं है</string>
+    <string name="add_account_save_error">खाता सहेजा नहीं जा सका</string>
+    <string name="add_account_camera_permission_needed">QR कोड स्कैन करने के लिए कैमरे की अनुमति आवश्यक है।</string>
+    <string name="add_account_grant_camera">कैमरे की अनुमति दें</string>
+
+    <!-- कुंजी -->
+    <string name="generate_key_description">Google Authenticator, Aegis, Authy… के साथ संगत एक यादृच्छिक Base32 सीक्रेट कुंजी (160 बिट) जनरेट करता है</string>
+    <string name="generate_key_generate">जनरेट करें</string>
+    <string name="generate_key_copy">कॉपी करें</string>
+    <string name="generate_key_copied">कुंजी कॉपी की गई</string>
+    <string name="generate_key_show_qr">QR दिखाएं</string>
+    <string name="generate_key_qr_title">QR कोड</string>
+    <string name="generate_key_close">बंद करें</string>
+
+    <!-- डिकोडर -->
+    <string name="decoder_import_qr">QR कोड (छवि) से आयात करें</string>
+    <string name="decoder_no_qr_found">इस छवि में कोई QR कोड नहीं मिला</string>
+    <string name="decoder_secret_label">MFA / TOTP कुंजी (BASE32)</string>
+    <string name="decoder_code_placeholder">— — — — — —</string>
+    <string name="decoder_generate_code">कोड जनरेट करें</string>
+    <string name="decoder_copy_content_description">कोड कॉपी करें</string>
+    <string name="decoder_code_copied">कोड कॉपी किया गया — 30 सेकंड में मिटा दिया जाएगा</string>
+    <string name="decoder_secret_empty_error">कुंजी दर्ज करें या आयात करें</string>
+    <string name="decoder_secret_invalid_error">अमान्य कुंजी</string>
+
+    <!-- वॉल्ट बनाएं/पुनर्स्थापित करें -->
+    <string name="create_vault_password_too_short">पासवर्ड में कम से कम 12 वर्ण होने चाहिए</string>
+    <string name="create_vault_passwords_mismatch">पासवर्ड मेल नहीं खाते</string>
+    <string name="create_vault_creation_error">वॉल्ट नहीं बनाया जा सका</string>
+    <string name="restore_vault_new_password_too_short">नए पासवर्ड में कम से कम 12 वर्ण होने चाहिए</string>
+    <string name="restore_vault_new_passwords_mismatch">नए पासवर्ड मेल नहीं खाते</string>
+    <string name="restore_vault_generic_error">बैकअप पुनर्स्थापित नहीं किया जा सका</string>
+    <string name="create_vault_title">अपना Big MFA वॉल्ट बनाएं</string>
+    <string name="create_vault_min_chars">न्यूनतम 12 वर्ण</string>
+    <string name="create_vault_password_label">पासवर्ड</string>
+    <string name="create_vault_confirm_label">पासवर्ड की पुष्टि करें</string>
+    <string name="create_vault_create_button">वॉल्ट बनाएं</string>
+    <string name="create_vault_restore_button">📥 मौजूदा बैकअप पुनर्स्थापित करें</string>
+    <string name="restore_backup_title">बैकअप पुनर्स्थापित करें</string>
+    <string name="restore_backup_description">मूल Big MFA प्रारूप या Chrome के साथ संगत — स्वचालित रूप से पहचाना जाता है।</string>
+    <string name="restore_backup_choose_file">बैकअप फ़ाइल चुनें</string>
+    <string name="restore_backup_file_selected">✅ फ़ाइल चुनी गई</string>
+    <string name="restore_backup_backup_password_label">बैकअप का पासवर्ड</string>
+    <string name="restore_backup_new_password_title">नया मास्टर पासवर्ड</string>
+    <string name="restore_backup_new_password_hint">बैकअप के पासवर्ड से अलग — न्यूनतम 12 वर्ण।</string>
+    <string name="restore_backup_new_password_label">नया मास्टर पासवर्ड</string>
+    <string name="restore_backup_confirm_new_password_label">नए पासवर्ड की पुष्टि करें</string>
+    <string name="restore_backup_restore_button">पुनर्स्थापित करें</string>
+    <string name="restore_backup_cancel">रद्द करें</string>
+    <string name="restore_backup_file_read_error">फ़ाइल पढ़ी नहीं जा सकी</string>
+
+    <!-- अनलॉक त्रुटियां -->
+    <string name="unlock_error_wrong_password">गलत पासवर्ड</string>
+    <string name="unlock_error_corrupted_vault">वॉल्ट डेटा दूषित या अपठनीय है</string>
+    <string name="unlock_error_no_vault">कोई वॉल्ट नहीं मिला</string>
+    <string name="unlock_error_too_many_attempts">बहुत अधिक प्रयास — %1$d सेकंड में फिर से प्रयास करें</string>
+    <string name="unlock_error_biometric_unavailable">बायोमेट्रिक्स उपलब्ध नहीं है — अपना पासवर्ड उपयोग करें</string>
+    <string name="unlock_error_biometric_failed">बायोमेट्रिक प्रमाणीकरण विफल हुआ</string>
+
+    <!-- मास्टर पासवर्ड बदलना -->
+    <string name="change_password_title">मास्टर पासवर्ड बदलें</string>
+    <string name="change_password_current_label">वर्तमान पासवर्ड</string>
+    <string name="change_password_new_label">नया पासवर्ड</string>
+    <string name="change_password_confirm_label">पुष्टि करें</string>
+    <string name="change_password_button">पासवर्ड बदलें</string>
+    <string name="change_password_new_too_short">नए पासवर्ड में कम से कम 12 वर्ण होने चाहिए</string>
+    <string name="change_password_new_mismatch">नए पासवर्ड मेल नहीं खाते</string>
+    <string name="change_password_wrong_current">वर्तमान पासवर्ड गलत है</string>
+    <string name="change_password_generic_error">पासवर्ड बदला नहीं जा सका</string>
+    <string name="change_password_success_toast">पासवर्ड सफलतापूर्वक बदला गया</string>
+    <string name="change_password_cancel">रद्द करें</string>
+
+    <!-- बायोमेट्रिक्स -->
+    <string name="biometric_setup_title">बायोमेट्रिक्स सक्रिय करें</string>
+    <string name="biometric_hardware_insufficient">आपके डिवाइस में बायोमेट्रिक्स को सुरक्षित रूप से सक्रिय करने के लिए पर्याप्त हार्डवेयर समर्थन नहीं है।</string>
+    <string name="biometric_activate_prompt">फिंगरप्रिंट से अनलॉक सक्रिय करें</string>
+    <string name="biometric_password_confirmed_hint">पासवर्ड की पुष्टि हो गई — अपनी उंगली सेंसर पर रखें।</string>
+    <string name="biometric_continue_button">फिंगरप्रिंट से जारी रखें</string>
+    <string name="biometric_confirm_password_label">अपने मास्टर पासवर्ड की पुष्टि करें</string>
+    <string name="biometric_confirm_button">पुष्टि करें</string>
+    <string name="biometric_wrong_password">गलत पासवर्ड</string>
+    <string name="biometric_key_creation_error">सुरक्षित कुंजी नहीं बनाई जा सकी</string>
+    <string name="biometric_cipher_error">एन्क्रिप्शन तैयार नहीं किया जा सका</string>
+    <string name="biometric_enable_error">बायोमेट्रिक्स सक्रिय नहीं किया जा सका</string>
+    <string name="biometric_auth_failed">बायोमेट्रिक प्रमाणीकरण विफल हुआ</string>
+    <string name="biometric_activated_toast">बायोमेट्रिक्स सक्रिय किया गया</string>
+    <string name="biometric_deactivated_toast">बायोमेट्रिक्स निष्क्रिय किया गया</string>
+    <string name="biometric_cancel">रद्द करें</string>
+    <string name="biometric_row_title">बायोमेट्रिक अनलॉक</string>
+    <string name="biometric_row_enabled">सक्रिय</string>
+    <string name="biometric_row_disabled">निष्क्रिय</string>
+
+    <!-- सेटिंग्स -->
+    <string name="settings_title">सेटिंग्स</string>
+    <string name="settings_security_status_title">सुरक्षा स्थिति</string>
+    <string name="settings_masvs_badge">🛡 OWASP MASVS — उन्नत स्तर</string>
+    <string name="settings_encryption_label">एन्क्रिप्शन</string>
+    <string name="settings_kdf_label">KDF</string>
+    <string name="settings_inactivity_label">निष्क्रियता का समय</string>
+    <string name="settings_inactivity_value">2 मिनट</string>
+    <string name="settings_bruteforce_label">ब्रूट फोर्स सुरक्षा</string>
+    <string name="settings_bruteforce_value">5 प्रयास + HMAC</string>
+    <string name="settings_lockout_label">लॉकआउट</string>
+    <string name="settings_lockout_value">घातांकीय</string>
+    <string name="settings_salt_label">सॉल्ट</string>
+    <string name="settings_salt_value">256 बिट</string>
+    <string name="settings_integrity_label">वॉल्ट अखंडता</string>
+    <string name="settings_integrity_value">HMAC-SHA256</string>
+    <string name="settings_hardware_label">हार्डवेयर एंकरिंग</string>
+    <string name="settings_hardware_value">न्यूनतम TEE, यदि उपलब्ध हो तो StrongBox</string>
+    <string name="settings_bruteforce_note">ℹ️ ब्रूट फोर्स सुरक्षा ऐप के भीतर बार-बार होने वाले प्रयासों से बचाती है। यह एक मजबूत पासवर्ड की जगह नहीं लेती: डिवाइस पर वॉल्ट फ़ाइल तक सीधी पहुंच रखने वाला कोई व्यक्ति इस सीमा को दरकिनार करके ऑफ़लाइन डिक्रिप्शन का प्रयास कर सकता है। 16+ वर्णों का पासफ़्रेज़ उपयोग करें।</string>
+    <string name="settings_change_password_button">🔑 मास्टर पासवर्ड बदलें</string>
+    <string name="settings_backup_title">बैकअप</string>
+    <string name="settings_export_native_title">🛡️ अधिकतम सुरक्षा निर्यात</string>
+    <string name="settings_export_native_subtitle">Argon2id + AES-256-GCM-SIV</string>
+    <string name="settings_export_chrome_title">🌐 क्रॉस-प्लेटफ़ॉर्म संगत निर्यात</string>
+    <string name="settings_export_chrome_subtitle">PBKDF2 + AES-256-GCM — Big MFA Chrome में आयात किया जा सकता है</string>
+    <string name="settings_export_qr_title">📷 QR निर्यात (कैरोसेल + ZIP)</string>
+    <string name="settings_export_qr_subtitle">प्रति खाता एक QR, ब्राउज़ करने या डाउनलोड करने के लिए</string>
+    <string name="settings_import_button">📥 आयात / पुनर्स्थापित करें</string>
+    <string name="settings_export_footer">निर्यात एन्क्रिप्टेड है — फ़ाइल साझा करने पर भी सीक्रेट्स सुरक्षित रहते हैं।</string>
+    <string name="settings_export_native_dialog_title">अधिकतम सुरक्षा निर्यात</string>
+    <string name="settings_export_chrome_dialog_title">क्रॉस-प्लेटफ़ॉर्म संगत निर्यात</string>
+    <string name="settings_export_native_dialog_desc">🛡️ Argon2id + AES-256-GCM-SIV — यह पासवर्ड निर्यात की गई फ़ाइल की सुरक्षा करता है और आपके मास्टर पासवर्ड से भिन्न है।</string>
+    <string name="settings_export_chrome_dialog_desc">🌐 PBKDF2 + AES-256-GCM — Big MFA Chrome एक्सटेंशन के साथ संगत प्रारूप। यह पासवर्ड आपके मास्टर पासवर्ड से भिन्न है।</string>
+    <string name="settings_export_password_label">निर्यात पासवर्ड</string>
+    <string name="settings_export_confirm_label">पुष्टि करें</string>
+    <string name="settings_export_min_chars_error">न्यूनतम 8 वर्ण</string>
+    <string name="settings_export_mismatch_error">पासवर्ड मेल नहीं खाते</string>
+    <string name="settings_export_button">निर्यात करें</string>
+    <string name="settings_export_cancel">रद्द करें</string>
+    <string name="settings_export_generic_error">निर्यात नहीं बनाया जा सका</string>
+    <string name="settings_export_share_title">निर्यात साझा करें</string>
+    <string name="settings_import_dialog_title">बैकअप आयात करें</string>
+    <string name="settings_import_dialog_desc">एक बैकअप फ़ाइल चुनें (मूल Big MFA या Chrome के साथ संगत — प्रारूप स्वचालित रूप से पहचाना जाता है)।</string>
+    <string name="settings_import_choose_file">फ़ाइल चुनें</string>
+    <string name="settings_import_file_selected_desc">फ़ाइल चुनी गई — इस बैकअप का पासवर्ड दर्ज करें।</string>
+    <string name="settings_import_password_label">बैकअप का पासवर्ड</string>
+    <string name="settings_import_button_confirm">आयात करें</string>
+    <string name="settings_import_read_error">फ़ाइल पढ़ी नहीं जा सकी</string>
+    <string name="settings_import_generic_error">आयात विफल हुआ</string>
+    <string name="settings_import_success_toast">%1$d खाते आयात किए गए</string>
+    <string name="settings_danger_zone_title">खतरनाक क्षेत्र</string>
+    <string name="settings_delete_all_button">🗑 मेरा सारा डेटा हटाएं</string>
+    <string name="settings_delete_all_description">आपके मिटाने के अधिकार का प्रयोग करता है (अनुच्छेद 17 GDPR)। सभी खातों और मास्टर पासवर्ड को हटाता है। यह क्रिया वापस नहीं ली जा सकती।</string>
+    <string name="settings_delete_confirm_title">सभी डेटा हटाएं?</string>
+    <string name="settings_delete_confirm_desc">आपके सभी खाते स्थायी रूप से हटा दिए जाएंगे। यह क्रिया पूर्ववत नहीं की जा सकती।</string>
+    <string name="settings_delete_continue">जारी रखें</string>
+    <string name="settings_delete_final_title">अंतिम पुष्टि</string>
+    <string name="settings_delete_final_desc">क्या आप वास्तव में निश्चित हैं? इस चरण के बाद कोई पुनर्प्राप्ति संभव नहीं होगी।</string>
+    <string name="settings_delete_final_button">स्थायी रूप से हटाएं</string>
+    <string name="settings_delete_cancel">रद्द करें</string>
+    <string name="settings_rgpd_badge">🔒 GDPR के अनुरूप — 100% स्थानीय डेटा</string>
+    <string name="settings_rgpd_title">गोपनीयता और GDPR</string>
+    <string name="settings_rgpd_controller_label">डेटा नियंत्रक</string>
+    <string name="settings_rgpd_controller_value">Patrick DJEUZONG – BigForTravel</string>
+    <string name="settings_rgpd_data_label">एकत्रित डेटा</string>
+    <string name="settings_rgpd_data_value">खाते के नाम, एन्क्रिप्टेड TOTP कुंजियां</string>
+    <string name="settings_rgpd_storage_label">भंडारण स्थान</string>
+    <string name="settings_rgpd_storage_value">केवल आपका डिवाइस (ऐप का निजी भंडारण, Android सैंडबॉक्स द्वारा अलग किया गया)</string>
+    <string name="settings_rgpd_transfer_label">तीसरे पक्षों को स्थानांतरण</string>
+    <string name="settings_rgpd_transfer_value">Big MFA स्वयं कोई अनुरोध नहीं भेजता। एन्क्रिप्टेड निर्यात केवल तभी आपके द्वारा चुने गए तीसरे पक्ष के ऐप के माध्यम से साझा किया जा सकता है, जब आप इसे स्पष्ट रूप से सक्रिय करते हैं।</string>
+    <string name="settings_rgpd_thirdparty_label">एम्बेडेड तीसरे पक्ष का कोड</string>
+    <string name="settings_rgpd_thirdparty_value">Bouncy Castle (MIT), CameraX (Apache-2.0), एम्बेडेड ML Kit barcode-scanning (Apache-2.0), ZXing (Apache-2.0) — सभी स्थानीय, कोई टेलीमेट्री नहीं</string>
+    <string name="settings_rgpd_retention_label">प्रतिधारण अवधि</string>
+    <string name="settings_rgpd_retention_value">अनइंस्टॉल या मैन्युअल डिलीशन तक</string>
+    <string name="settings_rgpd_legal_label">कानूनी आधार</string>
+    <string name="settings_rgpd_legal_value">उपयोगकर्ता की सहमति (अनुच्छेद 6.1.a)</string>
+    <string name="settings_rgpd_access_label">पहुंच का अधिकार (अनुच्छेद 15)</string>
+    <string name="settings_rgpd_access_value">एन्क्रिप्टेड निर्यात के माध्यम से (ऊपर)</string>
+    <string name="settings_rgpd_erasure_label">मिटाने का अधिकार (अनुच्छेद 17)</string>
+    <string name="settings_rgpd_erasure_value">“मेरा सारा डेटा हटाएं” के माध्यम से</string>
+    <string name="settings_rgpd_portability_label">डेटा पोर्टेबिलिटी का अधिकार (अनुच्छेद 20)</string>
+    <string name="settings_rgpd_portability_value">एन्क्रिप्टेड निर्यात के माध्यम से (मूल या क्रॉस-प्लेटफ़ॉर्म)</string>
+    <string name="settings_rgpd_dpo_label">DPO से संपर्क</string>
+    <string name="settings_rgpd_dpo_value">contact@bigfortravel.com</string>
+    <string name="settings_rgpd_eu_label">EU प्राधिकरण (शिकायतें)</string>
+    <string name="settings_rgpd_eu_value">CNIL – www.cnil.fr (यूरोपीय उपयोगकर्ता)</string>
+    <string name="settings_rgpd_cm_label">कैमरून प्राधिकरण (शिकायतें)</string>
+    <string name="settings_rgpd_cm_value">ANTIC – www.antic.cm (कैमरून के उपयोगकर्ता)</string>
+    <string name="settings_rgpd_footer">Big MFA आपके डिवाइस के बाहर कोई व्यक्तिगत डेटा एकत्र नहीं करता, स्वयं कोई नेटवर्क कनेक्शन शुरू नहीं करता, और तीसरे पक्षों के साथ कोई जानकारी साझा नहीं करता। सभी डेटा स्थानीय भंडारण से पहले AES-256-GCM-SIV के साथ एन्क्रिप्ट किया जाता है।</string>
+    <string name="settings_language_row_title">भाषा</string>
+
+    <!-- BackupImporter -->
+    <string name="backup_importer_unreadable">फ़ाइल अपठनीय है या दूषित है</string>
+    <string name="backup_importer_unknown_format">फ़ाइल प्रारूप पहचाना नहीं गया</string>
+    <string name="backup_importer_wrong_password">गलत पासवर्ड या दूषित फ़ाइल</string>
+
+    <!-- समर्थन करें -->
+    <string name="support_title">Big MFA का समर्थन करें</string>
+    <string name="support_description">Big MFA को BigForTravel द्वारा स्वेच्छा से विकसित और बनाए रखा जाता है। कोई विज्ञापन नहीं, कोई डेटा बिक्री नहीं, कोई छिपी हुई सदस्यता नहीं। यदि यह ऐप आपके लिए उपयोगी है, तो एक दान — चाहे छोटा हो — इसके निरंतर विकास को वित्तपोषित करने में मदद करता है।</string>
+    <string name="support_paypal_button">PayPal के माध्यम से दान करें</string>
+    <string name="support_kofi_button">Ko-fi के माध्यम से दान करें</string>
+    <string name="support_disclaimer">दान वैकल्पिक हैं और कोई अतिरिक्त कार्यक्षमता प्रदान नहीं करते। हमेशा सत्यापित करें कि प्रदर्शित प्राप्तकर्ता BigForTravel / Patrick Djeuzong है।</string>
+    <string name="support_official_site">🌐 आधिकारिक वेबसाइट</string>
+    <string name="support_contact_us">✉️ हमें लिखें</string>
+    <string name="support_contact_subject">Big MFA — संपर्क</string>
+
+    <!-- QR निर्यात कैरोसेल -->
+    <string name="export_qr_title">QR निर्यात (%1$d/%2$d)</string>
+    <string name="export_qr_no_accounts">निर्यात करने के लिए कोई खाता नहीं है।</string>
+    <string name="export_qr_zip_button">📦 सभी QR कोड को ZIP के रूप में निर्यात करें</string>
+    <string name="export_qr_close_button">बंद करें</string>
+    <string name="export_qr_zip_error">ZIP संग्रह नहीं बनाया जा सका</string>
+    <string name="export_qr_share_title">QR संग्रह साझा करें</string>
+
+    <!-- गाइड -->
+    <string name="guide_tab_installation">इंस्टॉलेशन</string>
+    <string name="guide_tab_usage">उपयोग</string>
+    <string name="guide_tab_features">सुविधाएं</string>
+    <string name="guide_title">Big MFA गाइड</string>
+    <string name="guide_intro">सभी उपलब्ध सुविधाओं का एक त्वरित अवलोकन।</string>
+    <string name="guide_codes_title">🔑 मेरे कोड</string>
+    <string name="guide_codes_body">आपके TOTP कोड विज़ुअल काउंटडाउन के साथ वास्तविक समय में अपडेट होते हैं। किसी कोड को कॉपी करने के लिए उसे टैप करें (30 सेकंड बाद क्लिपबोर्ड से स्वचालित रूप से मिटा दिया जाता है)। HOTP खातों के लिए, जब भी आपको कोड की आवश्यकता हो तो “जनरेट करें” टैप करें। प्रत्येक पंक्ति के आइकॉन का उपयोग करके किसी खाते को खोजें, नाम बदलें या हटाएं।</string>
+    <string name="guide_decoder_title">🔍 डिकोडर</string>
+    <string name="guide_decoder_body">किसी QR कोड छवि से एक सीक्रेट पेस्ट करें या आयात करें ताकि तुरंत उसका संबंधित TOTP कोड प्राप्त हो सके, इसे अपने वॉल्ट में जोड़े बिना। एक बार की जांच के लिए उपयोगी।</string>
+    <string name="guide_key_title">🔐 कुंजी</string>
+    <string name="guide_key_body">एक यादृच्छिक सीक्रेट कुंजी, उसके संबंधित QR कोड के साथ जनरेट करता है, ताकि किसी अन्य सेवा पर एक नया खाता सेट किया जा सके जो आपसे अपना खुद का सीक्रेट बनाने के लिए कहती है।</string>
+    <string name="guide_add_title">➕ खाता जोड़ें</string>
+    <string name="guide_add_body">सेवा द्वारा प्रदान किए गए QR कोड को स्कैन करें, या सीक्रेट को मैन्युअल रूप से दर्ज करें। उन्नत विकल्प आपको एल्गोरिदम, अंकों की संख्या, अवधि को समायोजित करने, या HOTP पर स्विच करने की अनुमति देते हैं।</string>
+    <string name="guide_biometric_title">👆 बायोमेट्रिक अनलॉक</string>
+    <string name="guide_biometric_body">सेटिंग्स से फिंगरप्रिंट अनलॉक सक्रिय करें। आपका मास्टर पासवर्ड हमेशा एक बैकअप के रूप में उपलब्ध रहता है — कभी बदला नहीं जाता, केवल पूरक किया जाता है।</string>
+    <string name="guide_backup_title">💾 बैकअप और पुनर्स्थापना</string>
+    <string name="guide_backup_body">दो निर्यात प्रारूप: अधिकतम सुरक्षा (Android के लिए मूल) या क्रॉस-प्लेटफ़ॉर्म संगत (Chrome एक्सटेंशन में आयात किया जा सकता है)। QR निर्यात QR कोड का एक कैरोसेल जनरेट करता है, व्यक्तिगत रूप से या ZIP संग्रह में। पुनर्स्थापना स्वचालित रूप से फ़ाइल प्रारूप का पता लगाती है।</string>
+    <string name="guide_security_title">🛡 सुरक्षा</string>
+    <string name="guide_security_body">सभी डेटा विशेष रूप से आपके डिवाइस पर रहता है, AES-256-GCM-SIV के साथ एन्क्रिप्टेड और Argon2id का उपयोग करके प्राप्त कुंजी के साथ। ऐप कभी भी स्वयं कोई नेटवर्क कनेक्शन शुरू नहीं करता।</string>
+    <string name="guide_language_title">🌐 भाषा</string>
+    <string name="guide_language_body">अपने फ़ोन की भाषा का पालन करने के लिए “स्वचालित” चुनें, या लॉगिन स्क्रीन के फुटर से एक विशिष्ट भाषा चुनें।</string>
+    <string name="guide_install_step1_title">1. अपना वॉल्ट बनाएं</string>
+    <string name="guide_install_step1_body">पहली बार लॉन्च करते समय, एक खाली वॉल्ट से शुरू करने के लिए “वॉल्ट बनाएं” चुनें, या यदि आपने पहले से ही Chrome या किसी अन्य Android डिवाइस पर Big MFA का उपयोग किया है तो “मौजूदा बैकअप पुनर्स्थापित करें” चुनें।</string>
+    <string name="guide_install_step2_title">2. एक मजबूत मास्टर पासवर्ड चुनें</string>
+    <string name="guide_install_step2_body">न्यूनतम 12 वर्ण, लेकिन बेहतर होगा कि 16+ वर्णों के पासफ़्रेज़ को लक्ष्य बनाएं (उदाहरण के लिए, कई संयुक्त शब्द)। यह एकमात्र कुंजी है जो आपके सभी खातों की सुरक्षा करती है।</string>
+    <string name="guide_install_step3_title">3. अपरिवर्तनीयता को समझें</string>
+    <string name="guide_install_step3_body">Big MFA आपके मास्टर पासवर्ड को कहीं भी संग्रहीत नहीं करता, न तो सादे टेक्स्ट में और न ही एन्क्रिप्टेड। यदि आप इसे भूल जाते हैं और आपके पास बाहरी बैकअप नहीं है, तो आपके खाते स्थायी रूप से अप्राप्य हो जाएंगे। इसे एक विश्वसनीय पासवर्ड मैनेजर में लिख लें।</string>
+    <string name="guide_install_step4_title">4. बायोमेट्रिक्स सक्रिय करें (वैकल्पिक)</string>
+    <string name="guide_install_step4_body">तेज़ दैनिक पहुंच के लिए सेटिंग्स से फिंगरप्रिंट अनलॉक सक्रिय करें। आपका मास्टर पासवर्ड हमेशा एक बैकअप के रूप में उपलब्ध रहता है।</string>
+    <string name="guide_usage_step1_title">1. अपना पहला खाता जोड़ें</string>
+    <string name="guide_usage_step1_body">“+ जोड़ें” से, सेवा द्वारा दिखाए गए QR कोड को स्कैन करें (सबसे तेज़ तरीका), या यदि आप स्कैन नहीं कर सकते तो मैन्युअल रूप से नाम, जारीकर्ता, और Base32 सीक्रेट दर्ज करें।</string>
+    <string name="guide_usage_step2_title">2. रोज़ाना एक कोड का उपयोग करें</string>
+    <string name="guide_usage_step2_body">“मेरे कोड” में, किसी TOTP कोड को कॉपी करने के लिए सीधे उस पर टैप करें (30 सेकंड बाद क्लिपबोर्ड से स्वचालित रूप से मिटा दिया जाता है)। HOTP खाते के लिए, जब भी आपको इसकी आवश्यकता हो “जनरेट करें” टैप करें — काउंटर हमेशा आगे बढ़ता है, कभी पीछे नहीं जाता।</string>
+    <string name="guide_usage_step3_title">3. अपने खातों का प्रबंधन करें</string>
+    <string name="guide_usage_step3_body">कई खातों में से किसी एक को जल्दी खोजने के लिए खोज बार का उपयोग करें। पेंसिल आइकॉन नाम बदलने की अनुमति देता है, ट्रैश आइकॉन हटाने की अनुमति देता है (दोहरी पुष्टि के साथ, अपरिवर्तनीय क्रिया)।</string>
+    <string name="guide_usage_step4_title">4. नियमित रूप से बैकअप लें</string>
+    <string name="guide_usage_step4_body">केवल Android बैकअप के लिए सेटिंग्स से “अधिकतम सुरक्षा निर्यात” चुनें, या यदि आप Chrome में भी Big MFA का उपयोग करते हैं तो “क्रॉस-प्लेटफ़ॉर्म संगत निर्यात” चुनें। QR निर्यात (कैरोसेल या ZIP) किसी अन्य मानक TOTP-संगत मैनेजर में स्थानांतरित करने के लिए उपयोगी है।</string>
+    <string name="guide_usage_step5_title">5. अपना मास्टर पासवर्ड बदलें</string>
+    <string name="guide_usage_step5_body">सेटिंग्स में, अपना वर्तमान पासवर्ड दर्ज करें, फिर नया। आपके खाते और बायोमेट्रिक्स (यदि सक्रिय है) अपरिवर्तित रहते हैं — केवल पासवर्ड बदलता है।</string>
+    <string name="nav_accounts">मेरे कोड</string>
+    <string name="nav_decoder">डिकोडर</string>
+    <string name="nav_key">कुंजी</string>
+    <string name="nav_add">+ जोड़ें</string>
+    <string name="nav_support">समर्थन करें</string>
+    <string name="nav_settings">सेटिंग्स</string>
+    <string name="nav_guide">गाइड</string>
+    <string name="nav_lock_content_description">वॉल्ट लॉक करें</string>
+</resources>

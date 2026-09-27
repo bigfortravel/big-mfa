@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Big MFA</string>
+
+    <!-- Экран разблокировки -->
+    <string name="unlock_title">Big MFA</string>
+    <string name="unlock_subtitle">Введите мастер-пароль</string>
+    <string name="unlock_password_label">Мастер-пароль</string>
+    <string name="unlock_button">Разблокировать</string>
+    <string name="unlock_reset_vault">Сбросить хранилище</string>
+    <string name="unlock_biometric_content_description">Разблокировать по отпечатку пальца</string>
+
+    <!-- Общий нижний колонтитул -->
+    <string name="footer_support">❤️ Поддержать</string>
+    <string name="footer_contact">✉️ Связаться с нами</string>
+    <string name="footer_language_auto">🌐 Автоматически — язык браузера</string>
+    <string name="footer_language_placeholder">Выбор языка — скоро будет доступен</string>
+    <string name="footer_gplv3">Бесплатно и с открытым исходным кодом (лицензия GPLv3).</string>
+    <string name="language_dialog_title">Выбрать язык</string>
+    <string name="language_option_auto">🌐 Автоматически (язык системы)</string>
+
+    <!-- Мои коды -->
+    <string name="accounts_empty_state">Пока нет учётных записей.\nИспользуйте «+ Добавить», чтобы создать одну.</string>
+    <string name="accounts_search_placeholder">Найти учётную запись</string>
+    <string name="accounts_no_results">Нет результатов для «%1$s»</string>
+    <string name="accounts_rename_title">Переименовать учётную запись</string>
+    <string name="accounts_name_label">Название учётной записи</string>
+    <string name="accounts_issuer_label">Издатель (необязательно)</string>
+    <string name="accounts_name_required_error">Название учётной записи обязательно</string>
+    <string name="accounts_save">Сохранить</string>
+    <string name="accounts_cancel">Отмена</string>
+    <string name="accounts_rename_content_description">Переименовать %1$s</string>
+    <string name="accounts_delete_content_description">Удалить %1$s</string>
+    <string name="accounts_delete_confirm_title">Удалить «%1$s»?</string>
+    <string name="accounts_delete_irreversible">Это действие необратимо.</string>
+    <string name="accounts_delete_button">Удалить</string>
+    <string name="accounts_hotp_label">HOTP</string>
+    <string name="accounts_unreadable">Нечитаемо</string>
+    <string name="accounts_copy_content_description">Копировать</string>
+    <string name="accounts_generate_button">Сгенерировать</string>
+
+    <!-- + Добавить -->
+    <string name="add_account_title">Добавить учётную запись</string>
+    <string name="add_account_scan_qr">📷 Сканировать QR-код</string>
+    <string name="add_account_qr_invalid">Недействительный или нераспознанный QR-код</string>
+    <string name="add_account_cancel_scan">Отменить сканирование</string>
+    <string name="add_account_name_label">Название учётной записи</string>
+    <string name="add_account_issuer_label">Издатель (необязательно)</string>
+    <string name="add_account_secret_label">Секрет (Base32)</string>
+    <string name="add_account_advanced_options">⚙ Дополнительные параметры (алгоритм, цифры, период)</string>
+    <string name="add_account_type_label">ТИП</string>
+    <string name="add_account_type_totp">TOTP (на основе времени — стандартный)</string>
+    <string name="add_account_type_hotp">HOTP (на основе счётчика)</string>
+    <string name="add_account_algorithm_label">АЛГОРИТМ</string>
+    <string name="add_account_algorithm_sha1">SHA-1 (по умолчанию, универсальная совместимость)</string>
+    <string name="add_account_digits_label">КОЛИЧЕСТВО ЦИФР</string>
+    <string name="add_account_digits_default">6 цифр (по умолчанию)</string>
+    <string name="add_account_digits_n">%1$d цифр</string>
+    <string name="add_account_period_label">ПЕРИОД (СЕКУНДЫ)</string>
+    <string name="add_account_save">Сохранить</string>
+    <string name="add_account_name_required">Название учётной записи обязательно</string>
+    <string name="add_account_secret_required">Секрет обязателен</string>
+    <string name="add_account_secret_invalid">Секрет не является допустимым Base32</string>
+    <string name="add_account_save_error">Не удалось сохранить учётную запись</string>
+    <string name="add_account_camera_permission_needed">Для сканирования QR-кода требуется доступ к камере.</string>
+    <string name="add_account_grant_camera">Предоставить доступ к камере</string>
+
+    <!-- Ключ -->
+    <string name="generate_key_description">Генерирует случайный секретный ключ Base32 (160 бит), совместимый с Google Authenticator, Aegis, Authy…</string>
+    <string name="generate_key_generate">Сгенерировать</string>
+    <string name="generate_key_copy">Копировать</string>
+    <string name="generate_key_copied">Ключ скопирован</string>
+    <string name="generate_key_show_qr">Показать QR</string>
+    <string name="generate_key_qr_title">QR-код</string>
+    <string name="generate_key_close">Закрыть</string>
+
+    <!-- Декодер -->
+    <string name="decoder_import_qr">Импортировать из QR-кода (изображение)</string>
+    <string name="decoder_no_qr_found">На этом изображении не обнаружен QR-код</string>
+    <string name="decoder_secret_label">КЛЮЧ MFA / TOTP (BASE32)</string>
+    <string name="decoder_code_placeholder">— — — — — —</string>
+    <string name="decoder_generate_code">Сгенерировать код</string>
+    <string name="decoder_copy_content_description">Копировать код</string>
+    <string name="decoder_code_copied">Код скопирован — будет удалён через 30с</string>
+    <string name="decoder_secret_empty_error">Введите или импортируйте ключ</string>
+    <string name="decoder_secret_invalid_error">Недействительный ключ</string>
+
+    <!-- Создание/Восстановление хранилища -->
+    <string name="create_vault_password_too_short">Пароль должен содержать не менее 12 символов</string>
+    <string name="create_vault_passwords_mismatch">Пароли не совпадают</string>
+    <string name="create_vault_creation_error">Не удалось создать хранилище</string>
+    <string name="restore_vault_new_password_too_short">Новый пароль должен содержать не менее 12 символов</string>
+    <string name="restore_vault_new_passwords_mismatch">Новые пароли не совпадают</string>
+    <string name="restore_vault_generic_error">Не удалось восстановить резервную копию</string>
+    <string name="create_vault_title">Создайте своё хранилище Big MFA</string>
+    <string name="create_vault_min_chars">Минимум 12 символов</string>
+    <string name="create_vault_password_label">Пароль</string>
+    <string name="create_vault_confirm_label">Подтвердите пароль</string>
+    <string name="create_vault_create_button">Создать хранилище</string>
+    <string name="create_vault_restore_button">📥 Восстановить существующую резервную копию</string>
+    <string name="restore_backup_title">Восстановить резервную копию</string>
+    <string name="restore_backup_description">Собственный формат Big MFA или совместимый с Chrome — определяется автоматически.</string>
+    <string name="restore_backup_choose_file">Выбрать файл резервной копии</string>
+    <string name="restore_backup_file_selected">✅ Файл выбран</string>
+    <string name="restore_backup_backup_password_label">Пароль резервной копии</string>
+    <string name="restore_backup_new_password_title">НОВЫЙ МАСТЕР-ПАРОЛЬ</string>
+    <string name="restore_backup_new_password_hint">Отличается от пароля резервной копии — минимум 12 символов.</string>
+    <string name="restore_backup_new_password_label">Новый мастер-пароль</string>
+    <string name="restore_backup_confirm_new_password_label">Подтвердите новый пароль</string>
+    <string name="restore_backup_restore_button">Восстановить</string>
+    <string name="restore_backup_cancel">Отмена</string>
+    <string name="restore_backup_file_read_error">Не удалось прочитать файл</string>
+
+    <!-- Ошибки разблокировки -->
+    <string name="unlock_error_wrong_password">Неверный пароль</string>
+    <string name="unlock_error_corrupted_vault">Данные хранилища повреждены или нечитаемы</string>
+    <string name="unlock_error_no_vault">Хранилище не найдено</string>
+    <string name="unlock_error_too_many_attempts">Слишком много попыток — повторите через %1$dс</string>
+    <string name="unlock_error_biometric_unavailable">Биометрия недоступна — используйте пароль</string>
+    <string name="unlock_error_biometric_failed">Биометрическая аутентификация не удалась</string>
+
+    <!-- Смена мастер-пароля -->
+    <string name="change_password_title">Сменить мастер-пароль</string>
+    <string name="change_password_current_label">ТЕКУЩИЙ ПАРОЛЬ</string>
+    <string name="change_password_new_label">НОВЫЙ ПАРОЛЬ</string>
+    <string name="change_password_confirm_label">ПОДТВЕРДИТЬ</string>
+    <string name="change_password_button">Сменить пароль</string>
+    <string name="change_password_new_too_short">Новый пароль должен содержать не менее 12 символов</string>
+    <string name="change_password_new_mismatch">Новые пароли не совпадают</string>
+    <string name="change_password_wrong_current">Текущий пароль неверен</string>
+    <string name="change_password_generic_error">Не удалось сменить пароль</string>
+    <string name="change_password_success_toast">Пароль успешно изменён</string>
+    <string name="change_password_cancel">Отмена</string>
+
+    <!-- Биометрия -->
+    <string name="biometric_setup_title">Включить биометрию</string>
+    <string name="biometric_hardware_insufficient">Ваше устройство не обладает достаточной аппаратной поддержкой для безопасного включения биометрии.</string>
+    <string name="biometric_activate_prompt">Включить разблокировку по отпечатку пальца</string>
+    <string name="biometric_password_confirmed_hint">Пароль подтверждён — приложите палец к датчику.</string>
+    <string name="biometric_continue_button">Продолжить с отпечатком пальца</string>
+    <string name="biometric_confirm_password_label">Подтвердите мастер-пароль</string>
+    <string name="biometric_confirm_button">Подтвердить</string>
+    <string name="biometric_wrong_password">Неверный пароль</string>
+    <string name="biometric_key_creation_error">Не удалось создать безопасный ключ</string>
+    <string name="biometric_cipher_error">Не удалось подготовить шифрование</string>
+    <string name="biometric_enable_error">Не удалось включить биометрию</string>
+    <string name="biometric_auth_failed">Биометрическая аутентификация не удалась</string>
+    <string name="biometric_activated_toast">Биометрия включена</string>
+    <string name="biometric_deactivated_toast">Биометрия отключена</string>
+    <string name="biometric_cancel">Отмена</string>
+    <string name="biometric_row_title">Биометрическая разблокировка</string>
+    <string name="biometric_row_enabled">Включена</string>
+    <string name="biometric_row_disabled">Отключена</string>
+
+    <!-- Настройки -->
+    <string name="settings_title">Настройки</string>
+    <string name="settings_security_status_title">СОСТОЯНИЕ БЕЗОПАСНОСТИ</string>
+    <string name="settings_masvs_badge">🛡 OWASP MASVS — Усиленный уровень</string>
+    <string name="settings_encryption_label">ШИФРОВАНИЕ</string>
+    <string name="settings_kdf_label">KDF</string>
+    <string name="settings_inactivity_label">ВРЕМЯ БЕЗДЕЙСТВИЯ</string>
+    <string name="settings_inactivity_value">2 мин</string>
+    <string name="settings_bruteforce_label">ЗАЩИТА ОТ ПОДБОРА</string>
+    <string name="settings_bruteforce_value">5 попыток + HMAC</string>
+    <string name="settings_lockout_label">БЛОКИРОВКА</string>
+    <string name="settings_lockout_value">Экспоненциальная</string>
+    <string name="settings_salt_label">СОЛЬ</string>
+    <string name="settings_salt_value">256 бит</string>
+    <string name="settings_integrity_label">ЦЕЛОСТНОСТЬ ХРАНИЛИЩА</string>
+    <string name="settings_integrity_value">HMAC-SHA256</string>
+    <string name="settings_hardware_label">АППАРАТНАЯ ПРИВЯЗКА</string>
+    <string name="settings_hardware_value">Минимум TEE, StrongBox при наличии</string>
+    <string name="settings_bruteforce_note">ℹ️ Защита от подбора пароля защищает от повторных попыток внутри приложения. Она не заменяет надёжный пароль: тот, у кого есть прямой доступ к файлу хранилища на устройстве, может попытаться выполнить автономную расшифровку в обход этого ограничения. Используйте кодовую фразу из 16+ символов.</string>
+    <string name="settings_change_password_button">🔑 Сменить мастер-пароль</string>
+    <string name="settings_backup_title">РЕЗЕРВНАЯ КОПИЯ</string>
+    <string name="settings_export_native_title">🛡️ Экспорт с максимальной безопасностью</string>
+    <string name="settings_export_native_subtitle">Argon2id + AES-256-GCM-SIV</string>
+    <string name="settings_export_chrome_title">🌐 Кроссплатформенный экспорт</string>
+    <string name="settings_export_chrome_subtitle">PBKDF2 + AES-256-GCM — можно импортировать в Big MFA Chrome</string>
+    <string name="settings_export_qr_title">📷 Экспорт QR (карусель + ZIP)</string>
+    <string name="settings_export_qr_subtitle">Один QR на учётную запись, для просмотра или скачивания</string>
+    <string name="settings_import_button">📥 Импорт / Восстановление</string>
+    <string name="settings_export_footer">Экспорт зашифрован — секреты остаются защищёнными, даже если файл будет передан.</string>
+    <string name="settings_export_native_dialog_title">Экспорт с максимальной безопасностью</string>
+    <string name="settings_export_chrome_dialog_title">Кроссплатформенный экспорт</string>
+    <string name="settings_export_native_dialog_desc">🛡️ Argon2id + AES-256-GCM-SIV — этот пароль защищает экспортированный файл и отличается от вашего мастер-пароля.</string>
+    <string name="settings_export_chrome_dialog_desc">🌐 PBKDF2 + AES-256-GCM — формат, совместимый с расширением Big MFA Chrome. Этот пароль отличается от вашего мастер-пароля.</string>
+    <string name="settings_export_password_label">Пароль экспорта</string>
+    <string name="settings_export_confirm_label">Подтвердить</string>
+    <string name="settings_export_min_chars_error">Минимум 8 символов</string>
+    <string name="settings_export_mismatch_error">Пароли не совпадают</string>
+    <string name="settings_export_button">Экспортировать</string>
+    <string name="settings_export_cancel">Отмена</string>
+    <string name="settings_export_generic_error">Не удалось создать экспорт</string>
+    <string name="settings_export_share_title">Поделиться экспортом</string>
+    <string name="settings_import_dialog_title">Импортировать резервную копию</string>
+    <string name="settings_import_dialog_desc">Выберите файл резервной копии (собственный формат Big MFA или совместимый с Chrome — формат определяется автоматически).</string>
+    <string name="settings_import_choose_file">Выбрать файл</string>
+    <string name="settings_import_file_selected_desc">Файл выбран — введите пароль этой резервной копии.</string>
+    <string name="settings_import_password_label">Пароль резервной копии</string>
+    <string name="settings_import_button_confirm">Импортировать</string>
+    <string name="settings_import_read_error">Не удалось прочитать файл</string>
+    <string name="settings_import_generic_error">Ошибка импорта</string>
+    <string name="settings_import_success_toast">Импортировано учётных записей: %1$d</string>
+    <string name="settings_danger_zone_title">ОПАСНАЯ ЗОНА</string>
+    <string name="settings_delete_all_button">🗑 Удалить все мои данные</string>
+    <string name="settings_delete_all_description">Реализует ваше право на удаление (ст. 17 GDPR). Удаляет все учётные записи и мастер-пароль. Необратимое действие.</string>
+    <string name="settings_delete_confirm_title">Удалить все данные?</string>
+    <string name="settings_delete_confirm_desc">Все ваши учётные записи будут удалены безвозвратно. Это действие нельзя отменить.</string>
+    <string name="settings_delete_continue">Продолжить</string>
+    <string name="settings_delete_final_title">Окончательное подтверждение</string>
+    <string name="settings_delete_final_desc">Вы ДЕЙСТВИТЕЛЬНО уверены? После этого шага восстановление будет невозможно.</string>
+    <string name="settings_delete_final_button">Удалить безвозвратно</string>
+    <string name="settings_delete_cancel">Отмена</string>
+    <string name="settings_rgpd_badge">🔒 Соответствует GDPR — 100% локальные данные</string>
+    <string name="settings_rgpd_title">КОНФИДЕНЦИАЛЬНОСТЬ И GDPR</string>
+    <string name="settings_rgpd_controller_label">Оператор данных</string>
+    <string name="settings_rgpd_controller_value">Patrick DJEUZONG – BigForTravel</string>
+    <string name="settings_rgpd_data_label">Собираемые данные</string>
+    <string name="settings_rgpd_data_value">Названия учётных записей, зашифрованные ключи TOTP</string>
+    <string name="settings_rgpd_storage_label">Место хранения</string>
+    <string name="settings_rgpd_storage_value">Только ваше устройство (частное хранилище приложения, изолированное песочницей Android)</string>
+    <string name="settings_rgpd_transfer_label">Передача третьим лицам</string>
+    <string name="settings_rgpd_transfer_value">Само приложение Big MFA не отправляет никаких запросов. Зашифрованным экспортом можно поделиться через стороннее приложение по вашему выбору, только если вы явно это активируете.</string>
+    <string name="settings_rgpd_thirdparty_label">Встроенный сторонний код</string>
+    <string name="settings_rgpd_thirdparty_value">Bouncy Castle (MIT), CameraX (Apache-2.0), встроенный ML Kit barcode-scanning (Apache-2.0), ZXing (Apache-2.0) — всё локально, без телеметрии</string>
+    <string name="settings_rgpd_retention_label">Срок хранения</string>
+    <string name="settings_rgpd_retention_value">До удаления приложения или ручного удаления данных</string>
+    <string name="settings_rgpd_legal_label">Правовое основание</string>
+    <string name="settings_rgpd_legal_value">Согласие пользователя (ст. 6.1.a)</string>
+    <string name="settings_rgpd_access_label">Право на доступ (ст. 15)</string>
+    <string name="settings_rgpd_access_value">Через зашифрованный экспорт (выше)</string>
+    <string name="settings_rgpd_erasure_label">Право на удаление (ст. 17)</string>
+    <string name="settings_rgpd_erasure_value">Через «Удалить все мои данные»</string>
+    <string name="settings_rgpd_portability_label">Право на переносимость данных (ст. 20)</string>
+    <string name="settings_rgpd_portability_value">Через зашифрованный экспорт (собственный или кроссплатформенный)</string>
+    <string name="settings_rgpd_dpo_label">Контакт с DPO</string>
+    <string name="settings_rgpd_dpo_value">contact@bigfortravel.com</string>
+    <string name="settings_rgpd_eu_label">Орган ЕС (жалобы)</string>
+    <string name="settings_rgpd_eu_value">CNIL – www.cnil.fr (европейские пользователи)</string>
+    <string name="settings_rgpd_cm_label">Орган Камеруна (жалобы)</string>
+    <string name="settings_rgpd_cm_value">ANTIC – www.antic.cm (пользователи из Камеруна)</string>
+    <string name="settings_rgpd_footer">Big MFA не собирает никаких персональных данных за пределами вашего устройства, самостоятельно не инициирует сетевые подключения и не передаёт информацию третьим лицам. Все данные шифруются с помощью AES-256-GCM-SIV перед локальным хранением.</string>
+    <string name="settings_language_row_title">Язык</string>
+
+    <!-- BackupImporter -->
+    <string name="backup_importer_unreadable">Файл нечитаем или повреждён</string>
+    <string name="backup_importer_unknown_format">Неопознанный формат файла</string>
+    <string name="backup_importer_wrong_password">Неверный пароль или повреждённый файл</string>
+
+    <!-- Поддержать -->
+    <string name="support_title">Поддержать Big MFA</string>
+    <string name="support_description">Big MFA разрабатывается и поддерживается на добровольной основе компанией BigForTravel. Никакой рекламы, никакой продажи данных, никакой скрытой подписки. Если приложение вам полезно, пожертвование — даже небольшое — помогает финансировать его дальнейшую разработку.</string>
+    <string name="support_paypal_button">Пожертвовать через PayPal</string>
+    <string name="support_kofi_button">Пожертвовать через Ko-fi</string>
+    <string name="support_disclaimer">Пожертвования добровольны и не дают никаких дополнительных функций. Всегда проверяйте, что указанным получателем является BigForTravel / Patrick Djeuzong.</string>
+    <string name="support_official_site">🌐 Официальный сайт</string>
+    <string name="support_contact_us">✉️ Напишите нам</string>
+    <string name="support_contact_subject">Big MFA — Контакт</string>
+
+    <!-- Карусель экспорта QR -->
+    <string name="export_qr_title">Экспорт QR (%1$d/%2$d)</string>
+    <string name="export_qr_no_accounts">Нет учётных записей для экспорта.</string>
+    <string name="export_qr_zip_button">📦 Экспортировать все QR-коды в ZIP</string>
+    <string name="export_qr_close_button">Закрыть</string>
+    <string name="export_qr_zip_error">Не удалось создать архив ZIP</string>
+    <string name="export_qr_share_title">Поделиться архивом QR</string>
+
+    <!-- Руководство -->
+    <string name="guide_tab_installation">Установка</string>
+    <string name="guide_tab_usage">Использование</string>
+    <string name="guide_tab_features">Функции</string>
+    <string name="guide_title">Руководство Big MFA</string>
+    <string name="guide_intro">Быстрый обзор всех доступных функций.</string>
+    <string name="guide_codes_title">🔑 Мои коды</string>
+    <string name="guide_codes_body">Ваши коды TOTP обновляются в реальном времени с визуальным обратным отсчётом. Нажмите на код, чтобы скопировать его (автоматически удаляется из буфера обмена через 30с). Для учётных записей HOTP нажимайте «Сгенерировать» каждый раз, когда вам нужен код. Ищите, переименовывайте или удаляйте учётную запись с помощью значков в каждой строке.</string>
+    <string name="guide_decoder_title">🔍 Декодер</string>
+    <string name="guide_decoder_body">Вставьте или импортируйте секрет из изображения QR-кода, чтобы мгновенно получить соответствующий код TOTP, не добавляя его в хранилище. Полезно для разовой проверки.</string>
+    <string name="guide_key_title">🔐 Ключ</string>
+    <string name="guide_key_body">Генерирует случайный секретный ключ вместе с соответствующим QR-кодом для настройки новой учётной записи в другой службе, которая просит вас создать собственный секрет.</string>
+    <string name="guide_add_title">➕ Добавить учётную запись</string>
+    <string name="guide_add_body">Отсканируйте QR-код, предоставленный службой, или введите секрет вручную. Дополнительные параметры позволяют настроить алгоритм, количество цифр, период или переключиться на HOTP.</string>
+    <string name="guide_biometric_title">👆 Биометрическая разблокировка</string>
+    <string name="guide_biometric_body">Включите разблокировку по отпечатку пальца в Настройках. Ваш мастер-пароль всегда остаётся доступным в качестве резервного варианта — никогда не заменяется, только дополняется.</string>
+    <string name="guide_backup_title">💾 Резервное копирование и восстановление</string>
+    <string name="guide_backup_body">Два формата экспорта: максимальная безопасность (собственный для Android) или кроссплатформенная совместимость (можно импортировать в расширение Chrome). Экспорт QR создаёт карусель QR-кодов, по отдельности или в архиве ZIP. Восстановление автоматически определяет формат файла.</string>
+    <string name="guide_security_title">🛡 Безопасность</string>
+    <string name="guide_security_body">Все данные остаются исключительно на вашем устройстве, зашифрованные с помощью AES-256-GCM-SIV и ключа, полученного с использованием Argon2id. Приложение никогда самостоятельно не инициирует сетевое подключение.</string>
+    <string name="guide_language_title">🌐 Язык</string>
+    <string name="guide_language_body">Выберите «Автоматически», чтобы следовать языку вашего телефона, или выберите конкретный язык в нижнем колонтитуле экранов входа.</string>
+    <string name="guide_install_step1_title">1. Создайте своё хранилище</string>
+    <string name="guide_install_step1_body">При первом запуске выберите «Создать хранилище», чтобы начать с пустого хранилища, или «Восстановить существующую резервную копию», если вы уже использовали Big MFA в Chrome или на другом устройстве Android.</string>
+    <string name="guide_install_step2_title">2. Выберите надёжный мастер-пароль</string>
+    <string name="guide_install_step2_body">Минимум 12 символов, но лучше стремитесь к кодовой фразе из 16+ символов (например, несколько объединённых слов). Это единственный ключ, защищающий все ваши учётные записи.</string>
+    <string name="guide_install_step3_title">3. Поймите необратимость</string>
+    <string name="guide_install_step3_body">Big MFA нигде не хранит ваш мастер-пароль, ни в открытом виде, ни в зашифрованном. Если вы его забудете и у вас нет внешней резервной копии, ваши учётные записи станут навсегда недоступными. Запишите его в надёжный менеджер паролей.</string>
+    <string name="guide_install_step4_title">4. Включите биометрию (необязательно)</string>
+    <string name="guide_install_step4_body">В Настройках включите разблокировку по отпечатку пальца для более быстрого ежедневного доступа. Ваш мастер-пароль всегда остаётся доступным в качестве резервного варианта.</string>
+    <string name="guide_usage_step1_title">1. Добавьте свою первую учётную запись</string>
+    <string name="guide_usage_step1_body">В разделе «+ Добавить» отсканируйте QR-код, показанный службой (самый быстрый способ), или введите вручную название, издателя и секрет Base32, если вы не можете сканировать.</string>
+    <string name="guide_usage_step2_title">2. Используйте код ежедневно</string>
+    <string name="guide_usage_step2_body">В разделе «Мои коды» нажмите непосредственно на код TOTP, чтобы скопировать его (автоматически удаляется из буфера обмена через 30 секунд). Для учётной записи HOTP нажимайте «Сгенерировать» каждый раз, когда он вам нужен — счётчик всегда движется вперёд, никогда назад.</string>
+    <string name="guide_usage_step3_title">3. Управляйте своими учётными записями</string>
+    <string name="guide_usage_step3_body">Используйте строку поиска, чтобы быстро найти учётную запись среди многих. Значок карандаша позволяет переименовать, значок корзины позволяет удалить (с двойным подтверждением, необратимое действие).</string>
+    <string name="guide_usage_step4_title">4. Регулярно делайте резервные копии</string>
+    <string name="guide_usage_step4_body">В Настройках выберите «Экспорт с максимальной безопасностью» для резервной копии только для Android, или «Кроссплатформенный экспорт», если вы также используете Big MFA в Chrome. Экспорт QR (карусель или ZIP) полезен для переноса в другой стандартный менеджер, совместимый с TOTP.</string>
+    <string name="guide_usage_step5_title">5. Смените мастер-пароль</string>
+    <string name="guide_usage_step5_body">В Настройках введите текущий пароль, а затем новый. Ваши учётные записи и биометрия (если включена) остаются нетронутыми — меняется только пароль.</string>
+    <string name="nav_accounts">Мои коды</string>
+    <string name="nav_decoder">Декодер</string>
+    <string name="nav_key">Ключ</string>
+    <string name="nav_add">+ Добавить</string>
+    <string name="nav_support">Поддержать</string>
+    <string name="nav_settings">Настройки</string>
+    <string name="nav_guide">Руководство</string>
+    <string name="nav_lock_content_description">Заблокировать хранилище</string>
+</resources>

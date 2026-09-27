@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Big MFA</string>
+
+    <!-- Avamise ekraan -->
+    <string name="unlock_title">Big MFA</string>
+    <string name="unlock_subtitle">Sisestage oma peaparool</string>
+    <string name="unlock_password_label">Peaparool</string>
+    <string name="unlock_button">Ava lukk</string>
+    <string name="unlock_reset_vault">Lähtesta hoidla</string>
+    <string name="unlock_biometric_content_description">Ava lukk sõrmejäljega</string>
+
+    <!-- Jagatud jalus -->
+    <string name="footer_support">❤️ Toeta</string>
+    <string name="footer_contact">✉️ Võtke meiega ühendust</string>
+    <string name="footer_language_auto">🌐 Automaatne — brauseri keel</string>
+    <string name="footer_language_placeholder">Keelevalik — varsti saadaval</string>
+    <string name="footer_gplv3">Tasuta ja avatud lähtekoodiga (GPLv3 litsents).</string>
+    <string name="language_dialog_title">Vali keel</string>
+    <string name="language_option_auto">🌐 Automaatne (süsteemi keel)</string>
+
+    <!-- Minu koodid -->
+    <string name="accounts_empty_state">Kontosid pole veel.\nKasutage kontoloomiseks „+ Lisa”.</string>
+    <string name="accounts_search_placeholder">Otsi kontot</string>
+    <string name="accounts_no_results">Tulemusi „%1$s” kohta ei leitud</string>
+    <string name="accounts_rename_title">Nimeta konto ümber</string>
+    <string name="accounts_name_label">Konto nimi</string>
+    <string name="accounts_issuer_label">Väljastaja (valikuline)</string>
+    <string name="accounts_name_required_error">Konto nimi on kohustuslik</string>
+    <string name="accounts_save">Salvesta</string>
+    <string name="accounts_cancel">Tühista</string>
+    <string name="accounts_rename_content_description">Nimeta %1$s ümber</string>
+    <string name="accounts_delete_content_description">Kustuta %1$s</string>
+    <string name="accounts_delete_confirm_title">Kustutada „%1$s”?</string>
+    <string name="accounts_delete_irreversible">Seda toimingut ei saa tagasi võtta.</string>
+    <string name="accounts_delete_button">Kustuta</string>
+    <string name="accounts_hotp_label">HOTP</string>
+    <string name="accounts_unreadable">Loetamatu</string>
+    <string name="accounts_copy_content_description">Kopeeri</string>
+    <string name="accounts_generate_button">Genereeri</string>
+
+    <!-- + Lisa -->
+    <string name="add_account_title">Lisa konto</string>
+    <string name="add_account_scan_qr">📷 Skanni QR-koodi</string>
+    <string name="add_account_qr_invalid">Kehtetu või tundmatu QR-kood</string>
+    <string name="add_account_cancel_scan">Tühista skannimine</string>
+    <string name="add_account_name_label">Konto nimi</string>
+    <string name="add_account_issuer_label">Väljastaja (valikuline)</string>
+    <string name="add_account_secret_label">Saladus (Base32)</string>
+    <string name="add_account_advanced_options">⚙ Täpsemad valikud (algoritm, numbrid, periood)</string>
+    <string name="add_account_type_label">TÜÜP</string>
+    <string name="add_account_type_totp">TOTP (ajapõhine — standardne)</string>
+    <string name="add_account_type_hotp">HOTP (loenduripõhine)</string>
+    <string name="add_account_algorithm_label">ALGORITM</string>
+    <string name="add_account_algorithm_sha1">SHA-1 (vaikimisi, universaalne ühilduvus)</string>
+    <string name="add_account_digits_label">NUMBRITE ARV</string>
+    <string name="add_account_digits_default">6 numbrit (vaikimisi)</string>
+    <string name="add_account_digits_n">%1$d numbrit</string>
+    <string name="add_account_period_label">PERIOOD (SEKUNDID)</string>
+    <string name="add_account_save">Salvesta</string>
+    <string name="add_account_name_required">Konto nimi on kohustuslik</string>
+    <string name="add_account_secret_required">Saladus on kohustuslik</string>
+    <string name="add_account_secret_invalid">Saladus ei ole kehtiv Base32</string>
+    <string name="add_account_save_error">Kontot ei õnnestunud salvestada</string>
+    <string name="add_account_camera_permission_needed">QR-koodi skannimiseks on vajalik kaamera juurdepääs.</string>
+    <string name="add_account_grant_camera">Luba kaamera juurdepääs</string>
+
+    <!-- Võti -->
+    <string name="generate_key_description">Genereerib juhusliku Base32 salajase võtme (160 bitti), mis ühildub Google Authenticator, Aegis, Authy jt-ga…</string>
+    <string name="generate_key_generate">Genereeri</string>
+    <string name="generate_key_copy">Kopeeri</string>
+    <string name="generate_key_copied">Võti kopeeritud</string>
+    <string name="generate_key_show_qr">Näita QR-koodi</string>
+    <string name="generate_key_qr_title">QR-kood</string>
+    <string name="generate_key_close">Sulge</string>
+
+    <!-- Dekooder -->
+    <string name="decoder_import_qr">Impordi QR-koodilt (pilt)</string>
+    <string name="decoder_no_qr_found">Sellel pildil ei tuvastatud QR-koodi</string>
+    <string name="decoder_secret_label">MFA / TOTP VÕTI (BASE32)</string>
+    <string name="decoder_code_placeholder">— — — — — —</string>
+    <string name="decoder_generate_code">Genereeri kood</string>
+    <string name="decoder_copy_content_description">Kopeeri kood</string>
+    <string name="decoder_code_copied">Kood kopeeritud — kustutatakse 30s pärast</string>
+    <string name="decoder_secret_empty_error">Sisesta või impordi võti</string>
+    <string name="decoder_secret_invalid_error">Kehtetu võti</string>
+
+    <!-- Hoidla loomine/taastamine -->
+    <string name="create_vault_password_too_short">Parool peab olema vähemalt 12 tähemärki</string>
+    <string name="create_vault_passwords_mismatch">Paroolid ei kattu</string>
+    <string name="create_vault_creation_error">Hoidlat ei õnnestunud luua</string>
+    <string name="restore_vault_new_password_too_short">Uus parool peab olema vähemalt 12 tähemärki</string>
+    <string name="restore_vault_new_passwords_mismatch">Uued paroolid ei kattu</string>
+    <string name="restore_vault_generic_error">Varukoopiat ei õnnestunud taastada</string>
+    <string name="create_vault_title">Loo oma Big MFA hoidla</string>
+    <string name="create_vault_min_chars">Vähemalt 12 tähemärki</string>
+    <string name="create_vault_password_label">Parool</string>
+    <string name="create_vault_confirm_label">Kinnita parool</string>
+    <string name="create_vault_create_button">Loo hoidla</string>
+    <string name="create_vault_restore_button">📥 Taasta olemasolev varukoopia</string>
+    <string name="restore_backup_title">Taasta varukoopia</string>
+    <string name="restore_backup_description">Big MFA algne vorming või Chrome\'iga ühilduv — tuvastatakse automaatselt.</string>
+    <string name="restore_backup_choose_file">Vali varukoopia fail</string>
+    <string name="restore_backup_file_selected">✅ Fail valitud</string>
+    <string name="restore_backup_backup_password_label">Varukoopia parool</string>
+    <string name="restore_backup_new_password_title">UUS PEAPAROOL</string>
+    <string name="restore_backup_new_password_hint">Erinev varukoopia paroolist — vähemalt 12 tähemärki.</string>
+    <string name="restore_backup_new_password_label">Uus peaparool</string>
+    <string name="restore_backup_confirm_new_password_label">Kinnita uus parool</string>
+    <string name="restore_backup_restore_button">Taasta</string>
+    <string name="restore_backup_cancel">Tühista</string>
+    <string name="restore_backup_file_read_error">Faili ei õnnestunud lugeda</string>
+
+    <!-- Avamise vead -->
+    <string name="unlock_error_wrong_password">Vale parool</string>
+    <string name="unlock_error_corrupted_vault">Hoidla andmed on rikutud või loetamatud</string>
+    <string name="unlock_error_no_vault">Hoidlat ei leitud</string>
+    <string name="unlock_error_too_many_attempts">Liiga palju katseid — proovige uuesti %1$d s pärast</string>
+    <string name="unlock_error_biometric_unavailable">Biomeetria pole saadaval — kasutage oma parooli</string>
+    <string name="unlock_error_biometric_failed">Biomeetriline autentimine ebaõnnestus</string>
+
+    <!-- Peaparooli muutmine -->
+    <string name="change_password_title">Muuda peaparooli</string>
+    <string name="change_password_current_label">PRAEGUNE PAROOL</string>
+    <string name="change_password_new_label">UUS PAROOL</string>
+    <string name="change_password_confirm_label">KINNITA</string>
+    <string name="change_password_button">Muuda parooli</string>
+    <string name="change_password_new_too_short">Uus parool peab olema vähemalt 12 tähemärki</string>
+    <string name="change_password_new_mismatch">Uued paroolid ei kattu</string>
+    <string name="change_password_wrong_current">Praegune parool on vale</string>
+    <string name="change_password_generic_error">Parooli ei õnnestunud muuta</string>
+    <string name="change_password_success_toast">Parool muudeti edukalt</string>
+    <string name="change_password_cancel">Tühista</string>
+
+    <!-- Biomeetria -->
+    <string name="biometric_setup_title">Luba biomeetria</string>
+    <string name="biometric_hardware_insufficient">Teie seadmel pole piisavat riistvaratuge biomeetria turvaliseks lubamiseks.</string>
+    <string name="biometric_activate_prompt">Luba avamine sõrmejäljega</string>
+    <string name="biometric_password_confirmed_hint">Parool kinnitatud — asetage sõrm andurile.</string>
+    <string name="biometric_continue_button">Jätka sõrmejäljega</string>
+    <string name="biometric_confirm_password_label">Kinnitage oma peaparool</string>
+    <string name="biometric_confirm_button">Kinnita</string>
+    <string name="biometric_wrong_password">Vale parool</string>
+    <string name="biometric_key_creation_error">Turvalist võtit ei õnnestunud luua</string>
+    <string name="biometric_cipher_error">Krüpteerimist ei õnnestunud ette valmistada</string>
+    <string name="biometric_enable_error">Biomeetriat ei õnnestunud lubada</string>
+    <string name="biometric_auth_failed">Biomeetriline autentimine ebaõnnestus</string>
+    <string name="biometric_activated_toast">Biomeetria lubatud</string>
+    <string name="biometric_deactivated_toast">Biomeetria keelatud</string>
+    <string name="biometric_cancel">Tühista</string>
+    <string name="biometric_row_title">Biomeetriline avamine</string>
+    <string name="biometric_row_enabled">Lubatud</string>
+    <string name="biometric_row_disabled">Keelatud</string>
+
+    <!-- Seaded -->
+    <string name="settings_title">Seaded</string>
+    <string name="settings_security_status_title">TURVASEISUND</string>
+    <string name="settings_masvs_badge">🛡 OWASP MASVS — Tugevdatud tase</string>
+    <string name="settings_encryption_label">KRÜPTEERIMINE</string>
+    <string name="settings_kdf_label">KDF</string>
+    <string name="settings_inactivity_label">TEGEVUSETUSE AEG</string>
+    <string name="settings_inactivity_value">2 min</string>
+    <string name="settings_bruteforce_label">KAITSE JÕURÜNNAKUTE EEST</string>
+    <string name="settings_bruteforce_value">5 katset + HMAC</string>
+    <string name="settings_lockout_label">LUKUSTUS</string>
+    <string name="settings_lockout_value">Eksponentsiaalne</string>
+    <string name="settings_salt_label">SOOL</string>
+    <string name="settings_salt_value">256 bitti</string>
+    <string name="settings_integrity_label">HOIDLA TERVIKLIKKUS</string>
+    <string name="settings_integrity_value">HMAC-SHA256</string>
+    <string name="settings_hardware_label">RIISTVARA SIDUMINE</string>
+    <string name="settings_hardware_value">Vähemalt TEE, StrongBox kui saadaval</string>
+    <string name="settings_bruteforce_note">ℹ️ Kaitse jõurünnakute eest kaitseb korduvate katsete eest rakenduse sees. See ei asenda tugevat parooli: seadmel oleva hoidla failile otsest juurdepääsu omav isik võib proovida offline-dekrüpteerimist seda piirangut vältides. Kasutage 16+ tähemärgist paroolifraasi.</string>
+    <string name="settings_change_password_button">🔑 Muuda peaparooli</string>
+    <string name="settings_backup_title">VARUKOOPIA</string>
+    <string name="settings_export_native_title">🛡️ Maksimaalse turvalisusega eksport</string>
+    <string name="settings_export_native_subtitle">Argon2id + AES-256-GCM-SIV</string>
+    <string name="settings_export_chrome_title">🌐 Platvormideülene ühilduv eksport</string>
+    <string name="settings_export_chrome_subtitle">PBKDF2 + AES-256-GCM — imporditav Big MFA Chrome\'i</string>
+    <string name="settings_export_qr_title">📷 QR-eksport (karussell + ZIP)</string>
+    <string name="settings_export_qr_subtitle">Üks QR-kood konto kohta, sirvimiseks või allalaadimiseks</string>
+    <string name="settings_import_button">📥 Impordi / Taasta</string>
+    <string name="settings_export_footer">Eksport on krüpteeritud — saladused jäävad kaitstuks isegi faili jagamise korral.</string>
+    <string name="settings_export_native_dialog_title">Maksimaalse turvalisusega eksport</string>
+    <string name="settings_export_chrome_dialog_title">Platvormideülene ühilduv eksport</string>
+    <string name="settings_export_native_dialog_desc">🛡️ Argon2id + AES-256-GCM-SIV — see parool kaitseb eksporditud faili ja erineb teie peaparoolist.</string>
+    <string name="settings_export_chrome_dialog_desc">🌐 PBKDF2 + AES-256-GCM — Big MFA Chrome\'i laiendusega ühilduv vorming. See parool erineb teie peaparoolist.</string>
+    <string name="settings_export_password_label">Ekspordi parool</string>
+    <string name="settings_export_confirm_label">Kinnita</string>
+    <string name="settings_export_min_chars_error">Vähemalt 8 tähemärki</string>
+    <string name="settings_export_mismatch_error">Paroolid ei kattu</string>
+    <string name="settings_export_button">Ekspordi</string>
+    <string name="settings_export_cancel">Tühista</string>
+    <string name="settings_export_generic_error">Eksporti ei õnnestunud luua</string>
+    <string name="settings_export_share_title">Jaga eksporti</string>
+    <string name="settings_import_dialog_title">Impordi varukoopia</string>
+    <string name="settings_import_dialog_desc">Valige varukoopia fail (Big MFA algne vorming või Chrome\'iga ühilduv — vorming tuvastatakse automaatselt).</string>
+    <string name="settings_import_choose_file">Vali fail</string>
+    <string name="settings_import_file_selected_desc">Fail valitud — sisestage selle varukoopia parool.</string>
+    <string name="settings_import_password_label">Varukoopia parool</string>
+    <string name="settings_import_button_confirm">Impordi</string>
+    <string name="settings_import_read_error">Faili ei õnnestunud lugeda</string>
+    <string name="settings_import_generic_error">Import ebaõnnestus</string>
+    <string name="settings_import_success_toast">Imporditud %1$d kontot</string>
+    <string name="settings_danger_zone_title">OHTLIK TSOON</string>
+    <string name="settings_delete_all_button">🗑 Kustuta kõik minu andmed</string>
+    <string name="settings_delete_all_description">Kasutab teie kustutamisõigust (GDPR artikkel 17). Kustutab kõik kontod ja peaparooli. Pöördumatu toiming.</string>
+    <string name="settings_delete_confirm_title">Kustutada kõik andmed?</string>
+    <string name="settings_delete_confirm_desc">Kõik teie kontod kustutatakse jäädavalt. Seda toimingut ei saa tagasi võtta.</string>
+    <string name="settings_delete_continue">Jätka</string>
+    <string name="settings_delete_final_title">Lõplik kinnitus</string>
+    <string name="settings_delete_final_desc">Kas olete TÕESTI kindel? Pärast seda sammu pole taastamine enam võimalik.</string>
+    <string name="settings_delete_final_button">Kustuta jäädavalt</string>
+    <string name="settings_delete_cancel">Tühista</string>
+    <string name="settings_rgpd_badge">🔒 GDPR-iga vastavuses — 100% kohalikud andmed</string>
+    <string name="settings_rgpd_title">PRIVAATSUS JA GDPR</string>
+    <string name="settings_rgpd_controller_label">Andmetöötleja</string>
+    <string name="settings_rgpd_controller_value">Patrick DJEUZONG – BigForTravel</string>
+    <string name="settings_rgpd_data_label">Kogutavad andmed</string>
+    <string name="settings_rgpd_data_value">Kontode nimed, krüpteeritud TOTP võtmed</string>
+    <string name="settings_rgpd_storage_label">Salvestuskoht</string>
+    <string name="settings_rgpd_storage_value">Ainult teie seade (rakenduse privaatne salvestusruum, isoleeritud Androidi sandbox\'iga)</string>
+    <string name="settings_rgpd_transfer_label">Edastamine kolmandatele osapooltele</string>
+    <string name="settings_rgpd_transfer_value">Big MFA ise ei saada ühtegi päringut. Krüpteeritud eksporti saab jagada teie valitud kolmanda osapoole rakenduse kaudu ainult siis, kui te selle sõnaselgelt aktiveerite.</string>
+    <string name="settings_rgpd_thirdparty_label">Sisseehitatud kolmanda osapoole kood</string>
+    <string name="settings_rgpd_thirdparty_value">Bouncy Castle (MIT), CameraX (Apache-2.0), sisseehitatud ML Kit barcode-scanning (Apache-2.0), ZXing (Apache-2.0) — kõik kohalikud, ilma telemeetriata</string>
+    <string name="settings_rgpd_retention_label">Säilitusperiood</string>
+    <string name="settings_rgpd_retention_value">Kuni desinstallimiseni või käsitsi kustutamiseni</string>
+    <string name="settings_rgpd_legal_label">Õiguslik alus</string>
+    <string name="settings_rgpd_legal_value">Kasutaja nõusolek (art 6.1.a)</string>
+    <string name="settings_rgpd_access_label">Juurdepääsuõigus (art 15)</string>
+    <string name="settings_rgpd_access_value">Krüpteeritud ekspordi kaudu (ülal)</string>
+    <string name="settings_rgpd_erasure_label">Kustutamisõigus (art 17)</string>
+    <string name="settings_rgpd_erasure_value">„Kustuta kõik minu andmed” kaudu</string>
+    <string name="settings_rgpd_portability_label">Andmete ülekantavuse õigus (art 20)</string>
+    <string name="settings_rgpd_portability_value">Krüpteeritud ekspordi kaudu (algne või platvormideülene)</string>
+    <string name="settings_rgpd_dpo_label">DPO kontakt</string>
+    <string name="settings_rgpd_dpo_value">contact@bigfortravel.com</string>
+    <string name="settings_rgpd_eu_label">ELi asutus (kaebused)</string>
+    <string name="settings_rgpd_eu_value">CNIL – www.cnil.fr (Euroopa kasutajad)</string>
+    <string name="settings_rgpd_cm_label">Kameruni asutus (kaebused)</string>
+    <string name="settings_rgpd_cm_value">ANTIC – www.antic.cm (Kameruni kasutajad)</string>
+    <string name="settings_rgpd_footer">Big MFA ei kogu mingeid isikuandmeid väljaspool teie seadet, ei algata ise ühtegi võrguühendust ega jaga mingit teavet kolmandate osapooltega. Kõik andmed krüpteeritakse enne kohalikku salvestamist AES-256-GCM-SIV-ga.</string>
+    <string name="settings_language_row_title">Keel</string>
+
+    <!-- BackupImporter -->
+    <string name="backup_importer_unreadable">Fail on loetamatu või rikutud</string>
+    <string name="backup_importer_unknown_format">Tundmatu failivorming</string>
+    <string name="backup_importer_wrong_password">Vale parool või rikutud fail</string>
+
+    <!-- Toeta -->
+    <string name="support_title">Toeta Big MFA-d</string>
+    <string name="support_description">Big MFA-d arendab ja hooldab vabatahtlikult BigForTravel. Ilma reklaamideta, ilma andmete müügita, ilma varjatud tellimuseta. Kui rakendus on teile kasulik, aitab annetus — isegi väike — rahastada selle jätkuvat arendust.</string>
+    <string name="support_paypal_button">Anneta PayPali kaudu</string>
+    <string name="support_kofi_button">Anneta Ko-fi kaudu</string>
+    <string name="support_disclaimer">Annetused on vabatahtlikud ega anna mingeid lisafunktsioone. Kontrollige alati, et kuvatav saaja on BigForTravel / Patrick Djeuzong.</string>
+    <string name="support_official_site">🌐 Ametlik veebisait</string>
+    <string name="support_contact_us">✉️ Kirjutage meile</string>
+    <string name="support_contact_subject">Big MFA — Kontakt</string>
+
+    <!-- QR-ekspordi karussell -->
+    <string name="export_qr_title">QR-eksport (%1$d/%2$d)</string>
+    <string name="export_qr_no_accounts">Eksportimiseks pole ühtegi kontot.</string>
+    <string name="export_qr_zip_button">📦 Ekspordi kõik QR-koodid ZIP-ina</string>
+    <string name="export_qr_close_button">Sulge</string>
+    <string name="export_qr_zip_error">ZIP-arhiivi ei õnnestunud luua</string>
+    <string name="export_qr_share_title">Jaga QR-arhiivi</string>
+
+    <!-- Juhend -->
+    <string name="guide_tab_installation">Paigaldus</string>
+    <string name="guide_tab_usage">Kasutamine</string>
+    <string name="guide_tab_features">Funktsioonid</string>
+    <string name="guide_title">Big MFA juhend</string>
+    <string name="guide_intro">Kiire ülevaade kõigist saadaolevatest funktsioonidest.</string>
+    <string name="guide_codes_title">🔑 Minu koodid</string>
+    <string name="guide_codes_body">Teie TOTP koodid uuenevad reaalajas visuaalse loendusega. Koodi kopeerimiseks puudutage seda (kustutatakse lõikelaualt automaatselt 30s pärast). HOTP kontode puhul puudutage iga kord, kui vajate koodi, nuppu „Genereeri”. Otsige, nimetage ümber või kustutage konto iga rea ikoonide abil.</string>
+    <string name="guide_decoder_title">🔍 Dekooder</string>
+    <string name="guide_decoder_body">Kleepige või importige saladus QR-koodi pildilt, et koheselt saada vastav TOTP kood, ilma seda hoidlasse lisamata. Kasulik ühekordseks kontrolliks.</string>
+    <string name="guide_key_title">🔐 Võti</string>
+    <string name="guide_key_body">Genereerib juhusliku salajase võtme koos vastava QR-koodiga, et seadistada uus konto teises teenuses, mis palub teil luua oma saladuse.</string>
+    <string name="guide_add_title">➕ Lisa konto</string>
+    <string name="guide_add_body">Skannige teenuse pakutud QR-kood või sisestage saladus käsitsi. Täpsemad valikud võimaldavad kohandada algoritmi, numbrite arvu, perioodi või lülituda HOTP-le.</string>
+    <string name="guide_biometric_title">👆 Biomeetriline avamine</string>
+    <string name="guide_biometric_body">Lubage sõrmejäljega avamine seadetest. Teie peaparool jääb alati varuvariandina saadavaks — seda ei asendata kunagi, ainult täiendatakse.</string>
+    <string name="guide_backup_title">💾 Varundamine ja taastamine</string>
+    <string name="guide_backup_body">Kaks ekspordivormingut: maksimaalne turvalisus (Androidile algne) või platvormideülene ühilduvus (imporditav Chrome\'i laiendusse). QR-eksport genereerib QR-koodide karusselli, üksikult või ZIP-arhiivina. Taastamine tuvastab failivormingu automaatselt.</string>
+    <string name="guide_security_title">🛡 Turvalisus</string>
+    <string name="guide_security_body">Kõik andmed jäävad ainult teie seadmesse, krüpteerituna AES-256-GCM-SIV-ga ja Argon2id abil saadud võtmega. Rakendus ei algata kunagi ise võrguühendust.</string>
+    <string name="guide_language_title">🌐 Keel</string>
+    <string name="guide_language_body">Valige „Automaatne”, et järgida oma telefoni keelt, või valige sisselogimisekraanide jaluses konkreetne keel.</string>
+    <string name="guide_install_step1_title">1. Looge oma hoidla</string>
+    <string name="guide_install_step1_body">Esimesel käivitamisel valige tühja hoidlaga alustamiseks „Loo hoidla” või „Taasta olemasolev varukoopia”, kui olete juba kasutanud Big MFA-d Chrome\'is või muus Androidi seadmes.</string>
+    <string name="guide_install_step2_title">2. Valige tugev peaparool</string>
+    <string name="guide_install_step2_body">Vähemalt 12 tähemärki, kuid parem on sihtida 16+ tähemärgist paroolifraasi (näiteks mitu kombineeritud sõna). See on ainus võti, mis kaitseb kõiki teie kontosid.</string>
+    <string name="guide_install_step3_title">3. Mõistke pöördumatust</string>
+    <string name="guide_install_step3_body">Big MFA ei salvesta teie peaparooli kuhugi, ei lihttekstina ega krüpteeritult. Kui unustate selle ja teil pole välist varukoopiat, muutuvad teie kontod jäädavalt kättesaamatuks. Kirjutage see üles usaldusväärsesse paroolihaldurisse.</string>
+    <string name="guide_install_step4_title">4. Lubage biomeetria (valikuline)</string>
+    <string name="guide_install_step4_body">Lubage seadetest sõrmejäljega avamine kiiremaks igapäevaseks juurdepääsuks. Teie peaparool jääb alati varuvariandina saadavaks.</string>
+    <string name="guide_usage_step1_title">1. Lisage oma esimene konto</string>
+    <string name="guide_usage_step1_body">Vajutage „+ Lisa”, skannige teenuse kuvatud QR-kood (kiireim meetod) või sisestage käsitsi nimi, väljastaja ja Base32 saladus, kui te ei saa skannida.</string>
+    <string name="guide_usage_step2_title">2. Kasutage koodi iga päev</string>
+    <string name="guide_usage_step2_body">Vajutage jaotises „Minu koodid” otse TOTP koodile selle kopeerimiseks (kustutatakse lõikelaualt automaatselt 30 sekundi pärast). HOTP konto puhul vajutage iga kord, kui vajate seda, nuppu „Genereeri” — loendur liigub alati edasi, mitte kunagi tagasi.</string>
+    <string name="guide_usage_step3_title">3. Hallake oma kontosid</string>
+    <string name="guide_usage_step3_body">Kasutage otsinguriba, et kiiresti leida konto paljude seast. Pliiatsi ikoon võimaldab ümbernimetamist, prügikasti ikoon võimaldab kustutamist (topeltkinnitusega, pöördumatu toiming).</string>
+    <string name="guide_usage_step4_title">4. Varundage regulaarselt</string>
+    <string name="guide_usage_step4_body">Valige seadetest „Maksimaalse turvalisusega eksport” ainult Androidi varukoopia jaoks või „Platvormideülene ühilduv eksport”, kui kasutate Big MFA-d ka Chrome\'is. QR-eksport (karussell või ZIP) on kasulik üleminekuks teisele standardsele TOTP-ühilduvale haldurile.</string>
+    <string name="guide_usage_step5_title">5. Muutke oma peaparooli</string>
+    <string name="guide_usage_step5_body">Sisestage seadetes oma praegune parool, seejärel uus. Teie kontod ja biomeetria (kui lubatud) jäävad puutumatuks — muutub ainult parool.</string>
+    <string name="nav_accounts">Minu koodid</string>
+    <string name="nav_decoder">Dekooder</string>
+    <string name="nav_key">Võti</string>
+    <string name="nav_add">+ Lisa</string>
+    <string name="nav_support">Toeta</string>
+    <string name="nav_settings">Seaded</string>
+    <string name="nav_guide">Juhend</string>
+    <string name="nav_lock_content_description">Lukusta hoidla</string>
+</resources>

@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Big MFA</string>
+
+    <!-- Màn hình mở khóa -->
+    <string name="unlock_title">Big MFA</string>
+    <string name="unlock_subtitle">Nhập mật khẩu chính của bạn</string>
+    <string name="unlock_password_label">Mật khẩu chính</string>
+    <string name="unlock_button">Mở khóa</string>
+    <string name="unlock_reset_vault">Đặt lại kho lưu trữ</string>
+    <string name="unlock_biometric_content_description">Mở khóa bằng vân tay</string>
+
+    <!-- Chân trang dùng chung -->
+    <string name="footer_support">❤️ Ủng hộ</string>
+    <string name="footer_contact">✉️ Liên hệ chúng tôi</string>
+    <string name="footer_language_auto">🌐 Tự động — ngôn ngữ trình duyệt</string>
+    <string name="footer_language_placeholder">Chọn ngôn ngữ — sắp có</string>
+    <string name="footer_gplv3">Miễn phí và mã nguồn mở (giấy phép GPLv3).</string>
+    <string name="language_dialog_title">Chọn ngôn ngữ</string>
+    <string name="language_option_auto">🌐 Tự động (ngôn ngữ hệ thống)</string>
+
+    <!-- Mã của tôi -->
+    <string name="accounts_empty_state">Chưa có tài khoản nào.\nSử dụng “+ Thêm” để tạo một tài khoản.</string>
+    <string name="accounts_search_placeholder">Tìm kiếm tài khoản</string>
+    <string name="accounts_no_results">Không có kết quả cho “%1$s”</string>
+    <string name="accounts_rename_title">Đổi tên tài khoản</string>
+    <string name="accounts_name_label">Tên tài khoản</string>
+    <string name="accounts_issuer_label">Nhà phát hành (tùy chọn)</string>
+    <string name="accounts_name_required_error">Tên tài khoản là bắt buộc</string>
+    <string name="accounts_save">Lưu</string>
+    <string name="accounts_cancel">Hủy</string>
+    <string name="accounts_rename_content_description">Đổi tên %1$s</string>
+    <string name="accounts_delete_content_description">Xóa %1$s</string>
+    <string name="accounts_delete_confirm_title">Xóa “%1$s”?</string>
+    <string name="accounts_delete_irreversible">Hành động này không thể hoàn tác.</string>
+    <string name="accounts_delete_button">Xóa</string>
+    <string name="accounts_hotp_label">HOTP</string>
+    <string name="accounts_unreadable">Không thể đọc</string>
+    <string name="accounts_copy_content_description">Sao chép</string>
+    <string name="accounts_generate_button">Tạo</string>
+
+    <!-- + Thêm -->
+    <string name="add_account_title">Thêm tài khoản</string>
+    <string name="add_account_scan_qr">📷 Quét mã QR</string>
+    <string name="add_account_qr_invalid">Mã QR không hợp lệ hoặc không nhận dạng được</string>
+    <string name="add_account_cancel_scan">Hủy quét</string>
+    <string name="add_account_name_label">Tên tài khoản</string>
+    <string name="add_account_issuer_label">Nhà phát hành (tùy chọn)</string>
+    <string name="add_account_secret_label">Khóa bí mật (Base32)</string>
+    <string name="add_account_advanced_options">⚙ Tùy chọn nâng cao (thuật toán, chữ số, chu kỳ)</string>
+    <string name="add_account_type_label">LOẠI</string>
+    <string name="add_account_type_totp">TOTP (dựa trên thời gian — tiêu chuẩn)</string>
+    <string name="add_account_type_hotp">HOTP (dựa trên bộ đếm)</string>
+    <string name="add_account_algorithm_label">THUẬT TOÁN</string>
+    <string name="add_account_algorithm_sha1">SHA-1 (mặc định, tương thích phổ quát)</string>
+    <string name="add_account_digits_label">SỐ CHỮ SỐ</string>
+    <string name="add_account_digits_default">6 chữ số (mặc định)</string>
+    <string name="add_account_digits_n">%1$d chữ số</string>
+    <string name="add_account_period_label">CHU KỲ (GIÂY)</string>
+    <string name="add_account_save">Lưu</string>
+    <string name="add_account_name_required">Tên tài khoản là bắt buộc</string>
+    <string name="add_account_secret_required">Khóa bí mật là bắt buộc</string>
+    <string name="add_account_secret_invalid">Khóa bí mật không phải là Base32 hợp lệ</string>
+    <string name="add_account_save_error">Không thể lưu tài khoản</string>
+    <string name="add_account_camera_permission_needed">Cần quyền truy cập camera để quét mã QR.</string>
+    <string name="add_account_grant_camera">Cấp quyền truy cập camera</string>
+
+    <!-- Khóa -->
+    <string name="generate_key_description">Tạo một khóa bí mật Base32 ngẫu nhiên (160 bit) tương thích với Google Authenticator, Aegis, Authy…</string>
+    <string name="generate_key_generate">Tạo</string>
+    <string name="generate_key_copy">Sao chép</string>
+    <string name="generate_key_copied">Đã sao chép khóa</string>
+    <string name="generate_key_show_qr">Hiển thị mã QR</string>
+    <string name="generate_key_qr_title">Mã QR</string>
+    <string name="generate_key_close">Đóng</string>
+
+    <!-- Bộ giải mã -->
+    <string name="decoder_import_qr">Nhập từ mã QR (hình ảnh)</string>
+    <string name="decoder_no_qr_found">Không phát hiện mã QR trong hình ảnh này</string>
+    <string name="decoder_secret_label">KHÓA MFA / TOTP (BASE32)</string>
+    <string name="decoder_code_placeholder">— — — — — —</string>
+    <string name="decoder_generate_code">Tạo mã</string>
+    <string name="decoder_copy_content_description">Sao chép mã</string>
+    <string name="decoder_code_copied">Đã sao chép mã — sẽ xóa sau 30 giây</string>
+    <string name="decoder_secret_empty_error">Nhập hoặc nhập khóa</string>
+    <string name="decoder_secret_invalid_error">Khóa không hợp lệ</string>
+
+    <!-- Tạo/Khôi phục kho lưu trữ -->
+    <string name="create_vault_password_too_short">Mật khẩu phải có ít nhất 12 ký tự</string>
+    <string name="create_vault_passwords_mismatch">Mật khẩu không khớp</string>
+    <string name="create_vault_creation_error">Không thể tạo kho lưu trữ</string>
+    <string name="restore_vault_new_password_too_short">Mật khẩu mới phải có ít nhất 12 ký tự</string>
+    <string name="restore_vault_new_passwords_mismatch">Mật khẩu mới không khớp</string>
+    <string name="restore_vault_generic_error">Không thể khôi phục bản sao lưu</string>
+    <string name="create_vault_title">Tạo kho lưu trữ Big MFA của bạn</string>
+    <string name="create_vault_min_chars">Tối thiểu 12 ký tự</string>
+    <string name="create_vault_password_label">Mật khẩu</string>
+    <string name="create_vault_confirm_label">Xác nhận mật khẩu</string>
+    <string name="create_vault_create_button">Tạo kho lưu trữ</string>
+    <string name="create_vault_restore_button">📥 Khôi phục bản sao lưu hiện có</string>
+    <string name="restore_backup_title">Khôi phục bản sao lưu</string>
+    <string name="restore_backup_description">Định dạng gốc Big MFA hoặc tương thích với Chrome — được phát hiện tự động.</string>
+    <string name="restore_backup_choose_file">Chọn tệp sao lưu</string>
+    <string name="restore_backup_file_selected">✅ Đã chọn tệp</string>
+    <string name="restore_backup_backup_password_label">Mật khẩu của bản sao lưu</string>
+    <string name="restore_backup_new_password_title">MẬT KHẨU CHÍNH MỚI</string>
+    <string name="restore_backup_new_password_hint">Khác với mật khẩu của bản sao lưu — tối thiểu 12 ký tự.</string>
+    <string name="restore_backup_new_password_label">Mật khẩu chính mới</string>
+    <string name="restore_backup_confirm_new_password_label">Xác nhận mật khẩu mới</string>
+    <string name="restore_backup_restore_button">Khôi phục</string>
+    <string name="restore_backup_cancel">Hủy</string>
+    <string name="restore_backup_file_read_error">Không thể đọc tệp</string>
+
+    <!-- Lỗi mở khóa -->
+    <string name="unlock_error_wrong_password">Mật khẩu không đúng</string>
+    <string name="unlock_error_corrupted_vault">Dữ liệu kho lưu trữ bị hỏng hoặc không thể đọc</string>
+    <string name="unlock_error_no_vault">Không tìm thấy kho lưu trữ</string>
+    <string name="unlock_error_too_many_attempts">Quá nhiều lần thử — vui lòng thử lại sau %1$d giây</string>
+    <string name="unlock_error_biometric_unavailable">Sinh trắc học không khả dụng — hãy dùng mật khẩu của bạn</string>
+    <string name="unlock_error_biometric_failed">Xác thực sinh trắc học thất bại</string>
+
+    <!-- Thay đổi mật khẩu chính -->
+    <string name="change_password_title">Thay đổi mật khẩu chính</string>
+    <string name="change_password_current_label">MẬT KHẨU HIỆN TẠI</string>
+    <string name="change_password_new_label">MẬT KHẨU MỚI</string>
+    <string name="change_password_confirm_label">XÁC NHẬN</string>
+    <string name="change_password_button">Thay đổi mật khẩu</string>
+    <string name="change_password_new_too_short">Mật khẩu mới phải có ít nhất 12 ký tự</string>
+    <string name="change_password_new_mismatch">Mật khẩu mới không khớp</string>
+    <string name="change_password_wrong_current">Mật khẩu hiện tại không đúng</string>
+    <string name="change_password_generic_error">Không thể thay đổi mật khẩu</string>
+    <string name="change_password_success_toast">Đã thay đổi mật khẩu thành công</string>
+    <string name="change_password_cancel">Hủy</string>
+
+    <!-- Sinh trắc học -->
+    <string name="biometric_setup_title">Kích hoạt sinh trắc học</string>
+    <string name="biometric_hardware_insufficient">Thiết bị của bạn không có đủ hỗ trợ phần cứng để kích hoạt sinh trắc học một cách an toàn.</string>
+    <string name="biometric_activate_prompt">Kích hoạt mở khóa bằng vân tay</string>
+    <string name="biometric_password_confirmed_hint">Đã xác nhận mật khẩu — đặt ngón tay của bạn lên cảm biến.</string>
+    <string name="biometric_continue_button">Tiếp tục bằng vân tay</string>
+    <string name="biometric_confirm_password_label">Xác nhận mật khẩu chính của bạn</string>
+    <string name="biometric_confirm_button">Xác nhận</string>
+    <string name="biometric_wrong_password">Mật khẩu không đúng</string>
+    <string name="biometric_key_creation_error">Không thể tạo khóa bảo mật</string>
+    <string name="biometric_cipher_error">Không thể chuẩn bị mã hóa</string>
+    <string name="biometric_enable_error">Không thể kích hoạt sinh trắc học</string>
+    <string name="biometric_auth_failed">Xác thực sinh trắc học thất bại</string>
+    <string name="biometric_activated_toast">Đã kích hoạt sinh trắc học</string>
+    <string name="biometric_deactivated_toast">Đã tắt sinh trắc học</string>
+    <string name="biometric_cancel">Hủy</string>
+    <string name="biometric_row_title">Mở khóa bằng sinh trắc học</string>
+    <string name="biometric_row_enabled">Đã kích hoạt</string>
+    <string name="biometric_row_disabled">Đã tắt</string>
+
+    <!-- Cài đặt -->
+    <string name="settings_title">Cài đặt</string>
+    <string name="settings_security_status_title">TRẠNG THÁI BẢO MẬT</string>
+    <string name="settings_masvs_badge">🛡 OWASP MASVS — Cấp độ tăng cường</string>
+    <string name="settings_encryption_label">MÃ HÓA</string>
+    <string name="settings_kdf_label">KDF</string>
+    <string name="settings_inactivity_label">THỜI GIAN KHÔNG HOẠT ĐỘNG</string>
+    <string name="settings_inactivity_value">2 phút</string>
+    <string name="settings_bruteforce_label">BẢO VỆ CHỐNG DÒ MẬT KHẨU</string>
+    <string name="settings_bruteforce_value">5 lần thử + HMAC</string>
+    <string name="settings_lockout_label">KHÓA</string>
+    <string name="settings_lockout_value">Theo cấp số nhân</string>
+    <string name="settings_salt_label">MUỐI</string>
+    <string name="settings_salt_value">256 bit</string>
+    <string name="settings_integrity_label">TÍNH TOÀN VẸN CỦA KHO LƯU TRỮ</string>
+    <string name="settings_integrity_value">HMAC-SHA256</string>
+    <string name="settings_hardware_label">NEO PHẦN CỨNG</string>
+    <string name="settings_hardware_value">Tối thiểu TEE, StrongBox nếu có</string>
+    <string name="settings_bruteforce_note">ℹ️ Bảo vệ chống dò mật khẩu chống lại các lần thử lặp lại trong ứng dụng. Nó không thay thế cho một mật khẩu mạnh: người có quyền truy cập trực tiếp vào tệp kho lưu trữ trên thiết bị có thể thử giải mã ngoại tuyến mà không cần vượt qua giới hạn này. Hãy sử dụng cụm mật khẩu từ 16 ký tự trở lên.</string>
+    <string name="settings_change_password_button">🔑 Thay đổi mật khẩu chính</string>
+    <string name="settings_backup_title">SAO LƯU</string>
+    <string name="settings_export_native_title">🛡️ Xuất bảo mật tối đa</string>
+    <string name="settings_export_native_subtitle">Argon2id + AES-256-GCM-SIV</string>
+    <string name="settings_export_chrome_title">🌐 Xuất tương thích đa nền tảng</string>
+    <string name="settings_export_chrome_subtitle">PBKDF2 + AES-256-GCM — có thể nhập vào Big MFA Chrome</string>
+    <string name="settings_export_qr_title">📷 Xuất mã QR (băng chuyền + ZIP)</string>
+    <string name="settings_export_qr_subtitle">Một mã QR cho mỗi tài khoản, để duyệt hoặc tải xuống</string>
+    <string name="settings_import_button">📥 Nhập / Khôi phục</string>
+    <string name="settings_export_footer">Bản xuất đã được mã hóa — các khóa bí mật vẫn được bảo vệ ngay cả khi tệp được chia sẻ.</string>
+    <string name="settings_export_native_dialog_title">Xuất bảo mật tối đa</string>
+    <string name="settings_export_chrome_dialog_title">Xuất tương thích đa nền tảng</string>
+    <string name="settings_export_native_dialog_desc">🛡️ Argon2id + AES-256-GCM-SIV — mật khẩu này bảo vệ tệp đã xuất và khác với mật khẩu chính của bạn.</string>
+    <string name="settings_export_chrome_dialog_desc">🌐 PBKDF2 + AES-256-GCM — định dạng tương thích với tiện ích mở rộng Big MFA Chrome. Mật khẩu này khác với mật khẩu chính của bạn.</string>
+    <string name="settings_export_password_label">Mật khẩu xuất</string>
+    <string name="settings_export_confirm_label">Xác nhận</string>
+    <string name="settings_export_min_chars_error">Tối thiểu 8 ký tự</string>
+    <string name="settings_export_mismatch_error">Mật khẩu không khớp</string>
+    <string name="settings_export_button">Xuất</string>
+    <string name="settings_export_cancel">Hủy</string>
+    <string name="settings_export_generic_error">Không thể tạo bản xuất</string>
+    <string name="settings_export_share_title">Chia sẻ bản xuất</string>
+    <string name="settings_import_dialog_title">Nhập bản sao lưu</string>
+    <string name="settings_import_dialog_desc">Chọn một tệp sao lưu (định dạng gốc Big MFA hoặc tương thích với Chrome — định dạng được phát hiện tự động).</string>
+    <string name="settings_import_choose_file">Chọn tệp</string>
+    <string name="settings_import_file_selected_desc">Đã chọn tệp — nhập mật khẩu của bản sao lưu này.</string>
+    <string name="settings_import_password_label">Mật khẩu của bản sao lưu</string>
+    <string name="settings_import_button_confirm">Nhập</string>
+    <string name="settings_import_read_error">Không thể đọc tệp</string>
+    <string name="settings_import_generic_error">Nhập thất bại</string>
+    <string name="settings_import_success_toast">Đã nhập %1$d tài khoản</string>
+    <string name="settings_danger_zone_title">VÙNG NGUY HIỂM</string>
+    <string name="settings_delete_all_button">🗑 Xóa tất cả dữ liệu của tôi</string>
+    <string name="settings_delete_all_description">Thực hiện quyền xóa dữ liệu của bạn (Điều 17 GDPR). Xóa tất cả tài khoản và mật khẩu chính. Hành động không thể hoàn tác.</string>
+    <string name="settings_delete_confirm_title">Xóa tất cả dữ liệu?</string>
+    <string name="settings_delete_confirm_desc">Tất cả tài khoản của bạn sẽ bị xóa vĩnh viễn. Hành động này không thể hoàn tác.</string>
+    <string name="settings_delete_continue">Tiếp tục</string>
+    <string name="settings_delete_final_title">Xác nhận cuối cùng</string>
+    <string name="settings_delete_final_desc">Bạn có THỰC SỰ chắc chắn không? Sẽ không thể khôi phục sau bước này.</string>
+    <string name="settings_delete_final_button">Xóa vĩnh viễn</string>
+    <string name="settings_delete_cancel">Hủy</string>
+    <string name="settings_rgpd_badge">🔒 Tuân thủ GDPR — Dữ liệu 100% cục bộ</string>
+    <string name="settings_rgpd_title">QUYỀN RIÊNG TƯ VÀ GDPR</string>
+    <string name="settings_rgpd_controller_label">Bên kiểm soát dữ liệu</string>
+    <string name="settings_rgpd_controller_value">Patrick DJEUZONG – BigForTravel</string>
+    <string name="settings_rgpd_data_label">Dữ liệu được thu thập</string>
+    <string name="settings_rgpd_data_value">Tên tài khoản, khóa TOTP đã mã hóa</string>
+    <string name="settings_rgpd_storage_label">Vị trí lưu trữ</string>
+    <string name="settings_rgpd_storage_value">Chỉ trên thiết bị của bạn (bộ nhớ riêng tư của ứng dụng, được cách ly bởi hộp cát Android)</string>
+    <string name="settings_rgpd_transfer_label">Chuyển giao cho bên thứ ba</string>
+    <string name="settings_rgpd_transfer_value">Bản thân Big MFA không gửi bất kỳ yêu cầu nào. Bản xuất đã mã hóa chỉ có thể được chia sẻ qua ứng dụng bên thứ ba do bạn chọn nếu bạn chủ động kích hoạt điều này.</string>
+    <string name="settings_rgpd_thirdparty_label">Mã bên thứ ba được tích hợp</string>
+    <string name="settings_rgpd_thirdparty_value">Bouncy Castle (MIT), CameraX (Apache-2.0), ML Kit barcode-scanning tích hợp (Apache-2.0), ZXing (Apache-2.0) — tất cả đều cục bộ, không có dữ liệu đo từ xa</string>
+    <string name="settings_rgpd_retention_label">Thời gian lưu giữ</string>
+    <string name="settings_rgpd_retention_value">Cho đến khi gỡ cài đặt hoặc xóa thủ công</string>
+    <string name="settings_rgpd_legal_label">Cơ sở pháp lý</string>
+    <string name="settings_rgpd_legal_value">Sự đồng ý của người dùng (Điều 6.1.a)</string>
+    <string name="settings_rgpd_access_label">Quyền truy cập (Điều 15)</string>
+    <string name="settings_rgpd_access_value">Thông qua bản xuất đã mã hóa (ở trên)</string>
+    <string name="settings_rgpd_erasure_label">Quyền xóa dữ liệu (Điều 17)</string>
+    <string name="settings_rgpd_erasure_value">Thông qua “Xóa tất cả dữ liệu của tôi”</string>
+    <string name="settings_rgpd_portability_label">Quyền di chuyển dữ liệu (Điều 20)</string>
+    <string name="settings_rgpd_portability_value">Thông qua bản xuất đã mã hóa (gốc hoặc đa nền tảng)</string>
+    <string name="settings_rgpd_dpo_label">Liên hệ với DPO</string>
+    <string name="settings_rgpd_dpo_value">contact@bigfortravel.com</string>
+    <string name="settings_rgpd_eu_label">Cơ quan EU (khiếu nại)</string>
+    <string name="settings_rgpd_eu_value">CNIL – www.cnil.fr (người dùng châu Âu)</string>
+    <string name="settings_rgpd_cm_label">Cơ quan Cameroon (khiếu nại)</string>
+    <string name="settings_rgpd_cm_value">ANTIC – www.antic.cm (người dùng Cameroon)</string>
+    <string name="settings_rgpd_footer">Big MFA không thu thập bất kỳ dữ liệu cá nhân nào ngoài thiết bị của bạn, không tự khởi tạo bất kỳ kết nối mạng nào, và không chia sẻ bất kỳ thông tin nào với bên thứ ba. Tất cả dữ liệu được mã hóa bằng AES-256-GCM-SIV trước khi lưu trữ cục bộ.</string>
+    <string name="settings_language_row_title">Ngôn ngữ</string>
+
+    <!-- BackupImporter -->
+    <string name="backup_importer_unreadable">Tệp không thể đọc được hoặc bị hỏng</string>
+    <string name="backup_importer_unknown_format">Định dạng tệp không được nhận dạng</string>
+    <string name="backup_importer_wrong_password">Mật khẩu không đúng hoặc tệp bị hỏng</string>
+
+    <!-- Ủng hộ -->
+    <string name="support_title">Ủng hộ Big MFA</string>
+    <string name="support_description">Big MFA được phát triển và duy trì tự nguyện bởi BigForTravel. Không quảng cáo, không bán dữ liệu, không có gói đăng ký ẩn. Nếu ứng dụng hữu ích với bạn, một khoản quyên góp — dù nhỏ — cũng giúp tài trợ cho sự phát triển liên tục của ứng dụng.</string>
+    <string name="support_paypal_button">Quyên góp qua PayPal</string>
+    <string name="support_kofi_button">Quyên góp qua Ko-fi</string>
+    <string name="support_disclaimer">Việc quyên góp là tùy chọn và không cấp thêm bất kỳ tính năng nào. Luôn xác minh rằng người nhận được hiển thị là BigForTravel / Patrick Djeuzong.</string>
+    <string name="support_official_site">🌐 Trang web chính thức</string>
+    <string name="support_contact_us">✉️ Viết thư cho chúng tôi</string>
+    <string name="support_contact_subject">Big MFA — Liên hệ</string>
+
+    <!-- Băng chuyền xuất QR -->
+    <string name="export_qr_title">Xuất mã QR (%1$d/%2$d)</string>
+    <string name="export_qr_no_accounts">Không có tài khoản nào để xuất.</string>
+    <string name="export_qr_zip_button">📦 Xuất tất cả mã QR dưới dạng ZIP</string>
+    <string name="export_qr_close_button">Đóng</string>
+    <string name="export_qr_zip_error">Không thể tạo tệp lưu trữ ZIP</string>
+    <string name="export_qr_share_title">Chia sẻ tệp lưu trữ QR</string>
+
+    <!-- Hướng dẫn -->
+    <string name="guide_tab_installation">Cài đặt</string>
+    <string name="guide_tab_usage">Sử dụng</string>
+    <string name="guide_tab_features">Tính năng</string>
+    <string name="guide_title">Hướng dẫn Big MFA</string>
+    <string name="guide_intro">Tổng quan nhanh về tất cả các tính năng có sẵn.</string>
+    <string name="guide_codes_title">🔑 Mã của tôi</string>
+    <string name="guide_codes_body">Mã TOTP của bạn được cập nhật theo thời gian thực với đồng hồ đếm ngược trực quan. Nhấn vào một mã để sao chép (tự động xóa khỏi bảng nhớ tạm sau 30 giây). Đối với tài khoản HOTP, nhấn “Tạo” mỗi khi bạn cần mã. Tìm kiếm, đổi tên hoặc xóa tài khoản bằng các biểu tượng trên mỗi dòng.</string>
+    <string name="guide_decoder_title">🔍 Bộ giải mã</string>
+    <string name="guide_decoder_body">Dán hoặc nhập khóa bí mật từ hình ảnh mã QR để nhận ngay mã TOTP tương ứng, mà không cần thêm vào kho lưu trữ của bạn. Hữu ích để kiểm tra một lần.</string>
+    <string name="guide_key_title">🔐 Khóa</string>
+    <string name="guide_key_body">Tạo một khóa bí mật ngẫu nhiên, cùng với mã QR tương ứng, để thiết lập tài khoản mới trên một dịch vụ khác yêu cầu bạn tạo khóa bí mật riêng.</string>
+    <string name="guide_add_title">➕ Thêm tài khoản</string>
+    <string name="guide_add_body">Quét mã QR do dịch vụ cung cấp, hoặc nhập khóa bí mật theo cách thủ công. Các tùy chọn nâng cao cho phép bạn điều chỉnh thuật toán, số chữ số, chu kỳ, hoặc chuyển sang HOTP.</string>
+    <string name="guide_biometric_title">👆 Mở khóa bằng sinh trắc học</string>
+    <string name="guide_biometric_body">Kích hoạt mở khóa bằng vân tay từ Cài đặt. Mật khẩu chính của bạn luôn được giữ lại như một phương án dự phòng — không bao giờ bị thay thế, chỉ được bổ sung.</string>
+    <string name="guide_backup_title">💾 Sao lưu và khôi phục</string>
+    <string name="guide_backup_body">Hai định dạng xuất: bảo mật tối đa (gốc dành cho Android) hoặc tương thích đa nền tảng (có thể nhập vào tiện ích mở rộng Chrome). Xuất QR sẽ tạo một băng chuyền mã QR, riêng lẻ hoặc trong tệp lưu trữ ZIP. Khôi phục sẽ tự động phát hiện định dạng tệp.</string>
+    <string name="guide_security_title">🛡 Bảo mật</string>
+    <string name="guide_security_body">Tất cả dữ liệu chỉ được lưu trên thiết bị của bạn, được mã hóa bằng AES-256-GCM-SIV với khóa được tạo bằng Argon2id. Ứng dụng không bao giờ tự khởi tạo kết nối mạng.</string>
+    <string name="guide_language_title">🌐 Ngôn ngữ</string>
+    <string name="guide_language_body">Chọn “Tự động” để theo ngôn ngữ điện thoại của bạn, hoặc chọn ngôn ngữ cụ thể ở chân trang của màn hình đăng nhập.</string>
+    <string name="guide_install_step1_title">1. Tạo kho lưu trữ của bạn</string>
+    <string name="guide_install_step1_body">Khi khởi động lần đầu, chọn “Tạo kho lưu trữ” để bắt đầu với kho lưu trữ trống, hoặc “Khôi phục bản sao lưu hiện có” nếu bạn đã sử dụng Big MFA trên Chrome hoặc một thiết bị Android khác.</string>
+    <string name="guide_install_step2_title">2. Chọn mật khẩu chính mạnh</string>
+    <string name="guide_install_step2_body">Tối thiểu 12 ký tự, nhưng tốt hơn nên nhắm đến cụm mật khẩu từ 16 ký tự trở lên (ví dụ như nhiều từ kết hợp). Đây là khóa duy nhất bảo vệ tất cả các tài khoản của bạn.</string>
+    <string name="guide_install_step3_title">3. Hiểu về tính không thể khôi phục</string>
+    <string name="guide_install_step3_body">Big MFA không lưu trữ mật khẩu chính của bạn ở bất kỳ đâu, dù dưới dạng văn bản thuần túy hay đã mã hóa. Nếu bạn quên nó và không có bản sao lưu bên ngoài, các tài khoản của bạn sẽ trở nên không thể truy cập vĩnh viễn. Hãy ghi lại vào một trình quản lý mật khẩu đáng tin cậy.</string>
+    <string name="guide_install_step4_title">4. Kích hoạt sinh trắc học (tùy chọn)</string>
+    <string name="guide_install_step4_body">Từ Cài đặt, kích hoạt mở khóa bằng vân tay để truy cập hàng ngày nhanh hơn. Mật khẩu chính của bạn luôn được giữ lại như một phương án dự phòng.</string>
+    <string name="guide_usage_step1_title">1. Thêm tài khoản đầu tiên của bạn</string>
+    <string name="guide_usage_step1_body">Từ “+ Thêm”, quét mã QR do dịch vụ hiển thị (phương pháp nhanh nhất), hoặc nhập thủ công tên, nhà phát hành và khóa bí mật Base32 nếu bạn không thể quét.</string>
+    <string name="guide_usage_step2_title">2. Sử dụng mã hàng ngày</string>
+    <string name="guide_usage_step2_body">Trong “Mã của tôi”, nhấn trực tiếp vào mã TOTP để sao chép (tự động xóa khỏi bảng nhớ tạm sau 30 giây). Đối với tài khoản HOTP, nhấn “Tạo” mỗi khi bạn cần — bộ đếm luôn tiến lên, không bao giờ lùi lại.</string>
+    <string name="guide_usage_step3_title">3. Quản lý tài khoản của bạn</string>
+    <string name="guide_usage_step3_body">Sử dụng thanh tìm kiếm để nhanh chóng tìm một tài khoản trong số nhiều tài khoản. Biểu tượng bút chì cho phép đổi tên, biểu tượng thùng rác cho phép xóa (với xác nhận kép, hành động không thể hoàn tác).</string>
+    <string name="guide_usage_step4_title">4. Sao lưu thường xuyên</string>
+    <string name="guide_usage_step4_body">Trong Cài đặt, chọn “Xuất bảo mật tối đa” để có bản sao lưu chỉ dành cho Android, hoặc “Xuất tương thích đa nền tảng” nếu bạn cũng sử dụng Big MFA trên Chrome. Xuất QR (băng chuyền hoặc ZIP) hữu ích để chuyển sang trình quản lý tương thích với tiêu chuẩn TOTP khác.</string>
+    <string name="guide_usage_step5_title">5. Thay đổi mật khẩu chính của bạn</string>
+    <string name="guide_usage_step5_body">Trong Cài đặt, nhập mật khẩu hiện tại của bạn, sau đó nhập mật khẩu mới. Tài khoản và sinh trắc học của bạn (nếu được kích hoạt) vẫn giữ nguyên — chỉ mật khẩu thay đổi.</string>
+    <string name="nav_accounts">Mã của tôi</string>
+    <string name="nav_decoder">Bộ giải mã</string>
+    <string name="nav_key">Khóa</string>
+    <string name="nav_add">+ Thêm</string>
+    <string name="nav_support">Ủng hộ</string>
+    <string name="nav_settings">Cài đặt</string>
+    <string name="nav_guide">Hướng dẫn</string>
+    <string name="nav_lock_content_description">Khóa kho lưu trữ</string>
+</resources>
